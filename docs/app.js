@@ -188,8 +188,8 @@ function applySavedAnswer(q, saved) {
   if (q.type === "mc" || q.type === "tf") {
     const opts = area.querySelectorAll(".option");
     opts.forEach((node) => {
-      const v = JSON.parse(node.dataset.value);
-      if (v === saved.picked) selectOption(node, v);
+      const v = parseOptionDataValue(node);
+      if (v !== undefined && v === saved.picked) selectOption(node, v);
     });
   } else if (q.type === "fill") {
     const input = $("fillInput");
@@ -281,11 +281,23 @@ function prevQuestion() {
   renderQuestion();
 }
 
+/** Çoktan seçmeli / D-Y şıkkının JSON değeri (data-value her zaman attribute ile set edilir). */
+function parseOptionDataValue(node) {
+  const raw = node.getAttribute("data-value");
+  if (raw == null || raw === "") return undefined;
+  try {
+    return JSON.parse(raw);
+  } catch (_) {
+    return undefined;
+  }
+}
+
 function selectOption(node, value) {
   if (node.parentElement.querySelector(".option.locked")) return;
   node.parentElement.querySelectorAll(".option").forEach(n => n.classList.remove("selected"));
   node.classList.add("selected");
-  node.dataset.value = JSON.stringify(value);
+  const enc = JSON.stringify(value);
+  node.setAttribute("data-value", enc);
   $("submitBtn").disabled = false;
 }
 
@@ -316,7 +328,8 @@ function submitAnswer() {
   if (q.type === "mc" || q.type === "tf") {
     const sel = $("answerArea").querySelector(".option.selected");
     if (!sel) return;
-    picked = JSON.parse(sel.dataset.value);
+    picked = parseOptionDataValue(sel);
+    if (picked === undefined) return;
   } else if (q.type === "fill") {
     picked = $("fillInput").value.trim();
     if (!picked) return;
@@ -352,9 +365,9 @@ function showQuestionFeedback(q, picked, isCorrect) {
     });
   } else if (q.type === "tf") {
     const opts = area.querySelectorAll(".option");
-    opts.forEach((n) => {
+    opts.forEach((n, i) => {
       n.classList.add("locked");
-      const v = JSON.parse(n.dataset.value);
+      const v = i === 0;
       if (v === q.answer) n.classList.add("correct");
       if (v === picked && v !== q.answer) n.classList.add("wrong");
     });
