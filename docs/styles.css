@@ -424,6 +424,78 @@ a:hover { color: var(--accent-hover); }
 .fill-input.correct { border-color: var(--ok); }
 .fill-input.wrong { border-color: var(--bad); }
 
+/* Open (klasik/açık uçlu) sorular */
+.open-input {
+  width: 100%;
+  min-height: 140px;
+  padding: 12px 14px;
+  border: 1px solid var(--stroke);
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.55;
+  border-radius: 2px;
+  resize: vertical;
+}
+.open-input:focus {
+  outline: 2px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  outline-offset: 0;
+}
+.open-input[readonly] {
+  background: var(--bg-muted);
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.open-hint {
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.open-model {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--ok);
+  background: color-mix(in srgb, var(--ok) 8%, var(--bg));
+}
+.open-model-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.open-model-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text);
+  white-space: pre-wrap;
+}
+
+.self-mark-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--stroke);
+  background: var(--bg-muted);
+}
+.self-mark-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+.self-mark-btn[data-mark="wrong"] { border-color: var(--stroke); }
+.self-mark-btn[data-mark="wrong"]:hover:not(:disabled) { border-color: var(--bad); color: var(--bad); }
+.self-mark-btn.active[data-mark="right"] { background: var(--ok); border-color: var(--ok); color: #fff; }
+.self-mark-btn.active[data-mark="wrong"] { background: var(--bad); border-color: var(--bad); color: #fff; }
+.self-mark-btn:disabled { cursor: default; }
+
 .feedback {
   margin-top: 12px;
   padding: 12px 14px;

@@ -1,5 +1,6 @@
 // IoT (Nesnelerin İnterneti) Vize Sınav Soru Bankası
-// Bölüm 1-6 kapsar. 3 tür: mc (çoktan seçmeli), tf (doğru/yanlış), fill (boşluk doldurma)
+// Bölüm 1-6 kapsar. 4 tür: mc (çoktan seçmeli), tf (doğru/yanlış), fill (boşluk doldurma), open (klasik/açık uçlu)
+// Klasik sorular için alt tipler: T (Tanım/Örnek), Ç (Çıkarım), A (Analiz), M (Modelleme/Senaryo)
 // PDF nesnelerin_interneti_vize_soru_bankasi.pdf (60 çoktan seçmeli + 36 boşluk) aşağıda ayrı blokta eklenmiştir.
 
 const QUESTIONS = [
@@ -391,6 +392,272 @@ const QUESTIONS = [
   { topic: 6, type: "fill", q: "6LoWPAN açılımında geçen IP sürümü ______'dır.", answer: ["ipv6","ıpv6"], exp: "PDF vize soru bankası — boşluk doldurma." },
   { topic: 6, type: "fill", q: "Geniş alan kapsaması için kullanılan hücresel teknolojiler arasında GPRS, 3G ve ______ bulunur.", answer: ["4g"], exp: "PDF vize soru bankası — boşluk doldurma." },
 
+  // ==============================================================
+  // KLASİK (AÇIK UÇLU) SORULAR — open tipi
+  // Alt tipler: T (Tanım/Örnek), Ç (Çıkarım), A (Analiz), M (Modelleme)
+  // Tüm model cevaplar yalnızca slayt içeriğinden türetilmiştir.
+  // ==============================================================
+
+  // ---------- Bölüm 1 — IoT Giriş ----------
+  { topic: 1, type: "open", subtype: "T",
+    q: `Slayta göre Nesnelerin İnterneti nedir? IoT'nin üzerine kurgulandığı üç ana kavramı tanımlayıp her biri için tek cümlelik görev tanımı yazınız.`,
+    answer: `Nesnelerin İnterneti; sensörler, algılayıcılar, akıllı yazılımlar ve internet haberleşmesinin birlikte kullanıldığı nesneler ağıdır. Üç ana kavram: (1) İnternet — haberleşmeyi sağlar, (2) Cihazlar — veri toplar ve aksiyon alır, (3) Veri — analiz, aksiyon alma veya raporlama için kullanılır.`,
+    exp: `Slayt 1.2.` },
+
+  { topic: 1, type: "open", subtype: "T",
+    q: `IoT'nin günümüzde kabul gören üç katmanlı sınıflandırmasının katmanlarını sırayla yazıp her bir katmanın işini tek cümleyle özetleyiniz.`,
+    answer: `Algılama (Perception) katmanı: Fiziksel veriyi sensör/RFID ile toplar. Ağ (Network) katmanı: Veriyi Wi-Fi/Zigbee/5G gibi protokollerle iletir. Uygulama (Application) katmanı: Son kullanıcı arayüzü ve akıllı servisleri sunar.`,
+    exp: `Slayt 1.3 ve 2.4.` },
+
+  { topic: 1, type: "open", subtype: "Ç",
+    q: `Slayt, "Siber çağ"da haberleşmenin sürekli, anlık ve en az insan etkisi ile gerçekleşmesi gerektiğini söylüyor. Bu üç özellik neden eş zamanlı aranır? Biri sağlanmazsa hangi sorunlar doğar?`,
+    answer: `Sürekli haberleşme olmazsa veri akışı kesintiye uğrar; anlık olmazsa gerçek zamanlı karar (ör. otonom aksiyon) alınamaz; insan etkisi fazla olursa ölçek büyüdükçe sistem yönetilemez hale gelir. Slayt bu üç özelliği dördüncü sanayi devriminin (Siber çağ) haberleşme ilkesi olarak birlikte vurgular.`,
+    exp: `Slayt 1.1.` },
+
+  { topic: 1, type: "open", subtype: "A",
+    q: `Slaytta verilen IoT uygulama alanlarından Ulaşım, Sağlık, Tarım ve Güvenlik için her birinde toplanan veri ve alınan örnek aksiyonları yazınız.`,
+    answer: `Ulaşım: araç içi/araçlar arası iletişim, akıllı trafik kontrolü, lojistik yönetimi, yol yardımı. Sağlık: akıllı sedye sistemleri. Tarım: zararlılarla mücadele, lojistik yönetimi, verimlilik artışı. Güvenlik: akıllı ev sistemleri.`,
+    exp: `Slayt 1.5.` },
+
+  { topic: 1, type: "open", subtype: "M",
+    q: `Akıllı Güneş Tarlası Veri Yönetim Sistemi örneğinde Publisher–MQTT–Subscriber üçlüsünün veri akışını ve ölçülen nicelikleri açıklayınız.`,
+    answer: `Sistem üç parçadan oluşur: Publisher (simülasyon veri üretici yazılımı), MQTT tabanlı haberleşme altyapısının yerel cihazda kurulması, ve Subscriber (analiz ve depolama yazılımı). Veri yapısı en az 100 sensör içerir; ölçülen nicelikler sıcaklık, nem ve ışık miktarıdır.`,
+    exp: `Slayt 1.7.` },
+
+  { topic: 1, type: "open", subtype: "M",
+    q: `Slayttaki üç dönem projesi alanından (Akıllı Tarım, Akıllı Ev, Akıllı Sistemler Yönetim Birimi) birini seçip slayttaki alt başlıkları kullanarak kısaca modelleyiniz.`,
+    answer: `Akıllı Tarım: topraklı/topraksız uygulamalarda mini sera kurulumu, sensör bilgisi toplama, zamana dayalı ve görsel verileri yapılandırma, YZ ile bitki gelişim süreci takibi. Akıllı Ev: akıllı ısıtma (kombi/elektrikli ısıtıcı), akıllı ışıklandırma (hareket ve gün ışığı duyarlı), akıllı gaz kontrol (hava kalitesi). Yönetim Birimi: akıllı modem veya güvenli, hız etkin haberleşme sistemleri.`,
+    exp: `Slayt 1.8.` },
+
+  { topic: 1, type: "open", subtype: "Ç",
+    q: `Slaytta standartlaşma bağlamında Matter ve Thread protokolleri geçmektedir. Standartlaşma olmasaydı heterojen cihazlardan kurulu bir sistemde hangi sorunlar yaşanırdı?`,
+    answer: `Standartlaşma olmadığında birbirinden farklı üreticilerin cihazları aynı ağda birlikte çalıştırılamaz; kullanıcı her marka için ayrı uygulama/protokol kullanmak zorunda kalır; ölçek büyüdükçe birlikte çalışabilirlik, güvenlik ve yönetim zorlaşır. Slayt bu sebeple Matter/Thread gibi standartları öne çıkarır.`,
+    exp: `Slayt 1 — Genel Bakış ve Kazanımlar.` },
+
+  // ---------- Bölüm 2 — Modern Mimariler ----------
+  { topic: 2, type: "open", subtype: "T",
+    q: `Slayttaki mimari tanımını kendi cümlelerinizle yazınız ve IoT'den birer örnek veriniz.`,
+    answer: `Mimari; bir ağın fiziksel bileşenlerini, fonksiyonel organizasyonunu, konfigürasyonunu, çalışma prensiplerini ve veri formatlarını tanımlayan çerçevedir. Örnek: fiziksel bileşen (sensör, gateway), fonksiyonel organizasyon (3/5 katmanlı yapı), çalışma prensibi (verinin algılama-ağ-uygulama boyunca akışı), veri formatı (MQTT paketi).`,
+    exp: `Slayt 2.2.` },
+
+  { topic: 2, type: "open", subtype: "T",
+    q: `IoT sisteminin 6 fonksiyonel bloğunu yazıp her biri için slayttaki tek cümlelik tanımı parafraz ediniz.`,
+    answer: `Algılama: fiziksel durum değişikliklerini gerçek zamanlı algılar. İletişim: katmanlar arası etkileşimi sağlar, farklı protokolleri (CoAP, MQTT, LwM2M) kapsar. Bulut: verinin depolanması, işlenmesi ve analizi için sistemin işlem birimidir. Yönetim: tüm katmanların izlenmesini sağlar. Servisler ve Uygulama: görselleştirme, güvenlik gibi kullanıcı odaklı servisleri sunar.`,
+    exp: `Slayt 2.3.` },
+
+  { topic: 2, type: "open", subtype: "A",
+    q: `3 katmanlı ve 5 katmanlı IoT mimarilerini katman içerikleri ve iş/analiz yeteneği açısından karşılaştırınız.`,
+    answer: `3 katmanlı: Algılama, Ağ, Uygulama. Temel mantığı açıklar ama karmaşık veri işleme ve iş modellerini açıklamakta yetersizdir. 5 katmanlı mimari buna Veri İşleme (Processing/Middleware) ve İş (Business) katmanlarını ekler; böylece veri işlenir ve iş katmanında stratejik değere dönüştürülür.`,
+    exp: `Slayt 2.4.` },
+
+  { topic: 2, type: "open", subtype: "Ç",
+    q: `IoT neden mimariye ihtiyaç duyar? Heterojenlik, ölçeklenebilirlik ve modülerlik başlıklarıyla açıklayınız.`,
+    answer: `Heterojenlik: Milyonlarca farklı donanım (MCU, MPU), OS (FreeRTOS, Linux) ve protokolün (Zigbee, WiFi) bir arada çalışma zorunluluğu vardır. Ölçeklenebilirlik: 10 cihazda çalışan sistemin 10.000 cihazda çökmemesi gerekir. Modülerlik (loosely coupled): Donanım değiştikçe yazılımın, bulut değiştikçe cihazın etkilenmemesi istenir.`,
+    exp: `Slayt 2.2.` },
+
+  { topic: 2, type: "open", subtype: "A",
+    q: `Middleware (İşleme) katmanının rolünü açıklayıp bu katmanın kaldırıldığında 5 katmanlı mimarinin nasıl çökeceğini mantıksal çıkarımla yazınız.`,
+    answer: `İşleme katmanı büyük miktardaki veriyi depolar, analiz eder ve işler; veritabanları ve bulut bilişim modüllerini kullanır. Kaldırılırsa ham veri iş katmanına işlenmeden ulaşır; iş katmanının stratejik karar üretmesi imkansızlaşır ve sistem sadece ham veri akışına indirgenir.`,
+    exp: `Slayt 2.5.` },
+
+  { topic: 2, type: "open", subtype: "A",
+    q: `Edge, Fog ve Cloud yaklaşımlarını "hız vs. derin analiz" kıyası çerçevesinde karşılaştırınız.`,
+    answer: `Cloud-Centric: tüm veri AWS/Azure/Google gibi sunuculara gider; sınırsız işlem gücü ve kolay yönetim sağlar, ancak bant genişliği maliyeti, yüksek gecikme ve gizlilik riski doğurur. Edge: işlem gücü sensörün tam yanındadır (ör. akıllı kamera görüntüyü kendi üzerinde işleyip sadece "İnsan Görüldü" bilgisini gönderir). Fog: cihazlar ile bulut arasındaki yerel sunuculardır (ör. fabrikadaki kontrol odası). Kritik kıyas: Hız (Edge) vs. Derin Analiz (Cloud).`,
+    exp: `Slayt 2.4 / 2.6.` },
+
+  { topic: 2, type: "open", subtype: "Ç",
+    q: `Slaytta otonom araçlar için <10 ms gecikme şartı verilmektedir. Bu kısıtın Cloud-Centric bir mimariyle sağlanamamasının nedenlerini açıklayınız.`,
+    answer: `Bulut merkeziyetçi yapıda veri buluta gidip işlenip geri döner; bu yolculuk gecikmeyi artırır ve <10 ms sınırının altında kalmak pratikte mümkün değildir. Ayrıca 1000 kameranın ham görüntüsünü buluta göndermek bant genişliği açısından da imkansızdır; bu nedenle gerçek zamanlı uygulamalarda edge/fog yaklaşımı zorunludur.`,
+    exp: `Slayt 2.5 — Mimari Karar Parametreleri.` },
+
+  { topic: 2, type: "open", subtype: "M",
+    q: `Akıllı sera vakasında (binlerce dönüm, nem/sıcaklık/toprak pH) Perception, Network, Middleware ve Business katmanlarında verilecek kararları slayttaki cevaplara uygun kurgulayınız.`,
+    answer: `Perception: nem, pH, sıcaklık ve yağış sensörleri kullanılır. Network: kablo çekilemeyen geniş alan için LoRaWAN tercih edilir. Middleware: edge computing hedefleniyorsa veri buluta gitmeden yerelde filtrelenir. Business: yağmur geliyor/başladı bilgisine göre sulama yapma/yapmama kararı üretilir; böylece çiftçiye para kazandıracak aksiyon alınır.`,
+    exp: `Slayt 2.4 — Tartışma/Sonuçlar.` },
+
+  { topic: 2, type: "open", subtype: "T",
+    q: `ISO/IEC 30141'i "sözlük ve şablon" olarak kullanmanın avantajı nedir? Domain ve Trustworthiness bileşenlerini listeleyiniz.`,
+    answer: `ISO/IEC 30141, tüm dünyadaki mühendislerin aynı dili konuşmasını sağlayan bir sözlük ve şablondur. Domainler: User, Service, Access, Physical, Resource. Trustworthiness: güvenlik, emniyet, dayanıklılık ve gizliliği mimariye entegre eder.`,
+    exp: `Slayt 2.5.` },
+
+  // ---------- Bölüm 3 — Sensörler I ----------
+  { topic: 3, type: "open", subtype: "T",
+    q: `Algılama katmanının amacı ve sorumluluğu nedir? Slayttaki "topraktaki nem miktarının voltaja dönüştürülmesi" örneğiyle fiziksel→dijital dönüşümü anlatınız.`,
+    answer: `Algılama katmanı IoT mimarisinin en alt ve temel katmanıdır. Amacı, bağlı nesnelerin fiziksel durumundaki değişiklikleri gerçek zamanlı olarak tespit etmektir. Sorumluluğu, nesnelerden veya çevreden (sıcaklık, nem vb.) faydalı bilgileri toplamak ve bunları dijital bir yapıya dönüştürmektir. Akıllı sera örneğinde topraktaki nem (fiziksel sinyal) bir sensör aracılığıyla voltaj değerine (analog sinyal) dönüştürülür.`,
+    exp: `Slayt 3.1.` },
+
+  { topic: 3, type: "open", subtype: "T",
+    q: `Sensörleri ölçme türü (aktif/pasif) ve çıktı türü (analog/dijital) açısından sınıflandırıp slayttaki örneklerle eşleştiriniz.`,
+    answer: `Pasif: ortama sinyal göndermeden algılar (PIR, LDR). Aktif: ortama sinyal göndererek algılar (LiDAR, RADAR). Analog: sürekli değer üretir (LM35, LDR). Dijital: ayrık/kesikli değer üretir (PIR, DHT).`,
+    exp: `Slayt 3.2.` },
+
+  { topic: 3, type: "open", subtype: "A",
+    q: `LM35, HC-SR04, ADXL345, BMP180, LDR, DHT11, MAX30100, PIR ve MQ-3 sensörleri için ölçtüğü nicelik, aktif/pasif, analog/dijital ve pinlerini yazınız.`,
+    answer: `LM35: sıcaklık, analog, pasif, VCC/OUT/GND. HC-SR04: mesafe, dijital/analog, aktif, VCC/Trig/Echo/GND. ADXL345: 3 eksen ivme, dijital (I2C/SPI), pasif, VCC/GND/SDA/SCL/CS/INT. BMP180: hava basıncı, dijital (I2C/SPI), pasif, VCC/GND/SDA/SCL. LDR: ışık, analog, pasif, VCC/OUT. DHT11: nem, dijital, pasif, VCC/DATA/GND. MAX30100: nabız, dijital (I2C), aktif, VCC/GND/SDA/SCL/INT. PIR: hareket, dijital, pasif, VCC/GND/OUT. MQ-3: alkol buharı, analog/dijital, aktif, VCC/GND/A0/D0.`,
+    exp: `Slayt 3.3.` },
+
+  { topic: 3, type: "open", subtype: "Ç",
+    q: `MQ-3 (150-200 mA) ile LM35 (~60 μA) arasındaki büyük güç farkı neden kaynaklanır? Aktif/pasif sensör tanımından yola çıkarak açıklayınız.`,
+    answer: `MQ-3 aktif bir sensördür; algılama yapabilmek için ortama/kendi yüzeyine sinyal/ısı üretmesi gerekir, bu da yüksek akım çeker. LM35 ise pasif bir sensördür; ortama sinyal göndermeden algılama yapar ve çok düşük akımla çalışabilir.`,
+    exp: `Slayt 3.2 ve 3.3.` },
+
+  { topic: 3, type: "open", subtype: "T",
+    q: `RFID'nin iki bileşenini tanımlayıp okuma sürecini adım adım yazınız. Pasif ve aktif etiket farkını açıklayınız.`,
+    answer: `RFID iki bileşenden oluşur. Okuyucu: çevresine sinyal iletir, yakındaki etiketleri aktif hale getirir ve etiketlerin benzersiz anahtarlarını toplar. Etiket: mikroçip ve antenden oluşur, genellikle yapışkan bir etiket formundadır. Pasif etiket: güç kaynağı yoktur, okuyucunun sinyaliyle aktifleşir. Aktif etiket: kendi güç kaynağı vardır; avantajı uzun mesafeden okunabilmesidir.`,
+    exp: `Slayt 3.4.` },
+
+  { topic: 3, type: "open", subtype: "M",
+    q: `Slayttaki "İnsansız kasa" örneğine göre RFID tabanlı mağaza çıkış sistemini kurgulayınız (etiket tipi, okuyucu yerleşimi, süreç).`,
+    answer: `Müşteri mağazadan çıkarken sensörler ürün üzerindeki RFID etiketlerini otomatik tarar ve ödeme insansız şekilde gerçekleştirilir. Maliyet/ürün başına düşen etiket bütçesi nedeniyle genellikle pasif etiket kullanılır; okuyucu çıkış kapısında sepetteki tüm etiketleri toplayacak biçimde konumlanır ve kimlikleri ödeme sistemine iletir.`,
+    exp: `Slayt 3.4.` },
+
+  // ---------- Bölüm 4 — Sensörler II & Aktüatörler ----------
+  { topic: 4, type: "open", subtype: "T",
+    q: `EPC (Elektronik Ürün Kodu) nedir? Mimari bileşenlerini yazınız.`,
+    answer: `EPC, fiziksel bir nesneyle ilişkili benzersiz tanımlayıcıdır; EPC Global Etiket Veri Standardı kod kurallarını ve yapısını tanımlar. MIT tarafından geliştirilmiştir. Mimari bileşenleri: Auto-ID laboratuvarları, EPC ve Nesne Adlandırma Servisi (ONS) üzerine kurulu tasarım.`,
+    exp: `Slayt 4 — Nesne Odaklı IoT Vizyonu.` },
+
+  { topic: 4, type: "open", subtype: "T",
+    q: `WSN'de Mote ve Sink düğümlerinin görevleri nelerdir? Kablolu çözümlere göre iki avantajını yazınız.`,
+    answer: `WSN, ışık, ısı ve basınç gibi fiziksel olayları algılayan sensör düğümlerinden oluşan bir ağdır. Mote: sınırlı sayıdaki sensör düğümü. Sink: verilerin toplandığı özel amaçlı düğüm. Kablolu çözümlere göre avantajları: daha kolay kurulum ve cihaz esnekliği.`,
+    exp: `Slayt 4 — WSN ve Mote/Sink.` },
+
+  { topic: 4, type: "open", subtype: "A",
+    q: `IEEE 802.15.4 standardını hedef ağ tipi, mesafe, bant genişliği, frekans bantları ve tasarım ilkeleri başlıkları altında özetleyiniz.`,
+    answer: `IEEE 802.15.4, WPAN (Kablosuz Kişisel Alan Ağları) için yaygın iletişim protokolüdür. Kısa mesafe, düşük güç, düşük karmaşıklık ve düşük maliyet için tasarlanmıştır. 800/900 MHz ve 2.4 GHz bantlarını kullanır. Enerji verimliliği, ölçeklenebilirlik, güvenilirlik ve sağlamlık (robustness) sağlar.`,
+    exp: `Slayt 4 — IEEE 802.15.4.` },
+
+  { topic: 4, type: "open", subtype: "T",
+    q: `Yıldız, Mesh ve Ağaç topolojilerini kısaca tanımlayıp her biri için bir IoT kullanım örneği veriniz.`,
+    answer: `Yıldız: tüm uç düğümler merkezi bir düğüme bağlıdır, trafik merkezden geçer; akıllı ev sensörlerinde kullanılır. Mesh (Ağ): düğümler birbirine bağlıdır, veri düğümden düğüme atlayarak hedefe ulaşır; akıllı fabrikalar/kritik endüstriyel takipte tercih edilir. Ağaç: yıldız ve yol topolojilerinin birleşimi olan hiyerarşik yapı; akıllı şehirler ve tarım uygulamalarında kullanılır.`,
+    exp: `Slayt 4 — Topolojiler.` },
+
+  { topic: 4, type: "open", subtype: "A",
+    q: `Slayttaki avantaj–dezavantaj matrisini (Kurulum, Güvenilirlik, Enerji, Menzil) kullanarak üç topolojinin güçlü ve zayıf yönlerini özetleyiniz.`,
+    answer: `Yıldız: Kurulum çok yüksek kolaylıkta, güvenilirlik düşük (tek hata noktası), enerji verimliliği en yüksek, menzil sınırlı (gateway mesafesi); akıllı evler için uygun. Mesh: Kurulum orta, güvenilirlik çok yüksek (yedekli yol), enerji verimliliği düşük (sürekli dinleme), menzil çok geniş (düğümler arası); akıllı fabrikalar. Ağaç: Kurulum yüksek, güvenilirlik orta (hiyerarşik bağımlılık), enerji verimliliği orta, menzil geniş; akıllı şehir/tarım.`,
+    exp: `Slayt 4 — Avantaj/Dezavantaj Matrisi.` },
+
+  { topic: 4, type: "open", subtype: "Ç",
+    q: `Mesh topolojisi neden enerji verimliliğinde Yıldız'ın gerisinde kalır?`,
+    answer: `Mesh topolojisinde düğümler birbirine bağlıdır; veri düğümden düğüme atlayarak ilerler ve düğümler düşük güçlü sinyallerle röleleme yapmak için sürekli dinleme halinde bulunur. Yıldız'da ise her düğüm sadece kendi verisinden sorumludur ve merkezle tek atlama yapar; bu yüzden Yıldız en yüksek enerji verimliliğine sahiptir.`,
+    exp: `Slayt 4 — İletişim Stratejileri ve Matris.` },
+
+  { topic: 4, type: "open", subtype: "T",
+    q: `Aktüatör sınıflarını (Elektriksel, Mekanik, Pnömatik/Hidrolik) slayttaki tanım ve örneklerle açıklayınız.`,
+    answer: `Elektriksel aktüatörler: elektrik enerjisini doğrudan mekanik enerjiye veya ışığa dönüştürür (röleler, LED'ler, step motorlar). Mekanik aktüatörler: genellikle bir anahtarlama işlemi yaparak fiziksel bir hareketi tetikleyen sistemlerdir. Pnömatik ve hidrolik aktüatörler: hava veya sıvı basıncını kullanarak çok yüksek güç gerektiren hareketleri sağlar (endüstriyel robot kollarındaki pistonlar).`,
+    exp: `Slayt 4 — Aktüatör Sınıfları.` },
+
+  { topic: 4, type: "open", subtype: "A",
+    q: `Slaytta IoT sistemi tarlada pompayı neden doğrudan sürmez de solenoid vanaları kontrol eder? Güç, ölçek ve güvenlik açısından çıkarım yapınız.`,
+    answer: `Gerçek bir tarlada su, küçük bir motorla değil, yüksek beygir gücüne sahip trifaze dalgıç pompalarla çekilir; IoT sistemi bu gücü doğrudan sağlayamaz. Bu nedenle IoT sistemi pompayı doğrudan sürmez, su akışını kontrol eden elektromanyetik solenoid vanaları açıp kapatır. Böylece düşük güçlü kontrol sinyaliyle yüksek güçlü su akışı güvenli ve ölçeklenebilir biçimde yönetilir.`,
+    exp: `Slayt 4 — Mini DC Su Pompası.` },
+
+  { topic: 4, type: "open", subtype: "A",
+    q: `Mikroişlemci ve mikrodenetleyici arasındaki farkları slayttaki tüm maddeler üzerinden karşılaştırınız.`,
+    answer: `Mikroişlemci bilgisayar sistemlerinin kalbidir; yalnızca işlemcidir, bellek ve G/Ç harici bağlanır, kompakt sistemlerde kullanılmaz, maliyeti yüksek, güç tüketimi yüksektir, çoğu güç tasarrufu moduna sahip değildir, Von Neumann modeline dayanır, register sayısı az, komut seti geniş ve pahalıdır, GHz+ frekanslarda çalışır, genel amaçlıdır. Mikrodenetleyici gömülü sistemlerin kalbidir; dahili bellek ve G/Ç ile entegredir, kompakt, ucuz, düşük güç tüketir, güç tasarrufu modlarına sahiptir, Harvard mimarisine dayanır, register sayısı fazla, komut seti azdır, ~200 MHz civarında çalışır ve uygulamaya özeldir.`,
+    exp: `Slayt 4 — Mikroişlemci/Mikrodenetleyici Tabloları.` },
+
+  { topic: 4, type: "open", subtype: "Ç",
+    q: `Pille çalışan kompakt IoT cihazlarında neden mikroişlemci yerine mikrodenetleyici tercih edilir?`,
+    answer: `Mikrodenetleyicinin güç tüketimi düşüktür ve çoğu güç tasarrufu modu sunar; bellek ve G/Ç tek çipte bulunduğundan devre küçük ve kompakttır; maliyeti de düşüktür. Mikroişlemciler ise harici bileşenler gerektirdiği için hem güç hem maliyet açısından pilli ve kompakt cihazlar için uygun değildir.`,
+    exp: `Slayt 4 — Mikroişlemci/Mikrodenetleyici Tabloları.` },
+
+  // ---------- Bölüm 5 — TinyML ve Uçta YZ ----------
+  { topic: 5, type: "open", subtype: "T",
+    q: `IoT verisetlerinin üç temel karakteristiğini yazıp bunların neden elle analizi imkansız kıldığını açıklayınız.`,
+    answer: `IoT verisetleri devasa hacme, heterojen yapıya ve gerçek zamanlı akışa sahiptir. Çok büyük miktarlardaki verinin elle işlenmesi ve analizinin yapılması mümkün değildir; bu nedenle makine öğrenmesi yöntemleri geliştirilmiştir.`,
+    exp: `Slayt 5 — IoT verisetleri.` },
+
+  { topic: 5, type: "open", subtype: "T",
+    q: `Slayttaki tanıma göre Makine Öğrenmesi'nin amacı nedir? Veri Madenciliği'ni de aynı bağlamda açıklayınız.`,
+    answer: `Makine öğrenmesinin amacı, geçmişteki verileri kullanarak gelecek için tahminlerde bulunmaktır; yöntemler geçmişteki veriyi kullanarak yeni veri için en uygun modeli bulmaya çalışır. Verinin incelenip içerisinden işe yarayan bilginin çıkarılmasına da Veri Madenciliği adı verilir.`,
+    exp: `Slayt 5 — Makine Öğrenmesi Nedir.` },
+
+  { topic: 5, type: "open", subtype: "T",
+    q: `Temel ML yaklaşımlarını (Sınıflandırma, Kümeleme, Regresyon) slayttaki örneklerle tanımlayınız.`,
+    answer: `Sınıflandırma: Geçmiş bilgilere ait sınıflar biliniyorsa yeni gelen verinin hangi sınıfa dahil olacağının bulunmasıdır. Kümeleme: Sınıflar/etiketler bilinmediğinde verilerin birbirine yakın benzerliklerinin yer aldığı kümelerin bulunmasıdır (256 rengi 16 renge indirme gibi). Regresyon (eğri uydurma): Geçmiş bilgilere ait sınıflar yerine sürekli bilginin yer aldığı problemlerdir; örn. hava sıcaklığına bağlı deniz suyu sıcaklığının tahmini.`,
+    exp: `Slayt 5 — Sınıflandırma/Kümeleme/Regresyon.` },
+
+  { topic: 5, type: "open", subtype: "A",
+    q: `Slayttaki doktor örneği üzerinden özellik belirleme, özellik seçimi ve özellik çıkarımı kavramlarını ayırınız.`,
+    answer: `Özellik belirleme: veriye bakılacak özelliklerin tanımlanması (ad soyad, doğum yeri, cinsiyet, kan tahlili, röntgen sonuçları vb.). Özellik seçimi (feature selection): var olan özelliklerden bazılarının seçilmesi; yöntemler: bilgi teorisi, entropi, sinyal-gürültü oranı, duyarlılık analizi. Özellik çıkarımı (feature inference): var olan özelliklerin birleşiminden yeni özelliklerin üretilmesi; yöntemler: PCA, LDA.`,
+    exp: `Slayt 5 — Özellik Seçimi ve Çıkarımı.` },
+
+  { topic: 5, type: "open", subtype: "M",
+    q: `Anomali tespitinin veri akış sürecini adım adım yazıp bir örnek (ör. izinsiz giriş tespiti) üzerinden açıklayınız.`,
+    answer: `Anomali tespiti, sistemin normal davranış profilinden sapan ve bir eşiği geçen eylemlerin alert üretmesi sürecidir (kötü amaçlı yazılım, izinsiz giriş, veri anomalisi). Bir sınıflandırma problemidir; gelen olaylar benzerlik ölçütüne göre daha önce etiketlenmiş eğitim veri setleriyle karşılaştırılır. Süreç: Veri Toplama → Ön İşleme → Profil Oluşturma → Karşılaştırma → Karar.`,
+    exp: `Slayt 5 — Örnek Problem: Anomali Tespiti.` },
+
+  { topic: 5, type: "open", subtype: "Ç",
+    q: `Slayt, bulut merkeziyetli yapıdan kaçışın üç nedeni olarak gecikme, bant genişliği ve mahremiyet/güvenliği sıralıyor. Her birini bir IoT senaryosu üzerinden örnekleyiniz.`,
+    answer: `Gecikme: Verinin buluta gidip gelmesi otonom araçlar gibi gerçek zamanlı uygulamalar için çok yavaştır. Bant genişliği: Milyarlarca cihazın ham verisini buluta göndermek ağ tıkanıklığına ve yüksek maliyete yol açar. Mahremiyet ve güvenlik: Verinin yerelde kalması iletim sırasında çalınma riskini azaltır ve kullanıcı gizliliğini korur.`,
+    exp: `Slayt 5 — Uçta Zeka İhtiyacı.` },
+
+  { topic: 5, type: "open", subtype: "T",
+    q: `TinyML nedir? Hangi donanım sınıfında çalışır ve hangi avantajları sağlar?`,
+    answer: `TinyML, makine öğrenmesi modellerinin mikrovat seviyesinde güç tüketen ve kısıtlı kaynaklara sahip mikrodenetleyiciler (ESP32, STM32 vb.) üzerinde çalıştırılmasıdır. Yerelde işlem yapmak veriyi radyo dalgalarıyla göndermekten çok daha az enerji harcar. Avantajlar: bant genişliğini tıkamama, gerçek zamanlı karar (kaza tespiti), verinin cihazdan hiç çıkmaması ile mahremiyetin korunması.`,
+    exp: `Slayt 5 — TinyML.` },
+
+  { topic: 5, type: "open", subtype: "A",
+    q: `TinyML yaşam döngüsünün adımlarını yazıp Kuantizasyon ve Budamanın neden gerekli olduğunu açıklayınız.`,
+    answer: `Veri Toplama: sensörlerden (ivmeölçer, mikrofon, nem) ham veri alınır. Eğitim: model güçlü bir bilgisayarda (TensorFlow/PyTorch) eğitilir. Optimizasyon & Dönüştürme: modelin boyutu kısıtlı donanım için küçültülür (kuantizasyon ve budama). Entegrasyon: TensorFlow Lite Micro gibi kütüphanelerle C++ koduna çevrilir ve cihaza yüklenir. Çıkarım: cihaz artık internete ihtiyaç duymadan yeni gelen veriyi sınıflandırır. Kuantizasyon ve budama, mikrodenetleyicinin sınırlı belleği ve işlem gücüne sığabilmek için modeli küçültür.`,
+    exp: `Slayt 5 — TinyML adımları.` },
+
+  { topic: 5, type: "open", subtype: "T",
+    q: `Slayttaki verinin sayısallaştırılması tablosunu (resim, metin, video, ses) özetleyiniz.`,
+    answer: `Resim: her piksel; renkli görüntülerde R,G,B değerleri, siyah-beyazlarda 1–255 gri seviye ile sayılara çevrilir. Renkli resim 3 adet, siyah-beyaz 1 adet en*boy matrisle ifade edilir. Metin: harfler, heceler ve kelimeler genelde frekanslarına göre kodlanarak sayılara çevrilir. Video: resim bilgisine ek olarak hangi resmin hangisinden sonra geldiğini gösteren zaman bilgisi içerir. Ses: genlik ve frekansın zaman içinde değişimiyle kodlanır.`,
+    exp: `Slayt 5 — Verilerin Sayısallaştırılması.` },
+
+  // ---------- Bölüm 6 — Haberleşme I ----------
+  { topic: 6, type: "open", subtype: "T",
+    q: `Haberleşme katmanının rolünü ve temel fiziksel birimleri (Router, Switch, Gateway) tanımlayınız.`,
+    answer: `Haberleşme katmanı IoT mimarisinde katmanlar arası etkileşimi sağlar; algılama katmanından gelen verileri buluta veya uygulama katmanına iletir. Router: modemden aldığı internet sinyalini kablolu/kablosuz yollarla ev/ofisteki birden fazla cihaza dağıtan, yerel ağ oluşturan cihazdır. Switch: LAN içindeki bilgisayarlar, yazıcılar ve sunucular gibi cihazları birbirine bağlayan ve veri paketlerini hedeflerine yönlendiren akıllı ağ donanımıdır. Gateway: farklı protokoller, adresleme yöntemleri veya teknik standartlar kullanan iki farklı ağı birbirine bağlar, veri trafiğini yönetir ve tercüman görevi görür.`,
+    exp: `Slayt 6 — Haberleşme Katmanı.` },
+
+  { topic: 6, type: "open", subtype: "T",
+    q: `IEEE 802.15.4 standardının tasarım hedeflerini ve teknik özelliklerini yazınız.`,
+    answer: `IEEE 802.15.4 kablosuz kısa mesafe iletimi için fiziksel ve bağlantı katmanlarını tanımlar. Tasarım hedefleri: düşük güç tüketimi, düşük karmaşıklık, düşük maliyet. Wi-Fi'a göre daha az bant genişliği sunar; yaklaşık 10 metre menzil ve 250 kbit/s bant genişliği. 800/900 MHz ve 2.4 GHz bantlarında çalışır; bant genişliği azaltılarak güç tüketimi daha da düşürülebilir.`,
+    exp: `Slayt 6 — IEEE 802.15.4.` },
+
+  { topic: 6, type: "open", subtype: "A",
+    q: `Bluetooth ile BLE (Bluetooth Low Energy) arasındaki farkları menzil, pil ömrü, çip ve kullanım açısından karşılaştırınız.`,
+    answer: `Bluetooth: Birbirine yakın taşınabilir cihazlar arasında dosya alışverişi ve müzikçalar–kulaklık bağlantısı için kullanılır; kapsama alanı 10 metreyi geçemez. BLE: Modern mobil platformlarla konuşabilen ürünler için uygundur; bir saat pili ile aylar hatta yıllar çalışabilen cihazlarda kullanılır; küçük ve düşük maliyetli çiplerle yönetilebilir; 10–100 m arası menzile sahiptir.`,
+    exp: `Slayt 6 — Bluetooth/BLE.` },
+
+  { topic: 6, type: "open", subtype: "T",
+    q: `NFC'yi menzil, hız, kaynak teknoloji ve bir günlük kullanım örneğiyle tanıtınız.`,
+    answer: `NFC, çok kısa mesafeli (<10 cm) bir tanımlama ve haberleşme teknolojisidir; RFID teknolojisinin bir uzantısıdır. Veri aktarım hızı ~424 Kbps civarındadır. Telefonlarımıza kredi kartı özelliği kazandırması günlük hayattaki kullanım örneklerinden biridir.`,
+    exp: `Slayt 6 — NFC.` },
+
+  { topic: 6, type: "open", subtype: "Ç",
+    q: `6LoWPAN'ın açılımından yola çıkarak IPv6 desteğinin IoT için neden kritik olduğunu açıklayınız.`,
+    answer: `6LoWPAN, "IPv6 over Low-Power WPAN" demektir ve düşük güç tüketen cihazların IPv6 üzerinden internete bağlanmasını sağlar. IPv6 sayesinde çok sayıda cihazın desteklenmesi mümkün olur; yani milyonlarca IoT cihazına benzersiz IP adresi verilebilir.`,
+    exp: `Slayt 6 — 6LoWPAN.` },
+
+  { topic: 6, type: "open", subtype: "A",
+    q: `Slayttaki teknoloji karşılaştırma tablosunu (Wi-Fi, Bluetooth, 6LoWPAN, NFC) avantaj–dezavantaj olarak özetleyiniz.`,
+    answer: `Wi-Fi: kablosuz, yüksek hız (100 Mbps+), internet erişimi; dezavantajı yüksek güç tüketimi. Bluetooth: kablosuz, düşük güç tüketimi (BLE), kısa mesafe iletişim; dezavantaj düşük hız (1 Mbps civarı). 6LoWPAN: kablosuz, 10–100 m, düşük güç; düşük hız (250 kbps). NFC: kablosuz, düşük güç, 424 Kbps hız; menzil <10 cm.`,
+    exp: `Slayt 6 — Teknolojilerin Karşılaştırması.` },
+
+  { topic: 6, type: "open", subtype: "T",
+    q: `Geniş alan kapsamasında GPRS/2G ile 3G/4G arasındaki kullanım farkını ve güvenlik özelliğini yazınız.`,
+    answer: `GPRS ve 2G: düşük maliyetli hücresel çözümdür; temel sensör verisi iletimi için kullanılır. 3G ve 4G: yüksek bant genişliği gerektiren IoT uygulamalarında (görüntülü izleme, tıbbi takip) kullanılır. Hücresel teknolojiler kendi güvenlik protokollerine sahiptir.`,
+    exp: `Slayt 6 — Geniş Alan ve Hücresel Entegrasyon.` },
+
+  { topic: 6, type: "open", subtype: "M",
+    q: `Slaytta verilen iki "Tartışma" sorusunu gerekçeleriyle çözünüz.`,
+    answer: `(a) Yönetim biriminde Raspberry Pi ile sensörlere IP adresi üzerinden erişmek için 6LoWPAN tercih edilmelidir; çünkü düşük güçlü cihazların IPv6 üzerinden internete bağlanmasını sağlar. (b) Tarım projesi okulun Wi-Fi kapsama alanı dışında gerçek tarlaya kurulursa haberleşme 3G/4G veya LPWAN ile sağlanır.`,
+    exp: `Slayt 6 — Tartışma.` },
+
+  { topic: 6, type: "open", subtype: "Ç",
+    q: `Wi-Fi'nin yüksek hız + yüksek güç tüketimi ikilisi, IoT'de hangi uygulama sınıflarını dışlar, hangilerini tercih ettirir?`,
+    answer: `Wi-Fi, yüksek hız (100 Mbps+) ve internet erişimi sunduğu için bant genişliği ihtiyacı yüksek (ör. görüntülü izleme) uygulamalarda tercih edilir. Ancak güç tüketimi yüksek olduğu için saat piliyle aylarca çalışması gereken düşük güçlü, uzun ömürlü IoT cihazlarında (BLE/6LoWPAN senaryoları) uygun değildir.`,
+    exp: `Slayt 6 — Teknolojilerin Karşılaştırması.` },
+
+  { topic: 6, type: "open", subtype: "A",
+    q: `Aşağıdaki senaryolar için sadece slayt verileriyle uygun teknolojiyi seçip gerekçesini yazınız: (i) saat pili ile yıllarca çalışan fitness bilekliği, (ii) gerçek tarlada geniş alan izleme, (iii) ofis LAN'ında yazıcı–sunucu yönlendirme, (iv) telefonla temassız ödeme, (v) düşük güçlü sensörün IPv6 ile internete açılması.`,
+    answer: `(i) BLE — saat pili ile aylar/yıllar çalışabilir. (ii) 3G/4G veya LPWAN — geniş alan kapsaması ve Wi-Fi dışı tarla koşulu. (iii) Switch — LAN içinde cihazları birbirine bağlar ve paketleri yönlendirir. (iv) NFC — <10 cm menzil, RFID uzantısı, kredi kartı benzeri günlük kullanım. (v) 6LoWPAN — düşük güçlü cihazların IPv6 üzerinden internete bağlanmasını sağlar.`,
+    exp: `Slayt 6 — Karşılaştırma ve Tartışma.` },
 
 ];
 

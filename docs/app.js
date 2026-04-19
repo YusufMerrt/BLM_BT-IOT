@@ -1,7 +1,7 @@
 // IoT Vize Sınav Uygulaması — app.js
 // Yayın: index.html içindeki script src="…?v=" ile aynı sürümü kullan (önbellek kırma).
 
-const APP_VERSION = "1.5.0";
+const APP_VERSION = "1.6.1";
 
 const STORAGE_KEYS = {
   wrong: "iot_wrong_questions_v1",
@@ -76,6 +76,7 @@ function renderTopics() {
       mc: qs.filter(q => q.type === "mc").length,
       tf: qs.filter(q => q.type === "tf").length,
       fill: qs.filter(q => q.type === "fill").length,
+      open: qs.filter(q => q.type === "open").length,
     };
     const card = el("div", {
       class: "topic-card" + (state.selectedTopics.has(kn) ? " selected" : ""),
@@ -88,7 +89,8 @@ function renderTopics() {
         `<span>Toplam: <b style="color:#e8ecff">${qs.length}</b></span>` +
         `<span>ÇS: ${byType.mc}</span>` +
         `<span>D/Y: ${byType.tf}</span>` +
-        `<span>Boşluk: ${byType.fill}</span>` })
+        `<span>Boşluk: ${byType.fill}</span>` +
+        `<span>Klasik: ${byType.open}</span>` })
     );
     grid.appendChild(card);
   });
@@ -200,6 +202,19 @@ function applySavedAnswer(q, saved) {
       input.value = saved.picked;
       $("submitBtn").disabled = input.value.trim().length === 0;
     }
+  } else if (q.type === "open") {
+    const ta = $("openInput");
+    if (ta && saved.picked != null) {
+      ta.value = saved.picked;
+      $("submitBtn").disabled = ta.value.trim().length === 0;
+      if (saved.submitted) {
+        ta.readOnly = true;
+        showOpenFeedback(q, saved.picked);
+        if (saved.isCorrect != null) {
+          lockSelfMark(saved.isCorrect);
+        }
+      }
+    }
   }
 }
 
@@ -214,8 +229,12 @@ function renderQuestion() {
   if (ml) ml.textContent = state.quiz.mode === "exam" ? "Sınav modu" : "Pratik modu";
 
   $("topicTag").textContent = TOPICS[q.topic].short;
-  const typeLabel = { mc: "Çoktan Seçmeli", tf: "Doğru / Yanlış", fill: "Boşluk Doldurma" }[q.type];
+  const typeLabel = { mc: "Çoktan Seçmeli", tf: "Doğru / Yanlış", fill: "Boşluk Doldurma", open: "Klasik" }[q.type];
   $("typeTag").textContent = typeLabel;
+  if (q.type === "open" && q.subtype) {
+    const subMap = { "T": "Tanım/Örnek", "Ç": "Çıkarım", "A": "Analiz", "M": "Modelleme" };
+    $("typeTag").textContent = `Klasik · ${subMap[q.subtype] || q.subtype}`;
+  }
 
   $("questionText").textContent = q.q;
   $("feedback").className = "feedback";
@@ -272,6 +291,31 @@ function renderQuestion() {
     });
     area.appendChild(input);
     setTimeout(() => input.focus(), 50);
+  } else if (q.type === "open") {
+    const ta = el("textarea", {
+      class: "open-input",
+      attrs: {
+        id: "openInput",
+        placeholder: "Cevabını kendi cümlelerinle yaz…",
+        rows: "7",
+        autocomplete: "off"
+      },
+      on: {
+        input: () => { $("submitBtn").disabled = ta.value.trim().length === 0; },
+        keydown: (e) => {
+          if (e.key === "Enter" && (e.ctrlKey || e.metaKey) &&
+              !$("submitBtn").disabled && $("submitBtn").style.display !== "none") {
+            e.preventDefault();
+            submitAnswer();
+          }
+        }
+      }
+    });
+    area.appendChild(ta);
+    const hint = el("div", { class: "open-hint",
+      text: "Kendi cevabını yaz, ardından gönder: model cevap gösterilecek ve kendini değerlendireceksin. (Ctrl/Cmd + Enter ile gönder)" });
+    area.appendChild(hint);
+    setTimeout(() => ta.focus(), 50);
   }
 
   const saved = state.quiz.answers[state.quiz.idx];
@@ -322,6 +366,7 @@ function checkAnswer(q, picked) {
     const p = normalize(picked);
     return q.answer.some(a => normalize(a) === p);
   }
+  if (q.type === "open") return null; // otomatik değerlendirme yok; öz-değerlendirme yapılır
   return false;
 }
 
@@ -336,6 +381,20 @@ function submitAnswer() {
   } else if (q.type === "fill") {
     picked = $("fillInput").value.trim();
     if (!picked) return;
+  } else if (q.type === "open") {
+    picked = $("openInput").value.trim();
+    if (!picked) return;
+  }
+
+  // Açık uçlu: otomatik puanlama yok, öz-değerlendirme akışı
+  if (q.type === "open") {
+    state.quiz.answers[state.quiz.idx] = { q, picked, isCorrect: null, skipped: false, submitted: true };
+    const ta = $("openInput");
+    if (ta) ta.readOnly = true;
+    showOpenFeedback(q, picked);
+    $("submitBtn").style.display = "none";
+    // Next butonu öz-değerlendirme sonrasında gösterilecek
+    return;
   }
 
   const isCorrect = checkAnswer(q, picked);
@@ -355,6 +414,72 @@ function submitAnswer() {
   $("submitBtn").style.display = "none";
   $("nextBtn").style.display = "inline-block";
   $("scoreText").textContent = `${state.quiz.correct} doğru · ${state.quiz.idx + 1}/${state.quiz.pool.length}`;
+}
+
+function showOpenFeedback(q, picked) {
+  const area = $("answerArea");
+  // Tekrar eklememek için mevcut model/mark kutularını temizle
+  area.querySelectorAll(".open-model, .self-mark-row, .open-hint").forEach(n => n.remove());
+
+  const model = el("div", { class: "open-model" },
+    el("div", { class: "open-model-label", text: "Model cevap (slaytlardan)" }),
+    el("div", { class: "open-model-text", text: q.answer })
+  );
+  area.appendChild(model);
+
+  const markRow = el("div", { class: "self-mark-row" },
+    el("span", { class: "self-mark-label", text: "Kendini değerlendir:" }),
+    el("button", {
+      class: "btn self-mark-btn",
+      text: "Yanlış say",
+      attrs: { type: "button", "data-mark": "wrong" },
+      on: { click: () => markOpenAnswer(false) }
+    }),
+    el("button", {
+      class: "btn primary self-mark-btn",
+      text: "Doğru say",
+      attrs: { type: "button", "data-mark": "right" },
+      on: { click: () => markOpenAnswer(true) }
+    })
+  );
+  area.appendChild(markRow);
+
+  const fb = $("feedback");
+  fb.className = "feedback show";
+  fb.innerHTML = `<strong>Cevabın kaydedildi.</strong> Model cevapla karşılaştır ve kendini değerlendir.` +
+    (q.exp ? ` <em>${q.exp}</em>` : "");
+}
+
+function markOpenAnswer(isCorrect) {
+  if (!state.quiz) return;
+  const q = state.quiz.pool[state.quiz.idx];
+  const saved = state.quiz.answers[state.quiz.idx] || { q, picked: null, skipped: false, submitted: true };
+  saved.q = q;
+  saved.isCorrect = isCorrect;
+  state.quiz.answers[state.quiz.idx] = saved;
+  removeWrongId(q._id);
+  if (!isCorrect) addWrongId(q._id);
+  recountScores();
+  lockSelfMark(isCorrect);
+
+  const fb = $("feedback");
+  fb.className = "feedback show " + (isCorrect ? "ok" : "bad");
+  fb.innerHTML = isCorrect
+    ? `<strong>Doğru olarak işaretlendi.</strong> ${q.exp || ""}`
+    : `<strong>Yanlış olarak işaretlendi.</strong> Yanlışlar listene eklendi. ${q.exp || ""}`;
+
+  $("nextBtn").style.display = "inline-block";
+  $("scoreText").textContent = `${state.quiz.correct} doğru · ${state.quiz.idx + 1}/${state.quiz.pool.length}`;
+}
+
+function lockSelfMark(isCorrect) {
+  document.querySelectorAll(".self-mark-btn").forEach(btn => {
+    btn.disabled = true;
+    const mark = btn.getAttribute("data-mark");
+    if ((isCorrect && mark === "right") || (!isCorrect && mark === "wrong")) {
+      btn.classList.add("active");
+    }
+  });
 }
 
 function showQuestionFeedback(q, picked, isCorrect) {
@@ -429,14 +554,18 @@ function renderReview(container, entries) {
   entries.forEach((entry, i) => {
     const q = entry.q;
     const item = el("div", { class: "review-item" });
-    item.appendChild(el("div", { class: "meta-row", html:
-      `<span class="tag">${TOPICS[q.topic].short}</span>` +
-      `<span class="tag alt">${({mc:"ÇS", tf:"D/Y", fill:"Boşluk"})[q.type]}</span>` +
-      (entry.skipped
-        ? `<span class="tag yellow">Boş bırakıldı</span>`
+    const statusTag = entry.skipped
+      ? `<span class="tag yellow">Boş bırakıldı</span>`
+      : (entry.isCorrect === null || entry.isCorrect === undefined
+        ? `<span class="tag" style="background:rgba(201,162,39,0.15);color:#f5d88a;border-color:rgba(201,162,39,0.4)">Değerlendirilmedi</span>`
         : (entry.isCorrect
           ? `<span class="tag" style="background:rgba(47,208,122,0.15);color:#aaf0c8;border-color:rgba(47,208,122,0.4)">Doğru</span>`
-          : `<span class="tag" style="background:rgba(255,95,120,0.15);color:#ffc1cc;border-color:rgba(255,95,120,0.4)">Yanlış</span>`)) }));
+          : `<span class="tag" style="background:rgba(255,95,120,0.15);color:#ffc1cc;border-color:rgba(255,95,120,0.4)">Yanlış</span>`));
+
+    item.appendChild(el("div", { class: "meta-row", html:
+      `<span class="tag">${TOPICS[q.topic].short}</span>` +
+      `<span class="tag alt">${({mc:"ÇS", tf:"D/Y", fill:"Boşluk", open:"Klasik"})[q.type]}</span>` +
+      statusTag }));
 
     item.appendChild(el("div", { class: "q", text: `${i + 1}. ${q.q}` }));
 
@@ -459,6 +588,12 @@ function renderReview(container, entries) {
       if (entry.picked !== null && !entry.isCorrect) {
         item.appendChild(el("div", { class: "opt picked-wrong", text: `Senin cevabın: ${entry.picked}` }));
       }
+    } else if (q.type === "open") {
+      if (entry.picked) {
+        const userCls = entry.isCorrect === false ? "opt picked-wrong" : "opt";
+        item.appendChild(el("div", { class: userCls, text: `Senin cevabın: ${entry.picked}` }));
+      }
+      item.appendChild(el("div", { class: "opt correct", text: `Model cevap: ${q.answer}` }));
     }
 
     if (q.exp) item.appendChild(el("div", { class: "exp", html: `<b>Açıklama:</b> ${q.exp}` }));
@@ -580,7 +715,8 @@ window.addEventListener("DOMContentLoaded", () => {
   // Klavye kısayolları (quiz ekranında)
   document.addEventListener("keydown", (e) => {
     if (!$("screen-quiz").classList.contains("active")) return;
-    if (document.activeElement && document.activeElement.tagName === "INPUT") return;
+    if (document.activeElement &&
+        (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA")) return;
     if (e.key === "ArrowLeft" && $("prevQBtn").style.display !== "none") {
       e.preventDefault();
       prevQuestion();

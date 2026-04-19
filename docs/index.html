@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IoT Vize — Sınav</title>
-  <link rel="stylesheet" href="styles.css?v=1.5.0" />
+  <link rel="stylesheet" href="styles.css?v=1.6.1" />
 </head>
 <body>
   <div class="app-shell">
@@ -26,6 +26,7 @@
         Sınavdayken <code>1–4</code> veya <code>A–D</code> ile seçenek,
         <code>Enter</code> ile gönder veya sonraki soru.
         <code>←</code> önceki soruya dönmek için.
+        Klasik sorularda <code>Ctrl/Cmd + Enter</code> ile gönder.
       </p>
     </aside>
 
@@ -72,6 +73,7 @@
                 <button type="button" class="chip" data-type="mc">Çoktan seçmeli</button>
                 <button type="button" class="chip" data-type="tf">Doğru / yanlış</button>
                 <button type="button" class="chip" data-type="fill">Boşluk</button>
+                <button type="button" class="chip" data-type="open">Klasik</button>
               </div>
             </div>
             <div class="cfg-row">
@@ -159,7 +161,7 @@
     Soru bankası PDF sunumlarına dayanır. Yanlışlar tarayıcıda yerel olarak saklanır.
   </footer>
 
-  <script src="questions.js?v=1.5.0"></script>
-  <script src="app.js?v=1.5.0"></script>
+  <script src="questions.js?v=1.6.1"></script>
+  <script src="app.js?v=1.6.1"></script>
 </body>
 </html>
