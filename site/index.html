@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Vize — Sınav</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Kenar çubuğu">
+      <div class="sidebar-brand">BTÜ · Nesnelerin İnterneti</div>
+      <div class="sidebar-title">Vize sınav pratiği</div>
+      <nav class="sidebar-nav">
+        <a class="nav-link" href="#setup">Konu ve ayarlar</a>
+        <a class="nav-link" href="#quiz" id="navQuizLink" style="display:none">Sınav ekranı</a>
+      </nav>
+      <div class="theme-row">
+        <span>Görünüm</span>
+        <div class="theme-toggle" role="group" aria-label="Tema">
+          <button type="button" data-theme="light" id="themeLight">Açık</button>
+          <button type="button" data-theme="dark" class="active" id="themeDark">Koyu</button>
+        </div>
+      </div>
+      <p class="sidebar-hint">
+        Sınavdayken <code>1–4</code> veya <code>A–D</code> ile seçenek,
+        <code>Enter</code> ile gönder veya sonraki soru.
+      </p>
+    </aside>
+
+    <main class="main" id="app">
+      <section id="screen-home" class="screen active">
+        <header class="page-head" id="setup">
+          <h1>Konu seç ve başla</h1>
+          <p>Altı PDF sunumunun tamamından üretilmiş soru havuzu. İstersen bölüm seç, istersen tüm konulardan karışık çöz.</p>
+          <div class="stats-row" id="globalStats"></div>
+        </header>
+
+        <div class="section-block">
+          <h2>Bölümler</h2>
+          <p class="desc">Birden fazla seçebilirsin. Hiç seçilmezse tüm bölümler dahil edilir.</p>
+          <div class="toolbar">
+            <span class="toolbar-label">Hızlı seçim</span>
+            <button type="button" class="btn ghost" id="selectAllTopics">Tümünü seç</button>
+            <button type="button" class="btn ghost" id="clearTopics">Temizle</button>
+          </div>
+          <div id="topicList" class="topic-grid"></div>
+        </div>
+
+        <div class="section-block">
+          <h2>Ayarlar</h2>
+          <div class="config-panel">
+            <div class="cfg-row">
+              <label>Soru sayısı</label>
+              <div class="chip-group" id="countChips">
+                <button type="button" class="chip" data-count="10">10</button>
+                <button type="button" class="chip active" data-count="20">20</button>
+                <button type="button" class="chip" data-count="30">30</button>
+                <button type="button" class="chip" data-count="50">50</button>
+                <button type="button" class="chip" data-count="-1">Tümü</button>
+              </div>
+            </div>
+            <div class="cfg-row">
+              <label>Tür</label>
+              <div class="chip-group" id="typeChips">
+                <button type="button" class="chip active" data-type="all">Hepsi</button>
+                <button type="button" class="chip" data-type="mc">Çoktan seçmeli</button>
+                <button type="button" class="chip" data-type="tf">Doğru / yanlış</button>
+                <button type="button" class="chip" data-type="fill">Boşluk</button>
+              </div>
+            </div>
+            <div class="cfg-row">
+              <label>Mod</label>
+              <div class="chip-group" id="modeChips">
+                <button type="button" class="chip active" data-mode="practice">Pratik (anında geri bildirim)</button>
+                <button type="button" class="chip" data-mode="exam">Sınav (cevaplar sonda)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <button type="button" class="btn primary big" id="startBtn">Sınavı başlat</button>
+          <button type="button" class="btn" id="wrongReviewBtn">Yanlışlarım</button>
+          <button type="button" class="btn ghost" id="resetBtn">Yerel veriyi sıfırla</button>
+        </div>
+      </section>
+
+      <section id="screen-quiz" class="screen" tabindex="-1">
+        <div class="quiz-bar" id="quiz">
+          <button type="button" class="btn ghost" id="quitBtn">Çık</button>
+          <div class="progress-wrap">
+            <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+            <div class="progress-meta">
+              <span><span id="qIndex">1</span> / <span id="qTotal">20</span></span>
+              <span id="modeLabel">Pratik</span>
+            </div>
+          </div>
+          <div class="score-pill"><span id="scoreText">0 / 0</span></div>
+        </div>
+
+        <div class="quiz-panel">
+          <div class="qmeta">
+            <span class="tag" id="topicTag"></span>
+            <span class="tag alt" id="typeTag"></span>
+          </div>
+          <h2 id="questionText"></h2>
+          <div id="answerArea"></div>
+          <div class="feedback" id="feedback" role="status"></div>
+          <div class="quiz-actions">
+            <button type="button" class="btn" id="skipBtn">Atla</button>
+            <button type="button" class="btn primary" id="submitBtn">Cevabı gönder</button>
+            <button type="button" class="btn primary" id="nextBtn" style="display:none;">Sonraki</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-result" class="screen">
+        <div class="result-panel">
+          <h1 id="resultTitle">Tamamlandı</h1>
+          <div class="result-row">
+            <div class="score-box" id="scoreCircle"><span id="resultScore">0%</span></div>
+            <div class="result-stats">
+              <div><strong id="resultCorrect">0</strong> doğru</div>
+              <div><strong id="resultWrong">0</strong> yanlış</div>
+              <div><strong id="resultSkipped">0</strong> atlandı</div>
+            </div>
+          </div>
+          <div class="cta-row">
+            <button type="button" class="btn primary" id="reviewBtn">Soruları incele</button>
+            <button type="button" class="btn" id="retryWrongBtn">Yanlışları tekrar</button>
+            <button type="button" class="btn ghost" id="homeBtn">Ana ekran</button>
+          </div>
+          <div id="reviewArea" class="review-area" style="display:none;"></div>
+        </div>
+      </section>
+
+      <section id="screen-wrong" class="screen">
+        <div class="quiz-bar">
+          <button type="button" class="btn ghost" id="wrongBack">Geri</button>
+          <h2 class="page-head" style="margin:0; flex:1;"><span style="font-size:16px;">Yanlış defteri</span></h2>
+          <button type="button" class="btn" id="wrongClear">Listeyi temizle</button>
+        </div>
+        <div id="wrongList" class="review-area"></div>
+        <div class="cta-row">
+          <button type="button" class="btn primary big" id="practiceWrongBtn">Bu soruları çöz</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    Soru bankası PDF sunumlarına dayanır. Yanlışlar tarayıcıda yerel olarak saklanır.
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
