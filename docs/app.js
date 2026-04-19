@@ -1,4 +1,7 @@
 // IoT Vize Sınav Uygulaması — app.js
+// Yayın: index.html içindeki script src="…?v=" ile aynı sürümü kullan (önbellek kırma).
+
+const APP_VERSION = "1.5.0";
 
 const STORAGE_KEYS = {
   wrong: "iot_wrong_questions_v1",
@@ -495,6 +498,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   renderTopics();
   updateGlobalStats();
+
+  const verEl = $("appVersion");
+  if (verEl) verEl.textContent = APP_VERSION;
 
   bindChips("countChips", (btn) => { state.count = parseInt(btn.dataset.count, 10); });
   bindChips("typeChips", (btn) => { state.type = btn.dataset.type; updateGlobalStats(); });

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IoT Vize — Sınav</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=1.5.0" />
 </head>
 <body>
   <div class="app-shell">
@@ -35,6 +35,10 @@
           <h1>Konu seç ve başla</h1>
           <p>Altı PDF sunumunun tamamından üretilmiş soru havuzu. İstersen bölüm seç, istersen tüm konulardan karışık çöz.</p>
           <div class="stats-row" id="globalStats"></div>
+          <p class="app-version-line" title="GitHub Pages’te hangi derlemenin yüklendiğini görmek için">
+            <span class="app-version-label">Sürüm</span>
+            <strong id="appVersion">—</strong>
+          </p>
         </header>
 
         <div class="section-block">
@@ -155,7 +159,7 @@
     Soru bankası PDF sunumlarına dayanır. Yanlışlar tarayıcıda yerel olarak saklanır.
   </footer>
 
-  <script src="questions.js"></script>
-  <script src="app.js"></script>
+  <script src="questions.js?v=1.5.0"></script>
+  <script src="app.js?v=1.5.0"></script>
 </body>
 </html>
