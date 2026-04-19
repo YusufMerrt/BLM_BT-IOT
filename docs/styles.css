@@ -423,7 +423,11 @@ a:hover { color: var(--accent-hover); }
   flex-wrap: wrap;
   gap: 8px;
   justify-content: flex-end;
+  align-items: center;
   margin-top: 16px;
+}
+.quiz-actions #prevQBtn {
+  margin-right: auto;
 }
 
 /* Result */

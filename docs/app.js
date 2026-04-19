@@ -157,7 +157,7 @@ function startQuiz(customPool = null) {
     correct: 0,
     wrong: 0,
     skipped: 0,
-    answers: [], // { q, picked, isCorrect, skipped }
+    answers: new Array(pool.length).fill(null), // indeks = soru sırası
     mode: state.mode,
   };
   renderQuestion();
@@ -165,12 +165,48 @@ function startQuiz(customPool = null) {
   $("screen-quiz").focus();
 }
 
+function recountScores() {
+  if (!state.quiz) return;
+  let c = 0;
+  let w = 0;
+  let s = 0;
+  for (const a of state.quiz.answers) {
+    if (a == null) continue;
+    if (a.skipped) s++;
+    else if (a.isCorrect) c++;
+    else w++;
+  }
+  state.quiz.correct = c;
+  state.quiz.wrong = w;
+  state.quiz.skipped = s;
+}
+
+/** Bu indekste daha önce verilmiş cevabı forma yükler (geri dönüşte). */
+function applySavedAnswer(q, saved) {
+  if (!saved || saved.skipped) return;
+  const area = $("answerArea");
+  if (q.type === "mc" || q.type === "tf") {
+    const opts = area.querySelectorAll(".option");
+    opts.forEach((node) => {
+      const v = JSON.parse(node.dataset.value);
+      if (v === saved.picked) selectOption(node, v);
+    });
+  } else if (q.type === "fill") {
+    const input = $("fillInput");
+    if (input && saved.picked != null) {
+      input.value = saved.picked;
+      $("submitBtn").disabled = input.value.trim().length === 0;
+    }
+  }
+}
+
 function renderQuestion() {
   const q = state.quiz.pool[state.quiz.idx];
+  recountScores();
   $("qIndex").textContent = state.quiz.idx + 1;
   $("qTotal").textContent = state.quiz.pool.length;
   $("progressFill").style.width = `${((state.quiz.idx) / state.quiz.pool.length) * 100}%`;
-  $("scoreText").textContent = `${state.quiz.correct} / ${state.quiz.idx}`;
+  $("scoreText").textContent = `${state.quiz.correct} doğru · ${state.quiz.idx + 1}/${state.quiz.pool.length}`;
   const ml = $("modeLabel");
   if (ml) ml.textContent = state.quiz.mode === "exam" ? "Sınav modu" : "Pratik modu";
 
@@ -186,6 +222,9 @@ function renderQuestion() {
   $("submitBtn").disabled = true;
   $("nextBtn").style.display = "none";
 
+  const prevBtn = $("prevQBtn");
+  if (prevBtn) prevBtn.style.display = state.quiz.idx > 0 ? "inline-block" : "none";
+
   const area = $("answerArea");
   area.innerHTML = "";
 
@@ -193,6 +232,7 @@ function renderQuestion() {
     q.options.forEach((opt, i) => {
       const node = el("div", {
         class: "option",
+        attrs: { "data-value": JSON.stringify(i) },
         on: { click: () => selectOption(node, i) }
       },
         el("div", { class: "bullet", text: String.fromCharCode(65 + i) }),
@@ -204,6 +244,7 @@ function renderQuestion() {
     [{ v: true, label: "Doğru" }, { v: false, label: "Yanlış" }].forEach((it, i) => {
       const node = el("div", {
         class: "option",
+        attrs: { "data-value": JSON.stringify(it.v) },
         on: { click: () => selectOption(node, it.v) }
       },
         el("div", { class: "bullet", text: i === 0 ? "D" : "Y" }),
@@ -229,6 +270,15 @@ function renderQuestion() {
     area.appendChild(input);
     setTimeout(() => input.focus(), 50);
   }
+
+  const saved = state.quiz.answers[state.quiz.idx];
+  applySavedAnswer(q, saved);
+}
+
+function prevQuestion() {
+  if (!state.quiz || state.quiz.idx <= 0) return;
+  state.quiz.idx--;
+  renderQuestion();
 }
 
 function selectOption(node, value) {
@@ -273,27 +323,22 @@ function submitAnswer() {
   }
 
   const isCorrect = checkAnswer(q, picked);
-  state.quiz.answers.push({ q, picked, isCorrect, skipped: false });
-  if (isCorrect) {
-    state.quiz.correct++;
-    removeWrongId(q._id);
-  } else {
-    state.quiz.wrong++;
-    addWrongId(q._id);
-  }
+  removeWrongId(q._id);
+  if (!isCorrect) addWrongId(q._id);
+  state.quiz.answers[state.quiz.idx] = { q, picked, isCorrect, skipped: false };
+  recountScores();
 
   // Kilit ve görsel geri bildirim
   if (state.quiz.mode === "practice") {
     showQuestionFeedback(q, picked, isCorrect);
   } else {
-    // Sınav modunda sessizce devam et
     nextQuestion();
     return;
   }
 
   $("submitBtn").style.display = "none";
   $("nextBtn").style.display = "inline-block";
-  $("scoreText").textContent = `${state.quiz.correct} / ${state.quiz.idx + 1}`;
+  $("scoreText").textContent = `${state.quiz.correct} doğru · ${state.quiz.idx + 1}/${state.quiz.pool.length}`;
 }
 
 function showQuestionFeedback(q, picked, isCorrect) {
@@ -340,13 +385,15 @@ function nextQuestion() {
 
 function skipQuestion() {
   const q = state.quiz.pool[state.quiz.idx];
-  state.quiz.answers.push({ q, picked: null, isCorrect: false, skipped: true });
-  state.quiz.skipped++;
+  removeWrongId(q._id);
+  state.quiz.answers[state.quiz.idx] = { q, picked: null, isCorrect: false, skipped: true };
+  recountScores();
   nextQuestion();
 }
 
 // ===================== SONUÇ =====================
 function finishQuiz() {
+  recountScores();
   const { correct, wrong, skipped, pool } = state.quiz;
   const pct = Math.round((correct / pool.length) * 100);
   $("resultScore").textContent = `${pct}%`;
@@ -473,11 +520,12 @@ window.addEventListener("DOMContentLoaded", () => {
   $("submitBtn").addEventListener("click", submitAnswer);
   $("nextBtn").addEventListener("click", nextQuestion);
   $("skipBtn").addEventListener("click", skipQuestion);
+  $("prevQBtn").addEventListener("click", prevQuestion);
 
   $("reviewBtn").addEventListener("click", () => {
     const area = $("reviewArea");
     if (area.style.display === "none" || !area.style.display) {
-      renderReview(area, state.quiz.answers);
+      renderReview(area, state.quiz.answers.filter((a) => a != null));
       area.style.display = "block";
       $("reviewBtn").textContent = "İncelemeyi gizle";
     } else {
@@ -486,7 +534,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
   $("retryWrongBtn").addEventListener("click", () => {
-    const wrongs = state.quiz.answers.filter(a => !a.isCorrect).map(a => a.q);
+    const wrongs = state.quiz.answers.filter((a) => a && !a.isCorrect && !a.skipped).map((a) => a.q);
     if (wrongs.length === 0) { alert("Yanlışın yok, harikasın!"); return; }
     startQuiz(wrongs);
   });
@@ -514,6 +562,11 @@ window.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (e) => {
     if (!$("screen-quiz").classList.contains("active")) return;
     if (document.activeElement && document.activeElement.tagName === "INPUT") return;
+    if (e.key === "ArrowLeft" && $("prevQBtn").style.display !== "none") {
+      e.preventDefault();
+      prevQuestion();
+      return;
+    }
     if (e.key === "Enter") {
       if ($("nextBtn").style.display !== "none") nextQuestion();
       else if (!$("submitBtn").disabled) submitAnswer();
