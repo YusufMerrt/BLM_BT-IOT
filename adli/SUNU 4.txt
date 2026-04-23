@@ -1,0 +1,255 @@
+--- page 1 ---
+ADLİ BİLİŞİME GİRİŞ 3
+--- page 2 ---
+BTK AKADEMİ EĞİTİM AKIŞI
+(3.Bölüm)
+Raporlama Aşamasında Dikkat Edilmesi Gereken Hususlar,
+Adli Kopya Alma yöntemleri (Canlı ve Kapalı Sistemlerdeİmaj alma)
+Adli Bilişim Yazılımve Donanımları,
+Veri Kurtarma Yöntemleri, 
+Dijital Verilerin Analizi, 
+RAM Analizi
+Anti Adli Bilişim Yöntemleri,
+--- page 3 ---
+Adli Kopya Alma Yöntemleri
+--- page 4 ---
+Adli Kopya(İmaj) Nedir ?
+Bir Suç Soruşturmasında yada siber saldırı sonrası elde edilen dijital ortamlardan
+elektronik delillerin toplanması amacıyla; Hedef cihazın hafızasından kopya alınması
+işlemine verilen isimdir.
+İmage.001
+
+--- page 5 ---
+Fiziksel İmaj?
+Yalnızca işletim sistemi tarafından görülebilen dosyaları değil, her veri bitini, her sektörü,
+bölümü, dosyaları, klasörleri, ana önyükleme kayıtlarını, silinmiş dosyaları ve ayrılmamış
+alanları içerir.
+İmaj, tüm sürücü yapılarının ve içeriğinin birebir kopyasıdır.
+MBR VBR VBR
+
+--- page 6 ---
+Mantıksal (Logical) İmaj?
+Belirli bir alanın yada bölümün kopyasının alındığı yöntemdir, Belirli mantıksal bölüm
+üzerindeki daha çok dosya sistemi ve işletim sisteminin eriştiği alanlara ait bilgilerin
+kopyalandığı imaj formatıdır.
+
+--- page 7 ---
+İmaj Formatları
+Adli Bilişimin nispeten yeni bir alan olması nedeniyle bütün alanlara hitap eden bir 
+standardın varlığından söz etmek zordur.
+Bu nedenle bir çok farklı firma ve ülke kendi kopya alma formatlarını oluşturmuş olsa da
+sınırlı standartlaşma çalışmaları neticesinde bazı standart image formatları oluşturulmuştur.
+DD, Smart, AFF ve E01 bunlardan en önemlileridir.
+
+--- page 8 ---
+İmaj Türleri
+1 – Raw ( dd ) :
+❖ Bu imaj formatında depolama içerisindeki verilerin ham hali bulunur.
+❖ Herhangi bir veri sıkıştırması uygulanmaz.
+❖ İmaj dosyası uzantısı dd, .001 ya da .img dir.
+2- SMART :
+❖SMARTgörüntü formatı esas olarak Linux tarafından kullanılır.
+❖Görüntü, her biri meta veri içeren tekli veya çoklu segment dosyalarında saklanır.
+❖Bu imaj formatı artık yaygın olarak kullanılmamaktadır.
+
+--- page 9 ---
+İmaj Türleri
+3- E01 :
+❖ EnCase firmasının imaj dosyası formatıdır.
+❖ E01 Meta verilerle zenginleştirilmiş tek veya birden çok dosyada saklanan fiziksel bir bit akışı kopyası 
+içerir.
+❖ Bu meta veriler Vaka bilgilerini, Muayene edenin adını, notları, sağlama toplamlarını ve bir MD5
+karmasını içerir.
+❖ Ayrıcasıkıştırma ve parola koruması sunar.
+Avantajı:sıkıştırma, parola koruması ve dosya başına sağlama toplamıdır.
+Dezavantajı: Belgelenmemiş kapalı bir format olmasıdır. Çoğu adli araç bu dosya biçimini desteklerken, diğer 
+(adli olmayan) araçlar tarafından desteklenmez.
+
+--- page 10 ---
+İmaj Türleri
+4- AFF :
+❖ Gelişmiş Adli Tıp Formatı, adli görüntülerin saklanması için açık bir formattır.
+❖ V eriile metadata bilgileri birleştirilerek aynı dosya içerisinde saklanır.
+❖ Metadata saklama ve sıkıştırma desteğine sahiptir,
+❖ Bu image formatı artık yaygın olarak kullanılmamaktadır.
+
+--- page 11 ---
+İmajAlma Araçları
+❖ dd Imager Yazılımı(Komutu)
+❖ Accessdata FTK Imager
+❖ EnCase Forensic Imager
+❖ Guymager Forensic
+❖ DEFT Forensic
+❖ TableauTD serisi (Donanım)
+❖ Ditto (Donanım)
+
+--- page 12 ---
+İmajAlma Yöntemleri
+YazmaKoruma
+KAYNAK İMAJ DOSYASI
+
+--- page 13 ---
+İmajAlma Yöntemleri
+KAYNAK İMAJ DOSYASI
+İMAJ ALMA DONANIMI
+
+--- page 14 ---
+İmajAlma Yöntemleri
+AÇIK SİSTEMLER KAPALI SİSTEMLER
+DİĞER DURUMLAR
+
+--- page 15 ---
+Karşılaşılan Zorluklar
+Her zaman depolama aygıtını sistemden çıkarıp bir yazma engelleyiciye veya adli
+kopyalayıcıya takarak imaj almamız mümkün olmayabilir.
+❖ Kanıt olan cihazda, çıkarılması imkansız olan yerleşik bir depolama cihazı olabilir. Bu
+durumda, tek seçeneğiniz aygıtın görüntüsünü oluşturmak için canlı bir önyükleme diski
+kullanmaktır.
+❖ Bazı cihazlar, harici depolamadan önyükleme yapmanıza izin vermeyebilir. Bu cihazlar
+gerçek bir adli tıp sorunudur ve canlı görüntüleme gerektirebilir. Adli tıp uzmanı
+değilseniz, sistemi başlattıktan sonra canlı olarak görüntülemeye asla
+❖ Disk Şifreleme teknikleri ???
+
+--- page 16 ---
+Karşılaşılan Zorluklar
+❖ Karşılaşabileceğiniz başka bir zorluk, sürücüdeki farklı bir konektördür. Bazı üreticiler 
+kendi konektörlerini kullanmayı tercih eder.
+
+--- page 17 ---
+DD TOOLİLE İMAJ ALMA
+❖Nasıl İndirilir:
+http://www.chrysocome.net/downloads/dd-0.5.zip
+❖ Kurulum:
+
+--- page 18 ---
+DD TOOLİLE İMAJ ALMA
+Nasıl Kullanılır:
+DD'yi Windows sistemlerinde kullanmak, onu bir Linux komut satırında kullanmaya çok
+benzer.
+./dd.exe –list : Takılı Diskleri Listeler
+./dd.exe if=<source_drive> of=<full_copy_name> bs=512 : Disk Kopyası Almak İçin
+dd if=\\.\f: of=C:\Users\vfv\Desktop\deneme image\image.001 bs=512
+
+--- page 19 ---
+DD TOOLİLE İMAJ ALMA
+❖ ./dd.exe if=<full_copy_name> of=<source_drive> bs=512 : HDD'yi yedekten geri yüklemek için Kullanılır .
+dd if=I FILE of=O FILE [seçenekler]
+I/O FILE :
+sürücü,dosya, partition
+[Seçenekler] :
+bs= block size (Blok Boyutu)
+count=NUM (NUM ile belirtilen sayıda bloğu kopyalar)
+skip=NUM (NUM ile belirtilen sayıda bloğu atla)
+conv=noerror,sync (Okuma hatası olduğu zaman işlemi sonlandırma, devam et)
+Örnek:
+dd if=\\.\f: of=C:\deneme image\image.001 bs=512 count=700 conv=noerror,sync
+
+--- page 20 ---
+DD TOOLİLE İMAJ ALMA
+• –cryptsum <hashtype> ( Hash Değeri md5, sha, sha1,sha256 )
+• –verify (Veri Bütünlük doğrulama)
+• –cryptout <file> (hash değerini dosyaya yaz)
+• –log <file> (log kayıtlarını dosyaya yaz)
+• –localwrt (yerel sürücülere yazmaya izin ver)
+• –ata_hpa (HPA(HostProtected Area)’yı geçici olarak devre dışıbırak)
+• Örnek:
+• dd if=\\.\f: of=C:\Users\vfv\Desktop\deneme image\image.001
+bs=512 --cryptsum md5 –verify –cryptout
+• C:\Users\vfv\Desktop\deneme image\hash.txt --localwrt
+
+--- page 21 ---
+Adli Bilişim Analiz Yazılımları
+--- page 22 ---
+Adli Bilişim Analiz Araçları
+1. Computer Forensic Tools
+2. Mobil Forensic Tools
+
+--- page 23 ---
+Computer Forensic Tools
+1. Lisanslı Araçlar
+b) GedData FEX forensics
+c) Encase
+2. Ücretsiz Araçlar
+a) Autopsy
+3. Forensic İşletim Sistemleri
+a) Cain Forensics
+c) Sans SIFT Workstation
+
+--- page 24 ---
+Deft Forensics
+
+--- page 25 ---
+Cain Forensics
+
+--- page 26 ---
+Sans SIFT Workstation
+https://sift.readthedocs.i
+o/en/latest/index.html
+
+--- page 27 ---
+Veri Kurtarma Yöntemleri
+--- page 28 ---
+VERİ KURTARMAYÖNTEMLERİ
+1. Dosya Siteminden Veri Kurtarma
+2. Sektör Bazlı Veri Kurtarma
+
+--- page 29 ---
+Dosya SitemindenVeri Kurtarma
+Fat DosyaSisteminde Silinmiş Bir dosya
+Dikkat !!! Dosya Sistemlerinde Silinen VerilereTekrarUlaşılabilir mi ?
+
+--- page 30 ---
+Sektör Bazlı VeriKurtarma
+3 sektörlü olursa
+--- page 31 ---
+Sektör Bazlı VeriKurtarma
+Dosya Uzantısı Dosya İmzası
+jpg jpeg Header = FF D8 
+Foother = FF D9
+
+--- page 32 ---
+Veri Kurtarmaİhtimalleri
+Dosya 
+Siteminde 
+Dosya Silindi
+Başlık ve
+İçerik Üzerine 
+VeriYazılmadı
+Dosya
+Kurtarma
+Kurtarma
+Başarılı
+Dosya 
+Siteminde 
+Dosya Silindi
+Başlık üzerine 
+VeriYazıldı-
+içerik sağlam
+Dosya 
+Kurtarma
+Başlık Hatalı -
+İçerik
+Kurtarıldı
+Dosya 
+Siteminde 
+Dosya Silindi
+Başlık Sağlam –
+İçerik Üzerine 
+Veri yazıldı
+Dosya 
+Kurtarma
+Başlık Kurtarıldı 
+içerik yok
+Dosya 
+Siteminde 
+Dosya Silindi
+Başlık ve
+İçerik Üzerine
+VeriYazıldı
+Dosya 
+Kurtarma
+Kurtarma 
+Başarısız
+
+--- page 33 ---
+UYGULAMALAR

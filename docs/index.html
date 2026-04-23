@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IoT Vize — Sınav</title>
-  <link rel="stylesheet" href="styles.css?v=1.6.1" />
+  <title>BTÜ Sınav Pratiği — IoT & Adli Bilişim</title>
+  <link rel="stylesheet" href="styles.css?v=1.7.0" />
 </head>
 <body>
   <div class="app-shell">
     <aside class="sidebar" aria-label="Kenar çubuğu">
-      <div class="sidebar-brand">BTÜ · Nesnelerin İnterneti</div>
-      <div class="sidebar-title">Vize sınav pratiği</div>
+      <div class="sidebar-brand">BTÜ · Ders seç</div>
+      <div class="sidebar-title">Sınav pratiği</div>
       <nav class="sidebar-nav">
         <a class="nav-link" href="#setup">Konu ve ayarlar</a>
         <a class="nav-link" href="#quiz" id="navQuizLink" style="display:none">Sınav ekranı</a>
@@ -34,7 +34,15 @@
       <section id="screen-home" class="screen active">
         <header class="page-head" id="setup">
           <h1>Konu seç ve başla</h1>
-          <p>Altı PDF sunumunun tamamından üretilmiş soru havuzu. İstersen bölüm seç, istersen tüm konulardan karışık çöz.</p>
+          <div class="section-block" style="margin-bottom:1rem;padding:0;border:none">
+            <h2 class="visually-hidden" style="position:absolute;left:-9999px">Ders</h2>
+            <p class="desc" style="margin-bottom:0.5rem">Önce dersi seç; soru havuzları birbirine karışmaz.</p>
+            <div class="chip-group" id="courseChips" role="group" aria-label="Ders">
+              <button type="button" class="chip active" data-course="iot">Nesnelerin İnterneti (IoT)</button>
+              <button type="button" class="chip" data-course="adli">Adli Bilişim</button>
+            </div>
+          </div>
+          <p id="homeCourseDesc">Altı bölümlük IoT dersi; klasik açık uçlu ve test soruları. Adli bilişim başka menüde.</p>
           <div class="stats-row" id="globalStats"></div>
           <p class="app-version-line" title="GitHub Pages’te hangi derlemenin yüklendiğini görmek için">
             <span class="app-version-label">Sürüm</span>
@@ -161,7 +169,8 @@
     Soru bankası PDF sunumlarına dayanır. Yanlışlar tarayıcıda yerel olarak saklanır.
   </footer>
 
-  <script src="questions.js?v=1.6.1"></script>
-  <script src="app.js?v=1.6.1"></script>
+  <script src="adli-questions.js?v=1.7.0"></script>
+  <script src="questions.js?v=1.7.0"></script>
+  <script src="app.js?v=1.7.0"></script>
 </body>
 </html>

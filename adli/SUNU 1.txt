@@ -1,0 +1,539 @@
+--- page 1 ---
+Adli Bilişime Giriş
+--- page 2 ---
+Ders Hakkında
+❖ Ders Kaynakları
+1. Bayram, Levent. "Ses Görüntü ve Data İncelemeleri, Adalet
+Yayınevi, 1." Baskı, Ankara (2008).
+2. Henkoğlu, Türkay. Adli bilişim: Dijital delillerin elde edilmesi ve
+analizi. Pusula, 2020.
+3. Arıcı, H. Yener: Adli bilişim, Seçkin Yayıncılık, 1. Baskı 2018
+4. Russ, John C., Jens Rindel, and P. Lord. Forensic uses of digital
+imaging. CRC Press, 2016
+❖ Değerlendirme
+❖ Araştırma Konuları- Ödev- Sunum
+❖ Yazılı Sınav
+--- page 3 ---
+Adli Bilişim Kavramı
+Adli vakaların bilimsel yöntemlerle aydınlatılmasında noktasında 
+adli tıp, adli kimya gibi uzmanlık alanlarından 
+faydalanılmaktadır.
+Söz konusu uzmanlık alanları adli olaylarda biyolojik ve fiziksel 
+izlerin değerlendirilmesi noktasında önemli rol oynamaktadır.
+--- page 4 ---
+Adli Bilişim Kavramı
+Olay yerinde veya bir olayla ilgili maddi suç delilleri 
+4 ana başlık altında toplanabilir.
+1. Biyolojik deliller
+2. Kimyasal deliller
+3. Fiziksel deliller
+4. İzler
+
+--- page 5 ---
+Adli Bilişim Kavramı
+❖Günümüzde internetin 
+yaygınlaşması ve teknolojik birçok 
+gelişme göz önünde bulundurularak 
+adli olayların aydınlatılmasında söz 
+konusu maddi delillerin yanında 
+bilişim sistemlerinde ve bunların 
+parçalarında incelemeler gündeme 
+gelmiştir. 
+--- page 6 ---
+Adli Bilişim Kavramı
+❖Locard teoremi olarak da bilinen 
+“Değişim Prensibi”ne göre, olay yerini 
+terk eden bir kimsenin orada 
+bulunduğuna dair iz bırakmaması ya da 
+üstünde o ortamdan bir şeyler alıp 
+götürmemesi mümkün değildir. 
+❖Bu değişim prensibi bilişim sistemleri 
+içinde geçerlidir. 
+
+--- page 7 ---
+Adli Bilişim Kavramı
+❖Bilişim sistemleri üzerinde de iz 
+bırakmadan işlem yapmak 
+neredeyse imkânsızdır. 
+❖Adli olayların bilişim/sayısal 
+sistemler üzerinden incelenmesi, 
+değerlendirilmesi ve adli 
+makamlara sunulması, adli bilişim 
+alanının geliştirilmesine neden 
+olmuştur.
+42
+--- page 8 ---
+Adli Bilişimin Tanımları
+Çeşitli tanımları vardır. Örnek olarak 3 tanesi aşağıda 
+verilmiştir.
+1. Adli olayların aydınlatılması amacıyla, olay 
+yerinden, 
+• dijital veri saklama ve iletme özelliğine sahip 
+cihazların toplanması,
+• cihazların içerisindeki dijital delillerin tespit 
+edilmesi 
+• adli otoritelere dijital delillerin raporlanması 
+• süreci içerisinde yapılan çalışmalardır.
+
+--- page 9 ---
+Adli Bilişimin Tanımları
+2. Elektronik ortamlardan elde
+edilen bulguların, çeşitli teknik
+donanım ve yazılımlar kullanılarak
+hukuki delillere dönüştürülme
+sürecidir.
+
+--- page 10 ---
+Adli Bilişimin Tanımları
+3. Bir olayın aydınlatılmasına
+yönelik olarak, olayla ilgili bilgi
+içerebilecek bilişim cihazlarının
+incelenmesidir.
+
+--- page 11 ---
+Adli Bilişimin Tanımları
+Adli bilişimi, bir yargılama sırasında kullanılabilecek potansiyel 
+delillerin belirlenmesi için bilişim sistemlerinin kullanılması şeklinde 
+tanımlamak da mümkündür. 
+Adli bilişim, ‘Bilgi Güvenliği ’ ana başlığının altında, hukuk ve 
+bilgisayar güvenliği bilimlerinden oluşan bir alt bilim dalı olarak ta 
+tasnif edilebilir. 
+--- page 12 ---
+Adli Bilişimin Tanımları
+❖ Adli bilişim;
+• bilişim suçlarına
+• bilgi güvenliği açıklarına
+• ulusal güvenlik tedbirlerine
+• bilgisayar suiistimallerine karşı, 
+adli analizler ve çalışmalar içeren bir yaklaşım olarak da 
+kabul edilebilir.
+--- page 13 ---
+Adli Bilişim Kavramı
+❖ Adli bilişim; bilişim sistemleri kullanılarak 
+5N 1K yöntemindeki gibi ne, nerede, neden, ne 
+zaman, nasıl ve kim sorularına cevap bulmaya 
+çalışmaktadır. 
+--- page 14 ---
+Adli Bilişim Kavramı
+❖ Adli bilişim, suç araştırmalarının dışında güvenlik 
+ve mahremiyet risk değerlendirmesinde veri 
+eşleştirmesi, fikri mülkiyet haklarının otomatik 
+olarak aranması gibi diğer alanlarda da 
+kullanılmaya başlanmıştır. 
+❖ Bu kullanımların yakın gelecekte daha da 
+yaygınlaşması söz konusu olabilecektir.
+--- page 15 ---
+Adli Bilişim Kavramı
+❖ Adli bilişim, “computer forensics” kavramına 
+karşılık gelmektedir. 
+❖ Türkçe tam karşılığı “bilgisayar adli bilimi” 
+kavramına denk gelmektedir.
+--- page 16 ---
+Adli Bilişim Kavramı
+❖ Bilişim teknolojisinde yaşanan birçok gelişmeler 
+sonrasında gerçekte elektronik delillerin yalnızca 
+bilgisayarlarda bulunmadığının anlaşılması üzerine 
+“Computer Forensics” kavramının yerine ondan daha 
+genel nitelikte olan “Digital Forensics” kavramı da 
+kullanılmaya başlanmıştır.
+--- page 17 ---
+Adli Bilişim Aşamaları
+❖ Adli bilişim inceleme süreci beş ana aşamada gerçekleştirilmektedir. 
+1. Hazırlık
+2. Toplama
+3. İnceleme
+4. Çözümleme
+5. Raporlama
+* Burada hazırlık aşaması bazı çalışmalarda kapsam dışında da tutulmaktadır.
+--- page 18 ---
+Adli Bilişim Türleri
+Adli bilişim, genel olarak dört alt dala ayrılabilir.
+1. Bilgisayar adli bilişimi : Masaüstü, dizüstü bilgisayarlar üzerinden işlenen suçları 
+kapsar.
+2. Ağ ve İnternet adli bilişimi: Sistem loglarının izinsiz bir şekilde incelenmesi, ağda 
+gelen/giden paketlerin incelenmesi ve ağda yapılan dinlemeleri kapsar.
+3. Gömülü cihazlara ait adli bilişim: Cep telefonu, tablet vb. cihazlar üzerinden 
+suçları kapsar.
+4. Sosyal ağ adli bilişimi : Sosyal ağ ve paylaşım ortamlarında işlenen suçları kapsar.
+--- page 19 ---
+Adli Bilişim ile ilgili Mevzuat 
+❖ Türkiye Cumhuriyeti hukuk mevzuatında adli bilişim ile ilgili 
+hükümler Ceza Muhakemesi Kanun (CMK) madde. 134 ile 
+Adli ve Önleme Aramaları Yönetmeliği’nin 17. maddesinde 
+yer almaktadır.
+❖ Söz konusu düzenlemelere göre özet olarak Cumhuriyeti 
+savcısı tarafından şüphelinin kullandığı bilgisayar ve 
+bilgisayar programları ile bilgisayar kütüklerinde arama 
+yapılmasına, bilgisayar kayıtlarından kopya çıkarılmasına, 
+bu kayıtların çözülerek metin hâline getirilmesine karar 
+verilir.
+--- page 20 ---
+Adli Bilişim ile ilgili Mevzuat 
+❖ Adli bilişimde; bilgisayarlarla işlenen suçların 
+üssel olarak artması ile dolandırıcılık, siber 
+taciz, öldürme ve çocuk istismarı gibi geniş bir 
+yelpazedeki suç faaliyetlerinin araştırılması 
+yapılmaktadır. 
+❖ Dolayısıyla analiz edilecek suç faaliyet sayısı 
+oldukça fazladır.
+--- page 21 ---
+Adli Bilişimde Karşılaşılan Temel 
+Zorluklar/Sorunlar
+❖ Adli bilişim sürekli değişen, gelişen ve 
+genişleyen bir alandır. 
+Örneğin önce yıllarda veri depolamak için disket, 
+CD/DVD kullanılmakta ve dolayısıyla adli 
+olaylarda incelenecek veri miktarı azdı. 
+--- page 22 ---
+Adli Bilişimde Karşılaşılan Temel
+Zorluklar/Sorunlar
+❖ Günümüzde ise depolama teknolojisinin değişmesi 
+(SSD vb.) ile birlikte artık TB boyutlarda veri saklayan 
+harddisk, flash bellek mevcuttur.  
+* Bu durumda incelenecek veri miktarı oldukça fazladır. 
+--- page 23 ---
+Adli Bilişimde Karşılaşılan Temel
+Zorluklar/Sorunlar
+❖ Günümüzde verilerin artık bir kısmı, bulut bilişim 
+sistemlerinde saklanmaktadır.
+* Bu durumda sayısal kanıtların bulunduğu ortamların 
+net bir şekilde bilinememesi, mahremiyet hususları ve 
+yasal sınırları zorluk oluşturan konulardandır.
+--- page 24 ---
+Adli Bilişimde Karşılaşılan Temel
+Zorluklar/Sorunlar
+❖ Adli bilişimde gelişen teknolojilere paralel olarak 
+suç türlerinin değişmekte ve dolayısı ile kanıt 
+toplama ve analiz etme yöntemleri değişmektedir.  
+❖ Dolayısıyla güncel durumlara göre adli bilişim 
+alanında personellerin eğitilmesi gerekmektedir.
+--- page 25 ---
+Adli Bilişimde Karşılaşılan Temel
+Zorluklar/Sorunlar
+❖ Ülkemizde adli bilişim alanında uzman teknik 
+personele ve hukukçulara oldukça ihtiyaç vardır. 
+• Son yıllarda lisans seviyesinde adli bilişim 
+mühendisliği bölümü ve bazı üniversitelerde  adli 
+bilişim ile ilgili yüksek lisans programları açılmıştır.
+--- page 26 ---
+Adli Bilişimde Karşılaşılan Temel
+Zorluklar/Sorunlar
+❖ Adli bilişim kapsamında inceleme yapılması gereken birçok 
+sayısal ortam söz konusu olabilir ve bu ortamların her biri özel 
+bir uzmanlık gerektirebilir. 
+Bu kapsamda değerlendirildiğinde adli bilişim; 
+• veri kurtarma
+• işletim sistemi
+• veri tabanı incelemesi
+•  bilgisayar ağları alanı
+•  cep telefonu 
+• mobil cihazlar 
+gibi alt alanlara da ayrılabilir. 
+--- page 27 ---
+Adli Bilişimde Çalışma Alanları
+❖ Sistem (işletim sistemi veya uygulama) kayıtlarının incelenmesi
+❖  Farklı sistemler arasında kayıt ilişkilendirilmesi ve olay/işlem takibi
+❖ Veri saklama
+❖ Veri kurtarma
+❖ Veri dönüştürme
+❖ Veri imha etme
+❖ Şifreleme
+❖ Şifre çözme
+❖ Gizlenmiş dosya bulma
+❖ Görüntü sahteciliği
+❖ …………………
+--- page 28 ---
+Adli Bilişimde Delil Sayılabilecek Bulgular
+❖Sistem olay kayıtları
+❖Video görüntüleri
+❖Fotoğraflar
+❖Uygulama dosyaları (Word, Excell, Open Office vb.)
+❖Bilgisayar programları
+❖Sistem veya uygulama ayarları
+❖İletişim kayıtları (SMS, Whatsapp, twitter vb.)
+❖Gizli ve şifreli dosyalar / klasörler
+❖Dosyaların oluşturulma, değiştirilme ve erişim tarih kayıtları
+❖Son gerçekleştirilen işlem kayıtları
+❖İnternet ortamından indirilen dosyalar
+❖Silinmiş dosya/klasörler
+❖…..
+--- page 29 ---
+ÖRNEK- Adli Bilişimde Görüntü İncelemeleri
+❑ Görsel bilgi, nitelik ve nicelik açısından somut bilgidir.
+❑  Adli bilimlerde ve meydana gelen bir vakanın 
+aydınlatılmasında fotoğrafik bilgi,  delil olarak sunulduğunda 
+çevirmen ve yorum gerektirmeyen bilgi varlığıdır.
+❑ Görüntü kayıtları ve fotoğraflar; yargılama, savunma ile ilgili 
+cevaplanması gereken birçok soruyu ortaya çıkaracaktır.
+--- page 30 ---
+ÖRNEK- Adli Bilişimde Görüntü İncelemeleri
+❖ Adli vaka ile ilgili her görüntü kaydı ve fotoğraf birer delil 
+midir? 
+❖  Görüntü kayıtlarının güvenilirliği var mıdır?
+❖ Görüntü kayıtları üzerinde montaj yapılıp yapılmadığı tespit 
+edilebilir mi?
+❖ Görüntü kayıtları üzerinde iyileştirme işlemi yapılabilir mi?
+--- page 31 ---
+ÖRNEK- Adli Bilişimde Görüntü İncelemeleri
+❖ Görüntü kayıtlarından şüpheli şahsın kimliği tespit edilebilir 
+mi?
+❖ Görüntü içerisine bilgi gizlenip terör faaliyetleri için mesaj 
+gönderiminde görüntüler kullanılabilir mi?  
+--- page 32 ---
+Dijital Medya İçeriğinin Bütünlüğüne Yönelik 
+Tehditler
+❖ Dijital görüntüler; sosyal medyada, web sitelerinde, 
+gazetelerde, televizyonlarda ve dergilerde de yaygın 
+olarak kullanılmaktadır.
+Bununla birlikte, internet gibi kamuya açık ve kolay 
+erişilebilen iletişim kanalları üzerinden günlük olarak 
+yayınlanan dijital görüntülerin sayısı  oldukça artmıştır. 
+* Görüntüler, değişimler yapılmasına ve bütünlük 
+saldırılarına karşı oldukça savunmasızdır.
+--- page 33 ---
+Dijital Medya İçeriğinin Bütünlüğüne Yönelik 
+Tehditler
+❖ Dijital görüntüler, Adobe Photoshop, Gimp, 
+Pixar vb. programlar ile dijital görüntüler 
+kusursuz ve algılanamaz şekilde çok kolay bir 
+şekilde manipüle edilebilmektedir. 
+❖ Ayrıca dijital görüntülerde göze çarpan öğeler 
+gizlenebilmektedir. 
+--- page 34 ---
+Dijital Medya İçeriğinin Bütünlüğüne Yönelik 
+Tehditler
+❖ Sosyal ağ ve anlık mesajlaşma hizmetlerinin 
+yaygınlaşması nedeniyle, sahte veya yanlış 
+temsil edilen bilgiler çok hızlı yayılabilmekte ve 
+kişisel itibar kaybına yol açmakla birlikte 
+potansiyel olarak ulusal ölçekte feci sonuçlara 
+yol açabilmektedir. 
+--- page 35 ---
+Dijital Medya İçeriğinin Bütünlüğüne Yönelik 
+Tehditler
+❖ Son yıllarda dijital görüntüler aynı zamanda bir 
+mahkemede bir kanıt olarak önemli bir rol 
+oynamaktadır. 
+❖ Bu nedenle, dijital görüntülerin gerçekliğini ve 
+bütünlüğünü korumak, son zamanlarda büyük 
+bir zorluk haline gelmiştir.
+--- page 36 ---
+Dijital Medya İçeriğinin Bütünlüğüne Yönelik 
+Tehditler
+❖ Aşağıdaki sayısal görüntülerin manipüle 
+edilmesi ile ilgili birkaç örnek verilmiştir.
+Şekil 1. (a) Vesikalık bir görüntünün morflenmesi ile kişisel kimlik ihlali (b) Oluşturulan 
+sahte görüntüde eski ABD Başkanı Barack Obama, Hindistan Başbakanı Narendra Modi’nin 
+TV'deki konferansını izlemesi
+--- page 37 ---
+Dijital Medya İçeriğinin Bütünlüğüne Yönelik 
+Tehditler
+Şekil 2. (c) Orijinal bir görüntü (solda) ve başka bir kişinin rafting yapmasına dönüştürülmüş bir sahte 
+görüntü (d) bir orijinal görüntü (solda), sağda İran füze testinin sahte görüntüsü (2008 yılında 
+yayınlanmıştır.)
+
+--- page 38 ---
+Dijital İçeriklerin Korunması
+❖ Siber suç oranlarında yakın zamanda yaşanan 
+hızlı artış nedeniyle, son birkaç on yılda dijital 
+içerik koruma ve dijital haklar yönetimi 
+alanlarında araştırma ilgisinde muazzam artış 
+gözlemlenmiştir. 
+--- page 39 ---
+Dijital İçeriklerin Korunması
+❖ Bu alandaki en popüler uygulamalar, 
+filigranlama/damgalama (watermarking) ve 
+steganografi (Sırörtme) gibi dijital içerik koruma 
+teknikleridir. 
+❖ Filigranlıma (watermarking) ve steganografi 
+teknikleri, aktif siber güvenlik önlemleri olarak 
+adlandırılır. 
+--- page 40 ---
+Aktif güvenlik önlemleri
+❖ Aktif güvenlik önlemleri, dijital medyanın gerçekliğini 
+doğrulamak için bazı ek yardımcı bilgiler gerektirir. 
+Bu nedenle, bu tür yardımcı bilgiler, ön işlem 
+adımlarından elde edilir.
+Örneğin, dijital filigran basmada, genellikle damga, 
+orijinal görüntü ile ilgili bir değerin hesaplanmasıyla 
+üretilir ve görüntüye  eklenir. 
+Bu eklenen veriler daha sonra görüntüyü doğrulamak 
+için kullanılır.
+--- page 41 ---
+Aktif güvenlik önlemleri
+❖ Steganografi’de ise, orijinal görüntü içerisine 
+güvenliğe hassas veriler oluşturulup görüntü 
+içerisine gizlenerek eklenir. 
+❖ Bu eklenen veriler daha sonra görüntüyü 
+doğrulamak için kullanılır.
+--- page 42 ---
+Aktif güvenlik önlemleri
+❑Steganografi görüntü kaynağının korunması amacının 
+dışında da kullanılmaktadır. 
+• Örneğin Devletlerin istihbarat teşkilatlarının, iletişim 
+kanallarının dinlenme olasılığına karşı haberleşmelerin 
+gizliliğini korumak için Steganografi tekniğinden 
+faydalanmaktadır.  
+
+--- page 43 ---
+Aktif güvenlik önlemleri
+❖ Terör örgütleri de ile güvenlik güçlerinin 
+haberleşmelerinin farkına varmaması için 
+Steganografi  tekniğini kullanmaktadır. (Son yıllarda 
+sosyal medya üzerinde bu tür haberleşmeler 
+artmıştır. ) Bu teknik ile bir görüntü içerisine metin, 
+imge gibi öğeler gizlenebilmektedir.
+--- page 44 ---
+Pasif güvenlik önlemleri
+• Günümüzde, görüntü çekme cihazlarının çoğu filigran, şifreleme ve veri 
+gömme gibi bu tür güvenlik yeteneklerini sağlamak için modüller 
+içermektedir. 
+• Bununla birlikte, bu ek güvenlik özellikleri aynı zamanda bu tür cihazların 
+üretim maliyetini de arttırmaktadır.
+• Bu sorun, siber suç oranlarındaki mevcut artışla birlikte, dijital 
+medyanın bütünlüğünü doğrulamak için herhangi bir ek bilgi 
+gerektirmeyen güvenlik önlemlerine (pasif güvenlik önlemleri)   olan 
+ihtiyacı doğurmuştur.
+--- page 45 ---
+Pasif güvenlik önlemleri
+❖Dijital adli bilişimde bir görüntünün kökenini belirlemek için 
+dijital medyada bulunan ipuçları ve kanıtlardan faydalanır. 
+❖Görüntü tahrif edilmiş veya doğası gereği bozulmamış olup 
+olmadığını araştırılır. 
+--- page 46 ---
+Pasif güvenlik önlemleri
+❖Dijital adli teknikler, incelenen medya hakkında herhangi bir ön 
+bilgi kullanmaz.
+❖Herhangi bir sahteciliği tespit etmeden önce veriler üzerinde 
+herhangi bir ön hesaplama yapmaz.
+--- page 47 ---
+Pasif güvenlik önlemleri
+❖İnceleme ve analizler tamamen verilerin sonradan 
+işlenmesine dayanmaktadır. 
+❖Bu nedenle, dijital adli teknikler, dijital içerik koruması 
+için pasif güvenlik önlemleri olarak kabul edilir. 
+❖Doğal olarak, bu teknikler daha pratik, güçlü ve 
+zorludur. 
+--- page 48 ---
+Dijital Görüntü Adli Bilimi
+• İçerik koruma teknikleri ve dijital 
+adli bilim arasındaki temel 
+farklılıklar, Şekil 4’te  blok 
+diyagramda gösterilmektedir.
+Şekil 4. İçerik koruma teknikleri ve dijital adli tıp arasındaki temel farklılıklar
+--- page 49 ---
+Dijital Görüntü Adli Bilimi
+❑Dijital adli görüntü adli bilimi sürekli gelişen bir 
+alandır.
+❑ Şu an için bu alan iki ana sorun ve bunların 
+çözümleriyle ilgilenmektedir:
+1. Görüntü kaynağı tanımlama
+2. Görüntü sahteciliği algılama
+--- page 50 ---
+1. Görüntü Kaynağı Tanımlama
+• Görüntü kaynağı tanımlama, araştırılan görüntüyü hangi cihazın (veya cihaz 
+sınıfının) yakaladığını veya oluşturduğunu araştırmak için adli analiz ile ilgilenir.
+Şekil 5. Kamera kaynağı tanımlama sorunu
+--- page 51 ---
+2. Görüntü Sahteciliği Tespiti
+❖Görüntü sahteciliği tespiti ile bir görüntünün 
+değiştirilip değiştirilmediğini analizi yapılır.  
+Birçok görüntü sahteciliği yöntemleri aşağıda 
+verilmiştir. 
+1. Kopyala-Taşı Görüntü Sahteciliği (Copy-Move Image Forgery)
+2. Kopyala-Yapıştır Görüntü Sahteciliği (Copy-Paste Image Forgery)
+3. Sıkıştırma ve Yeniden Sıkıştırma Tabanlı Görüntü Sahteciliği 
+ (Compression and Recompression-Based Image Forgery)
+--- page 52 ---
+2. Görüntü Sahteciliği Tespiti
+4. Filtreleme Saheticiliği Tespiti (Filtering Forgery)
+5. Rötuşlama  Görüntü Sahteciliği  (Retouching Image Forgery)
+6. Yeniden Örnekleme Görüntü Sahteciliği (Resampling Image 
+Forgery)
+7. Bilgisayar Tarafından Oluşturulan Görüntü Sahteciliği (Computer-
+Generated Image)
+--- page 53 ---
+1. Kopyala-Taşı Görüntü Sahteciliği (Copy-Move 
+Image Forgery)
+• Kopyala-taşı sahteciliğinde, görüntünün bir kısmı kopyalanır ve aynı 
+görüntünün başka bir bölümüne taşınır. 
+• Dolayısıyla sahteciliğin kaynağı görüntünün kendi içinde kalır. Bu nedenle, 
+özellik eşleştirme tabanlı teknik, bu tür sahteciliklerin tespiti için oldukça 
+kullanışlıdır. 
+Şekil 6. Kopyala-taşı sahteciliği
+--- page 54 ---
+2. Kopyala-Yapıştır Görüntü Sahteciliği (Copy-Paste 
+Image Forgery)
+• Kopyala-yapıştır sahteciliğinde, sahteciliği oluşturmak için bazı farklı görüntüler 
+kopyalanır ve görüntünün üzerine yapıştırılır. 
+• Bu tür sahteciliğin, kopya sahteciliğine göre en büyük farkı, sahteciliğin kaynağının 
+görüntünün kendisinde bulunmamasıdır.
+Şekil 7. Kopyala-yapıştır sahteciliği
+--- page 55 ---
+3. Sıkıştırma ve Yeniden Sıkıştırma Tabanlı Görüntü Sahteciliği 
+ (Compression and Recompression-Based Image Forgery)
+• Bir görüntü JPEG sıkıştırmasına maruz kaldığında, görüntüde belirli 
+sıkıştırma kusurları (artefacts) sergiler. Bu kusurlar sahtecilik olarak 
+değerlendirilmektedir.
+• Birden fazla sıkıştırma, görüntünün kalitesini ciddi şekilde düşürebilir. 
+Şekil 8. Sıkıştırma ve Yeniden Sıkıştırma Tabanlı Görüntü Sahteciliği, orijinal solda, sıkıştırılmış imge sağda 
+--- page 56 ---
+4. Filtreleme Saheticiliği (Filtering Forgery)
+• Görüntü filtrelemede diğer sahtecilik tespitlerine göre (kopya-
+taşı/yapıştır) nispeten daha az çalışma yapılmıştır. 
+• Genellikle, sahteciliği daha inandırıcı ve daha az tespit edilebilir 
+hale getirmek için bir görüntüde çeşitli iyileştirmeler, gürültü 
+azaltma, filtreleme, kontrast geliştirme, çapak giderme, kenar 
+keskinleştirme vb. teknikler uygulanır. 
+• Filtreleme  bu teknikler arasında en yaygın olanıdır ve pratikte 
+yaygın olarak kullanılmaktadır. 
+--- page 57 ---
+4. Filtreleme Saheticiliği Tespiti (Filtering Forgery)
+• Bir görüntünün bir filtreleme geliştirmesinden geçip geçmediğinin tespiti, 
+adli analiz için önemlidir ve içerik sahteciliği algılama tekniklerini tamamlar.
+Medyan filtreleme, birleştirme (splicing) 
+sahteciliğinin izlerini gizlemek için en 
+popüler geliştirme yöntemidir. 
+* Bu tür filtrelemeyi bulmak, son zamanlarda 
+daha fazla araştırma odağı kazanmıştır.
+Şekil 9. Ortanca filtreleme ve yüz birleştirme saldırısı örneği
+--- page 58 ---
+4. Image splicing (Görüntü birleştirme=
+Şekil 10. Birleştirme (splicing) tekniği ile yapılan sahtecilik örnekleri
+(a)
+(b)
+--- page 59 ---
+5. Rötuşlama  Görüntü Sahteciliği  (Retouching Image Forgery)
+• Rötuşlama, görüntüyü çekici kılmak için belirli görüntü özelliklerinin (ör. 
+Aydınlatma durumu, doku) iyileştirilmesi veya gizlenmesi anlamına gelir. 
+• Bu tür işlemleri gerçekleştiren ticari veya ücretsiz yazılımların kolay 
+kullanılabilirliği, bu tür sahteciliği özellikle sosyal medya uygulamalarında çok 
+yaygın hale getirmiştir. 
+Şekil 11. Rötuşlama sahteciliği orijinal sol, sahte görüntü sağda
+--- page 60 ---
+6. Yeniden Örnekleme Görüntü Sahteciliği 
+(Resampling Image Forgery)
+• Görüntüdeki belirli bir nesnenin veya tüm görüntünün farklı yükseklik ve genişlikte 
+yeniden boyutlandırılması, görüntü sahteciliğinin yeniden örneklenmesinde yapılır. 
+• Bununla birlikte, yeniden örnekleme yalnızca görüntünün boyutunu değiştirir, ancak 
+görüntünün kalitesini iyileştirmez veya düşürmez.
+Şekil 12. Yeniden Örnekleme Görüntü Sahteciliği orijinal solda, sahte görüntü sağda
+--- page 61 ---
+7. Bilgisayar TarafındanOluşturulan Görüntü Sahteciliği (Computer-
+Generated Image)
+• Günümüzün ileri teknolojisi ve yazılımı, tıpkı gerçek (fotoğrafik) görüntülere benzeyen 
+ve gerçeği ile zor bir şekilde ayırt edebilecek görüntüler oluşturulabilmektedir. 
+• Görüntülerin bilgisayarda oluşturulmuş olup olmadıklarını doğrulamak için adli 
+inceleme bu nedenle önemli ve zorlu bir araştırma problemidir. 
+Şekil 13. Bilgisayar Tarafından Oluşturulan Görüntü Sahteciliği
+--- page 62 ---
+Kaynakça
+▪ BAŞLAR, Yusuf. "ADLİ BİLİŞİM SÜRECİNDE KARŞILAŞILAN SORUNLAR VE ÇÖZÜM 
+ÖNERİLERİ." (2019).
+▪ Muharrem, Ö. Z. E. N., and Gürkan ÖZOCAK. "Adli Bilişim, Elektronik Deliller ve Bilgisayarlarda Arama 
+ve El Koyma Tedbirinin Hukuki Rejimi (CMK M. 134)." Ankara Barosu Dergisi 1.
+▪ Şengül, G., F. K. Atsan, and A. Bostan. "Adli Bilişim Alanındaki Mevcut Problemler, Çözüm Önerileri ve 
+Gelecek Öngörüleri." Uluslararası Bilgi Güvenliği ve Kriptoloji Konferansı (2014): 17-18.
+▪ Ses Görüntü ve Data İncelemeleri, Levent BAYRAM, Adalet Yayınevi
+▪ Digital Image Forensics Theory and Implementation , Roy, A., Dixit, R., Naskar, R., Chakraborty, R.S., 
+Springer

@@ -1,0 +1,455 @@
+--- page 1 ---
+ADLİ BİLİŞİME GİRİŞ 4
+--- page 2 ---
+BTK AKADEMİ EĞİTİM AKIŞI
+(3.Bölüm)
+Raporlama Aşamasında Dikkat Edilmesi Gereken Hususlar
+Adli Kopya Alma yöntemleri (Canlı ve Kapalı Sistemlerdeİmaj alma)
+Adli Bilişim Yazılımve Donanımları
+Veri Kurtarma Yöntemleri
+Dijital Verilerin Analizi
+RAM Analizi
+Anti Adli Bilişim Yöntemleri
+--- page 3 ---
+M57 Jean Davası
+Senaryo: M57 çalışanları hakkında SSN, maaşlar ve şirketteki pozisyonlar gibi 
+gizli bilgileri içeren bir belge internete sızdırılır. Bu hassas Excel sayfası, bir 
+rakibin web sitesinde gizemli bir şekilde ortaya çıktı. CFO Jean'in bu dosyaya 
+erişimi olduğu için işin içinde olduğuna inanılıyor. Başkan Alison Smith'in bu 
+bilgiyi açıkça istediğini iddia ediyor.Ancak Alison, bunu istediğini veya aldığını 
+reddediyor.
+--- page 4 ---
+M57 Jean Davası
+M57.biz modern bir web girişimidir.
+Davanın gerçekleri:
+•2 kurucu/sahip
+•İlk yıl işe alınan 10 personel
+•Başkan:Alison Smith
+•Mali İşler Müdürü: Jean
+•Programcılar: Bob, Carole, David, Emmy
+•Pazarlama: Gina, Harris,
+
+--- page 5 ---
+M57 Sanal Bir Şirkettir .
+Programcılar:
+•Çalışanlar Uzaktan Çalışır.
+•Günlük çevrimiçi sohbet oturumu; Haftalık yüz yüze toplantılar
+•Yüz yüze toplantılar iki haftada bir yapılır.
+• Belgelerin çoğu e-posta ile gönderilir.
+
+--- page 6 ---
+VakaAyrıntıları
+❖ Gizli bilgiler içeren bir e-tablo, Rakip firmanın web sitesinin "teknik destek" 
+forumunda yayınlanır.
+❖ Elektronik tablo CFO Jean'in bilgisayarından gönderilmiştir.
+❖ Karşılaştırma için "m57plan.xlsx" elektronik tablosunun bir kopyası verilir.
+❖ Cevaplanması gereken sorular: Belgeler rakibin web sitesine nasıl girdi?
+
+--- page 7 ---
+Görüşme Özetleri
+▪ Alison (Başkan):
+▪ Jean'in neden bahsettiğini bilmiyorum.
+▪ Jean'den elektronik tabloyu hiç istemedim.
+▪ Elektronik tabloyu e-posta ile hiç almadım.
+Jean (CFO):
+▪ Alison, yeni finansman turunun bir parçası olarak elektronik tabloyu hazırlamamı istedi.
+▪ Alison elektronik tabloyu kendisine e-posta ile göndermemi istedi.
+▪ Tüm bildiğim bu.
+
+--- page 8 ---
+Elektronik Kimlikler
+• Alison (President):
+• alison@m57.biz ; password: "ab=8989
+• Jean (CFO):
+• jean@m57.biz ; password: gick*1212
+
+--- page 9 ---
+Vaka Dosyası İçindekiler
+➢ Jean'in bilgisayarının sabit diskinin bir kopyası
+➢ Elektronik tablonun bir kopyası
+
+--- page 10 ---
+RAM ANALİZİ
+--- page 11 ---
+RAM (GEÇİCİ HAFIZA) ANALİZİ
+Volatility,olay müdahalesi ve kötü amaçlı yazılım analizi için açık kaynaklı bir adli bellek 
+çerçevesidir .Bu çok güçlü bir araçtır ve bellek dökümü dosyalarıyla birçok etkileşimi 
+tamamlayabiliriz, örneğin:
+➢ Çalışan tüm işlemleri listeleyin.
+➢ Etkin ve kapalı ağ bağlantılarını listeleyin.
+➢ İnternet geçmişini görüntüleyin (IE).
+➢ Sistemdeki dosyalarıtanımlayın ve bunları bellek dökümünden alın.
+➢ Not defteri belgelerinin içeriğini okuyun.
+➢ Windows Komut İstemi'ne (CMD) girilen komutları alın.
+➢ YARAkurallarınıkullanarak kötü amaçlı yazılım olup olmadığını tarayın.
+➢ Ekran görüntülerinive pano içeriğini alın.
+➢ Karma şifreleri alın.
+➢ SSL anahtarlarını ve sertifikalarını alın.
+
+--- page 12 ---
+KOMUTLAR
+volatility_2.6_win64_standalone.exe-h : YardımKomutu
+
+--- page 13 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exe imageinfo –f cridex.mem
+Bu, aşağıda gösterildiği gibi, görüntüsü alınan makinenin işletim sistemi ve görüntününne 
+zaman yapıldığı gibi görüntüyle ilgili temel bilgileri gösterir:
+
+--- page 14 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exepslist --profile=WinXPSP3x86-f cridex.mem 
+Bu, aşağıda gösterildiğigibi, RAM görüntüsü oluşturulduğunda makinede çalışan işlemleri 
+gösterir.
+
+--- page 15 ---
+KOMUTLAR
+➢ Ofset : İşlemin RAM'deki konumu, onaltılık
+➢ Ad : Görev Yöneticisi'ndegösterildiğişekliyle işlem adı
+➢ PID : İşlem kimliği
+➢ PPID : Üst işlem kimliği - yani bu işlemi başlatan işlem. Yukarıdakiörnekte, "Sistem"işlemi 4.
+işlemdir ve
+• "smss.exe"işleminin üst öğesidir .
+
+--- page 16 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exe pstree --profile=WinXPSP3x86 -f cridex.mem
+Bu, aşağıda gösterildiği gibi, RAM görüntüsü oluşturulduğunda makinede çalışan işlemleri
+ağaç yapısı ile gösterir.
+
+--- page 17 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exedlllist --profile=WinXPSP3x86 -f memdump.mem 
+Bu, aşağıda gösterildiği gibi, RAM görüntüsü oluşturulduğundamakinede çalışan işlemleri ağaç
+yapısı ile gösterir.
+
+--- page 18 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exenetscan --profile=WinXPSP3x86 -f memdump.mem
+Bu, aşağıda gösterildiğigibi Windows makinesindeki ağ bağlantılarını gösterir:
+
+--- page 19 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.execonnscan --profile=WinXPSP3x86 -f cridex.mem
+connscan eklentisi, TCP bağlantıları için bir tarayıcıdır,
+
+--- page 20 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exesockets --profile=WinXPSP3x86 -f cridex.mem
+socketsise açık soketlerin bir listesini yazdırır
+
+--- page 21 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exepsxview --profile=WinXPSP3x86 -f cridex.mem
+psxview bilgisayarda çalışırken kendinigizlemeye çalışan işlemleri listeler,
+
+--- page 22 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.execmdline --profile=WinXPSP3x86 -f cridex.mem
+cmdscan , consoles ve cmdline eklentileri kullanılarak çalıştırılan son komutlaragöz atabiliriz.
+
+--- page 23 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exe--profile=WinXPSP3x86 -f cridex.mem procdump –p
+1640 –dump-dir [dizin]
+Proses dökümlerini ayıklayın.
+
+--- page 24 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exehivelist --profile=VistaSP1x86 -f memdump.mem
+Bu, aşağıda gösterildiğigibi Kayıt Defteri kovanlarının RAM'indeki konumugösterir:
+
+--- page 25 ---
+KOMUTLAR
+➢ volatility_2.6_win64_standalone.exehashdump --profile=VistaSP1x86 -f memdump.mem
+Bu, aşağıda gösterildiğigibi Kayıt Defteri kovanlarının RAM'indeki konumugösterir:
+-y SİSTEM -s SAM
+volatility_2.6_win64_standalone.exehashdump --profile=VistaSP1x86-f memdump.mem -y 0x86226008 -s 
+0x89c33450
+
+--- page 26 ---
+KOMUTLAR
+• volatility_2.6_win64_standalone.exehashdump --
+profile=VistaSP1x86 -f memdump.mem
+• -y 0x86226008 -s 0x89c33450
+• Komutu doğru yaptığınızda, aşağıda gösterildiği gibi oturum açma
+hesap adlarını ve karma parolaları göreceksiniz.
+cfeac129dc5e61b2eb9b2e7131fc7e2b:Apple123
+e19ccf75ee54e06b06a5907af13cef42: P@ssw0rd
+
+--- page 27 ---
+KOMUTLAR
+volatility_2.6_win64_standalone.execonsoles --profile=VistaSP1x86 -f memdump.mem 
+Bu, aşağıda gösterildiğigibi, "csrss" işleminden başlayarak, yakın zamanda Windows 
+makinesinde yürütülen konsol komutlarınıgösterir:
+Karmaşıklık gereksinimini ihlal eden 
+"waldo" hesabında bir parola 
+belirlemeye çalışır .
+
+--- page 28 ---
+Anti Adli Bilişim Yöntemleri
+--- page 29 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+➢ "Olay mahallindeki delillerin mevcudiyetini, miktarını ve/veya kalitesini olumsuz
+yönde etkilemeye veya delillerin analiz ve incelemesini zorlaştırmaya veya imkansız
+kılmaya yönelik girişimler.
+➢ "Bir adli tıp soruşturmasının etkinliğini azaltmak amacıyla delillerin çıkarılması veya
+saklanması" olarak tanımlar.
+
+--- page 30 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+1.Disk Silme
+İlk teknik disk silmedir:
+▪ Bir sabit sürücüdeki veya ortam depolama aygıtındaki tüm verilerin silinmesi.
+▪ Adli bilişim araçları, bir sürücünün içeriğini silmek için kullanılabilir, bu da adli tıp
+analistlerinin verileri kurtarmasını zorlaştırır.
+Örneğin:
+Drive Wiper: verileri kurtarılamayacak şekilde silerek bir sürücüyü güvenli bir 
+şekilde silme seçeneği sunan Windows tabanlı bir araçtır.
+File Shredder: kurtarmayı önlemek için dosyaların üzerine yazabilen Java
+tabanlı bir araçtır.
+
+--- page 31 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+2. Dosya Şifreleme
+➢ Dosya şifreleme veya çeşitli şifreleme algoritmaları kullanarak okunabilir verileri
+okunamaz bir biçime dönüştürme işlemidir.
+➢ Dosyaları şifrelemek, onları meraklı gözlerden korumanın etkili bir yolu olsa da, adli
+bilişim araçları, dosyaların erişimini veya kodunun çözülmesini zorlaştırmak amacıyla
+şifrelemek için de kullanılabilir.
+
+--- page 32 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+3. Steganografi
+➢ Steganografi, mesajları veya dosyaları başka bir dosya içinde gizleme işlemidir.
+➢ Hidden Tearve Stego Watch gibi anti-adli araçlar, diğer dosya türlerinin yanı sıra
+resimlerdeki, sesteki ve videodaki bilgileri gizlemek için kullanılabilir, bu
+nedenle adli analistlerin ortaya çıkarması zordur.
+Hidden T ear:.jpeg, .gif ve .bmp görüntüleri içindeki dosyaları gizleyebilen Windows
+.gif ve .png resim biçimlerine gömmek için
+tabanlı bir araçtır.
+Stego Watch:gizli bilgileri .jpeg, 
+kullanılabilen Java tabanlı bir araçtır.
+
+--- page 33 ---
+4. Sıkıştırma
+Bir dosyanın boyutunu küçültmek için kullanılan sıkıştırmadır. Dosyaları sıkıştırmak
+boyutlarının küçülmesine yardımcı olur, bu da onları görüntülemeyi veya kodunu çözmeyi
+zorlaştırır. WinZip ve PKZIP gibi adli bilişim araçları bu amaçla dosyaları sıkıştırabilir.
+WinZip:dosyaları sıkıştırabilen Windows tabanlı bir araçtır.
+PKZIP: dosyaları da sıkıştırabilen DOS ve Windows tabanlı bir araçtır.
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+
+--- page 34 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+için
+5. KötüAmaçlı Yazılım
+Bilgisayarlar işlemlerine zarar vermek veya devre dışı bırakmak  
+tasarlanmış bir yazılım türüdür.
+Bir bilgisayara kötü amaçlı yazılım yüklemek için belirli araçlar kullanılabilir 
+ve bu da adli tıp analistlerinin verileri kurtarmasını zorlaştırır.
+Truva atları: Bir bilgisayara kötü amaçlı yazılım yüklemek için
+içeriğini şifreleyerek
+kullanılırken,
+Fidye Yazılımı : Bir sürücünün  
+kullanıcının erişemeyeceği hale getirir.
+
+--- page 35 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+6. V eriGizleme:
+➢ V erileringelecekte kullanılmak üzere erişilebilir olmasını sağlarken bulunmasını
+zorlaştırma işlemidir.
+➢ V erileringizlenmesi, araştırmacılara kanıtların tanımlanmasını ve toplanmasını
+sınırlama yeteneği verirken, kendilerine erişim ve bunları kullanma izni verir.
+➢ V erigizlemenin daha yaygın biçimlerinden bazıları, şifreleme, steganografi ve diğer
+çeşitli donanım/yazılım tabanlı veri gizleme biçimlerini içerir.
+
+--- page 36 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+7. Diğer Veri Gizleme Teknikleri
+➢ Diğer veri gizleme biçimleri, bir bilgisayar sistemindeki çeşitli konumlarda verileri gizlemek için araç ve 
+tekniklerin kullanılmasını içerir.
+➢ Bu yerlerden bazıları "bellek, boş alan , gizli dizinler, hatalı bloklar , alternatif veri akışları, (ve) gizli 
+bölümler " içerebilir.
+➢ Genellikle veri gizleme için kullanılan daha iyi bilinen araçlardan biri Slacker ( Metasploit çerçevesinin 
+bir parçası) olarak adlandırılır.
+Slacker: bir dosyayı parçalara ayırır ve o dosyanın her bir parçasını diğer 
+dosyaların boş alanına yerleştirerek onu adli tıp inceleme yazılımından gizler.
+
+--- page 37 ---
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+8. Fiziksel Hasarlar
+➢ Cihazlar üzerinde bilerek yada istemeden 
+meydana gelen fiziksel parça kayıpları yada 
+bozulmalarını içerir
+
+--- page 38 ---
+9. İz Gizleme
+➢ İz gizlemenin amacı, adli inceleme sürecini karıştırmak, yönünü şaşırtmak ve saptırmaktır.
+➢ Y aygın olarak bilinen iz gizleme araçlarından biri Timestomp'tur ( Metasploit
+Çerçevesinin bir parçası ).
+➢ Timestomp, kullanıcıya erişim, oluşturma ve değiştirme zamanları/tarihleri ile ilgili  
+dosya meta verilerini değiştirme yeteneği verir.
+➢ Bir kullanıcı, Timestomp gibi programları kullanarak, dosyaların güvenilirliğini doğrudan
+sorgulayarak herhangi bir sayıda dosyayı yasal bir ortamda işe yaramaz hale getirebilir.
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+
+--- page 39 ---
+9. İz Gizleme
+➢ İyi bilinen başka bir iz gizleme programı da Transmogrify'dır (aynı zamanda Metasploit
+Çerçevesinin bir parçasıdır).
+➢ Çoğu dosya türünde, dosyanın başlığı tanımlayıcı bilgiler içerir.A(.jpg), kendisini a ( .jpg )
+• olarak tanımlayan başlık bilgisine sahip olacaktır , a ( .doc ), onu
+(.doc) olarak tanımlayan
+• bilgiye sahip olacaktır vb.
+➢ Transmogrify, kullanıcının bir dosyanın başlık bilgisini
+değiştirmesine izin verir, böylece bir (.jpg) başlığı bir (.doc)
+başlığına dönüştürülebilir. Bir adli inceleme programı veya
+işletim sistemi bir makinede görüntüler için arama yapacak
+olsaydı, yalnızca bir (.doc) dosyasını görür ve onu atlardı.
+ANTİ ADLİ BİLİŞİM YÖNTEMLERİ
+
+--- page 40 ---
+Örnek Anti Adli Bilişim
+Uygulaması
+A Digital Forensics Approach for Lost Secondary Partition Analyses using master boot record structured Hard Disk 
+Drives
+Ana Önyükleme KaydıYapılandırılmışSabit Disk Sürücülerini Kullanarak Kayıp İkincil Bölme Analizlerine YönelikBir 
+Dijital Adli Tıp Yaklaşımı
+
+--- page 41 ---
+Örnek Anti Adli Bilişim Uygulaması
+
+--- page 42 ---
+Örnek Anti Adli Bilişim Uygulaması
+
+--- page 43 ---
+Örnek Anti Adli Bilişim Uygulaması
+
+--- page 44 ---
+Örnek Anti Adli Bilişim
+Uygulaması
+Software Tool Version License
+Access Data Forensic
+T oolKit (FTK)
+7.0.0.163 Lisanslı
+Encase 8.7.00.93 Lisanslı
+Magnet Axiom 3.0.0.13673 Lisanslı
+Autopsy 4.11.0 Açık Kaynak
+The Sleuth Kit 4.7.0 Açık Kaynak
+
+--- page 45 ---
+İNCELEMEAŞAMASI
+FTK TOOLS
+
+--- page 46 ---
+İNCELEMEAŞAMASI
+MAGNET AXIOM TOOLS
+
+--- page 47 ---
+İNCELEMEAŞAMASI
+AUTOPSY TOOLS
+
+--- page 48 ---
+İNCELEMEAŞAMASI
+ENCASE TOOLS
+
+--- page 49 ---
+İNCELEMEAŞAMASI
+ENCASE TOOLS
+
+--- page 50 ---
+İNCELEMEAŞAMASI
+ENCASE TOOLS
+
+--- page 51 ---
+İNCELEMEAŞAMASI
+ENCASE TOOLS
+
+--- page 52 ---
+İNCELEMEAŞAMASI
+ENCASE TOOLS
+
+--- page 53 ---
+İNCELEMEAŞAMASI
+ENCASE TOOLS
+
+--- page 54 ---
+İNCELEMEAŞAMASI
+ENCASE TOOLS
+
+--- page 55 ---
+İNCELEMEAŞAMASI
+TSK TOOLS
+mmls komutu ile partition bilgilerini okuyabiliriz.
+
+--- page 56 ---
+İNCELEMEAŞAMASI
+TSK TOOLS
+fsstat komutu ile bölüm bilgilerini  
+okuyabiliriz.
+
+--- page 57 ---
+İNCELEMEAŞAMASI
+TSK TOOLS
+fls komutu ile bölüm içindeki  
+dosyaları görüntüleyebiliriz
+
+--- page 58 ---
+İNCELEMEAŞAMASI
+TSK TOOLS
+mmls komutu ile Extendet Bölüm  
+Tablosunu okuyabiliriz
+Extended partitionun table 0158978048. sektörde olduğundan mmls komutu 
+kullanılarak Extended partition tablosu içeriği gösterilmiştir.
+Burada 2048 sektör rezerve alan olduğu açıkça görülmektedir.
+
+--- page 59 ---
+İNCELEMEAŞAMASI
+TSK TOOLS
+fsstat komutu ile bölüm bilgilerini  
+okuyabiliriz.
+
+--- page 60 ---
+İNCELEMEAŞAMASI
+TSK TOOLS
+fls komutu ile bölüm içindeki  
+dosyaları görüntüleyebiliriz
+
+--- page 61 ---
+Rapor Aşaması
+--- page 62 ---
+Rapor
+Aşaması
+➢ Bir soruşturmadaki bilgiler son derece teknik olabilir ve doğrulanması zor olabilir.
+Raporda bilgiler herkesin erişebileceği şekilde açıklanmalıdır.
+– Bence raporun amacı bir hikaye anlatmak, diyor Dario.
+➢ Bir raporda hikaye anlatmak, bir makale veya kitap yazmak gibidir. Hikayeyi
+anlamlandırmanız, tüm parçaları birbirine bağlamanız ve herkesin anlayıp takip
+edebileceği şekilde yazmanız gerekiyor.
+
+--- page 63 ---
+Rapor
+Aşaması
+➢ Y aniraporuma teknik veriler eklememeli miyiz.
+➢ Herkesin anlayabileceği bir hikaye anlatmak gerçekten önemlidir. Ancak hash
+değerleri, zaman damgaları, varlıklar, OSINT verileri, ip adresleri ve daha fazlasını
+dahil etmek de önemlidir.
+➢ Kanıtı adli tıp açısından yasal hale getirmek için tüm bu bilgilere ihtiyacınız var.Ancak
+tüm bunlar, asıl hikaye için önemli olmadığı için eke dahil edilebilecek şeylerdir.
+
+--- page 64 ---
+Rapor Aşaması
+
+--- page 65 ---
+Raporda Olması
+Gerekenler
+Sunulacak Makam
+Raporun Gerekçesi
+Kullanılan AnalizAraçları
+Analiz Edilen Dijital Materyallerin Özellikleri
+Tespit edilen Dijital Kanıtların Özellikleri
+Tespitedilen Dijital Kanıtların VeriBütünlük değeri
+Analiz Sonuçları
+Analiz Edilen Dijital Materyallerin VeriBütünlük Değerleri
+Sonuç ve Kanaat

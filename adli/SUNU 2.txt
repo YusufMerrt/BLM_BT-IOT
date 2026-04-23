@@ -1,0 +1,432 @@
+--- page 1 ---
+ADLİ BİLİŞİME GİRİŞ 2
+--- page 2 ---
+TEMEL ADLİ BİLİŞİM
+❖Bilgi Teknolojileri ve İletişim Kurumu'nun (BTK) adli bilişim alanında 
+online eğitim vermektedir. 
+❖Bu ders kapsamında belirli bölümlerde BTK Akademi tarafından 
+temel adli bilişim hakkında hazırlanan sunumlar kullanılmıştır.
+❖Bu ders kapsamında edinilecek bilgi birikimi ile aynı zamanda BTK 
+Akademi tarafından hazırlanan eğitime katılınarak sertifika alınabilir. 
+❖Sertifika almak için
+https://www.btkakademi.gov.tr/portal/course/adli-bilisime-giris-24376 
+adresine girilip kayıt olunabilir.
+❖Bu sertifika; BTK Akademi'yi tanıyan tüm kurum ve kuruluşlar 
+sertifikanızı dikkate alabilir.
+--- page 3 ---
+BTK AKADEMİ EĞİTİMAKIŞI
+(1.Bölüm)
+Tanıtımve Tanımlar
+Hukuki Boyut
+Dijital Delil Kavramıve Delil Zincirinin Korunmasının önemi
+
+--- page 4 ---
+BTK AKADEMİ EĞİTİM AKIŞI
+(2.Bölüm)
+Dosya Sitemleri
+Sayı ve Kodlama sistemleri
+Hash Fonksiyonlarının Tanımıve Kullanım Alanları 
+Depolama Ortamları
+--- page 5 ---
+BTK AKADEMİ EĞİTİM AKIŞI
+(3.Bölüm)
+Raporlama Aşamasında Dikkat Edilmesi Gereken Hususlar,
+Adli Kopya Alma yöntemleri (Canlı ve Kapalı Sistemlerdeİmaj alma)
+Adli Bilişim Yazılımve Donanımları,
+Veri Kurtarma Yöntemleri, 
+Dijital Verilerin Analizi, 
+RAM Analizi
+Anti Adli Bilişim Yöntemleri,
+--- page 6 ---
+BTK AKADEMİ EĞİTİMİ 
+BÖLÜM 1
+--- page 7 ---
+TANITIM
+--- page 8 ---
+Adli Bilişim Kapsama Alanı
+Modern çağda, cinayetlerden, terör
+saldırılarına, Dolandırıcılıktan ve siber 
+saldırılarına kadar her türlü suç
+soruşturmasının dijital bir boyutu olabilir.
+
+--- page 9 ---
+Adli Bilişim Çalışma Alanı
+Bu durumunun bir sonucu olarak Adli Bilişim:
+❖ Olay müdahalesi,
+❖ Kötü amaçlı yazılım analizi,
+❖ Siber tehdit istihbaratı,
+❖ Durumsal Analizler gibi,
+çeşitli alanlarda karar verici mercileri destekler .
+
+--- page 10 ---
+TANIMLAR VE TERİMLER
+--- page 11 ---
+ADLİ BİLİŞİM
+❖Bir suç soruşturmasında elektronik 
+cihazlardan dijital kanıt elde etme ve
+elde edilen bu kanıtların mahkemeler
+tarafından delil olarak kabul
+edilebilmesi için, belirli ilke ve
+disiplinlere bağlı olarak işlevlerini
+gerçekleştiren bir bilim dalıdır.
+
+--- page 12 ---
+Adli Bilişimin Alt Alanları
+--- page 13 ---
+Her bir alt alanda dijital kanıt elde etmek için kullanılan;
+➢Yöntem
+➢Araç
+➢Karşılaşılan zorluklar Farklılık göstermektedir.
+
+--- page 14 ---
+❖Adli İnceleme: Meydana gelen siber suçun kimler tarafından nasıl, ne zaman
+ve ne şekilde oluştuğunu belirlemek için; Elektronik cihazlardan dijital
+kanıtların toplanması, Muhafaza edilmesi, İncelenmesi ve Raporlanması
+sürecidir.
+❖Acquisition (İmaj): Olayın meydana geldiği bilgisayar sisteminin bit-bit
+kopyası veya adli çalışma görüntüsüdür.
+❖bit-to-bit copy (bit-bit kopya): Veri tahsisine bakılmaksızın, bir sabit disk
+veya başka bir ortamdaki her ardışık sektörün bir kopyasının alınması
+işlemidir.
+Adli BilişimTerimleri
+
+--- page 15 ---
+❖Active Files, Active Data (Aktif Dosyalar, Aktif Veriler): Bir
+bilgisayardaki silinmeyen ve genel olarak erişilebilir olan ve normal
+kullanımda kullanıcı tarafından kolayca görülebilen verilerdir.
+❖Allocated Space (Tahsis edilen alan): İşletim Sistemi tarafından bir dosyaya
+atanan sabit disk veya diğer ortamdaki mantıksal alan olarak ifade edilebilir.
+❖Sector (Sektör): Bir sabit diskte veya diğer elektronik ortamlarda veri
+depolamanın temel ve en küçük birimidir. Genellikle 512 bayt veri tutabilen
+bir bitişik alandan oluşur.
+Adli BilişimTerimleri
+
+--- page 16 ---
+❖Backup (Yedekleme): Bir sistem veya ortam arızasında veri
+kaybına karşı acil önlem olarak ve/veya arşiv verilerinin saklanması
+amacıyla saklanan verilerin bir kopyası.
+❖Cache (Önbellek): Hızlı erişim için sık erişilen verilerin
+saklanabileceği bir depolama alanıdır.
+❖Case Folder (Dava Dosyası): Olay ile ilgili tüm dijital kanıtların
+imajlarının içerisinde bulunduğu dijital dava dosyasını ifade eder.
+Adli BilişimTerimleri
+
+--- page 17 ---
+❖Cluster (Küme): Tahsis blokları olarak da bilinen küme, Microsoft Windows
+gibi bir işletim sistemi tarafından bir dosyaya atanan en küçük alan miktarı
+olan bitişik sektörler grubudur. Kümelerin büyüklüğü genellikle 4 sektörden
+64 sektöre kadar değişmektedir.
+❖Ambient Data (Ortam Verisi): Ortam verileri, kullanıcının genel olarak
+erişemeyeceği alanlarda bulunan bilgilerdir. Bu veriler, dosya boşluğunda,
+ayrılmamış kümelerde, sanal bellek dosyalarında ve aktif dosyalara tahsis
+edilmemiş diğer alanlarda bulunur.
+❖ Encryption (Şifreleme): Bir dosyayı yetkisiz kişiler veya cihazlar tarafından
+okunamaz hale getirme işlemi.
+Adli BilişimTerimleri
+
+--- page 18 ---
+❖ Extension, File Extension (Uzantı, Dosya Uzantısı): Dosya adının bir
+kısmı, genellikle dosya adında bir "nokta" veya noktadan sonra gelir.
+Microsoft Windows gibi bazı işletim sistemleri, verilen dosyayı açmak için
+hangi programın kullanıldığını bilmek için uzantıya bağlıdır. Örneğin
+Microsoft word belgelerinin uzantısı olarak “.doc” bulunur.
+❖File name (Dosya adı): Bir dosyanın adını ifade eder.
+❖File Attribute (Dosya Niteliği): Dosya dizini listesiyle birlikte tutulan bir
+dosyayla ilişkili özelliklerdir. Bu öznitelikler, dosyaya en son erişildiği,
+oluşturulduğu veya değiştirildiği tarih ve saati içerir.
+Adli BilişimTerimleri
+
+--- page 19 ---
+❖Hash, hash value (Hash Değeri): Hash, bir metin dizisinden üretilen bir
+sayıdır. Tek bir dosya için veya tüm sabit disk için bir karma değeri
+oluşturulabilir. Eşleşen bir karma, bir kopyanın orijinaliyle aynı olduğunu
+neredeyse garanti eder.
+❖Jumplists (Atlama listeleri): Windows 7'den itibaren Windows'taki belirli
+dosyaların kullanım geçmişini belirlemeye yardımcı olmak için kullanılabilir.
+❖Allocation Block (Tahsis Bloğu): Microsoft Windows gibi bir işletim
+sistemi tarafından bir dosyaya atanan en küçük alan miktarı olan bitişik
+sektörler grubu.
+Adli BilişimTerimleri
+
+--- page 20 ---
+❖ File signature (Dosya imzası): Dosyanın uzantısı değiştirilmiş olsa bile, dosyanın
+türünü
+• tanımlayan bir dosyanın içerdiği bilgilerdir.
+❖ Registry Hives : Windows kayıt defteri, "Hives" adı verilen alt dosyalardan
+oluşur. Bireysel Windows Kullanıcı ayarları ve bazı kullanım geçmişi çeşitli
+kovanlarda tutulur ve bilgisayar kullanıldıkça güncellenebilir.
+▪ SAM : Kullanıcıların şifrelerini saklayan “Güvenlik Hesap Yöneticisi”
+▪ Software : Yazılımve Windows ayarlarını içerir.
+▪ System : Windows sistem kurulumu, takılı aygıtlar, donanım sürücüleri ve
+hizmetler için alternatif yapılandırmalar hakkında bilgiler içerir.
+Adli BilişimTerimleri
+
+--- page 21 ---
+❖Thumbnail (Küçük resim): Genellikle orijinal tam çözünürlüklü
+görüntünün yerini alan küçük, düşük çözünürlüklü bir görüntü
+anlamına gelir. Küçük resimler genellikle GPS konumu veya
+kaynak görüntünün orijinal oluşturulma tarihi ile birlikte meta
+veriler içermez.
+❖Unallocated (Ayrılmamış): İşletim Sistemi tarafından bir
+dosyaya atanmamış (veya artık atanmamış) bir sabit disk veya
+diğer ortamdaki alan. Bozulmamış silinmiş dosyaları, bunların
+kalıntılarını veya diğer verileri içerebilir.
+Adli BilişimTerimleri
+
+--- page 22 ---
+❖Windows Registry (Windows Kayıt Defteri): Kullanıcının Windows
+kullanımı ve yapılandırmasıyla ilgili büyük miktarda bilgiyi işletim
+sisteminin Windows Kayıt Defteri adı verilen bir bölümünde tutar.
+❖Windows Kayıt Defterinde tutulan bilgilere, Atlama Listeleri ve LNK
+dosyalarında tutulan bilgiler ve Kayıt Defteri Kovanlarında bulunan diğer
+veriler dahildir.
+Adli BilişimTerimleri
+
+--- page 23 ---
+HUKUKİ BOYUT
+--- page 24 ---
+❖5237 sayılı Türk Ceza Kanunu’nun
+Özel Hükümler isimli İkinci
+Kitap’ının “Topluma Karşı Suçlar”
+başlıklı Üçüncü Kısımının Onuncu
+Bölümü Bilişim Alanında işlenen
+Suçlara ayrılmıştır.
+Bilişim Suçları
+
+--- page 25 ---
+Bilişim Alanında İşlenen Suçlar
+❖Bilişim sistemine girme (Madde 243)
+❖Sistemi engelleme, bozma verileri yok etme veya 
+değiştirme (Madde 244)
+❖Banka veya kredi kartlarının kötüye kullanılması (Madde 
+245)
+❖Yasak cihaz veya programlar (Madde 245 A)
+--- page 26 ---
+Türk Ceza Kanunun Diğer Bölümlerinde;
+❖Kişisel verilerin kaydedilmesi (Madde 135), 
+❖Verileri hukuka aykırı olarak verme veya ele geçirme (Madde 136), 
+❖Verileri yok etmeme (Madde 138), 
+❖Haberleşmenin gizliliğinin ihlali suçu (Madde 132), 
+❖Hakaret (Madde 125), 
+❖Haberleşmenin engellenmesi suçu (Madde 124),
+❖Bilişim sisteminin kullanılması yoluyla işlenen hırsızlık suçu (Madde 
+142/2-e),
+❖Bilişim sisteminin kullanılması yoluyla işlenen dolandırıcılık suçu 
+(Madde 158/1-f)
+--- page 27 ---
+Avrupa Konseyi Siber Suç Sözleşmesi (23 Kasım 
+2001)
+❑Türkiye sözleşmeyi;
+▪ 10 Kasım 2010 tarihinde imzalamış,
+▪ 29 Eylül 2014 tarihinde onaylamış, 
+▪ 1 Ocak 2015 tarihinde iç hukuk bağlamında yürürlüğe girmiştir.
+❑Sözleşme İle;
+▪ Taraf devletlerin iç hukuku bakımından hangi fiilleri suç olarak kabul 
+edeceği belirlenirmiştir,
+▪ Dijital delillerine ulaşma yolları ile bütünlüğü bozulmamış delilleri 
+mahkeme süreçlerine dahil etme konusunda yol gösterici hükümler 
+getirilmiştir.
+▪ Diğer taraftan da bilişim suçları ile ilgili iş birliği ve yardımlaşmaya 
+ilişkin hükümler kabul edilmiştir.
+--- page 28 ---
+Adli Bilişim Alanında Kabul Edilen Standartlar
+❖ISO/IEC 27037: 2012 (2012,2018): Dijital Kanıtların  tanımlanması, 
+toplanması ve muhafazası için yol gösterici bir standarttır. 
+❖ISO/IEC 27041: 2015: Soruşturmalarda uygun yöntem ve araçların 
+kullanılması konusunda yol göstermek için oluşturulmuş bir standarttır. 
+❖ISO/IEC 27042: 2015: Dijital delilin  sağlıklı ve kontrol edilebilir 
+şekilde analizi ve yorumlanması konusunda yol göstermek için 
+oluşturulmuş bir standarttır.
+❖ISO/IEC 27043: 2015: ise daha geniş bir perspektifle soruşturmalarda 
+vaka incelemesine ilişkin hususlarda prensipler ortaya koymaktadır. 
+❖ISO/ IEC 27050: 2016: dört ayrı bölüm altında elektronik keşifle ilgili 
+standartları belirlemektedir.
+--- page 29 ---
+Adli Bilişim İş Ve İşlemlerini Düzenleyen Kanun
+(5271 Sayılı CMK’nun 134. Maddesi)
+
+--- page 30 ---
+Adli Bilişim İş Ve İşlemlerini Düzenleyen Kanun
+(5271 Sayılı CMK’nun 134. Maddesi)
+
+--- page 31 ---
+Adli Bilişim İş Ve İşlemlerini Düzenleyen Kanun
+(5271 Sayılı CMK’nun 134. Maddesi)
+
+--- page 32 ---
+Bilirkişilik Kanunu (6754 Sayılı Kanun)
+
+--- page 33 ---
+Bilirkişi Raporu, Uzman Mütalaası (5271
+Sayılı CMK’nun 67. Maddesi)
+❖ (1) İncelemeleri sona erdiğinde bilirkişi yaptığı işlemleri ve vardığı sonuçları açıklayan
+bir raporu, kendisinden istenen incelemeleri yaptığını ayrıca belirterek, imzalayıp ilgili
+mercie verir veya gönderir. Mühür altındaki şeyler de ilgili mercie verilir veya gönderilir
+ve bu husus bir tutanağa bağlanır.
+❖ (2) Birden çok atanmış bilirkişiler değişik görüşleri yansıtmışlarsa veya bunların ortak
+sonuçlar üzerinde ayrık görüşleri varsa, bu durumu gerekçeleri ile birlikte rapora
+yazarlar.
+
+--- page 34 ---
+Bilirkişi Raporu, Uzman Mütalaası
+(5271 Sayılı CMK’nun 67. Maddesi)
+❖(3) (Değişik: 3/11/2016-6754/45 md) Bilirkişi, raporunda ve sözlü 
+açıklamaları sırasında çözümü uzmanlığı, özel veya teknik bilgiyi 
+gerektiren hususlar dışında açıklama yapamaz hâkim tarafından 
+yapılması gereken hukukî nitelendirme ve değerlendirmelerde 
+bulunamaz.
+❖(4) Bilirkişi tarafından düzenlenen rapor örnekleri, duruşma 
+sırasında Cumhuriyet savcısına, katılana, vekiline, şüpheliye veya 
+sanığa, müdafiine veya kanunî temsilciye doğrudan verilebileceği 
+gibi kendilerine iadeli taahhütlü mektupla da gönderilebilir.
+--- page 35 ---
+Bilirkişi Raporu, Uzman Mütalaası
+(5271 Sayılı CMK’nun 67. Maddesi)
+❖(5) Bilirkişi incelemeleri tamamlandığında, yeni bilirkişi incelemesi 
+yapılması veya itirazların bildirilmesi için istemde bulunabilmelerini 
+sağlamak üzere Cumhuriyet savcısına, katılana, vekiline, şüpheliye veya 
+sanığa, müdafiine veya kanunî temsilciye süre verilir.
+ Bu kişilerin istemleri reddedildiğinde, üç gün içinde bu hususta gerekçeli 
+bir karar verilir.
+❖(6) Cumhuriyet savcısı, katılan, vekili, şüpheli veya sanık, müdafii veya 
+kanunî temsilci, yargılama konusu olayla ilgili olarak veya bilirkişi 
+raporunun hazırlanmasında değerlendirilmek üzere ya da bilirkişi raporu 
+hakkında, uzmanından bilimsel mütalaa alabilirler.
+Sadece bu nedenle ayrıca süre istenemez.
+--- page 36 ---
+Uzman Görüşü 
+(6100 Sayılı HMK’nun 293. Maddesi)
+❖Taraflar dava konusu olayla ilgili olarak, uzmanından bilimsel 
+mütalaa alabilirler sadece bu nedenle ayrıca süre istenemez.
+❖Hâkim, talep halinde veya resen, kendisinden rapor alınan uzman 
+kişinin davet edilerek dinlenilmesine karar verebilir.
+❖ Uzman kişinin çağrıldığı duruşma da hâkim ve taraflar gerekli 
+soruları sorabilir.
+❖Uzman kişi, çağrıldığı duruşmaya geçerli bir özrü olmadan gelmezse, 
+hazırlamış olduğu rapor, mahkemece değerlendirilmeye tabi 
+tutulamaz.
+--- page 37 ---
+Dijital Deliller
+--- page 38 ---
+Delil Nedir?
+❖Delil: 
+Bir olayı aydınlatabilecek iz yada emare anlamına 
+gelmektedir.
+❖Hukuk Açısından Delil :  
+Uyuşmazlık konusu bir olayın aydınlatılması için mahkeme 
+heyetinde bir kanı oluşturmaya yarayan ispat aracıdır.
+--- page 39 ---
+Dijital Delil Nedir?
+❖Meydana gelen bir suçun aydınlatılması ile ilgili yol 
+gösterici olan ve Bilişim sistemlerinden veya dijital 
+depolama aygıtlarından usulüne uygun elde edilen 
+anlamlı sayısal bilgilerdir.
+--- page 40 ---
+Dijital ortamlarda; 
+Saklanan, 
+Oluşturulan, 
+Depolanan, 
+İletilen,
+her türlü sayısal bilgi olabilir.
+Hangi VerilerDijitalDelil Olabilir
+
+--- page 41 ---
+I. Akla uygunluk,
+II. Kabul edilebilirlik,
+III. Gerçeklik,
+IV. Tamam ve eksiksiz olma,
+V. Güvenirlik,
+VI. İnanılabilirlik,
+VII.Tekrar edilebilirlik,
+DijitalVerilerinKanıtOlabilmesiİçin Sahip 
+OlmasıGerekenÖzellikler
+
+--- page 42 ---
+Dijital Verilerin Kanıt Olabilmesi İçin Sahip 
+Olması Gereken Özellikler
+❖Akla uygunluk Kabul edilebilirlik:
+Elde edilen dijital verinin Şüphe altındaki konuyu açıklığa kavuşturacak 
+mantıklı öğeler içermesi gerekir.
+❖Gerçeklik :  Delil ile ispatlanmak istenen maddi gerçek arasında 
+mantıksal bir bağlantı mevcut olmalıdır.
+❖Tamam ve eksiksiz olma:  Sunulan deliller herhangi bir nedenle
+değişmemiş (delil bütünlüğünün bozulmamış) olmalıdır.
+--- page 43 ---
+Dijital Verilerin Kanıt Olabilmesi İçin Sahip 
+Olması Gereken Özellikler
+❖Güvenirlik ve İnanılabilirlik: Dijital delillerin geçtiği tüm 
+süreçlerde izlenen yol, uygulanan teknik ve yöntemler, 
+kanuni prosedürlere uygun olmalıdır. 
+Mahkemeye delil olarak sunulan tüm bulguların herkes 
+tarafından anlaşılabilir ve inanılabilir nitelikte olmalıdır.
+❖Tekrar Edilebilirlik: Yani elde edilen ve mahkemeye delil 
+olarak sunulan tüm bulgulara, farklı kişiler tarafından, farklı 
+yer ve zamanlarda da aynı yöntem ve metotlar kullanılarak 
+ulaşılabilmelidir.
+--- page 44 ---
+❖ Delillerin ToplanmasıZor ve Uzmanlık Gerektirmektedir.
+❖ Kolay Bozulabilir ve Manipülasyona Açıktır.
+❖ İşlem Aşamaları Maliyetlidir.
+❖ YargıMercilerince Değerlendirilmesi Zor Delillerdir
+DijitalDelillerinÖzellikleri
+
+--- page 45 ---
+Delil Zinciri
+❖Bir Suç Soruşturmasında elektronik delillerin Toplanması, 
+Korunması, Analizi ve Raporlanması süreçlerini içeren 
+mantıksal sırayı ifade eder.
+❖Dijital delillerin çok kolay bir şekilde değiştirilebileceği, 
+bozulabileceği ve yok edilebileceği düşünüldüğünde Delil 
+özelliklerinin sağlanabilmesi için delil zincirinin korunması 
+büyük önem taşımaktadır.
+--- page 46 ---
+Delil Zinciri Aşamaları
+Toplama Koruma Analiz Sunum
+
+--- page 47 ---
+Delil Zinciri Aşamaları
+• Dijital delil kaynaklarınınbelirlenmesi, etiketlendirilmesi ve taşınması süreçlerini içerir .
+Toplama
+Koruma
+• Toplanandijital delil kaynaklarıiçerisinden delillerin elde edilmesi, elde etme sonrasında delillerin korunması ile Tamamlanan 
+görevleri ve ortaya çıkarılan kanıtları göstermek için süreç boyunca ekran görüntüleri almak gibi görevleri içerir .
+Analiz
+• Alınan dijital kopyalarüzerinde soruşturmayı aydınlatacakdelillerin usulüne uygun yöntem ve araçlar kullanılarak anlamlı
+verilere dönüştürülmesi süreçlerini içerir .
+• Analiz aşaması çıktılarının adli makamlaraaçık ve anlaşılır bir dil ile ifade edildiği aşamadır .
+Sunum
+
+--- page 48 ---
+Delil Zinciri Neleri İçerir?
+❖Delil zinciri, Toplama, Koruma, Analiz ve Raporlama aşamalarının 
+sırasını gösterir.
+❖Ayrıca, kanıtlar ile ilgili işlem yapan her bir kişinin, İşlem 
+ayrıntılarını, toplandığı veya aktardığı tarih, saat ve aktarımın 
+amacını da belgeler.
+❖Mahkemelere ve İlgili taraflara delillerin tahrif edilmediğine olan 
+güveni gösterir.
+--- page 49 ---
+Delil Zinciri Formu
+❖ Kanıt Bilgisi: Örneğin Donanım bilgileri (seri numarası vb.), fotoğraflar ve ek açıklamaları
+❖ Kanıtı Nasıl TeslimAlındığı: Örneğin- Torbalı,etiketli veya masaüstünden çekilmiş.
+❖ Ne zaman toplandığı: Tarih,Saat
+❖ Kimin T opladığı:Görevlinin Kimlik veya Sicil Bilgileri
+❖ ToplayanGörevlinin V asfı:İlk Müdahale ekibi, Operasyon ekibi,Analist vb.
+❖ Nerede saklandığı: Bu, kanıtın saklandığı fiziksel konum hakkındaki bilgileri veya adli 
+görüntünün depolanması için kullanılan depolama bilgisini içerir.
+❖ Nasıl taşıdığı: Örneğin, sızdırmaz, statik olmayan bir torbada veya güvenli bir saklama kabında.
+❖ Nasıl saklandığı: Örneğin- güvenli bir saklama kabında.
+❖ Kanıta kimin erişimi olduğu: Bu, bir giriş/çıkış süreci geliştirmeyi içerir.
+
+--- page 50 ---
+Delil Zinciri OluşturmaProsedürü
+❖Orijinal malzemeyi kaydedin.
+❖Fiziksel kanıtların fotoğraflarını çekin.
+❖Dijital kanıtların ekran görüntülerini alın.
+❖Belge tarihi, saati ve delilin alındığına dair diğer bilgiler.
+❖Adli bilgisayarlara bit-bit dijital kanıt içeriği kopyasını aktarın.
+❖İmajı doğrulamak için doğrulamak için bir karma test analizi yapın.
+
+--- page 51 ---
+KAYNAK
+❖BTK AKADEMİ

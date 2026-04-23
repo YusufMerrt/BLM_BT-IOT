@@ -1,0 +1,1708 @@
+--- page 1 ---
+BTK AKADEMİ EĞİTİM AKIŞI
+(2.Bölüm)
+Dosya Sitemleri
+Sayı ve Kodlama sistemleri
+Hash Fonksiyonlarının Tanımıve Kullanım Alanları 
+Depolama Ortamları
+--- page 2 ---
+SAYI SİSTEMLERİ
+--- page 3 ---
+Sayı Sistemleri: Sayıları adlandırmaya 
+ve temsil etmeye yarayan ifade şeklidir.
+Sayı SistemleriNedir?
+
+--- page 4 ---
+I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I
+I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I
+I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I I
+RAKAM
+0 1 2 3 4 5 6 7 8 9
+SAYILAR
+10 20 30 40 50 60
+23 56 89 90 99 55
+126
+
+--- page 5 ---
+Ondalık Sayı Sistemi (Decimal Number System)
+*Bir sayıyı temsil etmek için 0 ila 9 arasındaki 10 rakam kullanır. 
+Bu rakam sayısı aynı zamanda kullanılan tabanı ifade eder.
+Örnek: 571 sayısını 10 tabanına göre açarsak:
+1 x 100 =1 x 1 = 1
+7 x 101 =7 x 10 = 70
+5 x 102 =5 x 100 = 500
+TOPLAM = 571
+
+--- page 6 ---
+İhtiyaca göre bir çok sayı sistemleri ifade edilebilir. En yaygın  
+kullanılan sayı sistemi Decimal (10 tabanlı) sayı sistemidir.
+Ancak genel olarak bilgisayar sistemlerinde kullanılan sayı  
+sistemleri 2’li, 8’li, 16’lı tabanlı sayı sistemleridir.
+Kaç Tane Sayı Sistemi Vardır?
+
+--- page 7 ---
+İkili Sayı Sistemi (Binary Number System)
+*Bir sayıyı temsil etmek için 0 ve 1 olmak üzere 2 adet rakam
+kullanır. Bu rakam sayısı aynı zamanda kullanılan tabanı ifade
+eder.
+
+--- page 8 ---
+İkili Sayı Sistemi (Binary Number System)
+Bilgisayar sistemleri için temel olarak iki elektronik durum söz konusudur.
+1.Durum: Açık=1
+2. Durum: Kapalı=0
+Binary (ikili) Sayı sisteminde bulunan her ‘0’ veya ‘1’ rakamları BIT (Binary Digit) adı 
+ile tanımlanır.
+Her karakter 8 bit’in birleşiminden oluşur. Örneğin C harfi 01100011ile ifade edilir.
+8 bit = 1 byte eşittir. Y apıdikkate alındığında üzerinde en fazla
+28 değerinde veri taşıyabilir. 10‘luk tabanda bu değer 256 ya
+denk gelmektedir.
+28 = 2x2x2x2x2x2x2x2 = 256
+
+--- page 9 ---
+İkili Sayı Sistemi (Binary Number System)
+8 bit = 1 byte eşittir. Y apıdikkate alındığında üzerinde en fazla 28 değerinde veri 
+taşıyabilir.10‘luk tabanda bu değer 256 ya denk gelmektedir.
+28 = 2x2x2x2x2x2x2x2 = 256
+
+--- page 10 ---
+İkili Sayı Sistemi (Binary Number System)
+Binary Decimal Binary Decimal
+0000 0 1000 8
+0001 1 1001 9
+0010 2 1010 A=10
+0011 3 1011 B=11
+0100 4 1100 C=12
+0101 5 1101 D=13
+0110 6 1110 E=14
+0111 7 1111 F=15
+Örnek: Binary Sistemde yazılabilecek 4 haneli
+kaç sayı yazılabilir ve Bu sayılardan en büyüğü
+kaçtır ?
+❖ n tabanında k haneli yazılabilecek sayı miktarı = Tabanhane
+yani n k şeklinde bulunur.
+Taban=2 , Hane = 4 Sonuç = 24=16
+❖ n tabanında k haneli yazılabilecek sayılardan en büyüğü =
+Tabanhane - 1 yani n k - 1 şeklinde bulunur.
+Taban=2 , Hane = 4 Sonuç = 24- 1 =15 (F)
+
+--- page 11 ---
+İkili Sayı Sistemi (Binary Number System) 
+Toplama
+Onluk tabanda toplama işleminde 10 ve katlarından sonraki sayılar bir sonrakine  
+ekleniyorsa 2 tanında yapılan işlemler içinde 2 ve 2’nin katları bir sonrakine eklenir.
+1011 = 11
+1100 = 12
++ 1101 = 13
+100100 = 36
+
+--- page 12 ---
+İkili Sayı Sistemi (Binary Number System) 
+Çıkarma
+1101 = 13
+- 1011 = 11
+0010 = 02
+
+--- page 13 ---
+İkili Sayı Sistemi (Binary Number System) 
+Çarpma
+1101011 107
+x 1011 x 11
+1101011 107
+1101011 +107
+0000000 1177
++ 1101011
+10010011001
+
+--- page 14 ---
+İkili Sayı Sistemi (Binary Number System) 
+Bölme
+11000 ÷ 100 = ?
+100
+110
+11000
+100
+01000
+
+--- page 15 ---
+Binary to Decimal
+(1 0 0 0 1 1 1 0 1 1 )2= (?) 10
+29 28 27 26 25 24 23 22 21 20
+(1 0 0 0 1 1 1 0 1 1 )2= 1x29 + 0x28 + 0x27 + 0x26 + 1x25 + 1x24 1x23 +0x22 + 1x21 + 1x20
+= 512 + 0 + 0 + 0 + 32 + 16 + 8 + 0 + 2 + 1
+= 571
+
+--- page 16 ---
+Sekizli Sayı Sistemi (Octal Number System)
+*Bu sistemde sayı gösterimi için 0 ile 8 arasında 8 rakam kullanır.Diğer sistemlere göre 
+pek yaygın olmayan bir kullanımı vardır.
+Örneğin, ondalık sayı sistemindeki 10, sekizlik sayı sisteminde 12 olarak gösterilir.
+3 2 1 0
+(1073)8= 1x83 + 0x82 + 7x81 + 3x80 = (571)10
+
+--- page 17 ---
+On altılı Sayı Sistemi (HexadecimalNumber System)
+*Bu sistem, sayı gösterimi için 0 ila 15 arasındaki 16 rakamı kullanır.
+Ancak 9 dan sonra diğer rakamlar : 10=A, 11=B, 12=C, 
+13=D, 14=E, 15=F sembolleri ile ifade edilir.
+(23B)16= 2x162 + 3x161 + Bx160 = (571)10
+
+--- page 18 ---
+DİKKAT !!!
+*571 sayısının 2 , 8 ve 16 tabanlarındaki karşılığına bakalım !
+(571)10 = (1 0 0 0 1 1 1 0 1 1 )2 Binary
+(571)10 = (1073)8 Octal
+(571)10 = (23B)16 Hexadecimal
+
+--- page 19 ---
+2’lik sistemden diğer sistemlere dönüşüm
+(1 0 0 0 1 1 1 0 1 1 )2 = (?)8
+(1 - 0 0 0 - 1 1 1 - 0 1 1 )2 = (0 0 1 - 0 0 0 - 1 1 1 - 0 1 1 )
+1 0 7 3
+=(1073) 8
+
+--- page 20 ---
+2’lik sistemden diğer sistemlere dönüşüm
+(1 0 0 0 1 1 1 0 1 1 )2 = (?)16
+(1 0 - 0 0 1 1 - 1 0 1 1 )2 = (0 0 10 - 0 0 1 1 - 1 0 1 1)
+2 3 B
+=(23B) 16
+
+--- page 21 ---
+VERİ KAVRAMI
+İkili sistemlerde ifade edilen bit dizileri bizim için bir veri niteliğindedir. Bu verinin ham hali 
+0 ve 1’lerden oluşsa da aynı veri farklı veri kodlama yöntemleri kullanılarak farklı bir veriye 
+dönüşebilmektedir.
+Örneğin, 01000010 01010100 01001011 şeklindeki bit dizisi
+❖ ASCII formatında ‘BTK’ ya karşılık gelirken,
+❖ Hexadecimal formatında 0x42 0x54 0x4b sayısına karşılık gelir.
+❖ BSD kodlamasında 42544B sayısına karşılık gelir.
+
+--- page 22 ---
+VERİ KAVRAMI
+❖ İkili sistemlerde ifade edilen bit dizileri bizim için bir veri niteliğindedir.
+❖ Bu verinin ham hali 0 ve 1’lerden oluşsa da aynı veri farklı veri kodlama yöntemleri
+kullanılarak farklı bir veriye dönüşebilmektedir.
+Örneğin, 01000010 01010100 01001011 şeklindeki bit dizisi
+❖ ASCII formatında ‘BTK’ ya karşılık gelirken,
+❖ BSD olarak ifade edildiğinde 42544B sayısına karşılık gelir.
+
+--- page 23 ---
+VERİ YAPILARI
+Veri Yapıları: bilgisayar ortamında verilerin etkin olarak saklanması ve  
+işlenmesi için kullanılan yapılardır.
+•Temel Veri Yapıları: Karakter, Tamsayı ve Gerçel Sayı gibi değişkenler temel 
+veri yapısı olarak kabul edilir.
+•Karakterler bir araya gelerek sözceleri (string), sayılar bir araya gelerek  
+dizileri (array) oluşturur.
+
+--- page 24 ---
+Temel Veri Yapıları
+❖ Karakter: a, c, z, !, >
+❖ Tamsayı:571, 44, 4
+❖ Gerçel Sayı: 61,14 , 1,0002
+❖ Sözce: ‘BTK’ , ‘AKADEMİ’’
+❖ Dizi/Matris: [1 3 0], 1 0
+0 1
+
+--- page 25 ---
+Yazı KarakterleriKodlama Sistemleri
+Y azıkarakterleri göstermede kullanılan birkaç yöntem vardır ancak bunlardan en çok
+kullanılanları;
+❖ ASCII(American Standart Code For Information Interchange),
+❖ Unicode (Unicode Transformation Format) dir. (UTF-8,UTF-16,UTF-32)
+
+--- page 26 ---
+ASCII(AmericanStandart Code For Information Interchange)
+ASCII birtakım sayıların birtakım karakterlerle eşleştirildiği basit bir tablodan ibarettir.
+❖ ASCII 7 bitlik bir sistemdir.
+❖ (2⁷=128) olduğundan toplam 128 karakter oluşturulabilir.
+❖ Bu 7 bit ile gösterilebilecek en son sayı 127‘dir.
+❖ ASCII tablosunu şöyle bir incelediğimizde ilk 32 karakter kontrol karakteri, geri kalan 96 karakter ise 
+basım karakteridir.
+
+--- page 27 ---
+ASCII TABLOSU
+
+--- page 28 ---
+Genişletilmiş ASCII(AmericanStandart Code For Information 
+Interchange)
+❖ ASCII 8 bitlik bir sistemdir.
+❖ (28=256) olduğundan toplam 256 karakter oluşturulabilir.
+❖ Bu 8 bit ile gösterilebilecek en son sayı 255‘dir.
+❖ ASCII tablosunu şöyle bir incelediğimizde ilk 32 karakter kontrol karakteri, geri kalan 96 karakter ise 
+basım karakteridir.StandartASCII ile aynı ancak 129 – 255 arası karakter farklı ülke ve durumlara 
+göre özelleştirilmiş karakterler olarak kullanılmaktadır.
+
+--- page 29 ---
+Unicode (Universal Code)
+❖ Universal” ve “Code” kelimelerinin bir araya getirilmesiyle oluşan Unicode standartı 1980’li yıllarda
+geliştirilmiştir.
+❖ Unicode’un geliştirilmesinin arında yatan temel neden ASCII (American Standart Code for
+Information Interchange) karakter kodlamasının daha gelişmiş ve stratejik bir sürümünün
+oluşturulabilmesidir.
+❖ ASCII karakterler sadece İngilizce üzerinde etkili olurken, Unicode tamamen evrenseldir.
+❖ İbranice, Arapça ve Çince gibi kompleks diller ile karmaşık semboller ve karakterler kolayca
+meydana getirilebilirler.
+
+--- page 30 ---
+Unicode TransformatinFormat (UTF)
+❖ UTF-16, UTF-32 ve UTF-8, kod noktalarının baytlarla nasıl eşleştirildiğini açıklayan Unicode dönüşümleri 
+geliştirilmiştir .
+❖ UTF, her Unicode kod noktasını benzersiz bir bayt dizisine eşlemek için bir algoritma tanımlayan Unicode 
+Dönüşümü anlamına gelir.
+❖ örneğin UTF-16 için 16 bit, UTF-32 için 32 bit ve UTF-8 için 8 bit alan kullanılmaktadır.
+❖ UTF-8, UTF-16 ve UTF-32 karakter kodlaması arasındaki temel fark, bellekteki bir karakteri temsil etmek 
+için kaç bayta ihtiyaç duyduğudur.
+
+--- page 31 ---
+Unicode TransformatinFormat (UTF)
+❖UTF-8 en az bir bayt kullanırken UTF-16 en az 2 bayt kullanır. Karakterin kod noktasının 
+baytın maksimum değeri olan 127'den büyükse, o zaman UTF-8 2, 3 veya 4 bayt alabilir,
+❖UTF-16 yalnızca iki veya dört bayt olabilir.
+❖UTF-32 sabit genişlikli bir kodlama şemasıdır ve bir Unicode kod noktasını kodlamak için 
+her zaman 4 bayt kullanır.
+
+--- page 32 ---
+Unicode ile ASCII Farkları
+❖ASCII yalnızca Latin alfabesi için kullanılabilir. Unicode ise evrensel olarak tüm dillerin 
+kullanımına uygun şekilde tasarlanmıştır.
+❖Unicode hala Unicode Konsoriyum’u tarafından kar amacı gütmeden geliştirilmeye devam 
+edilmektedir.ASCII’nin geliştirilmesi yıllar önce durdurulmuştur.
+
+--- page 33 ---
+HASH FONKSİYONLARI
+--- page 34 ---
+Hash FonksiyonlarıNedir ?
+ÖZET
+DATA F
+
+--- page 35 ---
+Hash FonksiyonlarıNasıl Çalışır?
+ÖZET
+DATA
+BTK
+AKADEMİ  
+TEMEL 
+ADLİ
+BİLİŞİM 
+EĞİTİMİ
+B
+A
+T
+A
+B
+E
+B A T A B E
+F
+2 1 24 1 2 6
+TOPLAM=36
+
+--- page 36 ---
+Hash FonksiyonlarıNasıl Çalışır?
+ÖZET
+DATA F
+M
+25 od 7 4
+87 3
+65 2
+78 1
+98 0
+66 3
+0 1 2 3 4 5 6
+0 1 2 3 4
+3
+
+--- page 37 ---
+İyi Bir Hash Fonksiyonun Özelliği Nasıl Olmalı ?
+
+--- page 38 ---
+İyi Bir Hash Fonksiyonun Özelliği Nasıl
+Olmalı ?Ön Görüntü Direnci (Pre-Image Resistance): Hash fonksiyonundan çıkan özet
+değerden orijinal mesaja ulaşılamaması gerekir.
+❖Eğer bir hash fonksiyonu h bir hash değeri z ürettiyse, o zaman z'ye hash olan herhangi 
+bir x girdi değerini bulmak zor bir süreç olmalıdır.
+x
+f
+z
+z
+f
+x
+BTK AKADEMİ TEMEL ADLİ BİLİŞİM EĞİTİMİ 36f
+
+--- page 39 ---
+İyi Bir Hash Fonksiyonun Özelliği Nasıl Olmalı ?
+
+--- page 40 ---
+İyi Bir Hash Fonksiyonun Özelliği Nasıl
+Olmalı ?İkincil Ön Görüntü Direnci (Second Pre-Image Resistance): İki ayrı mesajın aynı
+özet değerine denk gelmesi çok zor olmalıdır.
+❖Eğer bir x girişi için bir hash fonksiyonu (h), h(x) hash değerini üretiyorsa, o zaman 
+h(y) = h(x) olacak şekilde başka bir y girdi değeri bulmak zor olmalıdır.
+x
+f
+H(x)f
+y H(y)
+H(x) H(y)
+
+--- page 41 ---
+İyi Bir Hash Fonksiyonun Özelliği Nasıl Olmalı ?
+
+--- page 42 ---
+Hash FonksiyonlarıNasıl Çalışır?
+ÖZET
+DATA
+Birinci mesaj bloğunun karma değeri, çıktısı üçüncü işlemin sonucunu değiştiren ikinci
+karma işlemin girdisi haline geldiğinden, vb. Bu etki, karmanın çığ etkisi olarak bilinir .
+Çığ etkisi, tek bir veri biti ile bile farklılık gösteren iki mesaj için önemli ölçüde farklı karma 
+değerlerle sonuçlanır .
+Mesaj Bloğu nMesaj Bloğu 2Mesaj Bloğu 1 ………………..
+f f
+ fKarma
+Seed Value
+Hashing
+Algoritmması
+
+--- page 43 ---
+Kullanım Alanları
+❖Mesaj Güvenliği
+❖Şifre Güvenliği
+❖Adli Bilişim
+❖Kripto Para
+
+--- page 44 ---
+Kullanım Alanları
+USER NAME PASSWORD
+8dca7e74ef73b0265911fec31e519e83 b0956973857efb53188c30bc51ca9508
+BTK
+AKADEMİ
+
+--- page 45 ---
+Kullanım Alanları
+HASH VALUE
+58188088b894afd312f3148f014f3289
+
+--- page 46 ---
+Kullanım Alanları
+BTK AKADEMİ Özet Fonksiyonu 6b5cf88ba9bb1034a814b47c0c1007eb
+BTK AKADEMI Özet Fonksiyonu c2b114a279ba7be7e49c58845b4642d1
+BKT AKADEMİ Özet Fonksiyonu 8d682eb59cbe8ab812318f5dca3b035c
+
+--- page 47 ---
+Yaygın Kullanılan Özet Fonksiyonları
+1- MD (Message-Digest algorithm) Ailesi: MD5 karma işlevi, orijinal
+olarak, dijital imzaların kimliğini doğrulamak için güvenli bir şifreleme
+karma algoritması olarak kullanılmak üzere tasarlanmıştır
+MD2, MD4, MD5 ve MD6 karma işlevlerinden oluşur. İnternet Standardı  
+RFC 1321 olarak kabul edilmiştir.128 bitlik bir karma işlevidir.
+MD2 8 bit makineler için,
+MD4 VE MD5 32 bit makineler için tasarlanmıştır.
+MD5, MD4 den daha yavaş ancak daha güvenilirdir.
+
+--- page 48 ---
+MD5 Nedir?
+MD5 (message digest algorithm) karma algoritması, herhangi bir uzunluktaki
+mesajı girdi olarak kabul eden ve çıktı olarak orijinal mesajın kimliğini
+doğrulamak için kullanılacak sabit uzunlukta bir özet değeri döndüren tek
+yönlü bir şifreleme işlevidir.
+BTK AKADEMİ TEMEL ADLİ BİLİŞİM EĞİTİMİ 36f
+
+--- page 49 ---
+MD5 Kullanım Alanları?
+❖ MD5 Adli Bilişim alanında veri bütünlüğünü doğrulamak ve kasıtsız veri 
+bozulmasını tespit etmek için kullanılır.
+❖Mesaj Güvenliği
+❖Şifre Güvenliği
+❖V eriBütünlüğünü Doğrulama
+
+--- page 50 ---
+MD5 Yapısı
+128 Bit
+32 Karakter
+İsteğe Bağlı 
+Uzunlukta 
+veri
+MD5
+
+--- page 51 ---
+Yaygın Kullanılan Özet Fonksiyonları
+2- SHA-1 :
+❖ Mesaj özet algoritmalarının tasarımında MD5'inkilere benzer teknikler  
+kullanılır.
+❖ MD5’e göre daha güvenli olan160 bitlik değer üretir.
+
+--- page 52 ---
+Yaygın Kullanılan Özet Fonksiyonları
+2- SHA-2 :
+❖ SHA-1’ e göre SHA-2 mesaj özet algoritmaları daha uzun ve kırılması  
+daha zordur.
+❖ SHA-2 algoritma ailesi, 224, 256, 384 ve 512 bit uzunluğunda karma  
+değerler sunar.
+❖ Mesaj özet uzunluklarının adlarıyla bilinirler - örneğin, SHA-224 ve  
+SHA-256.
+
+--- page 53 ---
+Depolama Ortamları
+--- page 54 ---
+Depolama Ortamlarına Neden İhtiyaç Duyulur?
+❖Dijital veriler, uçucu ve çabuk bozulabilir bir yapıya sahiptir. Bu nedenle veri
+yönetimi ve organizasyonunun dikkatli bir şekilde yapılması veriye ulaşabilmek
+açısından en temel gereksinimlerden bir tanesidir.
+❖Bu veri yönetiminin ve organizyasyonun yapılmasına imkan tanıyan sistemler
+depolama ortamlarıdır.
+
+--- page 55 ---
+Depolama Ortamları Nedir ?
+ElektronikVeriler
+ElektronikVeriler
+ElektronikVeriler
+Elektronik Veriler
+Uygulamalar
+Kullanıcılar
+Fiziksel Cihaz
+
+--- page 56 ---
+Depolama Ortamları Nedir ?
+❖ Bilgisayarlarda, bir depolama ortamı, uygulamalar ve kullanıcılar için elektronik
+verileri alan ve saklayan, diğer taraftanda verileri geri almak için hazır hale getiren
+fiziksel bir cihazdır.
+❖ Depolama ortamı, bir bilgisayarın veya başka bir aygıtın içinde olabilir veya bir
+sisteme doğrudan veya bir ağ üzerinden harici olarak bağlı olabilir .
+❖ Bu terimin çoğul hali depolama ortamıdır.
+
+--- page 57 ---
+Depolama OrtamlarınınOrtaya Çıkışı?
+❖ Depolama ortamının ilk biçimleri, içine delikler açılmış bilgisayar kağıt bantlarını
+içeriyordu.
+❖ Her delik tek bir veri bitine karşılık geliyordu. Bir kağıt şerit okuyucu, deliği yorumlar 
+ve bir sayıya dönüştürür.
+❖ Delikli kartlar da veri depolamanın ilk günlerinde yaygın olarak kullanıldı ve bir  
+zamanlar dünyanın dijital bilgilerinin çoğunu depoladı.
+*Resim Kaynak (https://en.wikipedia.org/wiki/Punched_card)
+
+--- page 58 ---
+Depolama OrtamlarınınOrtaya Çıkışı?
+❖ Kağıt bant ve delikli kartların yerini manyetik bant aldı ve bu da sonunda manyetik 
+disklerin ortaya çıkışına yol açtı.
+❖ Sabit disk sürücüleri ( HDD'ler ) ve katı hal sürücüleri ( SSD'ler ) artık birincil
+depolama biçimleridir.
+
+--- page 59 ---
+1972 - Kompakt kaset - 660KB
+Depolama OrtamlarınınOrtaya Çıkışı?
+1725 - Delikli kartlar 1978 - Lazer disk - her yüze 1 saat video 2003 - Blu Ray - 25GB
+1846 - Delikli kartuş 1980 - IBM 3380 - 2.52GB 2006 - Bulut depolama
+1946 - Selectron tüpü - 32-512 bayt 1980 - 5.25" disket (ST-506) - 5MB 2008 - Katı hal sürücüsü (SSD) - 64GB 
+1947 - Williams tüpü - 0.0625KB 1982 - CD - 700MB 2009 - Holographic VersatileDisc - 39TB 
+1950 - Silindir bellek - 10KB 1985 - DVD ROM - 4GB
+1951 - Manyetik kartuş (UNISERVO) - 1995 - Jazz Drive - 1GB 
+inç başına 128B
+1996 - 7200RPM sabit disk
+1956 - Sabit disk (IBM 350) - 4.4MB
+1999 - Microdrive - 170MB
+1969 - Disket - 80KB
+2000 - USB bellek çubuğu 4MB - 256GB
+2000 - SD kart - 32MB-64MB
+*kaynak (https://www.chip.com.tr/haber/depolama-ortamlarinin-tarihcesi_47044.html)
+
+--- page 60 ---
+Holographic Versatile Disc ?
+*Resim Kaynak (https://en.wikipedia.org/wiki/Holographic_Versatile_Disc#/media/File:HVDstruct.svg)
+
+--- page 61 ---
+Farklı Depolama Ortamları
+
+--- page 62 ---
+1-Sabit Diskler
+V erileridepolamak için kullanabileceğimiz depolama aygıtlarıdır. Modern bilgisayarların 
+çoğu, büyük miktarda veri depolamak için sabit diskler kullanır.
+Bir sabit diskin mimarisi, aşağıdakileri içeren birkaç fiziksel bileşenden oluşur:
+•Plakalar (Platters)
+•Mil (Spindel)
+•Okuma/Yazma kafaları
+•İz (Track)
+•Sektörler
+
+--- page 63 ---
+Plakalar (Platers)
+Sabit diskler, eş merkezli bir disk yığını olarak  
+düzenlenmiştir.Tekbir diske plaka denir.
+Her tabak iki yüzeyden oluşur: bir alt ve bir üst
+yüzey.
+Platers (Plakalar)
+Upper Surface
+Lower Surface
+
+--- page 64 ---
+Spindel
+Sabit disk içindeki plakalar, plakaların ortasından 
+geçen bir mil ile birbirine bağlanır.
+Mil, ekseni boyunca tek yönlü olarak hareket eder
+(saat yönünde veya saat yönünün tersine).Lower Surface
+Spindel (Mil)
+Upper Surface
+Milin hareketi plakaların da dönmesine neden
+olur.
+Platers (Plakalar)
+
+--- page 65 ---
+Okuma Yazma Kafası
+Bir plaka üzerindeki
+okumak veya yazmak için kullanılan
+her yüzey , diske veri
+bir
+okuma/yazma kafası içerir.
+Okuma/yazma kafaları bir tabağın yüzeyi boyunca
+ileri geri hareket edebilir. Okuma/yazma kafaları
+sırayla tek bir aktüatör koluna bağlanır .
+Lower Surface
+Spindel (Mil)
+Upper Surface
+Platers (Plakalar)
+Actuator Arm (Aküatör Kolu)
+Rady/WriteHead
+
+--- page 66 ---
+İz (Track)
+Bir tabağın her yüzeyi sabit sayıda raydan oluşur .
+Bunlar, tabağın merkezine doğru hareket ettikçe
+çevresi azalan bir tabağın yüzeyindeki dairesel
+alanlardır.
+V erilerönce en dıştaki ize yazılır.
+Track
+
+--- page 67 ---
+Sektör (Sector)
+❖ Her iz sabit sayıda sektöre bölünmüştür.
+❖ Sektörler, hat bölümlerini böler ve  
+verileri depolar.
+Track
+1
+3
+2
+4
+Sector
+
+--- page 68 ---
+Sabit Disk Geometrisi ?
+❖ Track’lar dışarıdan içe doğru 0’dan başlayarak
+numaralandırılır.
+❖ Örnek, her bir plaka 1000 parçaya
+ayırdığımızda, her bir plakanın dışındaki ilk
+track 0, en iç track ise 999 olur.
+Track
+0
+1
+2
+3
+.
+.
+999
+
+--- page 69 ---
+Sabit Disk Geometrisi ?
+❖ Her plaka üzerinde bulunan Track’lara
+alt alta aynı adres atanır. Belirli bir
+adresteki tüm parçaları tanımlamak için
+Cylinder kullanılır.
+Track
+0
+1
+2
+3
+.
+.
+999
+0
+0
+0
+Cylinder
+
+--- page 70 ---
+Sabit Disk Geometrisi ?
+❖ Her bir track, sabit 
+adreslenebilir depolama
+diskteki en küçük  
+birimi olan ve
+genellikle 512 byte olan sektörlere ayrılmıştır.
+❖ Her sektörde her bir track için 1'den  
+başlayarak bir adres verilir.
+Track
+1
+3
+2
+4
+0
+1
+2
+3
+.
+.
+999
+
+--- page 71 ---
+Sabit Disk Geometrisi ?
+❖ Silindir adresi (C),
+❖ Plaka ve kenarı alacak baş numarasını (H),
+❖ Track üzerindeki sektörü göstermek için (S),
+Track
+1
+3
+2
+4
+0
+1
+2
+3
+.
+.
+999
+
+--- page 72 ---
+CHS
+Lower Surface
+Platers (Plakalar)
+Actuator Arm (Aküatör Kolu)
+Rady/WriteHead
+Spindel (Mil)
+Upper Surface
+
+--- page 73 ---
+Veri Yazılması ?
+❖ V erilerinhard disk üzerine yazılabilmesi için öncelikle hard disk üzerindeki
+yapının adreslemiş olması gerekir.
+❖
+ H
+a
+r
+d
+ diske
+ v
+e
+r
+i
+ y
+a
+z
+ı
+l
+d
+ığ
+ında ve
+ v
+e
+r
+i
+ ç
+a
+ğ
+ırıld
+ı
+ğ
+ında veriyi organize etmek
+için kullanacağı adresleme tipi CHS’dir
+--- page 74 ---
+CHS Nedir ?
+❖ CHS: Cylinder, Head ve Sector ‘un kısaltmasıdır ve bir hard
+disk üzerindeki verinin yerini belirtmek için kullanılan
+adresleme yöntemidir.
+--- page 75 ---
+CHS Adresleme (Eski Bios’larda) ?
+C: Silindir 10 bit (Geçerli aralık 0 ile 1023 silindir arasındadır)
+H: Kafa 8 bit
+S: Sektör 6 bit.
+(Geçerli aralık 0 ile 255 silindir arasındadır) 
+(Geçerli aralık 1 ile 63 sektör arasındadır)
+Adreslenebilir Boyut=(Sektör Boyutu)×(Sektör Sayısı)×(Kafa Sayısı)×(Silindir Sayısı)
+512×63×256×1024=8064 MB disk boyutu sağlar.
+Aslında Max Boyut 8 GB’dır ancak Track Üzerindeki sektör 1 den başladığı için  
+boyutunu hesaptan düşersek
+8x1024=8192 MB
+1 Sektör 512 byte x 256 =128 MB’dır. 8192-128=8064 MB
+
+--- page 76 ---
+Geçerli Aralıklar Fiziksel Gerçekleri Yansıtırmı?
+❖ 128 plakalı (0-255 kafalı) sabit disk yoktur.
+ Bu
+ maksimum
+ değerler, bir zamanlar
+BIOS tarafından sabit diski adreslemek için kullanıldı.
+❖
+ S
+a
+b
+i
+t
+ d
+isk
+ d
+e
+n
+e
+t
+l
+e
+y
+icisi bu değerleri daha sonra dahili olarak gerçek
+özelliklere  dönüştürerek sınırlı adresleme boyutunu arttırdı.
+❖ C ve H değerleri 0'dan başlar; ve S değeri 1'dedir. Bir sabit disk için ilk sektör bu
+nedenle CHS adresi 0/0/1'de bulunur.
+--- page 77 ---
+CHS Adresleme (Ata Spesifikasyonu)?
+C: Silindir 16 bit (Geçerli aralık 0 ile 65535 silindir arasındadır)
+H: Kafa 4 bit
+S: Sektör 8 bit.
+(Geçerli aralık 0 ile 15 kafa arasındadır) 
+(Geçerli aralık 1 ile 255 sektör arasındadır)
+Adreslenebilir Boyut=(Sektör Boyutu)×(Sektör Sayısı)×(Kafa Sayısı)×(Silindir Sayısı)
+512×255×16×65536=130560 MB disk boyutu sağlar.
+
+--- page 78 ---
+Alternatif Bir Adresleme Varmı ?
+❖ Bilim ve teknolojinin hızla gelişmesiyle birlikte sabit disklerin kapasitesi  
+büyük ölçüde artmıştır.
+❖ Mevcut kapasiteler 8 GB içeren adresleme aralığının çok ötesindedir.
+❖ Bu nedenle, 8 GB'ın üzerindeki bir alan adreslemek için CHS adres biti,  
+24'ten 28'e genişletilerek 128 GB'a ulaşan adresleme alanı elde edilmiştir.
+
+--- page 79 ---
+LBA - Mantıksal Blok Adresleme
+❖ LBA, sektörleri adreslemek için tamamen yeni bir yöntem sunar.
+❖ LBA ile sabit disk, 0'dan başlayarak mevcut blokları basitçe sayarak
+adreslenir. Y anisilindire, kafaya ve sektöre atıfta bulunmak yerine her
+sektöre benzersiz bir numara atar.
+❖ Bu yöntem ile 48 bit LBA adresleme modu kullanılarak adresleme alanı
+144.000.000 GB'a kadar ulaşabilir.
+
+--- page 80 ---
+LBA - Mantıksal Blok Adresleme
+❖ 8 GB büyük sabit diskler için, uyumluluk nedenleriyle, önyükleme için,
+CHS adreslemesini desteği devam etmektedir.
+❖ Modern BIOS'lar, Int13h kesme uzantılarını kullanarak Mantıksal Blok
+Adresleme (LBA) moduna geçebilir.
+❖ LBA kullanılarak, sabit disk, 0'dan başlayarak mevcut blokları basitçe
+sayan tek, büyük bir aygıt olarak adreslenir. Dolayısıyla bir LBA bloğu,
+CHS adresleme kullanan bir sektöre karşılık gelir.
+
+--- page 81 ---
+LBA - Mantıksal Blok Adresleme
+❖ LBA 0 adresi, CHS 0,0,1 adresine ve LBA 1 adresi, CHS adresi 0,0,2 ye 
+karşılık gelmektedir.
+❖ Track içindeki tüm sektörler kullanıldığında, aynı silindirdeki bir sonraki  
+kafadaki ilk sektör CHS adresi 0,1,1 olacaktır.
+❖ Bazı sistemlerin halen CHS adreslerini kullandığından bu nedenle  
+CHS'den LBA'ya dönüşüm yapabilmeyi bilmek gereklidir.
+
+--- page 82 ---
+CHS'dan LBA'ye Dönüşüm Formülü
+LBA = (((C * TH) + H) * TS) + S – 1
+C = Sektörün Silindir#
+TH = Geçerli BIOS çevirisine göre sabit sürücünün Toplam Kafaları 
+TS = Sabit sürücünün ToplamSektör sayısı
+H = Sektörün kafası#
+S = Sektörün Sektörü#
+ÖRNEK: Disk Geometrisi 1020 16 63 olan CHS adresi 3/2/1 olan verinin LBA adresi nedir ?
+CHS 3/2/1= ((3× 16)+2)× 63 + (1-1) = 3150 LBA ’dır
+
+--- page 83 ---
+LBA'dan CHS'ye Dönüşüm Formülü
+❖C , H ve S silindir numarası, kafa
+numarası ve sektör
+numarasıdır.
+❖LBA mantıksal blok adresidir
+❖HPC , silindir başına maksimum kafa
+sayısıdır (disk sürücüsü tarafından rapor
+edilir, genellikle 28 bit LBA için 16)
+❖SPT , iz başına maksimum sektör
+sayısıdır (disk
+sürücüsü tarafından rapor edilir,
+genellikle 28 bit LBA
+için 63)
+ÖRNEK: LBA = 3150 ardesini CHS formatına dönüştürelim.
+C = LBA ÷ ( HPC × SPT )
+C = 3150 ÷ (16 × 63) = 3.125 = 3
+H = ( LBA ÷ SPT ) mod HPC
+H= ( 3150 ÷ 63 ) mod 16
+H= 50 mod 16 = 2
+S = ( LBA mod SPT ) + 1
+S = ( 3150 mod 63 ) + 1
+S = ( 0) + 1 = 1
+CHS= 3 2 1
+
+--- page 84 ---
+LBA'dan CHS'ye Dönüşüm Formülü
+❖LBA adresleri, aşağıdaki formülle CHS
+demetlerine eşlenebilir ("mod"
+modulo işlemidir , yani kalandır
+ve "÷" tamsayı bölümüdür , 
+yani herhangi bir kesirli 
+parçanın atıldığı bölümün
+bölümüdür) :
+C = LBA ÷ ( HPC × SPT )
+H = ( LBA ÷ SPT ) mod HPC
+S = ( LBA mod SPT ) + 1
+ÖRNEK: LBA = 3150 ardesini CHS formatına dönüştürelim.
+C = LBA ÷ ( HPC × SPT )
+C = 3150 ÷ (16 × 63) = 3.125 = 3
+H = ( LBA ÷ SPT ) mod HPC
+H= ( 3150 ÷ 63 ) mod 16
+H= 50 mod 16 = 2
+S = ( LBA mod SPT ) + 1
+S = ( 3150 mod 63 ) + 1
+S = ( 0) + 1 = 1
+CHS= 3 2 1
+
+--- page 85 ---
+SABİT DİSK YAPISI
+Plater
+Pysical Device
+Volume 1 Volume n……………………….
+File System
+File
+ Application
+
+--- page 86 ---
+SABİT DİSK YAPISI
+❖ Blank Media
+❖ Low-Level Format
+❖ Partition
+Kullanılmayan  
+Sektörler 
+(512B)
+Sektör
+MBR VBR VBR
+VBC DPB VBC DPB
+MBC MPT
+
+--- page 87 ---
+SABİT DİSKLERİN MANTIKSAL YAPISI
+❖ Partition
+MBR = master boot record 
+MBC = master boot code 
+MPT = master partition table
+VBR = volume boot record 
+VBC = volume boot code 
+DPB = disk parameter block
+
+--- page 88 ---
+ÖNYÜKLEMESÜRECİ
+BİOS RAM (256 Byte)Power On Self
+T est
+0. Sector (MBR) HDD
+Partition 1
+Partition n
+BOOT
+
+--- page 89 ---
+MBR (Master Boot Record)
+❖ Ana Önyükleme Kaydı (MBR), bir sabit diskin veya çıkarılabilir bir sürücünün ilk
+sektöründeki bilgidir .
+❖ Bilgisayarın ana deposunda İşletim sisteminin ( OS ) yüklü bulunduğu bölüm  
+bilgilerini tutar.
+❖MBR ayrıca, disk üzerindeki bölümlerin adreslerini içeren bir tabloyu da içerisinde 
+barındırır.
+
+--- page 90 ---
+MBR (Master Boot Record)
+signature
+Master Partition Table (MPT)
+Master Boot Code (MBC)
+
+--- page 91 ---
+MBT (Master Boot Table)
+byte’lar (16 Byte) Açıklama
+0. Byte ‘’80’’ İşletim Sistemi Var ‘’00’’ Bootable İşletim Sitemi Yok
+1-3 Byte CHS formatında ilk sektörün adresi
+4.Byte Dosya Sistemi Türü Hakkında Bilgi Verir.Örneğin: ‘’07’’ NTFS , ‘’0B’’ FAT32
+5-7 Byte CHS formatında sektör adresi
+8-11 Byte LBA formatında ilk sektör adresi
+12-15 Byte LBA formatında Totalsektör sayısı
+
+--- page 92 ---
+Extended Partition (Genişletilmiş Bölüm)
+MBR
+ Volume 1
+ Volume 2
+ Volume 3
+ Volume 4
+
+--- page 93 ---
+Extended Partition (Genişletilmiş Bölüm)
+MBR
+ Volume 1
+ Volume 2
+ Volume 3
+ Extended 2
+Extended 1
+
+--- page 94 ---
+Extended Partition (Genişletilmiş Bölüm)
+
+--- page 95 ---
+Örnek GenişletilmişBölüm Oluşturma
+
+--- page 96 ---
+Örnek GenişletilmişBölüm Oluşturma
+
+--- page 97 ---
+Extended Partition (Genişletilmiş Bölüm)
+ID Type Start Sector Total Sectors Size
+07 NTFS 2.048 46.336.000 22,1 GB
+0c FAT32X 107.778.048 51.200.000 24,4 GB
+0c FAT32X 158.980.033 40.960.000 19,5 GB
+
+--- page 98 ---
+Extended Partition (Genişletilmiş Bölüm)
+ID Type Start Sector Total Sectors Size
+07 NTFS 2.048 46.336.000 22,1 GB
+00 Recovered 46.337.985 61.440.062 29,3 GB
+0c FAT32X 107.778.048 51.200.000 24,4 GB
+0c FAT32X 158.980.033 40.960.000 19,5 GB
+
+--- page 99 ---
+Extended Partition (Genişletilmiş Bölüm)
+ID Type Start Sector Total Sectors Size
+07 NTFS 2.048 46.336.000 22,1 GB
+00 Recovered 46.337.985 61.440.062 29,3 GB
+0c FAT32X 107.778.048 51.200.000 24,4 GB
+0c FAT32X 158.980.033 40.960.000 19,5 GB
+00 Recovered 199.942.081 112.635.966 53,7 GB
+
+--- page 100 ---
+GPT (Global Unic İdentities Partition Table)
+❖ GUID Bölüm Tablosu, Intel tabanlı bilgisayarlarda yaygın
+olan eski Ana Önyükleme Kaydı (MBR) bölümleme
+şemasını genişleten yeni bir disk mimarisidir.
+❖ BİOS, MBR Kullanırken EFI, GPT kullanır.
+❖ MBR, diski tanımlamak ve boot etmek için MBC
+kullanırken, EFI bunu tek başına yapabilir. Ancak geriye
+dönük uyuşmayı sağlamak için GPT başlığında MBR
+içerir
+EFI (Extensible Firmware Interface), bilgisayarın başlangıç ​​aşamasında (boot) donanım ve işletim 
+sistemi arasında bir köprü olarak görev yapan 
+bir tür firmware veya arayüzdür. EFI, bilgisayarın 
+donanımını başlatır ve işletim sistemi yüklenmeden önce temel sistem ayarlarını yapılandırır.
+--- page 101 ---
+GPT (Global Unic İdentities Partition Table)
+LBA 0
+LBA 1
+LBA 2
+LBA 3
+Protective MBR
+Primary GPT Header
+Entry 1 Entry 2 Entry 3 Entry 4
+Entries 5 -128
+LBA 34
+LBA 33
+LBA 2
+Partition 1
+Partition 2
+Remaining Partitions
+Entry 1 Entry 2 Entry 3 Entry 4
+Entries 5 -128
+Secondary GPT Header
+
+--- page 102 ---
+Protective MBR
+440 Byt UEFI TarafındanKullanılmayan Alan
+440-443 Kullanılmamış ve Sıfıra ayarlanmış alan
+443-445 Kullanılmamış ve Sıfıra ayarlanmış alan
+446-509
+Kullanılmayan ancak efı bölümüne işaret
+eden yanlızca bir bölüm kaydı olan MBR
+bölüm kaydına ayarlanmıştır
+510-511 MBR bölüm imzası
+LBA 0
+
+--- page 103 ---
+Protective MBR
+00 UEFI TarafındanGöz ardı edilen bir değerdir
+1-3 Başlangıç LBA alanına karşılık gelir 00 02 00 olarak
+ayarlanır.
+4 EE EFI bölüm türünü belirtir.
+5-7
+Diskteki son mantıksal bölümün CHS adresini temsil eder,
+bu mümkün değilse FF FF FF olarak temsil edilir.
+8-11 00 00 00 01 olarak belirtililir GPT bölüm başlığının yerini
+belirtir.
+12-15 Diskin Boyutu bu alanda gösterilmeyecek kadar büyükse FF
+FF FF FF olarak ayarlanır.
+
+--- page 104 ---
+LBA 1
+0-7 8 Byte " EFI BÖLÜM İmzası " , 45 46 49 20 50 41 52 54
+8-11 4 Byte Revizyon (GPT sürüm 1.0 için (en az UEFI sürüm 2.3.1 aracılığıyla), değer 00 00
+01 00'dir)
+12-15 4 Byte Little endian olarak başlık boyutu (bayt cinsinden, genellikle 5C 00 00 00 = 92 
+bayt anlamına gelir)
+16-19 4 Byte Başlığın CRC32'si (0'dan başlık boyutuna), bu alan hesaplama sırasında sıfırlanır
+20-23 4 Byte Rezerve ; sıfır olmalı
+24-31 8 Byte Mevcut LBA (bu başlık kopyasının yeri)
+32-39 8 Byte Yedek LBA (diğer başlık kopyasının yeri)
+40-47 8 Byte Bölümler için ilk kullanılabilir LBA (birincil bölüm tablosu son LBA + 1)
+48-55 8 Byte Kullanılabilir son LBA (ilk ikincil bölüm tablosu LBA - 1)
+56-71 16 Byte Disk GUID'si (UNIX'lerde UUID olarak da anılır)
+72-79 8 Byte LBA'dan başlayan bölüm girişleri (birincil kopyada her zaman 2)
+80-83 4 Byte Bölüm girişlerinin sayısı (128 adet girdi)
+84-87 4 Byte Bölüm girişlerinin sayısı Bölüm girişinin boyutu (genellikle 128)
+88-91 4 Byte bölüm dizisinin CRC 32
+92 * Rezerve ; bloğun geri kalanı için sıfır olmalıdır (512 baytlık bir LBA için 420 bayt)
+
+--- page 105 ---
+LBA 1
+❖ Bölüm TabloBaşlıkları kullanıcının disk üzerinde faydalanabileceği blokları tanımlar.
+❖ Bu tabloyu oluşturan bölümlendirme girdilerinin sayısı ve boyutlarını da tanımlar.
+❖ 64 bit Windows Server 2003'lerde 128 adet bölümlendirme girdisi vardır ve hepsi 128 bayt büyüklüğündedir. Bu yüzden
+128 tane bölümlendirme yapılabilir.
+❖ Başlık diskin GUID'ini içerir.
+❖ Başlık kendi boyutunu, yerini (her zaman LBA1) ve ikincil GPT başlık ve tablosunun yerini kaydeder.
+❖ Ayrıca kendisi ve tablo için EFI tarafından boot sarında onaylanacak CRC32 sağlama toplamını (checksum) da içerir.
+EFI bu kontrolü yaptığı için hex düzenleyicilerle GPT'nin içeriği değiştirilmemeli. Böyle değişimler sağlama
+toplamının (checksum) hata vermesine neden olacaktır. Böyle bir durumda EFI ikincil GPT'nin üzerine yazacak, o da
+aynı hatayı verirse diske erişemeyecektir.
+
+--- page 106 ---
+LBA 2
+Partition
+TypeGUID
+0-15 16 Byte Bu Bölümün amacını ve türünü tanımlayan benzersiz kimlik
+değeridir. Sıfır değeri, bu bölüm girişinin kullanılmadığını
+tanımlar.
+Unique 
+Partition  
+GUID
+16-31 16 Byte Her bölüm girişi için benzersiz bir GUID değeridir. Şimdiye
+kadar oluşturulan her bölümün benzersiz bir GUID'si
+olacaktır. Bu GUID, GPT Bölüm Girişi oluşturulduğunda
+atanmalıdır. GPT Bölümü Girişi, GPT Başlığındaki
+NumberOfPartition Girişleri daha geniş bir adres aralığı
+içerecek şekilde artırıldığında oluşturulur.
+Starting
+LBA
+32-39 8 Byte Bu giriş tarafından tanımlanan bölümün LBA'sının başlangıcı
+Ending  
+LBA
+40-47 8 Byte Bu girdi tarafından tanımlanan bölümün LBA'sının sonu .
+Attirubutes 48-55 8 Byte Öznitelik bitleri, UEFI tarafından ayrılmış tüm bitler
+Partition
+Name
+56-
+127
+72 Byte Bölümün okunabilir bir adını içeren boş sonlandırılmış dize,
+Reserve 128 Bölüm Girişi 
+Boyutu - 128
+VarsaGPT PartitionEntry'nin geri kalanı UEFI tarafından 
+ayrılmıştır ve sıfır olmalıdır.
+
+--- page 107 ---
+GPT GENEL YAPISI
+ProtectiveMBR
+GPT Header
+Partition Table Partition Area Backup Area
+
+--- page 108 ---
+MBR VE GPT FARKLARI
+❖MBR yalnızca 2 TB HDD alanını işleyebilir + yalnızca dört adede kadar birincil bölüm
+oluşturur. GPT diskleri 9.4 Zeta Bayta kadar boyutu destekler, + genişletilmiş bir bölüm
+oluşturmaya gerek kalmadan bir GPT sürücüsünde 128 bölüm oluşturabilirsiniz.
+❖GPT'nin bir kopyayı ikincil yedek olarak tutmasından dolayı GPT daha güvenlidir.
+❖UEFI nedeniyle, GPT önyükleme işlemleri MBR'den çok daha hızlıdır.
+
+--- page 109 ---
+DOSYA SİSTEMLERİ
+--- page 110 ---
+DOSYA SİSTEM YAPISI
+Plater
+Pysical Device
+Volume 1 Volume n……………………….
+File System
+File
+ Application
+
+--- page 111 ---
+DOSYA SİSTEM YAPILARI
+❖Bir dosya sistemi olmadan, depolama aygıtı içerisindeki arka arkaya  
+depolanmış büyük bir veri yığınını işletim sistemi ayırt edemezdi.
+❖Dosya sistemi terimi, adını, belgeleri dosya olarak tuttuğumuz ve  
+dizinlere koyduğumuz eski kağıt tabanlı veri yönetim sistemlerinden alır.
+
+--- page 112 ---
+DOSYA SİSTEM YAPILARI
+❖ Her yere dağılmış kağıt yığınları  
+düşünün. Dosya sistemi olmayan
+olan bir oda  
+bir depolama
+aygıtı da aynı durumda olacaktır ve bu işe yaramaz
+bir elektronik aygıt olacaktır.
+
+--- page 113 ---
+DOSYA SİSTEM YAPILARI
+❖Yine de bir dosya sistemi sadece bir defter
+tutmaya benzemez.
+❖Alan yönetimi, meta verileri, veri şifreleme,
+dosya erişim kontrolü ve veri bütünlüğü de
+dosya sisteminin sorumluluklarıdır.
+
+--- page 114 ---
+DOSYA SİSTEMİ NEDİR?
+❖Sabit Disk yapısı üzerinde dosyaların saklanma biçimini ifade  
+eden yapılardır.
+❖Her işletim sistemi, dosyaları yönetmek için belirli bir dosya  
+sistemi kullanır.
+
+--- page 115 ---
+DOSYA SİSTEMİNİNGÖREVLERİ NELERDİR ?
+❖Sabit Disk Üzerinde ;
+▪ Dosya İsimlerini,
+▪ Dosyaların Konum Bilgilerini,
+▪ Meta-Data Bilgilerini,
+▪ Attribute Bilgilerini,
+▪ Fragmantasyon Bilgilerini saklamak ve bu bilgiler üzerinde yapılan 
+değişiklikleri kayıt etmektir.
+
+--- page 116 ---
+Dosya Sistemi Veri Kategorileri
+❖ Blank Media
+❖ Low-Level Format
+❖ Partition
+Kullanılmayan  
+Sektörler 
+(512B)
+Sektör
+MBR VBR VBR
+VBC DPB VBC DPB
+MBC MPT
+
+--- page 117 ---
+Dosya Sistem Kategorisi
+MBR Rezerve Alan 1. Partition 2. Partition 3. Partition Ayrılmamış  
+Alan
+Windows XP ve öncesi = 63 
+Windows Vista ve Sonrası = 2048  
+Linux Sitemlerde = 63
+Not: Extended Partitionlar arasında 63 sektörlük bir boş alan bulunur.
+
+--- page 118 ---
+Dosya Sistem Kategorisi
+❖ Partition
+MBR = master boot record  
+MBC = master boot code  
+MPT = master partition table
+VBR = volume boot record  
+VBC = volume boot code  
+DPB = disk parameter block
+
+--- page 119 ---
+VBR (NTFS Dosya Sistemi)
+Atlama talimatı (Jump İnstruction) jmp 0x00000054
+OEM kimliği NTFS
+Sektör başına bayt 0x200
+Küme başına sektörler 0x08
+Ayrılmış sektörler 0x00
+Medya tanımlayıcı 0xF8
+Parça başına sektörler 0x3F
+Kafa sayısı 0xFF
+Gizli sektörler 0xAF800
+Toplam sektörler 0xF97FF
+MFT ilk küme 0xA655
+MFT ayna ilk küme 0x02
+MFT kaydı başına küme sayısı 0xF6
+Dizin bloğu başına kümeler 0x01
+Volume Seri No 0x8AF3570818589858
+Sağlama toplamı 0x00000000
+HATA MESAJI
+A disk read error occurred. 
+BOOTMGR is compressed. 
+Press Ctrl+Alt+Del to restart
+İMZA DEĞERİ 0xAA55
+diskparameterblock
+
+--- page 120 ---
+DOSYA SİSTEMİ VERİ KATEGORİLERİ
+File System Category
+Dosya 1.doc
+Dosya 2.doc
+▪ Oluşturma,Değişti 
+rme ,Erişim Tarihi,
+▪ Sahiplik Bilgisi,
+▪ Dosya boyutu,
+Küme 1
+Küme 2
+▪ Oluşturma,Değişti 
+rme ,Erişim Tarihi,
+▪ Sahiplik Bilgisi,
+▪ Dosya boyutu,
+Dosya Adı Kategorisi Meta-Data Kategorisi İçerik Kategorisi
+
+--- page 121 ---
+İçerik Kategorisi
+MBR VBR VBR
+❖ 4 Bit lik adresleme yöntemi kullanalım
+❖ 24=16 adet adresleme yapılabilir.
+❖ 100÷16 = 6 kalan 4
+❖ 6x16=96
+❖ 4 slak alan (volüme slack)
+100 1000
+❖ 8 Bit lik adresleme yöntemi kullanalım
+❖ 28=256 adet adresleme yapılabilir.
+❖ 1000÷256 = 3 kalan 232
+❖ 3x256=768
+❖ 4x250=1000 , 250 adresleme yapılabilir
+
+--- page 122 ---
+İçerik Kategorisi
+Cluster 1
+(5 Sektör)
+100 MB
+Cluster 2
+(5 Sektör)
+100 MB
+Cluster 3
+(5 Sektör)
+100 MB
+Cluster 4
+(5 Sektör)
+100 MB
+Cluster 5
+(5 Sektör)
+100 MB
+Cluster 6
+(5 Sektör)
+100 MB
+VBR
+2. Durum = Örnek.txt (90 MB)
+20 MB 20 MB 20 MB20 MB
+1. Durum = Örnek.txt (120 MB)
+20 MB 20 MB 20 MB20 MB
+20 MB 20 MB 20 MB20 MB 10
+MB
+10
+MB
+20 MB 20 MB File Slack
+Ram Slack
+
+--- page 123 ---
+Metadata Kategorisi
+Bir nesnenin veya bir bilgi parçasın kendisini ifade etmez. Ancak bir nesnenin veya
+bilgi parçasının içeriğini tanımlar.
+Bunu farklı şekillerde ifade edelim;
+➢ Metadata = V erilerleilgili veriler
+➢ Metadata = Bir bilgi nesnesini tanımlamak ve temsil etmek için kullanılan bir dizi veri
+➢ Metadata = Depolanan verileri tanımlayan belgeler
+Örneğin, bir e-postanın içinde içerik veya "bilgi" vardır, ancak meta verileri gönderildiği
+zaman, gönderen, konu vb. olabilir.
+
+--- page 124 ---
+MetaData Türleri
+Üç ana meta veri türü vardır:
+•Tanımlayıcı meta veriler: Bir dosyanın içeriğiyle ilgilidir ve  
+genellikle yazar, başlık, özet ve anahtar sözcükleri içerir.
+•Yapısal meta veriler: Farklı veriler arasındaki ilişki ve bunların  
+nasıl bir araya getirildikleri ile ilgilidir.
+•İdari meta veriler: Sahiplik, hak yönetimi ve hangi programın  
+kullanıldığı gibi diğer teknik bilgilerle ilgilidir.
+
+--- page 125 ---
+Dosya Adı Kategorisi
+Dosya adı kategorisi, her dosyanın ve dizinin adını depolayan  
+veri yapılarını içerir.
+
+--- page 126 ---
+FİLE ALLOCATION TABLE (FAT) DOSYA SİSTEMİ
+FAT Dosya Sistemi: orijinal olarak küçük diskler ve basit klasör yapıları için tasarlanmış  
+basit bir dosya sistemidir.
+➢ Az sayıda veri yapısı türüne sahiptir .
+➢ Genellikle USB, Hafıza Kartı, Dijital Kayıt Cihazlarında dosya formatı olarak sıkça tercih edilir .
+➢ Linux ve Windows işletim sistemleri tarafındandesteklenir .
+
+--- page 127 ---
+FİLE ALLOCATIONTABLE (FAT) DOSYA SİSTEMİ
+F A TD o s y aS i s t e m iVerileriorganizeetmekiçiniki tür kayıt tutar.
+1. F i l eA l l o c a t i o nT a b l e( F A T ) :HangiCluster’larınboşyadadoluolduğu bilgisiile verifragmantasyonuile ilgili
+kayıtlarıtutar.
+2. D i r e c t o r yE n t r y(DIR):Verifragmantasyonudışındakibilgilerburadatutulur.
+N o t :F A Td o s y as i s t e m ii ç e r i s i n d e k ih e rbird i zi nved o s y ac l u s t e ri ç e r i s i n d et u t u l m a k t a d ı r .
+
+--- page 128 ---
+CLUSTER VE BLOCK
+❖ Cluster ve Block’lar adreslemede kullanılan temel veri yapılarıdır ve iki’nin katları şeklinde) sektörlerin 
+bir araya gelmesi ile oluşur .
+❖ Windows’ta cluster kullanılırken Linux işletim sistemlerinde Block kullanılır .
+❖ Bir dosya yada dizin birden fazla block yada cluster’a yazılabilir .
+
+--- page 129 ---
+FAT DOSYA SİSTEMİ YAPISI
+MBR Partition 1 Partition 2
+Volume Slack  
+Alan
+VBR
+ Rezerve FAT1 FA T2
+ Root
+
+--- page 130 ---
+FAT VBR YAPISI
+Bayt Amaç
+0-2 Önyüklemekoduna atlamakiçinderleme kodu talimatları(önyüklenebilirbölümde 
+zorunludur)
+3-10 ASCII'deOEM adı
+11-12 Sektör başına bayt (512, 1024, 2048 veya 4096)
+13 Küme başına sektör sayısı (2'nin katı olmalı ve küme boyutu <=32 KB olmalıdır)
+14-15 Sektörlerde ayrılmış alanın büyüklüğü
+16 FAT sayısı (genellikle 2)
+17-18 Kök dizindeki maksimum dosya sayısı (FAT12/16;FAT32için 0)
+19-20 Dosya sistemindekisektör sayısı; 2 B yeterince büyük değilse, 0'a ayarlayın ve 
+aşağıdaki 32-35 baytlarda 4 B değerini kullanın
+21 Ortam türü (0xf0=çıkarılabilirdisk, 0xf8=sabit disk)
+22-23 FAT12/16için sektörler halinde her bir FAT'ninboyutu; FAT32için 0
+24-25 Depolama aygıtındaki parça başına sektörler
+26-27 Depolama aygıtındaki kafa sayısı
+28-31 Başlangıç bölümünden önceki sektör sayısı
+32-35 Dosya sistemindekisektör sayısı; yukarıdaki 2B alanı (bayt 19-20) sıfır değilse bu 
+alan 0 olacaktır.
+
+--- page 131 ---
+FAT YAPISI
+➢ Dosya Fragmantasyonunu sağlar.
+➢ F A T ,bir kümenin bir dosyaya tahsis edilip edilmediğini ve tahsis ettiği bir 
+sonraki kümenin nasıl tanımlanacağını göstererek çalışır.
+➢ Bir F A T32girişi 4 bayt uzunluğundadır.
+2 3 4 FF FF FF 0F 5 FF FF FF 0F 7
+
+--- page 132 ---
+ROOT YAPISI
+➢ Dizin verileri 32 baytlık kayıtlar halinde düzenlenir.
+➢ Herhangi bir sektör tam olarak 16 kayıt tutar ve hiçbir dizin kaydı sektör sınırını asla
+geçemez.
+➢ Dört tür 32 baytlık dizin kaydı vardır:
+1.Kısa dosya adıyla normal kayıt - Nitelik normaldir
+2.Uzun dosya adı metni - Attrib, dört tür bitin tümüne sahiptir
+3.Kullanılmayan - İlk bayt 0xE5
+4.Dizinin sonu - İlk bayt sıfırdır
+
+--- page 133 ---
+ROOT YAPISI
+Ofset (Onaltılı) Boyut (Bayt) Tanım
+0x00 8 Dosya adı (ilk bayt durum baytıdır)
+0x08 3 Dosya uzantısı
+0x0B 1
+Dosya ÖznitelikBaytı (11 Nitelik - bir bitvektör. Bit 0: salt
+okunur. Bit 1: gizli.Bit 2: sistem dosyası. Bit 3: birim etiketi.Bit 
+4: alt dizin Bit 5: arşiv. Bit 6-7: kullanılmamış.
+0x0C 1 Küçük Harf Bayrakları
+0x0D 1 MilisaniyeOlarak Dosya Oluşturma Süresi
+0x0E 2 Dosya Oluşturma Süresi (0-4 bit saniye, 5-10 bit dakika, 11-15 bit
+saat)
+0x10 2 Dosya Oluşturma Tarihi (0-4 bit gün, 5-8 bit ay, 9-15 bit yıl )
+0x12 2 Son Erişim Tarihi (0-4 bit gün, 5-8 bit ay, 9-15 bit yıl )
+0x14 2 High Word Başlangıç Kümesi (sıfır ise yalnızca Low Word 
+kullanılır)
+0x16 2 Dosyaya Son Yazma Zamanı (5/6/5 bit, saat/dakika/çift saniye
+için)
+0x18 2 Dosyaya Son YazmaTarihi Tarih (7/4/5 bit, 1980'den beri/ay/gün 
+için)
+0x1A 2 Düşük KelimeBaşlangıç Kümesi (Başlangıç kümesi (boş bir
+dosya için 0)
+0x1C 4 Dosya boyutu (Bayt cinsinden dosya boyutu)
+➢ 32 bayt 
+uzunluğundaki kayıt 
+tablosu
+
+--- page 134 ---
+ÖRNEK UYGULAMA
+Ofset (Onaltılı) Boyut (Bayt) Tanım Değer Decimal
+0x0B 2 Sektör Başına Bayt 00 02 512
+0x0D 1 Küme Başına Sektörler 10 16
+➢ VBR okunarak sektör ve küme 
+boyutu hesaplanması
+
+--- page 135 ---
+ROOT YAPISI
+➢ Attiributes 11.byte
+Attribute 20 = 00100000
+0 0 0 0 0 0 0 1 Read only Sadece oku
+0 0 0 0 0 0 1 0 Hidden File Gizlenmiş. Normal dizin görünümlerinden dosyaları veya 
+dizinleri gizler.
+0 0 0 0 0 1 0 0 System File Dosyanın sisteme ait olduğunu ve fiziksel olarak taşınmaması
+gerektiğini belirtir
+0 0 0 0 1 0 0 0 Volume ID Volume Id'si
+0 0 0 0 1 1 1 1 Long File 
+Name Uzun Dosya Adı
+0 0 0 1 0 0 0 0 Directory Bir Dizinin Kapsayıcı olduğunu gösterir
+0 0 1 0 0 0 0 0 Archive
+Yedeklemeye yardımcı uygulamalar  tarafından kullanılır. FAT 
+sürücüsü tarafından ayarlanan yeni dosya oluşturma, değiştirme 
+veya yenidenadlandırma işlemi yapılır.Yedeklemeprogramları, 
+yedeklenecek dosyayı kolayca bulabilir ve yedekleme işleminden 
+sonra özniteliği temizler.
+
+--- page 136 ---
+ROOT YAPISI
+➢ Dosya Oluşturma 
+Tarihi: 18-19.byte
+Oluşturma Tarihi 5E 55(55 5E) = 0101010101011110
+Byte 19 Byte 18
+55 5E
+0 1 0 1 0 1 0 1 0 1 0 1 1 1 1 0
+0 1 0 1 0 1 0 1 0 1 0 1 1 1 1 0
+42 + 1980 =2022 10 30
+Yıl + 1980 Ay Gün
+
+--- page 137 ---
+ÖRNEK UYGULAMA
+➢ Silinmiş Dosya  
+Görseli 
+TEST2.GIF
+
+--- page 138 ---
+ÖRNEK UYGULAMA
+Ofset (Onaltılı) Boyut (Bayt) Tanım
+0x00 8 Dosya adı (ilk bayt durum baytıdır)
+0x08 3 Dosya uzantısı
+0x0B 1 Dosya Öznitelik Baytı
+0x0C 1 Küçük Harf Bayrakları
+0x0D 1 MilisaniyeOlarak Dosya Oluşturma Süresi
+0x0E 2 Dosya Oluşturma Süresi
+0x10 2 Dosya Oluşturma Tarihi
+0x12 2 Son Erişim Tarihi
+0x14 2 High Word Başlangıç Kümesi (sıfır ise yalnızca Low  
+Word kullanılır)
+0x16 2 Dosyaya SonYazma Zamanı
+0x18 2 Dosyaya SonYazma Tarihi
+0x1A 2 Düşük KelimeBaşlangıç Kümesi
+0x1C 4 Dosya boyutu
+
+--- page 139 ---
+KONUM
+Ofset (Onaltılı) Boyut (Bayt) Tanım
+0x00 8 Dosya adı (ilk bayt durum baytıdır)
+0x08 3 Dosya uzantısı
+0x0B 1 Dosya Öznitelik Baytı
+0x0C 1 Küçük Harf Bayrakları
+0x0D 1 MilisaniyeOlarak Dosya Oluşturma Süresi
+0x0E 2 Dosya Oluşturma Süresi
+0x10 2 Dosya Oluşturma Tarihi
+0x12 2 Son Erişim Tarihi
+0x14 2 High Word Başlangıç Kümesi (sıfır ise yalnızca Low  
+Word kullanılır)
+0x16 2 Dosyaya SonYazma Zamanı
+0x18 2 Dosyaya SonYazma Tarihi
+0x1A 2 Low Word (Düşük Kelime) Başlangıç Kümesi
+0x1C 4 Dosya boyutu
+Konum
+High Word Başlangıç ​​Kümesi 0x0000'dır, yani
+başlangıç ​​kümesini bulmak için sadece 0x1A
+ofsetindeki düşük kelime değerine ihtiyacımız
+vardır. 0x1A uzaklığındaki değer 0x0B00'dır ve bu
+küçük endian olarak okunan 0x000B'tür ve
+ondalık sayıya dönüştürüldüğünde bize dosyanın
+küme 11'de başladığını söyler.
+
+--- page 140 ---
+DOSYA BOYUTU
+Dosya boyutu
+➢ 0x1C = 7F 87 05 00 ofsetindeki değer . Bu, 0x0005877F olan ve Windows'ta programcı hesap makinesi kullanılarak 
+(onaltılık aralık işlevine sahip olan) küçük-endian olarak okunur ve mantıksal boyut olan 362367 bayttır.
+➢ Küme Boyutu= Sektör boyutu x Kume Başına Düşen Sektör
+= 512 x 16 =8192
+➢ Dosyanın boyutunu küme boyutuna bölünce 362367/8192 = 44,23 olacaktır.
+➢ Bu sayıyı da 45 kümeye yuvarladığımız küme sayısını belirlemiş oluyoruz.
+
+--- page 141 ---
+FSSTAT ARACI
+
+--- page 142 ---
+NEW TECHONOLOGI FİLE SYSTEM (NTFS)
+➢ FA Tdosyasisteminde bulunmayan bir performans, güvenilirlik ve uyumluluk kombinasyonu sağlar .
+➢ Kritik verilerin bütünlüğü için önemli olan veri erişim kontrolünüve sahiplik ayrıcalıklarını da destekler .
+➢ Temelolarak, birimdeki her şey bir dosyadır ve bir dosyadaki her şey,veri özniteliğinden güvenlik özniteliğine, 
+dosya adı özniteliğine kadar bir özniteliktir .
+➢ Ayrılan bir NTFS birimindeki her sektör bir dosyayaaittir .Dosya sistemi meta verileri (dosya sisteminin kendisini 
+tanımlayan bilgiler) bile bir dosyanın parçasıdır .
+
+--- page 143 ---
+NTFS DOSYA SİSTEMİ YAPISI
+MBR Partition 1 Partition 2
+Volume Slack  
+Alan
+VBR
+ MFT
+* Bir dosya tarafından 
+kullanılmayan, ancak disk 
+üzerinde ayrılmış olan alanı 
+ifade eder.
+
+--- page 144 ---
+NTFS VBR YAPISI
+0-2 Bayt Jump komutu (Montaj kodu) önyükleme koduna atlamak için 
+(önyüklenebilir bölümde zorunludur.)
+3-10 Bayt OEM adı (OEM Kimliği)
+11-12 Bayt Sektör başına Bayt
+13 Bayt Küme başına sektör
+14-15 Bayt Rezerve
+16-20 Bayt Kullanılmayan
+21 Bayt Ortam Tanımlayıcısı
+22-23 Bayt Kullanılmayan
+24-31 Bayt Kullanılmayan
+32-35 Bayt Kullanılmayan
+36-39 Bayt Kullanılmayan
+40-47 Bayt Dosya Sistemindeki Toplam Sectör
+48-55 Bayt $MFT'nin başlangıç ​​küme adresi
+56-63 Bayt $MFT Mirror $DATAözniteliğininbaşlangıç ​​küme adresi
+64 Bayt MFT girişinin boyutu
+65-67 Bayt Kullanılmayan
+68 Bayt İndeks kaydının boyutu (dizin girişi)
+69-71 Bayt Kullanılmayan
+72-79 Bayt Seri Numarası
+80-83 Bayt Kullanılmayan
+84-509 Bayt Ön Yükleme Kodu
+510-511 Bayt Bitiş İmzası
+
+--- page 145 ---
+MFT
+➢ NTFS dosya sisteminin Adres defteridir .
+➢ Sabit diskte bulunan bütün dosyaların ve dizinlerin, disk üzerinde hangi konumda
+bulunduğunu ve ne kadarlık bir yer kapladığını kaydeder .
+➢ MFT her dosya ve dizin için kayıt tuttuğu gibi kendisi içinde bir kayıt tutar ve bu kayıt
+$MFT’dir. Bu giriş MFT ‘nin disk üzerindeki konumunu tutar, MFT’nin tamamına
+ulaşabilmek için yine MFT kaydınınokunması gerekir .
+➢ MFT dosyasının başlangıç yeri Ön Yüklemesektöründe kayıtlıdır .
+(Master File Table)
+
+--- page 146 ---
+MFT YAPISI
+MFT
+Header
+Unused  
+Space
+Attribute Content Attribute Content Attribute Content
+•Her bir $MFT girişi (kayıt) 1.024 (0x400) bayt uzunluğundadır
+•Küçük dosyalar bir MFT kayıtlarında tamamen bulunabilir
+AttributeHeaders
+
+--- page 147 ---
+MFT KAYIT DEĞERLERİ 1024 BAYT
+FİLE RECORD HEADER - 56 BYTE
+$STANDARD_INFORMATION ATTRIBUTE – 96 BYTE
+$FILE_NAME ATTRIBUTE
+$DATA ATTRIBUTE
+0000,0001,0002,0003Little Endian0000,0100, 0200, 0300
+0000
+0001
+0002
+0003
+Hex to Binary
+0000 Silinmiş Dosya
+0001 Varolan Dosya
+0010 Silinmiş Klasör
+0011 VarOlan Klasör
+
+--- page 148 ---
+Tarih Bilgileri
+➢ Created Time (Oluşturma Tarihi)
+➢ Modified Time (DeğiştirmeTarihi)
+➢ Entry Modify Time (DeğiştirmeTarihi)
+➢ LastAccess Time (Son Erişim Tarihi)
+Dikkat !!!
+➢ Entry Modify Time (Değiştirme Tarihi) MFT ile ilgili bir 
+durumdur
+➢ LastAccess Time (Son Erişim Tarihi)Eğer bu özellik kayıt 
+defterinde açık değilse bu tarih değişmeyecektir. (Default 
+Kapalı)
+Açmak İçin: Kayıt Defteri- Local_Machine-Sytstem-Controlset001-
+Control-Filesystem-NtfsDiasebledLastAccessUbdate - Enabled
+
+--- page 149 ---
+MFT ATTRIBUTE
+FİLE RECORD HEADER - 56 BYTE
+$STANDARD_INFORMATION ATTRIBUTE – 96 BYTE
+$FILE_NAME ATTRIBUTE
+$DATA ATTRIBUTE
+Type OS Name
+0x10 $STANDARD_INFORMATION
+0x20 $ATTRIBUTE_LIST
+0x30 $FILE_NAME
+0x40 NT $VOLUME_VERSION
+0x40 2K $OBJECT_ID
+0x50 $SECURITY_DESCRIPTOR
+0x60 $VOLUME_NAME
+0x70 $VOLUME_INFORMATION
+0x80 $DATA
+0x90 $INDEX_ROOT
+0xA0 $INDEX_ALLOCATION
+0xB0 $BITMAP
+0xC0 NT $SYMBOLIC_LINK
+0xC0 2K $REPARSE_POINT
+0xD0 $EA_INFORMATION
+0xE0 $EA
+0xF0 NT $PROPERTY_SET
+0x100 2K $LOGGED_UTILITY_STREAM
+
+--- page 150 ---
+MFT ATTRIBUTE OKUMAK
+MFTRCRD :  https://github.com/jschicht/MftRcrd:
+
+--- page 151 ---
+MFT ATTRIBUTE OKUMAK
+
+--- page 152 ---
+MFT ATTRIBUTE OKUMAK
+Boyut < 700-800 byte
+
+--- page 153 ---
+MFT ATTRIBUTE OKUMAK
+boot.ini için bir $MFT kod çözümünü boşaltma örneği:
+MFTRCRD C:\boot.ini -d indxdump=off 1024 -s
+Bir $MFT kod çözme + $MFT kaydının ve $MFT'nin kendisinin C: sürücüsünden bireysel özniteliklerinin 
+dökümü için örnek:
+MFTRCRD C:0 -a indxdump=off 1024 -s
+D: sürücüsünden $LogFile için bir $MFT kaydı çözme örneği :
+MFTRCRD D:2 -d indxdump=off 1024 -s
+C: üzerindeki kök dizini için çözümlenmiş INDX kayıtlarının hexdump dökümü için örnek, C:\ adlı 'klasöre' 
+eşdeğer
+MFTRCRD C:5 -d indxdump=on 1024 -s
+
+--- page 154 ---
+MFT ATTRIBUTE OKUMAK
+➢ 0x100000 birim ofsetinden ve 4096 baytlık bir kayıt boyutuna sahip bir $MFT kaydıkod
+çözme işleminin dökümü için örnek:
+MFTRCRD C?0x100000 -d indxdump=off 4096 -s
+➢ 4096 baytlık bir kayıt boyutuyla 0x100000 birim ofsetinden bir $MFT kaydı kod çözme 
+örneği boşaltma ve ikili kaydı geçerli dizine kaydetme örneği:
+MFTRCRD C?0x100000 -d indxdump=off 4096 -w
+
+--- page 155 ---
+MFT KAYITLARI
+➢ MFT içerisinde bir dizi kayıt tutulur .
+➢ Bu Kayıtların ilki MFT’nin kendisidir .
+➢ MFT içerisinde ilk 16 Kayıt meta – data dosyaları için rezerve edilmiştir .
+➢ Metadata dosyaları $ ile başlar ve ilk harfi her zaman büyüktür .
+➢ Dosyalar diskin kök dizininde saklanır .
+
+--- page 156 ---
+MFT KAYITLARI
+File Name MFT Record Dosyanın Amacı
+$Mft 0 Bir NTFS birimindeki her dosya ve klasör için bir temel dosya kaydı içerir. Bir dosya veya klasör için ayırma bilgisi
+tek bir kayda sığmayacak kadar büyükse, diğer dosya kayıtları da tahsis edilir. (Tüm Dosya İndexlerini saklar)
+$MftMirr 1 MFT'nin ilk dört kaydının kopya görüntüsü. Bu dosya, tek sektörlü bir arıza durumunda MFT'ye erişimi garanti
+eder. (İlk 4 kaydın yedeği)
+$LogFile 2 NTFS kurtarılabilirliği için kullanılan işlem adımlarının bir listesini içerir. Günlük dosyası boyutu, birim boyutuna
+bağlıdır ve 4 MB'a kadar büyük olabilir. Windows NT/2000 tarafından bir sistem arızasından sonra tutarlılığı 
+NTFS'ye geri yüklemek için kullanılır. (İşlem log kayıtlarını tutar)
+$Volume 3 Birim etiketi ve birim sürümü gibi birim hakkında bilgiler içerir.
+$AttrDef 4 Öznitelik adları, numaraları ve açıklamalarından oluşan bir tablo.
+$(root) 5 Kök klasör.
+$Bitmap 6 Hangi kümelerin kullanımda olduğunu ve boş olduğunu gösteren bir haritadır.
+$Boot 7 Birimi monte etmek için kullanılan BPB'yi ve birim önyüklenebilirse kullanılan ek önyükleme yükleyici kodunu 
+içerir. (Boot Kaydını saklar)
+
+--- page 157 ---
+MFT KAYITLARI
+$BadClus 8 Birim için bozuk kümeler içeriyor.
+$Secure 9 Bir birim içindeki tüm dosyalar için benzersiz güvenlik tanımlayıcıları içerir.
+$Upcase 10 Küçük harfli karakterleri eşleşen Unicode büyük harfli karakterlere dönüştürür.
+$Extend 11 İlave Meta Data Bilgilerini İçeren dosyadır.
+12-15 Gelecekte kullanılmak üzere rezerve edilmiştir.
+$Quota 24 Birim alanında kullanıcı tarafından atanan kotasınırlarını içerir.
+$ObjId 25 Dosya nesne kimliklerini içerir.(Dosyalara verilen tek ID)
+$Reparse 26 Bu dosya, yeniden ayrıştırma noktası verilerini içeren birimdeki dosyalar ve klasörler hakkında 
+bilgi içerir. (Yeniden Çözümleme Noktası Bilgisi)

@@ -1,22 +1,31 @@
 // IoT Vize Sınav Uygulaması — app.js
 // Yayın: index.html içindeki script src="…?v=" ile aynı sürümü kullan (önbellek kırma).
 
-const APP_VERSION = "1.6.1";
+const APP_VERSION = "1.7.0";
 
 const STORAGE_KEYS = {
-  wrong: "iot_wrong_questions_v1",
+  wrong: "iot_wrong_questions_v2", // { course -> [ids] } veya düz dizi (eski: q12)
   history: "iot_history_v1",
   theme: "iot_theme_v1",
+  course: "iot_exam_course_v1",
 };
 
 // Durum
 const state = {
+  course: "iot",
   selectedTopics: new Set(), // boşsa tümü
   count: 20,
   type: "all",
   mode: "practice",
   quiz: null,
 };
+
+function currentBank() {
+  const c = state.course && COURSES[state.course] ? state.course : "iot";
+  return COURSES[c];
+}
+function bankQuestions() { return currentBank().questions; }
+function bankTopics() { return currentBank().topics; }
 
 function $(id) { return document.getElementById(id); }
 function el(tag, opts = {}, ...children) {
@@ -47,12 +56,28 @@ function applyTheme(theme) {
   });
 }
 
+function wrongStorageKey() {
+  return `wrong_${state.course || "iot"}_v1`;
+}
 function getWrongIds() {
-  try { return new Set(JSON.parse(localStorage.getItem(STORAGE_KEYS.wrong) || "[]")); }
-  catch { return new Set(); }
+  const course = state.course || "iot";
+  try {
+    const raw = localStorage.getItem(wrongStorageKey());
+    if (raw) return new Set(JSON.parse(raw));
+  } catch (_) {}
+  try {
+    const legacy = localStorage.getItem("iot_wrong_questions_v1");
+    if (legacy && course === "iot") {
+      const s = new Set(JSON.parse(legacy).map((id) => (String(id).startsWith("q") ? `iot:${id.slice(1)}` : id)));
+      saveWrongIds(s);
+      localStorage.removeItem("iot_wrong_questions_v1");
+      return s;
+    }
+  } catch (_) {}
+  return new Set();
 }
 function saveWrongIds(set) {
-  localStorage.setItem(STORAGE_KEYS.wrong, JSON.stringify([...set]));
+  try { localStorage.setItem(wrongStorageKey(), JSON.stringify([...set])); } catch (_) {}
 }
 function addWrongId(qid) {
   const s = getWrongIds(); s.add(qid); saveWrongIds(s);
@@ -61,17 +86,72 @@ function removeWrongId(qid) {
   const s = getWrongIds(); s.delete(qid); saveWrongIds(s);
 }
 
-// Soru id üretimi (deterministic index tabanlı)
-function qid(i) { return `q${i}`; }
+/** "iot:12", "adli:3" veya eski "q12" (IoT) */
+function resolveStoredQuestionId(id) {
+  const s = String(id);
+  if (s.includes(":")) {
+    const parts = s.split(":");
+    const c = parts[0];
+    const idx = parseInt(parts[parts.length - 1], 10);
+    if (COURSES[c] && COURSES[c].questions[idx] !== undefined) {
+      return { q: COURSES[c].questions[idx], idx, course: c };
+    }
+    return null;
+  }
+  if (s.startsWith("q")) {
+    const idx = parseInt(s.slice(1), 10);
+    if (COURSES.iot.questions[idx] !== undefined) {
+      return { q: COURSES.iot.questions[idx], idx, course: "iot" };
+    }
+  }
+  return null;
+}
+
+// Soru id: "iot:12" / "adli:5" — derslere göre ayrışır
+function qid(i) { return `${state.course || "iot"}:${i}`; }
+
+function setCourse(c) {
+  if (!COURSES[c]) return;
+  if (c !== state.course) {
+    state.course = c;
+    state.selectedTopics.clear();
+    try { localStorage.setItem(STORAGE_KEYS.course, c); } catch (_) {}
+  }
+  const group = $("courseChips");
+  if (group) {
+    group.querySelectorAll(".chip").forEach((btn) => {
+      btn.classList.toggle("active", btn.getAttribute("data-course") === c);
+    });
+  }
+  const brand = document.querySelector(".sidebar-brand");
+  if (brand) {
+    brand.textContent = c === "adli" ? "BTÜ · Adli Bilişim" : "BTÜ · Nesnelerin İnterneti";
+  }
+  const sub = $("homeCourseDesc");
+  if (sub) {
+    sub.textContent = c === "adli"
+      ? "SUNU 1–7 slaytlarından üretilmiş yalnızca test sorusu havuzu. IoT sorusu karışmaz."
+      : "Altı bölümlük IoT dersi; klasik açık uçlu ve test soruları. Adli bilişim başka menüde.";
+  }
+  const foot = document.querySelector(".footer");
+  if (foot) {
+    foot.textContent = c === "adli"
+      ? "Sorular ders sunumlarına dayanır. Yanlışlar tarayıcıda seçili ders için ayrı saklanır."
+      : "Soru bankası PDF sunumlarına dayanır. Yanlışlar tarayıcıda yerel olarak saklanır.";
+  }
+  renderTopics();
+  updateGlobalStats();
+}
 
 // ===================== ANA EKRAN =====================
 function renderTopics() {
   const grid = $("topicList");
   grid.innerHTML = "";
-  Object.keys(TOPICS).forEach(k => {
+  const T = bankTopics();
+  Object.keys(T).forEach(k => {
     const kn = parseInt(k, 10);
-    const t = TOPICS[kn];
-    const qs = QUESTIONS.filter(q => q.topic === kn);
+    const t = T[kn];
+    const qs = bankQuestions().filter(q => q.topic === kn);
     const byType = {
       mc: qs.filter(q => q.type === "mc").length,
       tf: qs.filter(q => q.type === "tf").length,
@@ -104,7 +184,7 @@ function toggleTopic(k) {
 }
 
 function updateGlobalStats() {
-  const total = QUESTIONS.length;
+  const total = bankQuestions().length;
   const wrongCount = getWrongIds().size;
   const filtered = filterPool().length;
   $("globalStats").innerHTML =
@@ -114,7 +194,7 @@ function updateGlobalStats() {
 }
 
 function filterPool() {
-  let pool = QUESTIONS.map((q, i) => ({ ...q, _id: qid(i), _idx: i }));
+  let pool = bankQuestions().map((q, i) => ({ ...q, _id: qid(i), _idx: i }));
   if (state.selectedTopics.size > 0) {
     pool = pool.filter(q => state.selectedTopics.has(q.topic));
   }
@@ -228,7 +308,7 @@ function renderQuestion() {
   const ml = $("modeLabel");
   if (ml) ml.textContent = state.quiz.mode === "exam" ? "Sınav modu" : "Pratik modu";
 
-  $("topicTag").textContent = TOPICS[q.topic].short;
+  $("topicTag").textContent = (bankTopics()[q.topic] || { short: "—" }).short;
   const typeLabel = { mc: "Çoktan Seçmeli", tf: "Doğru / Yanlış", fill: "Boşluk Doldurma", open: "Klasik" }[q.type];
   $("typeTag").textContent = typeLabel;
   if (q.type === "open" && q.subtype) {
@@ -563,7 +643,7 @@ function renderReview(container, entries) {
           : `<span class="tag" style="background:rgba(255,95,120,0.15);color:#ffc1cc;border-color:rgba(255,95,120,0.4)">Yanlış</span>`));
 
     item.appendChild(el("div", { class: "meta-row", html:
-      `<span class="tag">${TOPICS[q.topic].short}</span>` +
+      `<span class="tag">${(bankTopics()[q.topic] || { short: "—" }).short}</span>` +
       `<span class="tag alt">${({mc:"ÇS", tf:"D/Y", fill:"Boşluk", open:"Klasik"})[q.type]}</span>` +
       statusTag }));
 
@@ -612,11 +692,11 @@ function renderWrongList() {
       `<div class="exp">Bir sınav tamamladığında yanlış yaptığın sorular buraya otomatik eklenir. Aynı soruyu doğru cevapladığında da listeden çıkar.</div>` }));
     return;
   }
-  const entries = [...ids].map(id => {
-    const idx = parseInt(id.slice(1), 10);
-    const q = QUESTIONS[idx];
-    return { q: { ...q, _id: id, _idx: idx }, picked: null, isCorrect: false, skipped: false };
-  });
+  const entries = [...ids].map((id) => {
+    const parsed = resolveStoredQuestionId(id);
+    if (!parsed) return null;
+    return { q: { ...parsed.q, _id: id, _idx: parsed.idx }, picked: null, isCorrect: false, skipped: false };
+  }).filter(Boolean);
   renderReview(list, entries);
 }
 
@@ -628,11 +708,23 @@ window.addEventListener("DOMContentLoaded", () => {
   } catch (_) {
     applyTheme("dark");
   }
+  try {
+    const savedC = localStorage.getItem(STORAGE_KEYS.course);
+    if (savedC === "adli" || savedC === "iot") state.course = savedC;
+  } catch (_) {}
   $("themeLight").addEventListener("click", () => applyTheme("light"));
   $("themeDark").addEventListener("click", () => applyTheme("dark"));
 
-  renderTopics();
-  updateGlobalStats();
+  const courseChips = $("courseChips");
+  if (courseChips) {
+    courseChips.addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      const c = btn.getAttribute("data-course");
+      if (c) setCourse(c);
+    });
+  }
+  setCourse(state.course);
 
   const verEl = $("appVersion");
   if (verEl) verEl.textContent = APP_VERSION;
@@ -642,7 +734,7 @@ window.addEventListener("DOMContentLoaded", () => {
   bindChips("modeChips", (btn) => { state.mode = btn.dataset.mode; });
 
   $("selectAllTopics").addEventListener("click", () => {
-    [1, 2, 3, 4, 5, 6].forEach((n) => state.selectedTopics.add(n));
+    Object.keys(bankTopics()).forEach((k) => state.selectedTopics.add(parseInt(k, 10)));
     renderTopics();
     updateGlobalStats();
   });
@@ -659,7 +751,12 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   $("resetBtn").addEventListener("click", () => {
     if (confirm("Yanlış defteri dahil tüm geçmiş sıfırlansın mı?")) {
-      localStorage.removeItem(STORAGE_KEYS.wrong);
+      try {
+        localStorage.removeItem(STORAGE_KEYS.wrong);
+        localStorage.removeItem("iot_wrong_questions_v1");
+        localStorage.removeItem("wrong_iot_v1");
+        localStorage.removeItem("wrong_adli_v1");
+      } catch (_) {}
       localStorage.removeItem(STORAGE_KEYS.history);
       updateGlobalStats();
     }
@@ -705,10 +802,12 @@ window.addEventListener("DOMContentLoaded", () => {
   $("practiceWrongBtn").addEventListener("click", () => {
     const ids = getWrongIds();
     if (ids.size === 0) { alert("Kayıtlı yanlışın yok."); return; }
-    const pool = [...ids].map(id => {
-      const idx = parseInt(id.slice(1), 10);
-      return { ...QUESTIONS[idx], _id: id, _idx: idx };
-    });
+    const pool = [...ids].map((id) => {
+      const p = resolveStoredQuestionId(id);
+      if (!p || p.course !== state.course) return null;
+      return { ...p.q, _id: id, _idx: p.idx };
+    }).filter(Boolean);
+    if (pool.length === 0) { alert("Bu ders için geçerli kayıt yok."); return; }
     startQuiz(pool);
   });
 

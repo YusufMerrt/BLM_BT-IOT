@@ -1,0 +1,689 @@
+--- page 1 ---
+Adli Bilişimde Görüntü 
+Karşılaştırma ve Ölçme (1)
+--- page 2 ---
+GİRİŞ
+1. Yan yana (Side by side) Karşılaştırma
+2. Eşleşen Özellikler veya Boyutlar
+3. Yüz Tanıma
+4. Biyometrik Ölçütler
+5. Ayak ve Lastik İzleri
+6. Ters Projeksiyon
+7. Fotogrametri
+--- page 3 ---
+1. Yan Yana Karşılaştırma (Side bye Side Comprasion)
+❑Görüntülemenin en yaygın adli kullanımlarından biri, 
+bir nesneyi veya yapıyı diğeriyle karşılaştırmaktır. 
+Örneğin
+• iki merminin, 
+• iki lifin, 
+• iki parmak izinin,
+• hatta iki yüzün 
+yan yana görüntüleri, genellikle benzerlikleri göstermek için 
+sunulur.
+--- page 4 ---
+Şekil 1. Mermiler üzerindeki yüzey (land) işaretlerinin karşılaştırılması: 
+(a, b) eşleşen madde işaretleri ve (c) bir eşleşmeyen yüzeyler
+Yan yana Karşılaştırma Örnek
+❑ İzleyiciyi bunların aynı nesnenin veya aynı tür bir şeyin
+resimleri ya da aynı kişinin olduğu sonucuna varmaya
+davet eder.
+--- page 5 ---
+Şekil 2. Aynı silahtan ateşlenen iki merminin yüzey yükseklik profilleri mekanik bir kalemle
+izlenmiştir. İki iz hizalanabilir ve aynı zamanda eşleşme derecesini ölçebilir. Bu örnekte
+gösterilen örnek için, korelasyon eşleşmesi % 99,6 sonuç vermiştir [1].
+Ölçüm Örneği 1
+--- page 6 ---
+Şekil 3. Yüzey yüksekliğini gösteren renkle bir mermi üzerindeki iz işaretlerini gösteren yükseklik haritası [1]. 
+* Mekanik veya optik olarak ölçülen yükseklik verileri, de bir alana yayılabilir ve bir görüntü olarak sunulabilir.
+Şekil.3, yüksekliği temsil etmek için renk kullanan ve alanların şeklini ve işaretlerin varlığını detaylandıran bir
+örnektir.
+Bunlar, yansıyan ışık görüntüleriyle aynı şekilde ölçüm, korelasyon veya yan yana karşılaştırma için kullanılabilir.
+Ölçüm Örneği 2
+--- page 7 ---
+1. Yan Yana Karşılaştırma Zorluklar
+❑Görüntüler arasındaki potansiyel olarak kafa karıştırıcı 
+alakasız farklılıkları olabilir. 
+Bunlar: 
+▪ Işık
+▪ Renk
+▪ Farklı yönelimler 
+▪ …
+etmenlerden kaynaklanmaktadır..
+--- page 8 ---
+1. Yan Yana Karşılaştırma Zorluklar
+❑Mermiler ve kovanlar dışında tüm araçlar, eşleştirme ve tanımlama için 
+yararlı olabilecek kişiselleştirilmiş işaretler bırakır.
+▪ Aydınlatma, 
+▪ Büyütme,
+▪ Görüş açısı 
+gibi koşullar olabildiğince benzer olduğunda görüntülerin eşleştirilmesi 
+başarılı sonuçlar verir.
+--- page 9 ---
+Örnek :  Aynı Tür Kağıda Ait Liflerin Farklı Görülmesi
+❖Şekil 4'te, aynı kağıdın farklı alanlarından
+gelen selüloz liflerinin SEM (taramalı
+elektron mikroskobu) görüntüleri,
+❖farklı kontrast,
+❖farklı lif oryantasyonu
+❖biraz farklı büyütme
+❖ ayrıca kağıt üzerindeki olası kullanım
+etkileri
+nedeniyle aynı olarak görülmez.
+Şekil 4. Eşleşen selüloz liflerinin farklı
+kontrast ve büyütme oranlarına sahip SEM
+görüntüleri.
+--- page 10 ---
+❑Şekil 5’teki boya pullarının birbiriyle eşleşen iki kesiti arasındaki görsel renk
+farklılıklar:
+❖ Mikroskoptaki akkor lamba üzerindeki voltajın hafifçe değiştirilmesinden
+kaynaklanmıştır.
+❑Bu da renk sıcaklığını ve dolayısıyla görüntünün renklerini değiştirir.
+Şekil 5. Boya pullarının enine kesitlerine uygun, fakat aydınlatma farkı mevcut bir görüntü.
+Örnek : Aynı Boya pullarının Farklı Görülmesi
+--- page 11 ---
+❑Şekil 6, iki yan yana lif görüntüsünün iyi bir eşleşme gösteriyor gibi
+durmaktadır.
+• Fakat resimlerde 2 kattan fazla bir faktörle farklı şekilde büyütülmüş ve lifler
+farklı kaynaklardan geldiği için bu sonuç iyi bir eşleşme olmayacaktır.
+Şekil 6. İki lifin SEM görüntülerinin yanlış karşılaştırılması: (a) kaşmir (keçi) ve (b)
+koyun yünü. Her görüntüye eklenen ölçek çubuğu, 10 μm uzunluğundadır.
+Örnek : Farklı tür liflerin  birbirleri ile yüksek oranda 
+eşleşmesi
+--- page 12 ---
+2. Eşleşen Özellikler veya Boyutlar
+❑ Adli bilişimde boyut, görüntülerdeki öğelerin karşılaştırmada
+kullanılmaktadır. Aşağıdaki şekilde bir örnek verilmiştir.
+Şekil 7. İki mermi kovanı üzerindeki ateşleme iğnesi girintileri 
+boyut olarak eşleşmiyor; merkezde (işaretli) haç şeklinde bir 
+işaret ile çap olarak daha küçük ve pürüzlüdür [1].
+❑ Yandaki şekilde iki .32 kalibrelik mermi
+üzerindeki ateşleme iğnesi girintilerini
+gösterilmektedir.
+❑ Ayırt edici özelliklerin (bir mermideki
+pim girintisindeki çapraz şekilli işaret,
+ancak diğerinde olmayan) ve boyutların
+(girintilerin boyutu) varlığına bağlı
+olarak, bunların aynı silahtan
+ateşlenmediğini göstermektedir.
+--- page 13 ---
+2. Eşleşen Özellikler veya Boyutlar
+❑ Görüntülerin yan yana karşılaştırmasını yaparken, amacı ve
+sınırlamalarını anlamak önemlidir.
+▪ İki görüntü asla tam olarak aynı değildir.
+Aşağıda belirtilen üç terimi anlamak kanıtların analiz
+edilmesinde oldukça önemlidir.
+1. Tanımlama
+2. Sınıf
+3. Bireyselleşme
+--- page 14 ---
+2. Eşleşen Özellikler veya Boyutlar
+1. Kimlik (Tanımlama)
+❖ Bir nesnenin kimyasal ve fiziksel özelliklerinin incelenmesi ve
+nesneyi bir grubun üyesi olarak sınıflandırmak için kullanılmasıdır.
+❖ Nesne neyden yapılmıştır?
+❖ Rengi, kütlesi ve/veya hacmi nedir?
+❖ Örneğin beyaz bir tozun incelenmesi, bir veya iki analiz
+yapılması ve kokain olduğu sonucuna varılması işlemi
+tanımlamadır.
+❖ Küçük ve renkli kırıntının otomotiv boyası olduğunu belirlemek
+tanımlamadır.
+--- page 15 ---
+2. Eşleşen Özellikler veya Boyutlar
+2. Sınıf
+❖ Mikroskobik özelliklere bakılarak, bir kanıtın hangi tür
+nesneye ya da canlıya ait olduğunu belirlenmesidir.
+❖ Örneğin bir kılın bir köpeğe ait olduğunu ve kılların en
+çok belirli bir köpek cinsine ait olduğunun tespit
+edilmesi, adli bilişimde sınıfsal kanıt olarak
+adlandırılmaktadır.
+--- page 16 ---
+Sınıfsal Kanıtlar
+❖Sınıf özellikleri, 
+kullanılan aracı 
+tanımlamada (hangi
+malzemeden yapılmış vb.)
+faydalı olabilir.
+
+--- page 17 ---
+2. Eşleşen Özellikler veya Boyutlar
+3. Bireyselleştirme
+❖ Kanıt tanımlama süreci çok daha spesifik hale gelmesi sonucunda
+ortaya çıkar.
+❖ Adli bilişimci analiz ve yönelttiği sorularla bunu ortaya koyar.
+❖ Kanıt tek ve yalnızca bir kaynakla ilişkilendirilmiştir:
+❖ Benzersizdir.
+❖ Bu tür kanıtlara bireysel kanıtlar denir.
+❖ Bir başka ifadeyle bir nesne, yalnızca bir üyesi (kendisi) olan bir
+grup halinde sınıflandırılabiliyorsa, “bireyselleştirilmiş” olduğu
+söylenir.
+--- page 18 ---
+2. Eşleşen Özellikler veya Boyutlar
+3. Bireyselleştirme
+Örneğin lifin muhtemelen alışılmadık bir boya rengi modeline
+dayanan belirli bir giysiden geldiğini gösterir.
+▪ Böyle bir eşleşmenin istatistiksel kesinliğini belirlemek zordur.
+▪ Çünkü böyle bir modelin meydana gelmesinin genel (global)
+sıklığı bilinmemektedir [1].
+--- page 19 ---
+Bireysel Kanıtlar
+❑ Bireysel kanıtlar, olay yeri
+kanıtlarının incelenmesinde
+sıklıkla elde edilebilir.
+❑ Örneğin saç telleri veya kıllar:
+Saç folikülünden (follicle) eklenmiş
+hücreler, DNA eşleşmesi için
+kullanılmadıkça genellikle bireysel
+eşleştirme üretemez.
+
+--- page 20 ---
+2. Eşleşen Özellikler veya Boyutlar
+❑Mikroskobik saç analizinin başlıca zorluğu, tek bir
+kişiden alınan tüylerde bulunan mikroskobik
+özelliklerin biyolojik çeşitliliğidir.
+❑Adli bilim camiası içinde genel olarak saçların
+pozitif bir tanımlama aracı olmadığı kabul edilir.
+❑Ancak bireyler arasındaki saç çeşitliliği nedeniyle
+araştırmalarda önemli bilgiler sağlayabilirler.
+--- page 21 ---
+2. Eşleşen Özellikler veya Boyutlar
+❑Ayrıca, sorgulanan bir saç ve
+bilinen bir örnek önemli ölçüde
+farklıysa, ortak bir kaynaktan
+(ırksal tanımlamadaki farklılıklar
+gibi) gelmedikleri yönünde
+olumlu bir fikir verirler.
+Şekil 8.1. (a) Avrupa (b) Zenci (Afrika) (c)
+Asya (mongoloid) saç kıllarının
+mikroskopla karşılaştırılması
+--- page 22 ---
+2. Eşleşen Özellikler veya Boyutlar
+❑Kıllar ve görünümler canlı
+türlerine göre de oldukça
+farklıdır.
+Şekil 8.2. Farklı canlılardaki kıllar
+
+--- page 23 ---
+2. Eşleşen Özellikler veya Boyutlar
+Ayrıca adli bilişimde saçı telinde olabilecek
+farklılıklar yararlanırlar.
+Bunlar:
+• Renk (saç tellerinin temel tonu ve pigment yoğunluğu, dağılımı,
+boyutu, şekli ve rengi)
+• Yapı (form, çap, kesit şekli, kortikal yapı)
+• Kütikül (Cuticle ) özellikleri (kütiküler pulların boyutu ve şekli)
+edinilen özellikler (herhangi bir kozmetik tedavi, temizlik)
+--- page 24 ---
+3. Yüz tanıma
+❑Yüz tanıma:
+▪ saç,
+▪ makyaj
+▪ gözlük
+vb. değişikliklerinden dolayı zorlaşmaktadır.
+Ayrıca bunların dışında
+▪ poz çeşitliliği
+▪ yüz ifadeleri
+▪ ışıklandırması
+gibi sebeplerden ötürü çok zorlu bir sorundur.
+--- page 25 ---
+3. Yüz tanıma
+Yüz tanıma (ve diğer biyometrik belirteçlerin kullanımı),
+doğrulama ve tanımlama olmak üzere iki temel
+uygulamaya ayrılabilir:
+• Doğrulama: 1: 1 tanımlama yapmayı amaçlar.
+• Bu olduğunu iddia ettikleri kişi mi?
+• Tanımlama: 1: N eşleştirme sorunudur.
+• Burada N, potansiyel bir eşleşme için aranacak veri
+tabanının boyutudur.
+--- page 26 ---
+3. Yüz tanıma
+Örneğin yüz tanıma kullanılan bazı ölçütler aşağıda verilmiştir.
+Şekil 9. Yüz tanıma oranlarında kullanılan bazı dikey ve yatay mesafelere örnekleri.
+--- page 27 ---
+3. Yüz tanıma
+❖Ölçüm noktaları manuel olarak veya 
+korelasyon kullanılarak yerleştirilebilir.
+❖Yüzdeki önemli noktaların konumları 
+otomatik ta olarak belirlenebilir.
+Şekil 10. Yer işaretlerinin manuel olarak 
+işaretlenmesinde değişkenlik.
+--- page 28 ---
+3. Yüz tanıma
+❑Üçüncü bir alternatif yaklaşımda, tüm görüntüyü
+karşılaştırmak için korelasyon kullanılır.
+❑En çok görüntülerin aydınlatma ve pozda sıkı bir
+şekilde kontrol edildiği 1: 1 doğrulama görevi için
+uygundur.
+--- page 29 ---
+3. Yüz tanıma
+Retina
+İris tarama
+Parmak izi
+Avuç içi
+El ve yüzdeki kan damarlarının desenini içeren 
+Doğrulama amacıyla aşağıdaki gibi biyometrik belirteçler kullanılabilir.
+(Böyle bir veritabanı oluşturmak zordur.)
+--- page 30 ---
+3. Yüz tanıma
+❑Yüz damar sisteminin kızılötesi (IR) görüntülemesi, gibi
+bu testlerden bazıları doğrulama için kullanılabilir.
+❑Ancak bilinmeyen bir kişinin tanımlanması için pratik
+değildir.
+Not: 2 boyutlu insan yüzlerinin önden görünümleri, birçok
+benzerliği paylaşır ve niceliksel farklılıklar azdır.
+❑Bu nedenle insan yüzlerinin 3 boyutlu modellemesi,
+yapılarak da insan yüzleri tanınmaya çalışılmaktadır.
+--- page 31 ---
+4. Biyometrik Ölçüler
+İnsanın tanınması için kaşlar en önemli özelliklerden biridir.
+Düşük çözünürlüklü görüntülere dayanarak bile insanların
+aşina oldukları yüzleri tanıyabildiklerini göstermektedir [1].
+Şekil 11. Oldukça düşük çözünürlüklü görüntülerde bile tanıdık yüzler tanınabilir.
+--- page 32 ---
+4. Biyometrik Ölçüler
+
+--- page 33 ---
+4. Biyometrik Ölçüler
+Daha uzak mesafelerden ve geniş açılı lenslerle alınan tipik 
+gözetim video görüntülerinde, hatalar Şekil 10’da 
+gösterilenden çok daha büyüktür ve oranlar, veri tabanı 
+araması için yeterince kesin değildir.
+Gözetim videosu öncelikle hareket izleme (ör. Trafik) ve 
+anomalilik tespiti (ör. Kazalar) için kullanılır. 
+Ancak kentsel bir ortamda ortalama bir kişi her gün örneğin 
+300 gözetleme kamerasına yakalanır [1] (Şekil 12).
+Şekil 12. Mantattan bölgesinde 2000 yılı itibariyle
+kırmızı noktalar, dış güvenlik kameralarının
+konumlarını gösterir.
+
+--- page 34 ---
+4. Biyometrik Ölçüler
+FBI’ın Yeni Nesil Tanımlama projesi, 13
+milyon yüz yüze sabıka kaydı çekiminden
+oluşan bir havuza sahiptir [1].
+Ancak gözetim görüntüleri ve hatta
+diğer soygun çekimleriyle otomatik
+eşleştirme, şu anda uzak bir olasılık
+olarak gözükmektedir.
+--- page 35 ---
+4. Biyometrik Ölçüler
+Şekil 12. Yüksek kaliteli tam yüz görüntülerde
+manuel olarak işaretlenen dönüm noktası noktaları
+arasındaki mesafe ve açı oranları kullanılarak,
+(a) hedef görüntü (b) bir test setinden (c) sadece
+yalnızca % 15-20 oranında seçilmiştir.
+❖ Şekil 9. ve 10.’daki, elle
+konumlandırılan dönüm/kritik
+noktalar arasındaki oranları ve açıları
+kullanma yeteneğini test etmek için
+yüksek kaliteli tam yüz görüntüleri
+gerekmiştir.
+❖ Başarısızlık oranı% 80-% 85 olarak
+çıkmıştır.
+--- page 36 ---
+4. Biyometrik Ölçüler
+❑ Görgü tanığı tasvirleri ve polis ressamlarının taslakları ile
+sabıka fotoğraflarını veya gerçek yüzleri eşleştirmek daha
+da zordur.
+❖ Farklı gözlemciler, algılanan benzerliklerine veya bellekteki
+diğer nesnelerden farklılıklarına dayanarak, sahnenin veya
+şüphelinin farklı özelliklerini dikkate değer olarak seçerler.
+--- page 37 ---
+4. Biyometrik Ölçüler
+❑ Gözlemcilerin tanımlarından polis
+ressamların şüpheli taslakları,
+yakalandıktan sonra çekilen gerçek
+fotoğraflarla nadiren uyumludur.
+❑ Pek çok bakımdan, tek bir gözlemciye
+tanıdık veya alışılmadık görünen bazı
+yönleri, (genellikle önemsiz veya kolayca
+çıkarılabilir) vurgulayan karikatürlerdir.
+Şekil 13. Polis ressamının eskizleri, her bir bireyin daha
+sonra yakalandıktan sonra çekilmiş yüz fotoğrafları.
+--- page 38 ---
+4. Biyometrik Ölçüler
+❑ Tanık tanımlama, soruşturma amacıyla
+yararlı olabilir.
+❑ Ancak genellikle mahkemede şüphelidir
+çünkü insan hafızası yanılabilir.
+Şekil 13. Polis ressamının eskizleri, her bir bireyin daha
+sonra yakalandıktan sonra çekilmiş yüz fotoğrafları.
+--- page 39 ---
+4. Biyometrik Ölçüler
+❑ Görgü tanığının güvenilirliğiyle ilgili bir
+başka endişe de, insanların olay yerinde
+bekledikleri veya odaklandıkları şeydir.
+❑ Çoğu durumda, yalnızca beklenen veya
+dikkat ettiğimiz şeyleri tespit edebiliriz.
+Şekil 14. Örnek bir videodan bir kare
+* Bu videoyu izleyenlere basketbolun beyaz gömlekli
+öğrenciler arasında kaç kez geçtiğini saymaları istenmiştir.
+İzleyiciler, kargaşada ileri geri yürüyen goril kıyafetli kişiyi
+tamamen fark edemedikleri söylemişlerdir [1].
+--- page 40 ---
+4. Biyometrik Ölçüler
+❑İnsan yüzünü eşleştirirken biyometrik
+belirteçlerden (kulak vb.) de
+faydalanılmaktadır.
+•Biyometrik belirteçlerle ilgili bir güçlük,
+genel popülasyonda belirli belirteçlerin
+görünümü hakkında istatistiklere ihtiyaç
+duyulmasıdır.
+Şekil 15. eşleşen özelliklere sahip iki görüntünün 
+yan yana karşılaştırması. 
+--- page 41 ---
+4. Biyometrik Ölçüler
+❑Biyometrik belirteçlerin dışında
+dövmeler, bireyleri görüntülerle
+eşleştirmek için zengin olanaklar
+sunmaktadır.
+•Amerika Birleşik Devletleri'ndeki
+insanların % 24'ünün dövmesi
+olduğunu bildirilmiştir [1].
+ Şekil 16. İnsanların vücutlarını süslemeyi tercih 
+ettikleri dövmelerden birkaç örnek.
+
+--- page 42 ---
+5. Ayak ve Lastik İzleri
+❑Belirli bir ayakkabı, bir ayakkabı iziyle
+eşleştirilir.
+▪Nadiren kritik baskılar, ayakkabının
+mükemmel kopyalarıdır.
+❖Bunun yerine, ayakkabı izleri eksiklikler içerirler.
+❖Alt tabaka dokusuyla karıştırılırlar, yumuşak ve
+sert yüzeylerde farklıdırlar.
+❖Yabancı maddeler içerirler ve çoğu zaman zayıf
+veya yetersiz aydınlatma ile fotoğrafları
+çekilirler.
+
+--- page 43 ---
+5. Ayak ve Lastik İzleri
+❖Belirtilen bu eksikliklere rağmen, İsviçre’de bir marka
+ve modele göre ayakkabı izleri veri tabanının parmak
+izlerinden dört kat daha fazla hırsız tespit ettiğini
+bildirmiştir [1].
+--- page 44 ---
+5. Ayak ve Lastik İzleri
+❖Spor ayakkabılarda kullanılan kalıplı
+ayakkabı tabanlarının tasarımları çok
+çeşitlidir ve tasarım sayısı (örneğin
+5000 ) çok fazladır.
+
+--- page 45 ---
+5. Ayak ve Lastik İzleri
+❖Bu nedenle oldukça fazla olan tasarımı
+geometrik şekillere göre kategorilere göre
+ayırarak sınıflandırılabilir.
+❖Daha sonra, her bir kategori içinde,
+benzerlik ölçüleri, baskıyı kalıba uydurmak
+için gereken bozulmalar tarafından
+tanımlanır.
+Şekil 17. Spor ayakkabılarının sekiz kategoriye
+ayrılması ve desen örneklerinin gösterimi.
+Soldan sağa: Çizgiler, çizgiler ve daireler, çizgiler ve
+elipsler, daireler ve yaylar, elipsler, çizgiler, daireler
+ve elipsler, yalnızca doku.
+--- page 46 ---
+5. Ayak ve Lastik İzleri
+❖Ayakkabının fotoğrafı çekildiğinde, ayakkabı baskısı
+ile tam olarak aynı ölçekte değildir.
+❖Bu nedenle görüntü boyutunu buna göre ayarlamak
+gerekir.
+❖Görüntü boyutları ayarlandıktan sonra,
+▪Ayakkabının alt kısmının görüntüsü baş aşağı
+çevrilmelidir.
+▪Baskı resmi üzerine yerleştirilmeli ve hizalanmalıdır.
+--- page 47 ---
+5. Ayak ve Lastik İzleri
+❖Karşılaştırma işlemi
+▪Üst katmanın şeffaflığının ayarlanması
+▪Görüntülere bir türev operatörün uygulanması
+▪İki resmin farklı renk kanallarına yerleştirilmesi
+vb. teknikleri ile kolaylaştırılabilir.
+--- page 48 ---
+5. Ayak ve Lastik İzleri
+❖Yürüyüş sırasında ayakkabının esnemesi,
+fotoğrafı çekildiği gibi düz ayakkabının
+mükemmel bir kopyası olmayan bir izlenim
+yaratır.
+❖Görsel bir eşleşme için görüntüleri üst üste
+bindirmeye çalışmak yerine, Şekil 18'de
+gösterildiği gibi, ayak izinden ayakkabıyla
+eşleştirilebilecek belirli aşınma izlerini
+belirlemek genellikle daha yararlıdır.
+Şekil 18. Bir ayakkabı izinde eşleşen aşınma izlerinin 
+bulunması.
+--- page 49 ---
+5. Ayak ve Lastik İzleri
+❖Baskıdaki izlerin bir kısmı, küçük
+taşlardan veya ayakkabının içine
+gömülü veya yerde bulunan diğer
+parçacıklardan kaynaklanabilir.
+❖Aşınma izlerine ek olarak, diş derinliği
+gibi ölçümler de eşleştirme amaçları
+için yararlıdır.
+ Şekil 18. Bir ayakkabı izinde eşleşen aşınma izlerinin 
+bulunması.
+--- page 50 ---
+5. Ayak ve Lastik İzleri
+❖Ayakkabı baskılarının alçı veya
+balmumu baskılarının kullanılması
+zaman alıcıdır ve çok yüksek
+çözünürlüklü değildir.
+❖Yapılandırılmış ışık veya kenar
+projeksiyonu adı verilen bir optik
+ölçüm tekniği, sahne boyunca bir
+açıyla bir dizi çizgiyi (veya noktayı)
+parlatır.
+Şekil 19. Yüzey kabartmasını ölçmek için
+yapılandırılmış ışık veya saçak projeksiyonu kullanma
+şeması.
+* Projektör, kamera görüntüsünde yerel yüzey
+yüksekliğiyle orantılı bir miktarda yer değiştiren
+yüzeye bir çizgi veya nokta deseni yansıtır.
+--- page 51 ---
+5. Ayak ve Lastik İzleri
+❖Dikey kamera görüntüsü,
+Şekil 19’da gösterildiği gibi yükseklik
+derinliğindeki değişikliklere karşılık
+gelen hatların sapmalarını gösterir.
+❖Yazılım, yer değiştirmeyi ölçer.
+❖Bir yükseklik görüntüsü oluşturmak
+için ölçüm verilerini toplar.
+Şekil 19. Yüzey kabartmasını ölçmek için
+yapılandırılmış ışık veya saçak projeksiyonu kullanma
+şeması.
+* Projektör, kamera görüntüsünde yerel yüzey
+yüksekliğiyle orantılı bir miktarda yer değiştiren
+yüzeye bir çizgi veya nokta deseni yansıtır.
+--- page 52 ---
+5. Ayak ve Lastik İzleri
+❖Şekil 20’de gösterildiği gibi arabalar
+da iz bırakmaktadır.
+❖Tıpkı ayakkabı izlerinde olduğu gibi,
+bazen dişteki aşınma veya hasar
+işaretlerine bağlı olarak bir ize sahip
+belirli bir lastiği tanımlamak
+mümkündür.
+Şekil 20. Bir lastik baskısının görüntüsü ve 
+görüntü düzeltmesinin sonucu
+--- page 53 ---
+5. Ayak ve Lastik İzleri
+❖Ancak çoğu durumda yapılabilecek en iyi
+şey lastik modeliyle eşleşmektir.
+❖Şekil 21’de gösterildiği gibi, bir sırt
+deseninden bir lastik markasının ve
+modelinin belirlenmesi, çevrimiçi olarak
+temin edilebilen diş desenlerinin
+kataloglarından faydalanabilir.
+Şekil 21. Terk edilmiş bir araçtaki lastik modelini
+yakındaki bir olay yerindeki raylarla eşleştirilmeye
+çalışılması
+--- page 54 ---
+5. Ayak ve Lastik İzleri
+❑Adli bilişimde ayak ve lastik izi
+dışında başka birçok izden
+faydalanılmaktadır.
+❑Kulak izi, Isırık izi, Kesici alet
+(bıçak vb.) izi bunlardan
+birkaçıdır.
+(a) (b)
+(c)
+Şekil 22. (a) ve (b) Bir ısırık ve bunu yapan kişinin tespiti için
+dişlerin incelenmesi (c) bir bıçağın bir kesiti ile kişinin kaburgasında
+oluşan hasar izinin örtüşmesi
+--- page 55 ---
+6. Ters Projeksiyon
+• Ters projeksiyon fotogrametrisi
+yöntemi, örneğin gözetim
+videosundaki veya diğer
+mesafelerdeki insanların
+boylarını ölçmek için sıklıkla
+kullanılabilir.
+--- page 56 ---
+6. Ters Projeksiyon
+• Şekil 23’te gösterildiği gibi,
+prosedür, olaydan sonra aynı
+sahneye bir kalibrasyon
+standardı yerleştirilir.
+• Doğrudan karşılaştırma için
+görüntüleri üst üste getirir.
+Şekil 23. Ters projeksiyon fotogrametrisi. 
+--- page 57 ---
+6. Ters Projeksiyon
+Daha önce öznenin bulunduğu sahnede
+▪ aynı konuma bir ölçüm standardı yerleştirmek
+▪aynı kamerayı kullanarak görüntüsünü yakalamak
+▪görüntüyü orijinalin üzerine bindirmek
+öznenin yüksekliğini ölçmek için doğrudan bir yol
+sağlar.
+--- page 58 ---
+6. Ters Projeksiyon
+❑Ölçüm açısından birçok
+avantajı olsa da, ters
+projeksiyon yöntemi, örneğin
+Şekil 24’teki gibi görüntünün
+doğrudan göstermediği şeyleri
+ölçemez.
+Şekil 24. Bir market soygununun gözetim videosuna uygulanan 
+ters projeksiyon.
+• Kişi dik durmamaktadır. 
+• Geniş bir duruşun ve bükülmüş bacakların etkisinin tahmin 
+edilmesi, 
+• onu modellemeye çalışarak 
+• veya birisinin aynı pozda aynı pozisyonda durmasını 
+sağlayarak üstlenilebilir.
+--- page 59 ---
+Ters Projeksiyon 
+Kullanılamıyorsa?
+❑Örneğin yerleşim yeri
+değiştirilmişse veya kamera
+hareket ettirilmişse, bazı
+referans ölçütlerine ihtiyaç
+vardır.
+❑Şekil 25’teki kişinin boyu;
+masaların yüksekliği ölçülebilir
+ve bir boyut belirlemede bir
+referans olarak kullanılabilir.
+Yukarıdaki örnekte, bir cinayet davasında iki çete üyesini ayırt
+etmek için videodaki kişinin boyuna ihtiyaç vardı.
+Şekil 25. Bir referans kullanarak ölçüm: (a) bir şüphelinin, 
+boyunu ölçmek (b) masaları gösteren önceki bir video 
+çerçevesi dikey mesafenin ölçülmesi
+--- page 60 ---
+Ters Projeksiyon 
+Kullanılamıyorsa?
+❑Görüntü gürültüsünü azaltmak için hibrit bir
+medyan uygulanmıştır.
+• Özellikle de zemindeki karo desenleri kamera
+konumunu tahmin etmek için kullanılabilir.
+❑Masaların bacaklarının üst ve alt kenarlarına,
+şüphelinin ayakkabısının altına ve başının
+üstüne kenar pikselleri bulmak için bir Canny
+filtresi uygulanmıştır.
+❑Şüphelinin konumunu kesiştirmek için masa üstleri ve
+bacaklar arasına çizgiler yerleştirmek için bir Hough
+dönüşümü kullanılmıştır [1].
+Şekil 26. Uzayan çizgiler, ufuk noktasını bulmak için yer karolarının
+ve duvar işaretlerinin kenarlarına sığar ve buradan kamera
+konumunu belirler.
+--- page 61 ---
+7.  Boyutsal Ölçümler
+❑Boyutları ve mesafeleri belirlemenin başka bir yolu, kamera lensinin sonsuza
+odaklandığı durum için Şekil 27’de gösterildiği gibi, kamera lensinin odak
+uzaklığının ve çip üzerindeki detektör dizisinin boyutunun bilinmesine
+bağlıdır.
+Şekil 27. Kamera odak uzaklığı F ile çip boyutu C oranı ile nesneye olan mesafenin oranı 
+ve bu mesafedeki görüntünün yüksekliği arasındaki ilişki.
+--- page 62 ---
+ÖRNEK 1
+Şekil 28’de, kameramanın fok avcısına olan uzaklığı
+belirlenmeye çalışılsın.
+• Çipin yüksekliği (C), 3.6 mm
+• Lens odak uzunluğunu (F), 54 mm
+• Avcının gerçek silahının uzunluğu, 1,2 m
+• Sayısal görüntüde avcının silahının uzunluğu, 246 piksel
+• Sayısallaştırılmış video karesinin tam yüksekliği, 480 piksel
+❑İlk önce görüntü düzleminin gerçek yüksekliği (avcı
+mesafesindeki) H bulunur.
+❖
+𝐻
+480 =
+𝑎𝑣𝑐𝚤𝑛𝚤𝑛 𝑠𝑖𝑙𝑎ℎ 𝑢𝑧𝑢𝑛𝑙𝑢ğ𝑢
+𝑆𝑎𝑦𝚤𝑠𝑎𝑙 𝑔ö𝑟ü𝑛𝑡ü𝑑𝑒 𝑝𝑖𝑘𝑠𝑒𝑙 𝑠𝑎𝑦𝚤𝑠𝚤 =
+1.2
+246 ise H=
+1.2∗480
+246 = 2.34 m
+❖
+𝐻 (𝑂𝑑𝑎𝑘𝑡𝑎𝑘𝑖 𝑛𝑒𝑠𝑛𝑒𝑦𝑒 𝑜𝑙𝑎𝑛 𝑚𝑒𝑠𝑎𝑓𝑒𝑑𝑒 𝑔ö𝑟ü𝑛𝑡ü𝑛ü𝑛 𝑏𝑜𝑦𝑢𝑡𝑢)
+𝐷 (𝑙𝑒𝑛𝑠𝑖𝑛 𝑛𝑒𝑠𝑛𝑒𝑦𝑒 𝑢𝑧𝑎𝑘𝑙𝚤ğ𝚤) =
+𝐶 (ç𝑖𝑝𝑖𝑛 𝑦ü𝑘𝑠𝑒𝑘𝑙𝑖ğ𝑖)
+𝐹 (𝑙𝑒𝑛𝑠 𝑜𝑑𝑎𝑘 𝑢𝑧𝑢𝑛𝑙𝑢ğ𝑢)
+❖
+2.34
+𝐷 =
+3.6
+54 ise D = 35.11 m olur.
+Şekil 28. Kameranın avcıya olan mesafesinin 
+belirlenmesi
+Şekil 29. Kamera odak uzaklığı F ile çip boyutu C
+ve kamera görüş açısı arasındaki ilişki.
+--- page 63 ---
+Örnek 2
+❖Kamera mesafesini belirlemek için birden fazla referans noktası belirlenebilir.
+Şekil 30. Kamera mesafesini hesaplamak için kullanılan, belirtilen birkaç referans yüksekliğine sahip bir marketin fotoğrafı.
+--- page 64 ---
+8. Fotogrametri
+• Fotogrametri, cisimlerin oluşturduğu ve yansıtmış olduğu ışınlardan oluşan 
+fotografik resimler üzerinden nesneleri ölçme ve yorumlama tekniği olarak 
+adlandırılabilir. 
+• Fotogrametri ve özellikle hava veya uydu fotogrametrisinin aksine kısa 
+menzilli fotogrametri, adli uygulamalarda, kazaların yeniden 
+canlandırılmasında ve benzeri uygulamalarda genellikle önemlidir.
+• Sahneler hakkında 3B geometrik bilgi elde etmek için bir veya daha fazla 2B 
+görüntü üzerinde ölçümler kullanır.
+--- page 65 ---
+8. Fotogrametri
+❖Bir görüntüdeki ilgili noktaları,
+köşeleri ve kenarları tanımlamak ve
+konumlandırmak ve bu noktaları
+işaretlemek için gereken insan
+muhakemesini ve çabasını en aza
+indirmek veya ortadan kaldırmak için
+görüntü işlemenin doğru kullanımı
+sıklıkla gereklidir.
+Şekil 31. Masa fotoğrafı. Yeşil çizgiler, görünen kenar
+konumlarını işaretler: (a) ayrıntılı alanı gösteren orijinal
+fotoğraf, (b) orijinal üzerinde belirlenen kenarlar, (c) yerel
+olmayan filtre uygulandıktan sonra ve (d) hesaplanan
+maksimum parlaklık gradyanı.
+--- page 66 ---
+8. Fotogrametri
+Şekil 32. Bir kan damlasının geliş açısı ile kan sıçrama modelinde ürettiği en boy oranı arasındaki ilişki, 
+damlacıkların kaynağının bulunmasını sağlar.
+
+--- page 67 ---
+Kaynakça
+[1] Russ, John C., Jens Rindel, and P . Lord.Forensic uses of digital 
+imaging. CRC Press, 2016.

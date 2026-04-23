@@ -1,0 +1,531 @@
+--- page 1 ---
+Adli BilişimdeGörüntüAnalizi
+
+--- page 2 ---
+1. Kaynağının T espit Edilmesi
+(CameraSourceIdentification)
+❖Kamera kaynağının belirlenmesi, klasik
+bir adli sorundur.
+Kamera kaynağının gizli/kör tespiti
+(blind detection), sayısal bir görüntünün
+kaynağını ve gerçekliğini doğrulamak
+için kullanılır.
+--- page 3 ---
+1. Kaynağının T espit Edilmesi (Camera
+Source Identification)
+Ceza soruşturmalarında, delillerin
+adli analizi, etkili kamera kaynağı
+tanımlama teknikleri gerektirir.
+Bu tür teknikler öncelikle askeri ve
+savunma uygulamalarında adli analiz
+için kullanılır [1].
+--- page 4 ---
+1.1. DijitalKameraBileşenleri
+Bir görüntü yakalama cihazının iki ana
+bileşeni lens ve sensördür.
+Lens çekimi:
+Sensörün yüzeyinde sahnenin (kameranın
+önünde) bir görüntüsünü oluşturur.
+
+--- page 5 ---
+1.1. Dijital Kamera Bileşenleri
+Alıcı lens, sensöre ulaşmasını sağlamak için gelen ışınım yolunun
+bükmek ve eğmek ile sorumludur.
+Şekil 1. Bir fotoğraf makinesinde görüntü oluşumu ile ilgili örnek
+--- page 6 ---
+1.1. Dijital Kamera Bileşenleri
+Sensör: Gelen ışınımı, daha sonra 
+sayısallaştırılan ve ham görüntü verisi 
+olarak saklanan foto şarjlara dönüştür.
+Bir sensörün temel görüntüleme öğesi 
+bir "pikseldir" ve bir sensör, doğrusal bir 
+piksel ızgarasından oluşur .
+Görüntü hakkında renk bilgisini renk 
+filtreleri ile yapılır.
+Şekil 2. (a) Tek görüntüleme algılaycısı
+(b) satır algılayıcı (c) dizi algılayıcı [2]
+--- page 7 ---
+1.1. Dijital Kamera Bileşenleri
+CFA (Color Filter Array) : Renk filtreleri, kamera sensörünün yüzeyine 
+yerleştirilmiş farklı renklendiricilerin (tek veya çoklu) ince katmanlardır.
+Sensör yüzeyi üzerinde düzenlenen bir dizi piksel boyutlu renk filtresi, 
+yalnızca tek bir sensör kullanarak bir görüntünün tam renkli bilgilerinin 
+algılanmasını sağlar. 
+Renkli bir görüntü, örneğin RGB (Kırmızı Yeşil Mavi) gibi üç bileşenle
+hassas bir şekilde yakalanması, her piksel konumundaen az üç sensör seti
+gerektirir. Dolayısıyla cihaz maliyeti oldukça aratacaktır.
+--- page 8 ---
+1.1. Dijital Kamera Bileşenleri
+Cihaz maliyetini düşürmek için üreticiler, geleneksel dijital
+kameralarda, her piksel konumu yalnızca bir rengi
+örnekleyecek şekilde tasarlanmıştır.
+Dolayısıyla, her piksel konumunda tek renkli filtre
+kullanılmasıyla maliyet ve karmaşıklık azaltılır; eksik renkler,
+komşu piksel konumlarından ara değerlemesidir
+(interpolation).
+Örneğin Bayer deseni, İnsan Görsel Sisteminin (HVS) RGB
+görüntüsünün yeşil bileşenine daha duyarlı olduğu gerçeğini
+dikkate alarak, kırmızı ve mavi renklerin her birini algılamak
+için % 25 filtre, yeşil için % 50 filtre kullanır [1].
+Şekil 3. Renk filtrelerinin
+Bayer desen düzenlemesi
+--- page 9 ---
+Örnek:  Dijital Görüntünün Elde Edilmesi
+Şekil 4. Dijital görüntünün elde edilmesi [2]
+--- page 10 ---
+1.2. Dijital Kamera Kaynağı T espitinde T emel Durumlar
+Görüntünün son hali tamamlanmadan önce
+❖sensör gürültüsü azaltma
+❖renk düzeltme
+❖kenar geliştirme vb.
+bazı ek görüntü iyileştirme adımları uygulanır [1].
+--- page 11 ---
+1.2. Dijital Kamera Kaynağı T espitinde T emel Durumlar
+Görüntü ve kaynağı hakkındaki bilgiler, dosya başlığı veya
+EXIF ​​(Değiştirilebilir Görüntü Dosyası Formatı) gibi görüntü meta
+verilerinden elde edilebilir.
+Bu tür meta veriler,
+❖kamera markası ve modeli (ancak belirli kamera kimliği hariç),
+üretici ayrıntıları,
+❖görüntü boyutu,
+❖görüntü yakalamatarihi ve saati
+❖JPEG görüntülerdesıkıştırma oranı
+gibi bilgileri içerir.
+--- page 12 ---
+1.2. Dijital Kamera Kaynağı T espitinde T emel Durumlar
+Dosya başlığında bulunan bu tür bilgiler değişiklik, saldırılarına karşı oldukça 
+savunmasız. 
+Bu nedenle, bir görüntünün kökenini doğrulamak için kör/gizli adli tekniklere (blind
+forensic techniques) ihtiyaç vardır . 
+Kör/gizli adli bilişim teknikleri, belirli bir cihaz tarafından oluşturulması ve depolanması
+sırasında, geride kalan farklı izlerden yararlanır . 
+Bu izler veya yapaylıklar, görüntün elde edilmesi veya depolanması aşamalarında görülür .
+--- page 13 ---
+1.2. Dijital Kamera Kaynağı T espitinde 
+T emel Durumlar
+❑Görüntü Elde Etme Aşaması:
+Görüntü edinme yapaylıkları;
+❖bir sahneyi yakalarken kamera
+merceğinin ürettiği bozulmalardan
+❖CFA tarafından renk bilgisi edinimi
+(enterpolasyon) sırasında üretilen
+sensör
+gürültüleridir.
+--- page 14 ---
+1.2. Dijital Kamera Kaynağı T espitinde T emel Durumlar
+❑Görüntü Depolama Aşaması:
+Görüntü depolama yapaylıkları (artefacts), bir
+görüntüyü standart bir formatta depolamak için işlerken
+oluşmaktadır.
+❖Bu tür işleme faaliyetleri arasında gürültü giderme,
+görüntü iyileştirme vb. teknikler yer alır.
+❖ Görüntü yapaylıkları, kameranın lensi gibi
+bileşenlerine bağlı olarak farklı kamera modelleri
+arasında ayrım yapma aracı olarak işlev görür.
+Bu yapılar ayrıca sensör tarafından üretilen izleri
+kullanarakcihazla ilgili özel bilgiler sağlayabilir.
+--- page 15 ---
+1.3. Dijital Kamerada Görüntü İşleme Süreci
+❖Bir nesneden yansıyan ışık kamera merceğinden geçer, ardından renkli Filtre
+Dizisi (CFA) ve sensör gelir.
+❖CFA, sensöre ulaşmadan önce piksel başına ışığın yalnızca bir renk bileşeninin
+geçmesine izin verir ve her piksel konumundaki diğer iki gözlenmeyen renk
+değeri, bir ayırma işlemi (demosaicing) kullanılarak ara değerleme yapılır.
+Demosaicing ve Post-Processing işleminden sonra sayısal görüntü, JPEG formatı
+kullanılarak sıkıştırılıp depolanır.
+Şekil 5. Dijital Kamerada Görüntü İşleme Adımları [1]
+--- page 16 ---
+1.3. Dijital Kamerada Görüntü İşleme Süreci
+Dijital Kamerada Görüntü işleme, kullanılan cihaz
+türüne göre farklılıklar göstermektedir.
+❖Örneğin CFA, sensöre ulaşmadan önce yapılan ara
+değerleme sürecinde kameranın kendine özgü
+parametrelerinikullanır.
+❖Bu da kamera kaynağının tanımlanmasında önemli rol
+oynar.
+--- page 17 ---
+1.3. Dijital Kamerada Görüntü İşleme Süreci
+❖Bir başka durum ise JPEG sıkıştırma sürecinde
+vardır.
+❖JPEG nicelemleme/kuantalama Ayrık Kosinüs
+Dönüşümü (DCT) tabanlı görüntü sıkıştırmayı kullanır.
+❖Genel olarak, JPEG sıkıştırması için kullanılan
+nicemleme tabloları farklı kamera modellerinde
+değişiklik gösterir.
+❖Bu nedenle, JPEG sıkıştırması görüntüde kamera
+modeline bağlı niceleme gürültülerine/yapaylıklara
+neden olur [1].
+
+--- page 18 ---
+2. Adli Bilişimde Görüntü İnceleme Konuları 
+❖Adli bilişimde fotoğraf ve güvenlik
+kameralarından elde edilen görüntülerde
+incelenecek birçok öğe vardır.
+▪Örneğin kıyafet bunlardan biridir.
+▪Kıyafet, insan vücudunu örtmeye yarayan ve
+genelde kumaşlardanoluşan işlenmiş tekstildir.
+
+--- page 19 ---
+2. Adli Bilişimde Görüntü İnceleme Konuları 
+❑Adli tekstil,
+Adli olaylarda faile veya mağdura ait giysi ve
+aksesuarların, olay yeri, fail ve mağdur arasındaki ilişkinin
+kurulması ve olayların aydınlatılmasında kullanılmasını
+ifade etmektedir [3].
+--- page 20 ---
+Adli Bilişimde Adli Giysi İncelemeleri
+❑Kıyafet ve aksesuarların dizayn, tasarım ve üretim
+aşamalarında yapılan işlemler eşsiz olmasını
+sağlamaktadır.
+❑Kıyafetlerin kullanılması ile birlikte kişilerin vücut
+yapılarına göre şekil alarak tamamen
+bireyselleşebilmektedir.
+Söz konusu incelemeler, adli bilişimde son
+zamanlarda adli giysi incelemeleri olarak incelemeler
+da bilinmektedir.
+--- page 21 ---
+Adli Bilişimde Adli Giysi İncelemeleri
+Adli giysi incelemelerini aşağıdaki gibi alt
+bölümlere ayrılabilir [3].
+❖Kumaş / Lif İncelemeleri
+❖Otopsi Sırasında Kıyafetlerin İncelenmesi
+❖Toplu Ölümlerde Kıyafet İncelemesi
+❖Görüntü İncelemeleri
+❖Fotoğraf ve Güvenlik Kamera Görüntülerinden
+Elbise İncelemeleri
+--- page 22 ---
+Kumaş / Lif İncelemeleri
+❑Lif (fiber veya elyaf):
+❖yumuşak yapıda,
+❖kırılmadan kıvrılabilen,
+❖katlanabilen,
+❖eğrilebilen,
+❖çekmeye karşı koyan,
+❖kopmaya mukavemet gösteren
+elastiki maddelerdir.
+❖Lift, bir kumaşın özelliğini taşıyan en küçük parçadır.
+❑Tekstil lifleri, iki kişi arasında, bir birey ile bir nesne
+arasında ve iki nesne arasında değiştirilebilir.
+--- page 23 ---
+Kumaş / Lif İncelemeleri
+❖Lifler belirli bir kaynakla (kurbandan, şüpheliden ve / veya olay
+mahalinden) eşleştirildiğinde, bu ilişkiye bir değer verilir.
+❖Bu değer, olay mahallindeki veya kurban kıyafetleriüzerinde bulunan
+▪ lif türü,
+▪ lifteki renk veya renk değişimi,
+▪ liflerin sayısı,
+▪ konumu veya farklı liflerin sayısı
+gibi birçok faktöre bağlıdır [4].
+--- page 24 ---
+Kumaş / Lif İncelemeleri
+Bir liflerin transfer edilip edilmeyeceği, şüpheli ile mağdur
+veya olay yeri arasındaki temasın niteliğine ve süresine,
+transferden sonra liflerin kalıcılığına ve temas halinde bulunan
+kumaşın türüne / türlerine bağlıdır.
+Lifler, doğal (bitki veya hayvan) veya insan yapımı (sentetik)
+olabilir.
+--- page 25 ---
+Kumaş / Lif İncelemeleri
+Şekil 6. (a) Pamuk (b) yün  (c) keten (d) suni ve sentetik (e) naylon [4]
+(a) (b) (e)(d)(c)
+Liflerin incelenmesinde farklı görüntüleme teknikleri kullanılmaktadır.
+Örneğin Şekil 6. c’de bir ketenden yapılmış lifler polarize edilmiş ışıkla
+incelenmiştir.
+Şekil 6.e’de ise naylon lifler, taramalı elektron mikroskobu (SEM) ile
+incelenmiştir.
+--- page 26 ---
+Kumaş / Lif İncelemeleri
+Bir lif incelemesi; sorgulanan bir lifi, bilinen
+bir giysi ile eşleştirdiğinde, sadece iki olası
+açıklama vardır:
+• Lif aslında giyim eşyasından
+kaynaklanmıştır.
+• Lifin kökeni, giyim eşyasından
+kaynaklanmamaktadır.
+Liflerin kimyasal açıdan incelemeye tabi
+tutulmasının yanında görüntü incelemeleri
+de önemli katkı sağlamaktadır.
+--- page 27 ---
+Kumaş / Lif İncelemeleri
+Literatürde lif eşleştirmelerini renk bilgisinden faydalanarak (görüntü 
+işleme vb. yöntemler kullanarak)  çeşitli çalışmalar yapılmıştır [5,6].
+Ayrıca renklerde solma vb. tahribatlarda oluşur . 
+Örneğin dünyada var olan çok sayıda boya türü ve renk, sınırsız sayıda olası boya
+kombinasyonugöz önüne alındığında, her türlü elyaf ilişkisini ortaya koyma noktasında
+renk bilgisi önemli rol oynamaktadır.
+--- page 28 ---
+Otopsi Sırasında Kıyafetlerin İncelenmesi
+❑Elbiselerin genel olarak incelenmesi olay
+yerinde başlar.
+❖Cesedin olay yerinde yapılan ilk
+muayenesinde, fotoğraflarçekilir,
+❖cesedin pozisyonu,
+❖elbiselerin durumu ve
+❖birlikte bulunan delillerin yerleri
+belirlenmektedir.
+Yeterli sayıda fotoğraf çekilir ve cesede
+herhangi bir fiziksel temas yapılmaz.
+
+--- page 29 ---
+Otopsi Sırasında Kıyafetlerin İncelenmesi
+❑Olay yerinde adli hekimin elbiseler üzerinde
+yapmış olduğu değişiklikler kaydedilir[3].
+❑Olay yerindeki her bir durum önemli rol oynar.
+❑Örneğin kıyafetlerde toz, çamur, kan vb. her
+türlü leke ve bunların konumları, kıyafetlerin
+durumu (düğme sökülmesi, parçalanma vb.) ve
+olay yerindeki kalıntı (giysilerdeki kıl, lif, boya vb.)
+olayın aydınlatılmasındaönemlidir.
+--- page 30 ---
+T oplu Ölümlerde Kıyafetlerin İncelenmesi
+❑Toplu ölümlerde kıyafetlerden,
+özellikle kimliği belirsiz cesetlerin kimlik
+tespitinde yararlanılmaktadır[3].
+❑Bir toplu mezar bulunduğunda,
+yerinde herhangi bir işlem yapılmadan
+önce buluntu alanı koruma altına
+alınmalıdır.
+Şekil 7. Toplu mezarlardan elde edilen elbise 
+ve aksesuarlar
+--- page 31 ---
+T oplu Ölümlerde Kıyafetlerin İncelenmesi
+❑Olay yerinin ilk hali ile tespit edilmeli,
+bilgi kaybının önlenmesi için
+▪ alanın ve buluntuların fotoğraflar ve video
+görüntüleri ayrıntılı bir şekilde alınmalı,
+▪ bütün bulgu ve deliller bir kroki üzerinde
+belirtilmeli
+▪ ve numaralandırılarak ilgili açıklamalar
+eklenmelidir.
+Şekil 7. Toplu mezarlardan elde edilen elbise 
+ve aksesuarlar
+--- page 32 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+❑Bir kıyafet genelde o kıyafetin modeline ve bedenine göre birçok
+kesilmiş parçadan oluşur.
+❑Bu durum o kıyafetteya da bir seride karakteristik birtakım farklılıkların
+oluşmasına sebebiyet vermektedir[3].
+Ayrıca, kumaşlar üzerindeki desenler, kalıp ve şablonlar kullanılmak
+suretiyle yapılan kesim esnasında da maliyetleri düşürmek amacıyla çok
+dikkat edilmemektedir.
+Bu durum özellikle kareli, çizgili, kamuflaj kumaşlarda aynı atölye veya
+fabrikadanüretilmiş olsalar dahi çok açık farklılıklar oluşmaktadır [3].
+--- page 33 ---
+Fotoğraf ve Güvenlik Kamera Görüntülerinden Elbise İncelemeleri
+Şekil 8. (a) Kravat üzerinde üretimden (b) Triko üzerinde baskıdan kaynaklanan farklılıklar [3]
+(a) (b)
+--- page 34 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+Elbiseleri, işleme esnasında da farklı durumlar söz konusudur.
+❖Bir dikişin görüntüsü üzerinde iğnenin şekli, dikim şekli, makine ve makine
+ayar tercihi (iğne batış şekli, iğne batış uzunluğu, işlenim şekli, makara ger-
+ginliği) gibi ip çeşidi, inceliği ve renginin de önemli ölçüde etkisi bulunmaktadır.
+❖Kıyafete şekil vermek için gerekli olan keçe, pamuk ve tüy gibi iç malzemeler
+genelde bizzat el ile işlenmektedir.
+❖Bu ve benzeri sebeplerden dolayı, elbiselerin her bir parçası aynı yerde
+üretilmelerine rağmen birbirinden farklı ve böylece bireysel karakteristik
+özelliklere sahip olmaktadırlar[3].
+--- page 35 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+❑Kıyafetlerde, farklı düğme dikimi, farklı
+aksesuar eklemeleri ile kullanımdan,
+yıkamalardan ve tadilatlardan kaynaklanan
+kırışıklık, yıpranma, renk solması gibi kendi
+özdeşleriyle bile birtakım karakteristik
+farklılıklar oluşabilmektedir.
+Şekil 9. Kotta kullanım ve yıkamadan kaynaklanan farklılık
+--- page 36 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+Elbiselerdeki bu bireysellik ve farklılıkların özellikle son zamanlar da çokça
+gündeme gelmektedir.
+❑Güvenlik kamera görüntüleri ve fotoğraflardan şüpheli kişilerin
+yüzlerinden tanımlama yapılamaması durumunda, kıyafetlerinden teşhis ve
+mukayeseyapılmasına imkan vermesi açısından oldukça önemlidir.
+❑Güvenlik kamera görüntülerinin elverişsiz niteliklerde olması, olay yerinin
+ışık durumunun yetersiz olması, sistemin renk ve boyut çözünürlüğünün kötü
+olması gibi sebepler görüntülerin incelenmesini olumsuz yönde
+etkilemektedir [3].
+--- page 37 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+Şekil 10. Güvenlik kameralarındandın elde edilen elverişsiz görüntü örnekleri [7]
+--- page 38 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+Şekil 11. Güvenlik kameralarındandın elde edilen  görüntü üzerinden kıyafetin tahmin edilmesi [7]
+
+--- page 39 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+❑Adli açıdan yapılan görüntü karşılaştırmalarının
+gerçekleşebilmesi için gerekli olan ilk basamak, karşılaştırması
+yapılacak olan
+ görüntünün
+ iyileştirilmesidir.
+❑Görüntünün iyileştirilmesi bir görüntüde yeterli düzeyde
+görüntü bilgisi içerip içermediği durumlarda gerçekleştirilir.
+❑Görüntü iyileştirme; video çerçevesi (kadrajı) içerisinde kalan
+nesnelerin daha seçilebilir olması, mukayese yapmaya
+elverecek düzeye getirilmesi işlemidir.
+--- page 40 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+❖Görüntü bilgisi eksikliğinin en sık olarak rastlandığı vakalar,
+güvenlik kamerasıkayıtlarıylakaydedilmişolaylardır.
+❖Örneğin 2007 yılında aralık ayı başına kadar Ankara
+Kriminal Polis Laboratuvarlarına ulaşan adli görüntü
+incelemelerinin %80’ ni görüntü iyileştirme talepleri
+oluşturmuştur [3].
+Bu taleplerin %69’u üzerinde ise kayıtların yeterli düzeyde
+görüntü bilgisi içermemesi nedeniyle inceleme
+yapılamamıştır [3].
+--- page 41 ---
+Fotoğraf ve Güvenlik Kamera Görüntülerinden 
+Elbise İncelemeleri
+Örneğin aşağıda sunulan 9 kameralı bir güvenlik sisteminde, sol üst köşedeki
+1.kamera içerisinde tespit edilen şüpheli bir şahsın, iyileştirme işleminden
+sonra elde edilen görüntüsü, görüntü bilgisi azlığından dolayı
+iyileştirilememiştir.
+Şekil 11. (a) Güvenlik kameralarını izle ekranı (b)Şüpheli bir şahsın iyileştirme işleminden sonraki görüntüsü 
+(a) (b)
+* Kameradaki donanım özelliklerinin
+yetersizliği ve konumlandırma eksikliği
+nedeniyle iyileştirilmiş görüntü
+büyütüldüğünde bile kimlik tespiti yapılamamış
+ve elbiseler üzerinde yeterli detay elde
+edilememiştir.
+--- page 42 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+Daha fazla görüntü bilgisi içeren görüntüler, başarılı bir şekilde iyileştirilmektedir.
+Şekil 12. (a) Güvenlik kamera görüntüsü (b)Şüpheli bir şahsın iyileştirme işleminden sonraki görüntüsü 
+(a) (b)
+• İyileştirilen görüntüde de elbiseler
+üzerinde yeterli detay elde (rengi,
+deri mi kumaş mı vs.?) edilememiştir.
+--- page 43 ---
+Fotoğraf ve Güvenlik Kamera Görüntülerinden 
+Elbise İncelemeleri
+❑Olay yeri ile ilgili fotoğraflar çekilirken
+çok dikkat edilmelidir.
+❑Bazı durumlarda hatalar
+yapılabilmektedir.
+❑Bu hatalar, kıyafetlerin görüntüler
+üzerinden incelenmesini
+zorlaştırmaktadır.
+❑Benzer şekilde hatalı çekilmeden
+kaynaklı fotoğraflar da iyileştirilmesi
+gerekmektedir.
+Şekil 13. Sol: Yanlış kompozisyon. Sağda: Güneşi engellemek ve gölgeli alana maruz bırakmak [8].
+
+--- page 44 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+❑Örneğin aşağıda güvenlik kameralarından elde edilen görüntülerde şahıslar 
+üzerindeki elbiselerin tespiti yapılmaya çalışılmıştır .
+(a) (b)
+Şekil 13. Güvenlik kameralarından elde edilen görüntülerde elbise incelemeleri [7]
+Yukarıda verilen görüntüler iyileştirilip derin öğrenme ile kişilerin elbiselerinin ne olduğu saptanmaya çalışılmıştır 
+[7].
+--- page 45 ---
+Fotoğraf ve Güvenlik Kamera 
+Görüntülerinden Elbise İncelemeleri
+❖Elbise karşılaştırmaları hareketli görüntüler üzerinden daha çok
+sabit imajlar (still images) üzerinden yapılması çok daha başarılı
+ve tatminkar sonuçlar verecektir.
+❖Tek fotoğraf çekimlerinden elde edilen fotoğraf çözünürlüğü,
+hareketligörüntülerin çözünürlüğünegöre çok daha fazla olacaktır.
+❖Tek fotoğraf çekimlerinin bir dezavantajı hareketli
+görüntülerdeki gibi seri karelerin (frames) olmayışıdır [3].
+--- page 46 ---
+Fotoğraf ve Güvenlik Kamera Görüntülerinden 
+Elbise İncelemeleri
+❑Örneğin cinsel istismar suçuyla ilgili olarak tek fotoğraf çekimleri (tab
+edilmiş) elde edilen görüntüler verilmiştir. Kamera görüntülerine göre çok
+daha net görüntülerdir.
+Şekil 14. Cinsel istismar suçuyla ilgili olarak incelenen 
+adli bir vakaya ait tetkik konusu fotoğraflar [3]
+• Yandaki fotoğrafların çözünürlüğe bağlı olarak yeterli derece
+görüntü içermesi nedeniyle sağ ve sol taraftaki montlar birçok
+noktadan irtibatlandırılmıştır.
+• Her iki fotoğraftakimontun aynı mont olduğu anlaşılmıştır.
+• Bu olayda erkek şahıs tarafından aynı montun giyilmesi,
+• Çekilen fotoğraflarda erkek şahsın olmamasına rağmen
+arkaplanda montun görülmesi (Şekil 15.b)
+Yukarıdaki verilen durumlar ile diğer delil olan fotoğraflardaki
+farklı unsurların tespitiyle de desteklenmiş ve söz konusu şahıs
+hakkında bir kanaat oluşmuştur.
+(a) (b)
+--- page 47 ---
+Fotoğraf ve Güvenlik Kamera Görüntülerinden 
+Elbise İncelemeleri
+❑Sol taraftaki fotoğraf, tab edilerek kağıt 
+üzerine baskısı alınmış bir fotoğraf tarayıcıdan 
+bilgisayar ortamına aktarılmıştır [3].
+❑Sağ taraftaki ise delil olarak gönderilen
+montun görüntüsüdür. Bu montun yüksek
+çözünürlükte birçok görüntüsü çekilmiştir [3].
+Yandaki şekildeki gibi mont birçok nokta baz
+alınarak eşleştirilmiştir [3].
+Şekil 15. İki montun aynı montlar olup olmadığının tespiti [3]
+* Y andaki örnek durum için mont neden insan gözüyle
+direk karşılaştırılmayıp bilgisayarda görüntü karşılaştırma
+yöntemi kullanılmış olabilir mi? (Avantajları)
+Y andaki örnek durum için elbisenin yapısı/görünümü
+haricinde eşleştirme işlemini zorlaştıran faktör var mıdır?
+--- page 48 ---
+Sonuç
+Görüntü kaynağının tespiti oldukça önemlidir. Çünkü günümüzde görüntü kaynağı tespit
+edilmeden bir görüntü veya video kayıtlarının birer delil olarak kabul edilmesi farklı
+durumlara yol açacaktır.
+Örneğin aşağıda üzerinde oynanmış bir görüntü verilmiştir.
+Şekil 16. (a) Orijinal görüntü  (b) copy-move forgery tekniği ile olay yerindeki bulguların yok edilmesi  [8]
+* Şekil b’de görüldüğü gibi olay
+yerindeki bazı deliller (kovan
+parçaları) yok edilmiştir.
+--- page 49 ---
+Sonuç
+Günümüzde artık videolar da üzerinde Deepfake tekniği ile gerçeğinden ayırt
+edilemeyecek şekilde oynamalar yapılmaktadır.
+Şekil 17. (a) orijinal görüntü  (b) Deepfake tekniği ile konuşmanın 
+Hillary Clinton olarak gösterilmeye çalışılması [9]
+--- page 50 ---
+Sonuç
+Literatürde yapılan birçok çalışma ile birlikte (derin öğrenme,
+örüntü tanıma, görüntü işleme vb.) adli bilişimde sayısal
+görüntülerin incelenmelerinde ivme kazanılmıştır.
+Fakat birçok vakada karşılaşılan gerçek problemlerin
+kompleksliliği, görüntü sahteciliğinin çok daha kolay bir şekilde
+daha profesyonel yapılabilmesi ve de incelenecek sayısal
+görüntülerin sayısının fazla olması gibi durumlar göz önüne
+alındığında bu alanda daha çok çalışma yapılmasına gerek vardır.
+--- page 51 ---
+Kaynakça
+[1] Digital Image Forensics Theory and Implementation , Roy, A., Dixit, R., 
+Naskar, R., Chakraborty, R.S., Springer
+[2] Sayısal Görüntü İşleme, Rafael C. Gonzalez, Richard E. Woods, Palme
+Yayıncılık, Üçüncü Baskıdan Çeviri
+[3] Ses Görüntü ve Data İncelemeleri, Levent BAYRAM, Adalet Yayınevi
+[4] https://archives.fbi.gov/archives/about-us/lab/forensic-science-
+communications/fsc/july2000/deedric3.htm#Natural%20Fibers
+[5] Paulsson, Nils, and Bengt Stocklassa. "A real-time color image processing 
+system for forensic fiber investigations." Forensic science international 103.1 
+(1999): 37-59.
+[
+--- page 52 ---
+[6] Wetzer, Elisabeth, and Hans Lohninger. "Image Processing using Color
+Space Models for Forensic Fiber Detection." IFAC-PapersOnLine 51.2 (2018): 
+445-450.
+[7] Bedeli, Marianna, Zeno Geradts, and Erwin van Eijk. "Clothing
+identification via deep learning: forensic applications." Forensic sciences
+research 3.3 (2018): 219-229.
+[8] Mahdian, Babak, and Stanislav Saic. "Detection of copy–move forgery 
+using a method based on blur moment invariants." Forensic science 
+international 171.2-3 (2007): 180-189.
+[9] Afchar, Darius, et al. "Mesonet: a compact facial video forgery detection
+network." 2018 IEEE International Workshop on Information Forensics and
+Security (WIFS). IEEE, 2018.

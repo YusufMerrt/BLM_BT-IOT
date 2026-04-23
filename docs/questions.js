@@ -3,7 +3,7 @@
 // Klasik sorular için alt tipler: T (Tanım/Örnek), Ç (Çıkarım), A (Analiz), M (Modelleme/Senaryo)
 // PDF nesnelerin_interneti_vize_soru_bankasi.pdf (60 çoktan seçmeli + 36 boşluk) aşağıda ayrı blokta eklenmiştir.
 
-const QUESTIONS = [
+const IOT_QUESTIONS = [
   // ================= BÖLÜM 1 - IoT GİRİŞ =================
   { topic: 1, type: "mc", q: "Nesnelerin İnterneti (IoT) kaç ana kavram üzerine kurgulanmıştır?", options: ["2", "3", "4", "5"], answer: 1, exp: "IoT üç ana kavram üzerine kurgulanmıştır: İnternet, Cihazlar ve Veri." },
   { topic: 1, type: "mc", q: "Aşağıdakilerden hangisi IoT'nin üç ana kavramından biri DEĞİLDİR?", options: ["İnternet", "Cihazlar", "Veri", "Donanım"], answer: 3, exp: "IoT; İnternet, Cihazlar ve Veri kavramları üzerine kurgulanmıştır." },
@@ -661,8 +661,8 @@ const QUESTIONS = [
 
 ];
 
-// Bölüm başlıkları
-const TOPICS = {
+// Bölüm başlıkları (Nesnelerin İnterneti dersi)
+const IOT_TOPICS = {
   1: { title: "Bölüm 1 — Nesnelerin İnternetine Giriş", short: "IoT Giriş" },
   2: { title: "Bölüm 2 — Modern IoT Mimarileri", short: "IoT Mimarileri" },
   3: { title: "Bölüm 3 — Sensörler ve Aktüatörler I", short: "Sensörler I" },
@@ -671,4 +671,27 @@ const TOPICS = {
   6: { title: "Bölüm 6 — Haberleşme I: Teknolojiler", short: "Haberleşme" },
 };
 
-if (typeof module !== "undefined") module.exports = { QUESTIONS, TOPICS };
+/** Ders havuzları: index.html’de adli-questions.js IoT’tan sonra yüklenir. */
+const COURSES = {
+  iot: {
+    id: "iot",
+    name: "Nesnelerin İnterneti (IoT)",
+    shortName: "IoT",
+    questions: IOT_QUESTIONS,
+    topics: IOT_TOPICS,
+  },
+  adli: {
+    id: "adli",
+    name: "Adli Bilişim",
+    shortName: "Adli Bilişim",
+    questions: typeof ADLI_QUESTIONS !== "undefined" ? ADLI_QUESTIONS : [],
+    topics: typeof ADLI_TOPICS !== "undefined" ? ADLI_TOPICS : {},
+  },
+};
+
+const QUESTIONS = IOT_QUESTIONS;
+const TOPICS = IOT_TOPICS;
+
+if (typeof module !== "undefined") {
+  module.exports = { QUESTIONS, TOPICS, IOT_QUESTIONS, IOT_TOPICS, COURSES };
+}
