@@ -1,4 +1,5 @@
 import fs from "fs";
+import { addFinalQuestions } from "./build-adli-final-questions.mjs";
 const out = [];
 function T(topic, o) {
   out.push({ topic, ...o });
@@ -321,6 +322,9 @@ T(7, { type: "fill", q: "Girişte listelenen başlıklardan biri: Yan yana (side
 T(7, { type: "fill", q: "Ayak ve lastik ______ slaytta 'Görüntü karşılaştırma ve ölçme' dersinin giriş maddelerinden biridir.", answer: ["izleri", "İzleri", "iz", "izi"], exp: "Ayak ve lastik izleri (SUNU7 giriş listesi)." });
 T(7, { type: "fill", q: "Yüzey yüksekliği mermi örneğinde korelasyon ______ yüzde seviyesinde verilmiştir (slayt örnek, virgüllü sayı).", answer: ["99,6", "99.6"], exp: "99,6 (SUNU7)." });
 
+// ===== FINAL: SUNU 8–14 (8adli–14adli) =====
+addFinalQuestions(T);
+
 // Çoktan seçmelilerde doğru şık hep aynı harfte birikmesin: A/B/C/D arasında dönüşümlü
 function redistributeMcAnswerPositions(questions) {
   let k = 0;
@@ -345,8 +349,8 @@ function redistributeMcAnswerPositions(questions) {
 }
 redistributeMcAnswerPositions(out);
 
-const header = `// Adli Bilişim (SUNU 1-7) — yalnızca test (çoktan seçmeli, doğru-yanlış, boşluk).
-// Kaynak: ders slaytları (SUNU 1-7). Otomatik: build-adli-questions.mjs
+const header = `// Adli Bilişim (SUNU 1-14) — test (çoktan seçmeli, doğru-yanlış, boşluk).
+// Kaynak: ders slaytları (SUNU 1-7 vize, 8-14 final). Otomatik: build-adli-questions.mjs
 const ADLI_TOPICS = {
   1: { title: "SUNU 1 — Adli bilişime giriş, kavram, aşamalar, mevzuat, içerik koruma", short: "SUNU 1" },
   2: { title: "SUNU 2 — Temel adli bilişim, BTK, terimler, hash, sektör", short: "SUNU 2" },
@@ -355,6 +359,14 @@ const ADLI_TOPICS = {
   5: { title: "SUNU 5 — M57 vakası, RAM, Volatility", short: "SUNU 5" },
   6: { title: "SUNU 6 — Görüntü, kamera, CFA/Bayer, EXIF, kör tespit", short: "SUNU 6" },
   7: { title: "SUNU 7 — Karşılaştırma, ölçüm, fotogrametri", short: "SUNU 7" },
+  8: { title: "SUNU 8 — Stereo ölçüm, eşikleme, morfoloji, şekil, manipülasyon", short: "SUNU 8" },
+  9: { title: "SUNU 9 — Kalibrasyon, renk uzayları, düzeltme, interpolation, histogram", short: "SUNU 9" },
+  10: { title: "SUNU 10 — Kanıt sunumu, karşılaştırma, animasyon, standartlar", short: "SUNU 10" },
+  11: { title: "SUNU 11 — Bilirkişilik kanunu, yetki, yükümlülük, eğitim", short: "SUNU 11" },
+  12: { title: "SUNU 12 — Uzman mütalaa, CMK 67, HMK 293", short: "SUNU 12" },
+  13: { title: "SUNU 13 — Adli belge incelemeleri, sahtecilik, grafoloji", short: "SUNU 13" },
+  14: { title: "SUNU 14 — Laboratuvar yazılımları, Amped, Cognitech, karşılaştırma", short: "SUNU 14" },
+  15: { title: "FINAL — Tüm final konuları (SUNU 8–14 birleşik)", short: "Final hazırlık" },
 };
 const ADLI_QUESTIONS = `;
 const text = header + JSON.stringify(out, null, 2) + ";\n";

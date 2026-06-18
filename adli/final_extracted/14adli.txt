@@ -1,0 +1,542 @@
+ADLİ GÖRÜNTÜ İNCELEME 
+LABORATUVARLARINDA
+KULLANILAN YAZILIMLAR VE ÖRNEK 
+OLAYLAR
+---PAGE---
+GİRİŞ: ADLİ GÖRÜNTÜ ÇALIŞMA 
+GRUPLARI
+❖Dünyada Yüz Tanımlama Bilimsel Çalışma Grubu
+(FISWG) ve Dijital Görüntüleme Çalışma Grubu (DIWG)
+uluslararası alanda çalışmalar yürüten gruplara örnek
+olarak verilebilir [1].
+• Türkiye’de adli görüntü inceleme alanında faaliyet
+gösteren birçok laboratuvar olmasına rağmen, bu
+laboratuvarların ve inceleme uzmanlarının ortak bir
+platformda buluşabileceği bir çalışma grubu henüz
+oluşturulmamıştır [1].
+---PAGE---
+LABORATUVAR ÇALIŞMALARINDA 
+KULLANILAN ARAÇLAR VE YAZILIMLAR [1]
+1)Görüntü İyileştirme İncelemeleri
+2)Manipülasyon İncelemeleri
+3)Karşılaştırma İncelemeleri
+4)Yüz Karşılaştırma İncelemesi
+---PAGE---
+1.GÖRÜNTÜ İYİLEŞTİRME İNCELEMELERİ
+❖Adli video ve görüntü analizi, video ve görüntü işleme,
+kolluk kuvvetleri, endüstriyel güvenlik ve mahkemeler
+arasındaki ilişkide köprü oluşturur.
+❖Görüntü iyileştirme; adli bilişim ve adli görüntü inceleme
+alanında kabul edilen bir uygulamadır ve olay yerinin
+yeniden canlandırılması, fotogrametri, okunamayan
+belgeler ve yüz ve parmak izi tanımlama dâhil olmak
+üzere biyometrik analiz gibi birçok adli uygulamada
+büyük ölçüde güvenilmektedir [1].
+---PAGE---
+• Görüntü iyileştirme incelemesi, görüntüdeki kalite kaybının nedenini
+bulmak, gürültü türünü tanımlamak, işlemi tersine çevirmek, görsel
+olarak geliştirmek ve adli incelemeye hazır hale getirmek gibi amaçlar
+gütmektedir.
+Görüntü geliştirmenin sınırları, büyük ölçüde görüntünün oluşumu esnasında 
+geçtiği bir dizi işlemin her adımında oluşan ve yukarıda gösterilen bilgi kaybı 
+miktarıyla belirlenir [1].
+---PAGE---
+❖Adli olaya konu olan, incelenmek üzere 
+laboratuvara gönderilen görüntüler genellikle 
+görüntü kalitesi ve çözünürlüğü düşük olan 
+görüntülerdir.
+❖Uygun görüntü inceleme araçları kullanılarak 
+görüntülerdeki gürültüleri gidermek, çözünürlüğü 
+artırmak ve inceleme talep eden birimlere cevap 
+verebilmek kolaylaştırılabilir.
+❖Görüntü iyileştirme için önde gelen çeşitli adli 
+yazılımlar geliştirilmiştir.
+---PAGE---
+1. AMPED
+• Amped yazılımlarının geliştirmeye çalıştığı çözümler 
+genel olarak; adli incelemeler, soruşturma aşamasının 
+sağlıklı yapılması, asayişin sağlanması ve istihbarat ile 
+ilgili tüm görüntü ve video izleme, çözümleme ve 
+iyileştirme ihtiyaçlarının giderilmesini sağlayan 
+işlemleri kapsar.
+• Amped yazılımı, farklı ürün paketleri ile adli inceleme 
+ihtiyaç türüne göre hizmet vermektedir. 
+• Amped FIVE, Amped Replay ve Amped DVRConv 
+bunlardan bazılarıdır.
+---PAGE---
+Amped FIVE
+❖Videolardaki detayları ve sayısal ortamdaki 
+görüntüleri en az hatayla ve seri bir şekilde incelemek 
+ve geliştirmek için adli görüntü inceleme uzmanlarının 
+elini çeşitli çözümlerle güçlendirmek birincil amacıdır. 
+❖Amped FIVE, adli görüntü uzmanları tarafından güvenilen 
+bir yazılımdır çünkü mahkemede kalıcı olan kanıtları 
+ortaya koymak için belirgin bir çalışma dizisi kullanır.
+❖İncelenen materyalin orijinal halinin değişmemesi için 
+yapılan video yükleme, bir bölümünü kesip dışa 
+aktarma, gürültü giderme, kareleri seçme, ölçümler 
+yapma gibi her işlem sadece filtreleme konsepti ile 
+çalışır.
+---PAGE---
+❖Bu modül altında gerçekleştirilen başlıca 
+işlemler şunlardır:
+▪Hareket halindeki bir aracın plakasının tespit 
+edilmesi
+▪Odak hatası olan kamera görüntüsünde odak 
+noktasının şüpheli şahıs veya nesne olacak şekilde 
+düzeltilmesi
+▪Kamera açısına göre nesnelerin perspektiflerinin 
+düzeltilmesi
+▪Karanlık bir ortamda çekilmiş bir görüntüden detay 
+elde edebilmek için ışık şiddetinin artırılması
+---PAGE---
+▪Olay yeri fotoğraflarından şüphelilerin veya 
+nesnelerin boylarının ölçülmesi
+▪Ters ışık hatalarının düzeltilmesi
+▪360 derece kamerayla çekilen bir görüntünün 
+düzleştirilmesi
+▪Gürültülü görüntülerin iyileştirilmesi
+▪Distorsiyon hatalarının giderilmesi
+---PAGE---
+Amped FIVE Yazılımı Kullanıcı Ara Yüzü [1]
+---PAGE---
+❖Adli görüntü incelemelerinde, Amped FIVE 
+tarafından uygulanan işlemlerin iş akışı genellikle 
+şu şekildedir:
+1. Yükleme/İçe Aktarma: DVR dönüştürme aracıyla 
+yüzlerce video formatını destekler.
+2. Analiz Etme: EXIF meta verileri, video formatı ve 
+codec özellikleri, kare kare kodlama türü ve makro 
+blok analizi gibi görüntülerin ve videoların belirli 
+ayrıntıları analiz edilir.
+---PAGE---
+3. Seçim Yapma :
+Hareket algılama özelliği ile görüntüdeki incelenmek istenilen 
+kareleri bulunur veya inceleme uzmanı tarafından görüntünün 
+belirli bir bölümü tanımlanarak incelemeye sadece bu kısımda 
+devam edilebilir.
+4.Görüntü İşleme ve İyileştirme:
+Görüntü üzerindeki gürültüyü gidermek ve görüntüyü iyileştirmek, 
+görüntüden daha fazla detay elde edebilmek için 140’tan fazla 
+mevcut filtre ve araç istenilen şekilde kombine edilerek 
+kullanılabilir.
+Amped Yazılımıyla Karanlık Bir Video Karesinin iyileştirilmesi örneği [1]
+---PAGE---
+5. Sonuçları Dışa Aktarma: İyileştirme sonucu oluşan 
+görüntü veya video bölümü, yapılan işlemlerle beraber, 
+orijinal karelerle karşılaştırma amaçlı yan yana olarak 
+görülebilir.
+6. Raporlama: Yapılan tüm işlemleri, işlem sırasıyla 
+gösteren otomatik bir rapor oluşturmak mümkündür. 
+• Rapor, kullanılan her filtre ve parametre ayarları için
+sağladığı bilimsel referansla, mahkemeye kanıt olarak
+geçerli olabilmesi için tekrarlanabilirlik ve yeniden
+üretilebilirliğe yardımcı olur.
+---PAGE---
+Amped Replay
+• Olay yeri inceleme personeli, asayiş birimleri ve diğer ilgili kolluk 
+personeli tarafından, vücuda ve araca takılan kamera 
+görüntülerini, dronlardan, sosyal medyadan elde edilen 
+görüntüleri ve diğer kaynaklardan elde edilen çoğu tescilli 
+CCTV/DVR formatındaki görüntüleri dönüştürüp oynatmaya 
+yarayan ve araştırma sırasında kolaylık sağlamak amacıyla 
+görüntüler üzerinde basit oynama ve not ekleme gibi modülleri 
+olan adli yazılım aracıdır.
+---PAGE---
+Amped Replay Yazılımı Kullanıcı Ara Yüzü [1]
+Amped Replay, saha 
+birimindeki araştırmacıların 
+basit olaylardaki görüntüleri 
+olay yerinde daha hızlı 
+inceleyip kendileri karar 
+vermesini ya da bunu 
+yapamasalar bile 
+görüntülerin adli açıdan da 
+uygun olarak elde edilip 
+laboratuvara bu şekilde 
+gönderildiğini garanti 
+etmesine yardımcı olur.
+---PAGE---
+Amped DVRConv
+• Ortalama bir suç mahallini düşünürseniz, herhangi bir suç 
+muhtemelen 10 veya daha fazla CCTV kamerası tarafından 
+yakalanır.
+• Format dönüşümü yapılamadığından Windows ortamında bazı 
+videolar açılamaz.
+• Videoların orijinal akışı mümkün olduğu kadar koruyan, 
+standart kodlama bilgilerini özel meta verilerden ayırarak oynatım 
+esnasındaki hatalardan ve kayıp karelerden kaçınan ve adli 
+açıdan sağlam bir şekilde CCTV video dönüştürme bu araçla 
+yapılabilir.
+---PAGE---
+2. COGNITECH TRI-SUITE
+•Cognitech Tri-Suite araç seti, başlıca üç adet 
+gerçek zamanlı patentli adli görüntü 
+uygulamasından oluşur: 
+•AutoMeasure, VideoActive ve Video 
+Investigator olmak üzere 3 ana modülü 
+vardır.
+---PAGE---
+AutoMeasure
+• İleri derecede fotogrametri bilgisine sahip olmayı gerektirmeyen, 
+yapılacak ölçümde uygulanacak adımları teker teker ve renklendirerek 
+işlem sırasına koyan ve kullanıcıyı her adımda yönlendiren ara yüzü ile 
+kullanımı oldukça rahattır.
+• Olay yeri incelemesi yapan birimler tarafından 360 derece çekim 
+yapabilen bir kamera vasıtasıyla, olay yerinin 360 derece fotoğrafı veya 
+videosu çekilmişse, bu kamerayı otomatik olarak algılayan ve 
+hassas ölçümler yapmak için görüntüyü düzeltme esnasında 
+oluşacak bozulmaları ve distorsiyonu gideren gelişmiş bir 
+algoritması da mevcuttur.
+• Geleneksek ters projeksiyon tekniğinden farklı olarak görüntü 
+kaynağı değiştirilmiş veya silinmiş olsa bile tek kareden ölçüm 
+yöntemi kullanılarak birkaç 3B olay yeri ölçümünden bir veya birden 
+fazla sayıda olan suça konu görüntülerdeki bir öznenin uzunluğu 
+hesaplanabilir.
+---PAGE---
+Cognitech AutoMeasure Ölçüm Araçları Penceresi ve Bu Araç Kullanılarak Yapılan Bir İnsan Boyu 
+Ölçüm Örneği
+---PAGE---
+VideoActive
+• Yeni bir video yakalama ve kodlama teknolojisi olup, 
+otomatik çoğullamayı iletme tekniği ve suça konu 
+görüntüdeki kişilerin GPS konum belirlemesini yürütme 
+yeteneği ile gerçek zamanlı video işleme için önde gelen 
+adli bilişim yazılımlarındandır.
+
+---PAGE---
+Video Investigator
+• İnceleme uzmanı personele, en yaygın olarak 
+kullanılan iyileştirme parametrelerini sonuçları 
+ekranda anlık olarak görebilmesine olanak 
+tanıyarak kullanma, görüntü iyileştirme fonksiyonlu 
+filtre türlerine sahip gelişmiş bir ara yüzü keşfetme 
+imkânı sunar.
+• Bu yazılım paketi, adli görüntü işleme 
+incelemelerinde farklı çözümleri araştırmak ve 
+sonuca ulaşmada uzmana yardımcı olmak için 
+tasarlanmıştır.
+---PAGE---
+Dosya Dönüştürme: inceleme uzmanlarının, dosyaları RGB'den 
+YUV'ye, 8-bit'ten 16-bit'e, 8-bit'ten 32-bit'e gibi çeşitli şekillerde 
+dönüştürmesine olanak tanır.
+
+---PAGE---
+❖ Özetle Video Investigator birçok özelliği içerisinden 
+barındırmaktadır.
+• Bulanıklığı Giderme Filtreleri
+• Çoğullamayı Çözme
+• Gürültü Giderme Filtreleri
+• Algılama Filtreleri
+• Histogram Düzenleyici
+• İzleme
+• Dönüştürme
+• Yeniden Yapılandırma
+• FaceFusion3D 
+---PAGE---
+Cognitech Video Investigator FaceFusion3D Filtresi Uygulama Örneği [1]
+---PAGE---
+3. OCEAN SYSTEMS
+• Ocean Systems, dünyada yaygın olarak kullanılan ve 
+kullanıcıya geniş kapsamlı inceleme fırsatı sunan bir 
+adli multimedya işleme, analiz ve sunum çözümüdür.
+• Görüntüleri işlemek ve iyileştirmek için dTective ve 
+ClearID en çok kullanılan araçlardır.
+---PAGE---
+dTective
+• İnceleme konusu videoları işlemek için farklı özelliklerde 
+uygulanan ve aşağıda kısaca açıklanan farklı araçlar kullanır.
+• dVeloper ile inceleme ve karşılaştırma için önemli bir yeri olan 
+video renk uzayını ayırmak kolaydır.
+Ocean System dTective dVeloper Filtresi ile iyileştirilmiş bir görüntü örneği [1]
+---PAGE---
+• SpotLight, hızlı ve kullanıcıya basit kullanım imkânı veren 
+parametreleriyle, inceleme yapan personelin, bir video 
+görüntüsü içerisinde vurgu veya bulanıklık yaratmak 
+istediği bölgeyi seçmesini sağlar.
+• arithMATIC, inceleme yapan uzmanın, belirlenen kareler 
+arasında neyin değiştiğini belirlemesi gereken 
+durumlarda yararlı olabilir. 
+Örneğin, şüpheli şahsın bir odaya girmeden önceki oda 
+güvenlik kamerası görüntüsüyle, odadan çıktıktan sonraki 
+odanın son halinin görüntü karesi aritmetik çıkarma 
+parametresiyle karşılaştırılarak şahsın hırsızlık yapıp 
+yapmadığı konusunda kanaat belirtmek mümkün 
+olabilmektedir.
+---PAGE---
+• Renk Düzeltme, zayıf aydınlatma ve ışık şiddetinin yetersiz olduğu 
+alanları analiz edip düzeltir ve orijinal sahnenin doğru renklerini 
+elde etmek için çekim kaynaklı hataları düzelten, real-time (gerçek 
+zamanlı) olarak çalışan ve diğer filtrelerin çıktılarını da daha 
+başarılı bir şekilde görmeyi sağlayan bir süreçtir.
+• Resim içinde Resim, bir hareketli görüntüyü diğerinin içinde 
+görüntüleme yeteneğine sahiptir ve dinamik, yan yana 
+karşılaştırmalar sunarak mukayese görüntüleri ile suç konusu 
+şüpheli görüntüler arasındaki tutarlılıkları ve tutarsızlıkları gösterir.
+• Mukayesesi yapılacak kaynak görüntüyü ekranda sürekli 
+göstermek ve şüpheli olarak görünen, üzerinde değişiklik 
+yapıldığı düşünülen kısımların (tarih ve zaman satırları gibi) 
+büyütülmüş veya orijinal haliyle ekranda kalmasını sağlamak 
+için videonun istenilen bir alanında bu filtre uygulanabilir. 
+---PAGE---
+• Karşılaştırmalı Analiz (Ters Projeksiyon), görüntüleri üst üste 
+bindirme özelliği ile konunun boyunu hesaplamayı amaçlar.
+• İnceleme yapan personel, bir şüpheliyi videoda belirledikten 
+ve ayrımını yaptıktan sonra, kalibre edilmiş bir ölçüm standardı 
+ile çalışan bu filtreyi şüphelinin resminin üzerine yerleştirebilir ve 
+ardından bu video ile diğer videoyu karşılaştırabilir. 
+• Bu basit karşılaştırma, şüphelinin gerçek boyutunun 
+belirlenmesini sağlar.
+---PAGE---
+• ClearID, çeşitli kaynaklardan elde edilen dijital görüntülerdeki 
+gizli ayrıntıları ortaya çıkarmak amacıyla geliştirilmiştir. 
+• Bu modül, sayısal görüntülerin ve videoların işlenmesi ve 
+iyileştirilmesi üzerine yoğunlaşmıştır.
+• ClearID, kanıtların orijinalliğine zarar vermeyen ve görüntü 
+üzerinde yapılan incelemeler süresince bütünleşik olarak çalışan 
+renk ön izleme pencereleri ile netleştirme gibi iyileştirmeleri uygun 
+ayarla yapmaya yardımcı olur. 
+• Görüntü üzerinde uygulanan her işlem ayrı bir katman 
+oluşturularak saklanır ve işlem tamamlandığında bir 
+doğrulama raporu oluşturmaya olanak tanır.
+---PAGE---
+• Örneğin aşağıda bulanıklığı giderilmiş bir görüntü verilmiştir. 
+Ocean System ClearID Modülü ile Bulanıklığı Giderilmiş ve Keskinliği Arttırılmış
+Bir Görüntü Örneği [1]
+---PAGE---
+4. MOTIONDSP
+• Güvenlik ve gözetim uygulamaları ile adli görüntü inceleme için yenilikçi 
+bir çözüm olarak geliştirilmiştir.
+• Bu yazılımın gelişmiş çeşitli özellikleri vardır:
+• Süper Çözünürlük: MotionDSP, videoyu yeniden oluşturma, 
+çözünürlüğü artırma ve gürültüyü giderme yeteneğine sahiptir.
+• Görüntü Sabitleme: MotionDSP'nin doğru sonuçlar veren sabitleme 
+algoritmaları, çoklu kareli hareket tahmininden yararlanır.
+• Bulanıklık Giderme ve Netleştirme: Bu parametre, diğer 
+keskinleştirme filtreleri ile işlem yapıldığında genellikle ortaya çıkan 
+gürültü artışını engelleyecek şekilde, istenilen görüntü karelerini 
+keskinleştirebilen özel bir bulanıklık giderme algoritması kullanır.
+---PAGE---
+MotionDSP Yazılımı Bulanıklığı Giderme ve Karışıklığı Çözme Filtreleri Kullanılarak Yapılan Bir 
+İyileştirme Örneği [1]
+---PAGE---
+5. FOCLAR
+• Kolluk kuvvetlerinin dijital görüntülerden eyleme dönüştürülebilir 
+bilgiler almasına olanak sağlamayı amaçlar.
+• Çeşitli gelişmiş özellikleri vardır.
+• Impress, görüntü iyileştirme aracı, düşük kalitedeki görüntüleri 
+işlem yapılabilir bilgilere dönüştürme işlemi yapar.
+---PAGE---
+• MotionDSP Impress Yazılımı Kullanıcı Ara Yüzü [1]
+
+---PAGE---
+• Corepro, kapalı devre izleme sistemi görüntülerinden şüphelinin 
+boyunun ölçülmesine imkan sağlamaktadır.
+MotionDSP Corepro Yazılımı Kullanıcı Ara Yüzü [1]
+---PAGE---
+6. FOREVID
+• Suç ve suçlunun tespitine yönelik çeşitli yöntemlerle farklı 
+kaynaklardan elde edilen görüntülerin adli olarak incelenmesi 
+amacıyla kullanılan açık kaynak yazılımlardan biridir.
+• Forevid, adli olaylarda görüntü incelemeleri için gerekli olan video 
+oynatma, işleme ve raporlama için çeşitli seçenekler gibi kapsamlı 
+bir dizi özellik sunar.
+---PAGE---
+• Aynı zamanda Forevid, güvenlik kameraları video kayıtlarını 
+incelemeyi kolaylaştırmak için basit bir araç olarak ya da düşük 
+kaliteli videoları geliştirmek, videolardaki olayları analiz etmek ve 
+analiz sonuçlarını belgelemek gibi farklı amaçlar için kullanılabilir.
+• Finlandiya Ulusal Soruşturma Bürosu Adli Laboratuvarında 
+geliştirilmiştir. 
+• Forevid'in görüntü üzerinde uygulanabilen özellikleri, aşağıda 
+belirtilmiştir
+---PAGE---
+Forevid Yazılımı Kullanıcı Ara Yüzü Filtre Ekleme Ekranı [1]
+---PAGE---
+7. KINESENSE
+• Kinesense, büyük hacimli güvenlik kameraları ve kapalı devre 
+izleme sistemleri videolarından kanıtları almak, aramak ve
+analiz etmek için taşınabilir bir çözüm olarak geliştirilmiştir.
+• Kinesense LE: Soruşturmaları hızlandırmak, insan çabasını 
+azaltmak ve soruşturmanın her aşamasında kanıtsal bütünlüğü 
+sağlamak için inceleme yapan personele kullanımı kolay bir 
+uygulamada gelişmiş video analitiği teknolojisi sunmaktadır.
+---PAGE---
+Kinesense LE Kullanıcı Ara Yüzü [1]
+---PAGE---
+• Kinesense Redact ise Kinsense LE'nin kullanılabilir bütün 
+işlevlerini güvenilir ve taşınabilir bir modülde birleştirir. 
+• Dijital kapalı devre izleme sistemlerinden görüntü almak ve 
+aramak ve açık ve gizli güvenlik kayıtları arasında video kanıtlarını 
+analiz etmek için idealdir.
+Kinesense LE Hareket Bulanıklığı Giderme Filtresi ile Bir Plakanın Netleştirilmesi Örneği [1]
+---PAGE---
+8. Videntifier
+❖Ele geçirilen sabit disk ve diğer medya 
+cihazlarındaki şüpheli videoların tespiti için tüm 
+incelemeyi ve aramayı otomatik olarak yapan, 
+kullanımı basit bir ara yüze sahiptir.
+❖Yüksek hızla tüm medyayı tarayarak uzman 
+personele kazandırdığı zaman sayesinde diğer 
+incelemelerin detaylı yapılabilmesi için olanak 
+sağlar. 
+❖Tarama sonlandığında ise tespit edilen medyaları 
+listeleyen özet bir rapor sunar.
+---PAGE---
+Videntifier Yazılımı İstemci Girişi (Solda) ve Rapor Alma (Sağda) Ekranları [1]
+---PAGE---
+9. IYON SUITE
+• TÜBİTAK tarafından Adli Görüntü İYileştirme ve 
+ONarma (IYON) yazılımı geliştirilmiştir.
+• İyileştirme Filtreleri, Onarma Filtreleri ve 
+Bulanıklık Giderme Filtreleri vs. birçok özelliği 
+içerisinde barındırmaktadır.
+---PAGE---
+IYON Yazılımında İyileştirme İşlemleri Penceresi
+---PAGE---
+10. iNPUT-ACE
+❖iNPUT-ACE yazılımı, doğruluk, basitlik ve hıza odaklanan 
+inceleme uzmanları için görüntü ve videoların analiz 
+edilmesinde önemli kolaylıklar sağlayan Amerika Birleşik 
+Devletleri menşeili bir adli görüntü inceleme yazılımıdır.
+iNPUT-ACE Yazılımı Kullanıcı Arayüzü ve Sürükle-Bırak-Oynat Ekranı [1]
+---PAGE---
+iNPUT-ACE Yazılımı Raporlama Ekranı [1]
+---PAGE---
+• Videodan Hız Hesaplama: Öncelikli olarak şüpheli araçların 
+görüntüdeki hızlarını belirlemek ve videodaki zamanlamayı doğru 
+bir şekilde hesaplamak VFR Lightboard ile mümkün 
+olabilmektedir.
+Video Üzerinden Hız Hesaplamak Ġçin Kullanılan iNPUT-ACE VFR Lightboard Cihazının Önden Görüntüsü [19
+---PAGE---
+ADLİ GÖRÜNTÜ 
+İYİLEŞTİRME 
+YAZILIM 
+ÖZELLİKLERİNİN 
+KARŞILAŞTIRMASI 
+[1]
+
+---PAGE---
+ÖRNEK PROBLEMLER VE YAZILIMLARIN 
+BAŞARIM  KARŞILAŞTIRMASI
+• Hüseyin HALİSTOPRAK tarafından [1] 2023 yılında sunulan 
+ADLİ GÖRÜNTÜ İNCELEME LABORATUVARLARINDA 
+KULLANILAN YAZILIMLARIN KARŞILAŞTIRMALI OLARAK 
+İNCELENMESİ adı yüksek lisans tezinden alınmıştır.
+• Deneysel çalışmalarda  Amped Five ve Cognitech Video 
+Investigator, Foclar Impress , IYON Suite ve Forevid yazılımları 
+kullanılmıştır.  
+• Elde edilen sonuçlar karşılaştırılmıştır.
+---PAGE---
+ÖRNEK PROBLEMLERİ
+Problem 1:
+Metre ile elde edilen görüntüde derinlik ve uzaklıktan dolayı tam 
+okunamayan yazıların iyileştirmesi ve çözünürlüğünün 
+artırılması işlemi yapılarak yazıların okunabilmesi problemi
+
+---PAGE---
+Problem 2:
+Çekim esnasında kameranın yukarı aşağı hareket 
+ettirilmesinden kaynaklanan dikey hareket bulanıklığının 
+giderilmesi ve bardak üzerindeki yazıların mümkün olduğu 
+kadar okunabilir hale getirilmesi
+
+---PAGE---
+Problem 3:
+❖Çekim esnasında kameranın tam 
+odaklanamamasından kaynaklanan 
+optik bulanıklığının giderilmesi ve 
+etiket üzerindeki yazıların mümkün 
+olduğu kadar okunabilir hale 
+getirilmesi
+
+---PAGE---
+Problem 4:
+Işık şiddetinin düşük olduğu ortamda yapılan çekim ile 
+karanlıkta kalan şahsın yüz detaylarının elde edilmesine 
+yönelik iyileştirme yapılması
+
+---PAGE---
+Amped Five ile Elde Edilen Sonuçlar
+
+---PAGE---
+Amped Five ile Elde Edilen Sonuçlar
+
+---PAGE---
+Amped Five Yazılımı ile Uygulanan Filtrelerin 
+İşlem Süreleri
+
+---PAGE---
+Cognitech Video Investigator ile Elde 
+Edilen Sonuçlar
+
+---PAGE---
+Cognitech Video Investigator ile Elde 
+Edilen Sonuçlar
+
+---PAGE---
+Cognitech Video Investigator Yazılımı ile 
+Uygulanan Filtrelerin İşlem Süreleri
+
+---PAGE---
+Foclar Impress ile Elde Edilen Sonuçlar
+
+---PAGE---
+Foclar Impress ile Elde Edilen Sonuçlar
+
+---PAGE---
+Foclar Impress Yazılımı ile Uygulanan 
+Filtrelerin İşlem Süreleri
+
+---PAGE---
+Forevid ile Elde Edilen Sonuçlar
+
+---PAGE---
+Forevid ile Elde Edilen Sonuçlar
+
+---PAGE---
+Forevid Yazılımı ile Uygulanan Filtrelerin 
+İşlem Süreleri
+
+---PAGE---
+IYON SUITE İLE ELDE EDİLEN SONUÇLAR
+
+---PAGE---
+Iyon Suıte İle Elde Edilen Sonuçlar
+
+---PAGE---
+IYON Suite Yazılımı ile Uygulanan Filtrelerin 
+İşlem Süreleri
+
+---PAGE---
+DEĞERLENDİRMELER
+• Görüntü iyileştirme alanında karşılaştırması 
+yapılabilen yazılımlar arasında filtre çeşitliliği, uygulama 
+sonuçlarının görsel olarak yeterliliği, uygulama hızı ve 
+kullanım kolaylığı bakımından en iyi seviyede Amped 
+Five yazılımı olduğu görülmüştür.
+• Sonrasında Foclar Impress yazılımı uygulama 
+sonuçlarının görsel olarak yeterliliği ve kullanım 
+kolaylığı bakımından Amped Five ile benzer seviyede 
+olsa da filtre çeşitliliği ve hız konusunda bir seviye 
+geride kalmaktadır. 
+---PAGE---
+• Cognitech Video Investigator yazılımı ise kullanım kolaylığı en 
+düşük olan yazılımdır. Filtre çeşitliliği üst seviyede olsa da 
+uygulamak uzun sürmektedir. 
+• Forevid yazılımı fotoğraf kareleri üzerinde etkili sonuç 
+vermemektedir, filtre çeşitliliği ve uygulama sonuçlarının 
+görselliği yetersiz seviyededir. 
+• IYON Suite yazılımı, yerli ve milli olmasıyla dikkat çekse de 
+gelişmeye ihtiyacı vardır. Filtre çeşitliliği, sonuçların görsel 
+olarak izlenmesi yeterli seviyede olsa da hız ve kullanım 
+kolaylığı bakımından geride kalmaktadır.
+---PAGE---
+Görüntü İyileştirme Deney Sonuçlarına Göre Ulaşılan 
+Kanaatleri Gösterir Çizelge
+---PAGE---
+KAYNAKÇA
+[1] H. Halistoprak, "Adli görüntü inceleme laboratuvarlarında 
+kullanılan yazılımların karşılaştırmalı olarak incelenmesi" , Yüksek 
+Lisans Tezi, Adli Bilimler A.B.D., Hacettepe Üniv., Ankara, 2023.
+---PAGE---

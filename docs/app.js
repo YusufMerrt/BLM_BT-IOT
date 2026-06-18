@@ -1,7 +1,7 @@
 // IoT Vize Sınav Uygulaması — app.js
 // Yayın: index.html içindeki script src="…?v=" ile aynı sürümü kullan (önbellek kırma).
 
-const APP_VERSION = "1.7.0";
+const APP_VERSION = "1.8.0";
 
 const STORAGE_KEYS = {
   wrong: "iot_wrong_questions_v2", // { course -> [ids] } veya düz dizi (eski: q12)
@@ -130,7 +130,7 @@ function setCourse(c) {
   const sub = $("homeCourseDesc");
   if (sub) {
     sub.textContent = c === "adli"
-      ? "SUNU 1–7 slaytlarından üretilmiş yalnızca test sorusu havuzu. IoT sorusu karışmaz."
+      ? "SUNU 1–14 slaytlarından test soru havuzu (1–7 vize, 8–14 final). IoT sorusu karışmaz."
       : "Altı bölümlük IoT dersi; klasik açık uçlu ve test soruları. Adli bilişim başka menüde.";
   }
   const foot = document.querySelector(".footer");
@@ -151,7 +151,9 @@ function renderTopics() {
   Object.keys(T).forEach(k => {
     const kn = parseInt(k, 10);
     const t = T[kn];
-    const qs = bankQuestions().filter(q => q.topic === kn);
+    const qs = kn === 15
+      ? bankQuestions().filter(q => q.topic >= 8 && q.topic <= 14)
+      : bankQuestions().filter(q => q.topic === kn);
     const byType = {
       mc: qs.filter(q => q.type === "mc").length,
       tf: qs.filter(q => q.type === "tf").length,
@@ -163,7 +165,7 @@ function renderTopics() {
       on: { click: () => toggleTopic(kn) },
       attrs: { role: "button", tabindex: "0", "aria-pressed": state.selectedTopics.has(kn) ? "true" : "false" }
     },
-      el("div", { class: "num", text: `Bölüm ${k}` }),
+      el("div", { class: "num", text: kn === 15 ? "Final" : `Bölüm ${k}` }),
       el("div", { class: "name", text: t.short }),
       el("div", { class: "meta", html:
         `<span>Toplam: <b style="color:#e8ecff">${qs.length}</b></span>` +
@@ -193,10 +195,20 @@ function updateGlobalStats() {
     `<span>Yanlış defteri: <b>${wrongCount}</b></span>`;
 }
 
+function effectiveSelectedTopics() {
+  const t = new Set(state.selectedTopics);
+  if (t.has(15)) {
+    t.delete(15);
+    for (let i = 8; i <= 14; i++) t.add(i);
+  }
+  return t;
+}
+
 function filterPool() {
   let pool = bankQuestions().map((q, i) => ({ ...q, _id: qid(i), _idx: i }));
-  if (state.selectedTopics.size > 0) {
-    pool = pool.filter(q => state.selectedTopics.has(q.topic));
+  const topics = effectiveSelectedTopics();
+  if (topics.size > 0) {
+    pool = pool.filter(q => topics.has(q.topic));
   }
   if (state.type !== "all") {
     pool = pool.filter(q => q.type === state.type);

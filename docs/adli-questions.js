@@ -1,5 +1,5 @@
-// Adli Bilişim (SUNU 1-7) — yalnızca test (çoktan seçmeli, doğru-yanlış, boşluk).
-// Kaynak: ders slaytları (SUNU 1-7). Otomatik: build-adli-questions.mjs
+// Adli Bilişim (SUNU 1-14) — test (çoktan seçmeli, doğru-yanlış, boşluk).
+// Kaynak: ders slaytları (SUNU 1-7 vize, 8-14 final). Otomatik: build-adli-questions.mjs
 const ADLI_TOPICS = {
   1: { title: "SUNU 1 — Adli bilişime giriş, kavram, aşamalar, mevzuat, içerik koruma", short: "SUNU 1" },
   2: { title: "SUNU 2 — Temel adli bilişim, BTK, terimler, hash, sektör", short: "SUNU 2" },
@@ -8,6 +8,14 @@ const ADLI_TOPICS = {
   5: { title: "SUNU 5 — M57 vakası, RAM, Volatility", short: "SUNU 5" },
   6: { title: "SUNU 6 — Görüntü, kamera, CFA/Bayer, EXIF, kör tespit", short: "SUNU 6" },
   7: { title: "SUNU 7 — Karşılaştırma, ölçüm, fotogrametri", short: "SUNU 7" },
+  8: { title: "SUNU 8 — Stereo ölçüm, eşikleme, morfoloji, şekil, manipülasyon", short: "SUNU 8" },
+  9: { title: "SUNU 9 — Kalibrasyon, renk uzayları, düzeltme, interpolation, histogram", short: "SUNU 9" },
+  10: { title: "SUNU 10 — Kanıt sunumu, karşılaştırma, animasyon, standartlar", short: "SUNU 10" },
+  11: { title: "SUNU 11 — Bilirkişilik kanunu, yetki, yükümlülük, eğitim", short: "SUNU 11" },
+  12: { title: "SUNU 12 — Uzman mütalaa, CMK 67, HMK 293", short: "SUNU 12" },
+  13: { title: "SUNU 13 — Adli belge incelemeleri, sahtecilik, grafoloji", short: "SUNU 13" },
+  14: { title: "SUNU 14 — Laboratuvar yazılımları, Amped, Cognitech, karşılaştırma", short: "SUNU 14" },
+  15: { title: "FINAL — Tüm final konuları (SUNU 8–14 birleşik)", short: "Final hazırlık" },
 };
 const ADLI_QUESTIONS = [
   {
@@ -2675,5 +2683,2187 @@ const ADLI_QUESTIONS = [
       "99.6"
     ],
     "exp": "99,6 (SUNU7)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Stereo (stereografik) çift görüntülerde derinlik haritaları nasıl hesaplanır?",
+    "options": [
+      "Tek kameradan zoom",
+      "Yanlamasına kaydırılmış iki giriş görüntüsünden",
+      "Sadece EXIF meta verisinden",
+      "Sadece histogram eşitlemeden"
+    ],
+    "answer": 1,
+    "exp": "Stereo pairs: iki konumdan görüntü (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Stereo kameralar slayta göre nasıl tasarlanır?",
+    "options": [
+      "Tek mercek",
+      "Sadece yazılım simülasyonu",
+      "İki merceğe sahip özel tasarım",
+      "Sadece termal sensör"
+    ],
+    "answer": 2,
+    "exp": "İki mercekli stereo kamera (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Stereo ölçümde paralaks mesafeleri (d1-d2) hangi büyüklükle orantılıdır?",
+    "options": [
+      "Sadece dosya boyutu",
+      "Sadece renk kanalı",
+      "Sadece GPS",
+      "İki nokta arasındaki yükseklik farkı (A ve B)"
+    ],
+    "answer": 3,
+    "exp": "Denklem 1: paralaks → yükseklik farkı (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Stereo ölçüm hangi ölçek aralığında rutin yapılabilir?",
+    "options": [
+      "Kilometreden mikrometreye kadar",
+      "Sadece nanometre",
+      "Sadece metre",
+      "Sadece piksel"
+    ],
+    "answer": 0,
+    "exp": "Hava fotoğrafçılığından SEM'e (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Kalabalık yoğunluğu tahmininde mors örneğinde yakın plan fotoğraf ne için kullanılır?",
+    "options": [
+      "Sadece renk",
+      "Mors başına ortalama alanı belirlemek",
+      "Sadece GPS",
+      "Sadece ses"
+    ],
+    "answer": 1,
+    "exp": "Şekil 3.1: başına alan (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Konser/siyasi etkinlik kalabalık görüntülerinde neden doğrudan kafa sayımı zor olabilir?",
+    "options": [
+      "Kamera yok",
+      "Sadece gece",
+      "Görüş açısı ve ışıklandırma birçok kafayı gizleyebilir",
+      "Sadece analog"
+    ],
+    "answer": 2,
+    "exp": "Şekil 3.2: açı ve ışık (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Kalabalık yoğunluğu tahmininde Google Haritalar slaytta nasıl kullanılabilir?",
+    "options": [
+      "Sadece navigasyon",
+      "Sadece hava durumu",
+      "Sadece trafik",
+      "Seyircilerin büyük kısmının nerede durduğunu belirlemek"
+    ],
+    "answer": 3,
+    "exp": "Şekil 4: harita üzerinden yoğunluk (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Toprak parçacığı görüntüleri Locard ilkesiyle nasıl ilişkilendirilir?",
+    "options": [
+      "Kişi olay yerine bırakmış veya olay yerinden almış olabilir",
+      "Sadece dijital hash",
+      "Sadece ağ logu",
+      "Sadece RAM"
+    ],
+    "answer": 0,
+    "exp": "Nesne ölçümleri: ayakkabı/lastik malzeme (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Manuel eşikleme neden genellikle tercih edilmez?",
+    "options": [
+      "Çok hızlı",
+      "Tekrar üretilemezlik ve beklenti/arzu etkisi",
+      "Yasak",
+      "Sadece renkli görüntüde"
+    ],
+    "answer": 1,
+    "exp": "Eşikleme slaytı (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Otsu yöntemi eşik seçiminde ne yapar?",
+    "options": [
+      "Rastgele piksel seçer",
+      "Sadece medyan",
+      "Her eşik ayarında grupları karşılaştırır; en ayırt edilebilir olanı seçer",
+      "Sadece XOR"
+    ],
+    "answer": 2,
+    "exp": "Otsu vs Student's t-test (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Student's t-test eşiklemede hangi varsayımı yapar (slayt)?",
+    "options": [
+      "Piksel sayısı sonsuz",
+      "Renk yok",
+      "Sadece binary",
+      "İki popülasyon Gauss dağılımına sahip noktasında kesin varsayım (nadiren gerçek)"
+    ],
+    "answer": 3,
+    "exp": "Şekil 6.2 açıklaması (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Otomatik eşikleme karmaşık yüzeylerde (ayak izi, kan sıçraması) neden daha az başarılı?",
+    "options": [
+      "Düzensiz yüzeyler ve desenler",
+      "Çok basit",
+      "Sadece gece",
+      "Sadece JPEG"
+    ],
+    "answer": 0,
+    "exp": "Şekil 7 (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Morfolojik genişleme (dilation) eşiklenmiş görüntüde ne yapar?",
+    "options": [
+      "Sadece renk değiştirir",
+      "Çatlakları doldurur ancak lif boyutunu büyütür",
+      "Dosyayı siler",
+      "Sadece EXIF"
+    ],
+    "answer": 1,
+    "exp": "Şekil 8 morfoloji (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Watershed bölütleme ne için kullanılır?",
+    "options": [
+      "Sadece renk kalibrasyonu",
+      "Sadece ağ tarama",
+      "Birbirine temas eden nesneleri ayırt etmek",
+      "Sadece hash"
+    ],
+    "answer": 2,
+    "exp": "Şekil 10 watershed (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "İkili görüntülerde AND, OR, EXOR (XOR), NOT hangi amaçla kullanılır?",
+    "options": [
+      "Sadece sıkıştırma",
+      "Sadece şifreleme",
+      "Sadece OCR",
+      "Boolean mantığı ile birleştirme/izole etme"
+    ],
+    "answer": 3,
+    "exp": "Şekil 11 (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Dijital kameralar mutlak renk için neden spektrofotometre gerektirebilir?",
+    "options": [
+      "RGB filtreler geniş aralık; farklı dalga boyları aynı sinyal üretebilir",
+      "Piksel yok",
+      "Sadece analog",
+      "Sadece video"
+    ],
+    "answer": 0,
+    "exp": "Konum ve renk ölçümü (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "41 üreticiden mavi tükenmez mürekkep ayırt etmede RGB ile slaytta başarı oranı yaklaşık nedir?",
+    "options": [
+      "%10",
+      "%94",
+      "%50",
+      "%100"
+    ],
+    "answer": 1,
+    "exp": "Renk sinyalleri ile ayırt (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Boyut ölçümünde alan genellikle nasıl belirlenir?",
+    "options": [
+      "Sadece EXIF",
+      "Sadece dosya adı",
+      "Eşiklenmiş sınır içindeki piksel sayısı",
+      "Sadece çevre"
+    ],
+    "answer": 2,
+    "exp": "Alan ölçümü (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Çevre ölçümü neden zordur?",
+    "options": [
+      "Her zaman düzgün",
+      "Sadece renk",
+      "Sadece meta",
+      "Sınır düzensiz; çevre görüntü çözünürlüğünün fonksiyonu"
+    ],
+    "answer": 3,
+    "exp": "Büyüklük ve şekil (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "En/boy oranı gibi şekil tanımlayıcıları neden ölçekten bağımsız sayılır?",
+    "options": [
+      "Oranlar; çözünürlük sınırlaması hariç",
+      "Piksel yok",
+      "Sadece analog",
+      "Sadece 3D"
+    ],
+    "answer": 0,
+    "exp": "Şekil 17 (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "İskelet tabanlı şekil tanımlayıcı neyi ifade eder?",
+    "options": [
+      "Sadece renk",
+      "Topolojik özellikler; şeklin orta çizgisi",
+      "Sadece histogram",
+      "Sadece GPS"
+    ],
+    "answer": 1,
+    "exp": "Naylon lif lob sayısı örneği (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Fraktal boyut ölçümü hangi bağlamda anılır?",
+    "options": [
+      "Sadece ağ",
+      "Sadece ses",
+      "Pürüzlü sınır/yüzey; toner partikülü, hücre teşhisi vb.",
+      "Sadece SQL"
+    ],
+    "answer": 2,
+    "exp": "Minkowski ölçüsü (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Görüntü manipülasyonunda ilk kural slayta göre nedir?",
+    "options": [
+      "Sadece JPEG sil",
+      "Sadece meta sil",
+      "Sadece crop",
+      "Orijinal görüntünün kalıcı kopyasını tüm verilerle saklamak"
+    ],
+    "answer": 3,
+    "exp": "Manipülasyon algılama (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "Copy-move sahteciliğinin kesin işareti slaytta nedir?",
+    "options": [
+      "Aynı özelliğin tam veya neredeyse tam kopyalarını bulmak",
+      "Dosya küçük",
+      "Sadece EXIF yok",
+      "Sadece blur"
+    ],
+    "answer": 0,
+    "exp": "Rastgele gürültü varyasyonu (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "mc",
+    "q": "JPEG kes-yapıştır birleştirmede 8×8 bloklar neden ipucu verir?",
+    "options": [
+      "Blok yok",
+      "Parçalar tam hizalanmayabilir",
+      "Sadece renk",
+      "Sadece GPS"
+    ],
+    "answer": 1,
+    "exp": "JPEG blok hizası (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "tf",
+    "q": "Stereo görüntülerde aynı sahne iki farklı yerden izlenir; konumlar arası mesafe veya açı bilinir (slayt).",
+    "answer": true,
+    "exp": "Stereo pairs temel ilke (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "tf",
+    "q": "Morfolojik açıklık (opening) başıboş pikselleri kaldırır ve ön plan bölgeleri arasındaki boşlukları açar (slayt).",
+    "answer": true,
+    "exp": "Morfolojik işlemler (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "tf",
+    "q": "Görüntüye herhangi bir şey eklemek slaytta her zaman kabul edilebilir.",
+    "answer": false,
+    "exp": "Genel kural: ekleme kabul edilemez; iyileştirme raporlanarak olabilir (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "tf",
+    "q": "Birkaç görüntünün kontrastını farklı ayarlayıp birleştirmek potansiyel olarak yanıltıcıdır (slayt).",
+    "answer": true,
+    "exp": "Manipülasyon uyarısı (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "fill",
+    "q": "Stereo ölçümde kaydırma mesafesi slaytta S harfiyle; alt rakım ______ olarak anılır.",
+    "answer": [
+      "rakım",
+      "Rakım",
+      "alt rakım"
+    ],
+    "exp": "Şekil 2: S kaydırma, alt rakım (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "fill",
+    "q": "Eşiklenmiş görüntüde birbirine temas eden nesneleri ayırmak için ______ bölütleme kullanılır (İng. watershed).",
+    "answer": [
+      "Watershed",
+      "watershed",
+      "havza"
+    ],
+    "exp": "Watershed bölütleme (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "fill",
+    "q": "Boolean işlemlerinde A ve B'nin yalnızca birinde olan pikseller için kullanılan işlem EXOR veya ______ (kısaltma).",
+    "answer": [
+      "XOR",
+      "xor"
+    ],
+    "exp": "Exclusive OR (8adli)."
+  },
+  {
+    "topic": 8,
+    "type": "fill",
+    "q": "Görüntü kaynağı tespiti sensör üzerindeki ______ desenlerindeki farklılıkları da kullanabilir (slayt).",
+    "answer": [
+      "toz",
+      "Toz"
+    ],
+    "exp": "Kamera sensör toz deseni (8adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Kanıt görüntülerinin kalibre edilmesi slaytta genellikle nasıl kurulur?",
+    "options": [
+      "Sadece EXIF",
+      "Sadece GPS",
+      "Piksel aralığı başına bir uzunluk boyutu",
+      "Sadece hash"
+    ],
+    "answer": 2,
+    "exp": "Boyut kalibrasyonu (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Kalibrasyon için L şeklinde cetvel neden tercih edilir?",
+    "options": [
+      "Daha ucuz",
+      "Sadece renk",
+      "Sadece gece",
+      "Dikey görünümü doğrular veya dik olmayan görünümü düzeltmeye yardım"
+    ],
+    "answer": 3,
+    "exp": "ABFO No.2 ölçeği (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Renk kalibrasyonu için slaytta hangi standart anılır?",
+    "options": [
+      "GretagMacbeth ColorChecker veya cetvel renk çipleri",
+      "Sadece QR kod",
+      "Sadece ASCII",
+      "Sadece NTFS"
+    ],
+    "answer": 0,
+    "exp": "Şekil 3 (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Yanak çürüğündeki kırmızı-mor renk slaytta neyi gösterir?",
+    "options": [
+      "Eski çürük",
+      "Taze çürük",
+      "Sadece makyaj",
+      "Sadece ışık"
+    ],
+    "answer": 1,
+    "exp": "Renk uzayları vaka (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Bilgisayar ekranlarında yaygın renk uzayı slaytta hangisidir?",
+    "options": [
+      "CMYK only",
+      "Sadece HSV tek kanal",
+      "RGB",
+      "Sadece YUV video"
+    ],
+    "answer": 2,
+    "exp": "RGB ekran (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "İnsan görüş sistemine HSI'ye göre slaytta hangi uzay daha yakındır?",
+    "options": [
+      "Sadece binary",
+      "Sadece CRC",
+      "Sadece Base64",
+      "HSI renk uzayı"
+    ],
+    "answer": 3,
+    "exp": "HSI vs RGB (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Ton (Hue) slaytta neyi ifade eder?",
+    "options": [
+      "Kırmızı, turuncu, sarı gibi renk ayrımı",
+      "Sadece parlaklık",
+      "Sadece dosya boyutu",
+      "Sadece piksel sayısı"
+    ],
+    "answer": 0,
+    "exp": "Renk uzayları tanım (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Medyan filtre veya kenar keskinleştirmeyi RGB kanallarına ayrı uygulamak neye yol açabilir?",
+    "options": [
+      "Renk sabit",
+      "Renk kaymaları; kırmızı/yeşil/mavi oranları değişir",
+      "Sadece hız artışı",
+      "Sadece EXIF silme"
+    ],
+    "answer": 1,
+    "exp": "HSI parlaklık kanalına uygulama önerisi (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "ColorChecker renkleri neden seçilmiştir?",
+    "options": [
+      "Rastgele",
+      "Sadece siyah-beyaz",
+      "Çoğu yazıcı ve ekranın üretebileceği CIE renk çizelgesi bölgesini kapsamak",
+      "Sadece web"
+    ],
+    "answer": 2,
+    "exp": "Şekil 8 CIE (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Nötr nokta renk ayarında slaytta hangi üç referans kullanılır?",
+    "options": [
+      "Sadece mavi",
+      "Sadece yeşil",
+      "Sadece kırmızı",
+      "Siyah, beyaz ve gri temsil eden nötr alanlar"
+    ],
+    "answer": 3,
+    "exp": "Şekil 10 lastik/plaka örneği (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Suç mahalli fotoğrafında en iyi uygulama slayta göre nedir?",
+    "options": [
+      "Konunun yüzeye dik görüntülenmesi",
+      "Eğik açı serbest",
+      "Sadece uzaktan",
+      "Sadece flaş kapalı"
+    ],
+    "answer": 0,
+    "exp": "Görüntü düzeltme giriş (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Perspektif düzeltmede fayans kan sıçraması örneğinde referans noktaları nasıl oluşturulur?",
+    "options": [
+      "GPS",
+      "Karo köşelerini işaretleme",
+      "Sadece EXIF",
+      "Sadece OCR"
+    ],
+    "answer": 1,
+    "exp": "Şekil 12 (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Zoom lenslerde lens bozulması düzeltmesi neden zor?",
+    "options": [
+      "Zoom yok",
+      "Sadece analog",
+      "Odak uzaklığına göre değişen bozulma; yazılım her ayarı bilmez",
+      "Sadece gece"
+    ],
+    "answer": 2,
+    "exp": "Cep telefonu/gözetleme kameraları (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Ara değerleme (interpolation) hangi durumlarda gerekir?",
+    "options": [
+      "Sadece kaydetme",
+      "Sadece silme",
+      "Sadece hash",
+      "Döndürme, ölçekleme, perspektif düzeltme sonrası yeni piksel değerleri"
+    ],
+    "answer": 3,
+    "exp": "Şekil 17 (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "En yakın komşu (nearest-neighbor) ara değerleme avantaj/dezavantajı slayta göre?",
+    "options": [
+      "Parlaklık/renk korur ama çizgileri ve kenarları deforme eder",
+      "Çizgiler mükemmel",
+      "Her zaman en iyi",
+      "Sadece 3D"
+    ],
+    "answer": 0,
+    "exp": "Interpolation (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Çift doğrusal (bilinear) ara değerleme kaç komşu piksel kullanır?",
+    "options": [
+      "1",
+      "4 (en yakın dört)",
+      "64",
+      "256"
+    ],
+    "answer": 1,
+    "exp": "Bilinear tanım (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Adli durumlarda fotoğraf büyütme için çift kübik tercih edilmemeli çünkü?",
+    "options": [
+      "Çok yavaş",
+      "Yasak",
+      "İnce detay önemli olabilir; piksel değerleri değişir",
+      "Sadece gece"
+    ],
+    "answer": 2,
+    "exp": "Adli uyarı (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Histogram eşitleme ne yapar?",
+    "options": [
+      "Sadece renk değiştirir",
+      "Sadece crop",
+      "Sadece EXIF",
+      "Her parlaklık tonundaki piksel alanlarını eşitlemeye yönelik parlaklık değiştirme"
+    ],
+    "answer": 3,
+    "exp": "Histogram eşitleme (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Kümülatif histogram slaytta nasıl tanımlanır?",
+    "options": [
+      "Her değerden daha koyu olan alan fraksiyonu",
+      "Sadece renk sayısı",
+      "Sadece dosya boyutu",
+      "Sadece GPS"
+    ],
+    "answer": 0,
+    "exp": "Histogram eşitleme formül (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Gri görüntüde en parlak piksel değeri slaytta histogram bağlamında kaç?",
+    "options": [
+      "128",
+      "255",
+      "512",
+      "1024"
+    ],
+    "answer": 1,
+    "exp": "255 gri ton (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "mc",
+    "q": "Renkli görüntüde histogram eşitleme slayta göre nerede uygulanmalı?",
+    "options": [
+      "Her RGB kanalına ayrı (istenmeyen renk)",
+      "Sadece alpha",
+      "Parlaklık verilerine (ör. Lab L kanalı); renk kanalları korunur",
+      "Sadece EXIF"
+    ],
+    "answer": 2,
+    "exp": "Şekil 23-24 (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "tf",
+    "q": "Adli görüntüde değişiklik yapıldığında orijinal saklanmalı; değişiklikler yeni kopyada belirtilmeli (slayt).",
+    "answer": true,
+    "exp": "Kontrast/parlaklık uyarısı (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "tf",
+    "q": "Doygunluk (Saturation) gri ile kırmızı arasındaki ayrım gibi mevcut renk miktarını ifade eder (slayt).",
+    "answer": true,
+    "exp": "Renk uzayı tanımları (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "tf",
+    "q": "En yakın komşu ara değerleme adli incelemede ince detay için her zaman tercih edilir (slayta göre).",
+    "answer": false,
+    "exp": "Bicubic görsel iyi ama adlide yapılmamalı uyarısı (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "tf",
+    "q": "Histogram eşitleme aynı sahnenin farklı aydınlatmada çekilmiş görüntülerini karşılaştırmayı kolaylaştırabilir (slayt).",
+    "answer": true,
+    "exp": "Şekil 22 banka soygunu örneği (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "fill",
+    "q": "ABFO No. 2, Amerikan Adli ______ Kurulu kalibrasyon ölçeği olarak slaytta anılır.",
+    "answer": [
+      "Odontoloji",
+      "odontoloji"
+    ],
+    "exp": "ABFO ölçeği (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "fill",
+    "q": "Adobe Photoshop gibi programlar slaytta ______ ara değerleme yöntemini kullanır (bicubic).",
+    "answer": [
+      "çift kübik",
+      "çift küpsel",
+      "bicubic",
+      "Çift kübik"
+    ],
+    "exp": "Bicubic (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "fill",
+    "q": "Intensity (açıklık) slaytta ______ miktarını ifade eder (ör. koyu vs açık kırmızı).",
+    "answer": [
+      "ışık",
+      "Işık",
+      "parlaklık",
+      "Parlaklık"
+    ],
+    "exp": "Intensity tanımı (9adli)."
+  },
+  {
+    "topic": 9,
+    "type": "fill",
+    "q": "Perspektif düzeltmede ayak izi örneğinde güven işaretleri için cetvellerle özetlenen ______ gösterilir (slayt).",
+    "answer": [
+      "alan",
+      "Alan",
+      "ölçek"
+    ],
+    "exp": "Şekil 13 cetvel alanı (9adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Görüntüleri jüriye sunmak için slayta göre en uygun yöntem hangisidir?",
+    "options": [
+      "Sadece basılı kopya",
+      "Sadece e-posta",
+      "Sadece küçük telefon",
+      "Ortak odak noktası olan geniş ekran monitör"
+    ],
+    "answer": 3,
+    "exp": "Görüntü ekranları (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Yanlış renkler vaka için önemli olmasa bile jüride ne yapabilir?",
+    "options": [
+      "Tepki ve yorumu önyargılı hale getirebilir",
+      "Hiç etki yok",
+      "Sadece hız artırır",
+      "Sadece dosya büyür"
+    ],
+    "answer": 0,
+    "exp": "Renk sunumu (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Sadece sonuçları göstermek neden kötü uygulama?",
+    "options": [
+      "Çok hızlı",
+      "Süreç sihir gibi görünebilir; bilimsellik kaybolur",
+      "Yasak değil",
+      "Sadece renk"
+    ],
+    "answer": 1,
+    "exp": "Prosedür açıklaması (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "İşleme sürecini göstermenin iyi yolu slaytta nedir?",
+    "options": [
+      "Sadece son JPEG",
+      "Sadece meta silmek",
+      "Adım adım sonuçları göstermek",
+      "Sadece crop"
+    ],
+    "answer": 2,
+    "exp": "Prosedür gösterimi (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Yan yana karşılaştırmada slayta göre hangileri eşleşmeli?",
+    "options": [
+      "Sadece dosya adı",
+      "Sadece EXIF",
+      "Sadece GPS",
+      "Ölçek, yönelim, benzer parlaklık ve kontrast"
+    ],
+    "answer": 3,
+    "exp": "Karşılaştırmalar (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Örgü deseni karşılaştırması neden zordur?",
+    "options": [
+      "Renk farklılıkları ve farklı görüntü ölçekleri",
+      "Aynı renk",
+      "Sadece gece",
+      "Sadece analog"
+    ],
+    "answer": 0,
+    "exp": "Şekil 7 (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Adli animasyonların doğruluğu slayta göre neye bağlıdır?",
+    "options": [
+      "Sadece yazılım sürümü",
+      "Oluşturulması için kullanılan verilerin doğruluğu ve doğrulanabilirliği",
+      "Sadece renk",
+      "Sadece ses"
+    ],
+    "answer": 1,
+    "exp": "Dinamik modeller (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Dinamik modelde küçük parametre değişikliği ne yapabilir?",
+    "options": [
+      "Hiçbir şey",
+      "Sadece renk değişir",
+      "Sonuçta büyük değişikliğe neden olabilir",
+      "Sadece EXIF"
+    ],
+    "answer": 2,
+    "exp": "Dinamik modeller (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Mahkemede adli animasyon slayta göre ne yapmalıdır?",
+    "options": [
+      "Sadece gösterilmeli",
+      "Her zaman kabul",
+      "Sadece CGI",
+      "Mevcut kanıtları desteklemeli ve doğrulamalı"
+    ],
+    "answer": 3,
+    "exp": "Gereklilikler: uygunluk, özgünlük (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Lastik sırtı ve ayakkabı tabanı modelleri için veritabanı hangi SWG tarafından tutulur?",
+    "options": [
+      "SWGTREAD",
+      "FISWG",
+      "DIWG",
+      "ISO only"
+    ],
+    "answer": 0,
+    "exp": "SWGTREAD (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Boya yongaları karşılaştırma standartları hangi gruplarla ilişkilidir?",
+    "options": [
+      "Sadece BTK",
+      "SWGMAT ve ASTM",
+      "Sadece NATO",
+      "Sadece IEEE"
+    ],
+    "answer": 1,
+    "exp": "Standartlar (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "79.3 ± 1.2 cm gibi ifade slaytta neyi temsil eder?",
+    "options": [
+      "Kesin değer",
+      "Sadece dosya boyutu",
+      "Ölçüm belirsizliği",
+      "Sadece piksel"
+    ],
+    "answer": 2,
+    "exp": "Olasılık değerlendirme (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "mc",
+    "q": "Avukatlar için slaytta önerilen sunum biçimi hangisine yakındır?",
+    "options": [
+      "Kesin tek sayı",
+      "Sadece 'büyük'",
+      "Sadece 'küçük'",
+      "Gerçek değerin belirli aralık dışında olma olasılığının %1'den az olduğunu belirtmek"
+    ],
+    "answer": 3,
+    "exp": "İstatistik sunumu (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "tf",
+    "q": "Bilgisayar grafikleri ve animasyonlar kanıt sunumunda dönüştürücü olabilir (slayt).",
+    "answer": true,
+    "exp": "Bilgisayar grafikleri bölümü (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "tf",
+    "q": "Gauss istatistikleri ve standart sapma kavramları jüri üyelerinin çoğu için tanıdık olmayabilir (slayt).",
+    "answer": true,
+    "exp": "Olasılık değerlendirme (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "tf",
+    "q": "Kumaş izi karşılaştırmasında ölçek ve yön eşleştirmesi gerekir (slayt).",
+    "answer": true,
+    "exp": "Şekil 8 (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "tf",
+    "q": "Yaşlanma tahmini için yüz fotoğrafları kayıp çocuk aramada kullanılabilir (slayt).",
+    "answer": true,
+    "exp": "Şekil 12 çocuk yaşlandırma (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "fill",
+    "q": "Dinamik modellerde araçların konumlarını gösteren harita görünümü slaytta Şekil ______ olarak verilmiştir (örnek numara).",
+    "answer": [
+      "10",
+      "11"
+    ],
+    "exp": "Şekil 10 harita, 11 animasyon (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "fill",
+    "q": "Ters evrişim (deconvolution) örneği slaytta plaka alanı için Şekil ______'de gösterilmiştir.",
+    "answer": [
+      "3"
+    ],
+    "exp": "Şekil 3 deconvolution (10adli)."
+  },
+  {
+    "topic": 10,
+    "type": "fill",
+    "q": "Ulusal parmak izi veritabanına ek olarak yerel ______ resimleri ve ehliyet fotoğrafları standart veritabanlarıdır (slayt).",
+    "answer": [
+      "sabıka",
+      "Sabıka"
+    ],
+    "exp": "Standartlar (10adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "6754 sayılı Bilirkişilik Kanunu bilirkişiyi nasıl tanımlar?",
+    "options": [
+      "Uzmanlık/özel/teknik bilgi için oy ve görüş veren gerçek veya özel hukuk tüzel kişisi",
+      "Sadece polis",
+      "Sadece hakim",
+      "Sadece avukat"
+    ],
+    "answer": 0,
+    "exp": "Tanım (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişinin sahip olması gereken niteliklerden biri değildir?",
+    "options": [
+      "Dürüstlük",
+      "Pazarlama becerisi",
+      "Tarafsızlık",
+      "Yetkinlik"
+    ],
+    "answer": 1,
+    "exp": "Dürüstlük, bağımsızlık, tarafsızlık, yetkinlik, güvenilirlik (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Gerçeğe aykırı bilirkişilik TCK hangi madde?",
+    "options": [
+      "243",
+      "134",
+      "276",
+      "293"
+    ],
+    "answer": 2,
+    "exp": "TCK 276 (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi siciline kayıt için temel eğitim slayta göre zorunlu mudur?",
+    "options": [
+      "Hayır",
+      "Sadece yurtdışı",
+      "Sadece tıp",
+      "Evet, Bilirkişilik Temel Eğitimi zorunlu"
+    ],
+    "answer": 3,
+    "exp": "Nasıl bilirkişi olunur (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi listesine kayıt için uzmanlık alanında minimum çalışma süresi slaytta?",
+    "options": [
+      "En az 5 yıl fiilen",
+      "1 yıl",
+      "20 yıl",
+      "Süre yok"
+    ],
+    "answer": 0,
+    "exp": "Başvuru şartları (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişinin çekinme yetkisi HMK'da hangi maddeyle ilişkilidir?",
+    "options": [
+      "m. 134",
+      "m. 270/II",
+      "m. 500",
+      "m. 1"
+    ],
+    "answer": 1,
+    "exp": "Çekinme yetkisi (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi ücreti HMK hangi madde?",
+    "options": [
+      "m. 270",
+      "m. 67",
+      "m. 283",
+      "m. 134"
+    ],
+    "answer": 2,
+    "exp": "Ücret ve giderler m.283 (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi hangi konuda inceleme yapabilir?",
+    "options": [
+      "Her hukuki mesele",
+      "Sadece trafik",
+      "Sadece tıp",
+      "Çözümü özel veya teknik bilgi gerektiren durumlar; hukuki meselede başvurulamaz"
+    ],
+    "answer": 3,
+    "exp": "İnceleme konusu (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Listeye kayıtlı bilirkişi görevi kabul etmekle yükümlü mü?",
+    "options": [
+      "Evet, kural olarak yükümlü",
+      "Hayır, her zaman",
+      "Sadece ceza",
+      "Sadece idare"
+    ],
+    "answer": 0,
+    "exp": "Görevden kaçınamama (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişiler bölge kurulları listelerinden nasıl seçilir?",
+    "options": [
+      "Rastgele internet",
+      "Bölge kurullarınca düzenlenen listelerden",
+      "Sadece BTK",
+      "Sadece üniversite"
+    ],
+    "answer": 1,
+    "exp": "Görevlendirme (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Raporu süresinde vermeyen bilirkişiye ne olabilir?",
+    "options": [
+      "Ödül",
+      "Sadece uyarı",
+      "Görevden alınıp yerine başka bilirkişi; yeni görev verilmez",
+      "Sicilden otomatik silinme her zaman"
+    ],
+    "answer": 2,
+    "exp": "Süre ve mazeret (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Görev tebliğinden sonra uzmanlık alanına girmiyorsa bilirkişi ne yapmalı?",
+    "options": [
+      "Sessiz kalır",
+      "Raporu yazar",
+      "Dosyayı siler",
+      "En geç bir hafta içinde mercie bildirmek"
+    ],
+    "answer": 3,
+    "exp": "Tebliğ sonrası (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi raporuna itiraz süresi hukuk yargısında slayta göre?",
+    "options": [
+      "Tebliğden itibaren iki hafta içinde",
+      "1 gün",
+      "1 yıl",
+      "Süre yok"
+    ],
+    "answer": 0,
+    "exp": "İtiraz (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Temel eğitim süresi slayta göre en az kaç ders saati?",
+    "options": [
+      "8",
+      "24 (18 teorik + 6 uygulama)",
+      "100",
+      "1"
+    ],
+    "answer": 1,
+    "exp": "Temel eğitim içeriği (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişilik temel eğitimi geçerlilik süresi?",
+    "options": [
+      "Sonsuz",
+      "1 ay",
+      "3 yıl",
+      "10 yıl"
+    ],
+    "answer": 2,
+    "exp": "3 yıl geçerlilik (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Yenileme eğitimi sıklığı slayta göre?",
+    "options": [
+      "Her ay",
+      "Hiç",
+      "Her 10 yıl",
+      "Üç yılda bir, en az 6 saat"
+    ],
+    "answer": 3,
+    "exp": "Yenileme eğitimi (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "UYAP Bilirkişi Portal'ın amacı nedir?",
+    "options": [
+      "Bilirkişilerin dosya işlemlerini adliyeye gitmeden online yapması",
+      "Sadece e-posta",
+      "Sadece ödeme",
+      "Sadece eğitim"
+    ],
+    "answer": 0,
+    "exp": "UYAP portal (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi etik ilkelerinden biri?",
+    "options": [
+      "Reklam yapmak serbest",
+      "Menfaat elde etme yasağı",
+      "Görevi reddetmek serbest her zaman",
+      "Raporu değiştirmek serbest"
+    ],
+    "answer": 1,
+    "exp": "Etik ilkeler (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi raporunda yer verilmesi gerekenlerden biri değildir?",
+    "options": [
+      "İnceleme yöntemi",
+      "Gerekçeli sonuç",
+      "Hakimin yerine hukuki nitelendirme",
+      "Bilimsel ve teknik dayanaklar"
+    ],
+    "answer": 2,
+    "exp": "Hukuki nitelendirme hakime ait; rapor içeriği listesi (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi başka uzman bilirkişiyle işbirliği talebi ne anlama gelir?",
+    "options": [
+      "Sadece sekreter",
+      "Görevi devretmek",
+      "Raporu iptal",
+      "Konunun bir diğer uzmanıyla istişare; yardımcı kullanmak değil"
+    ],
+    "answer": 3,
+    "exp": "İşbirliği (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "mc",
+    "q": "Bilirkişi raporu taraflara nasıl ulaşmalı?",
+    "options": [
+      "Mahkeme kanalıyla; duruşmadan önce tebliğ",
+      "Bilirkişi doğrudan",
+      "Sadece sosyal medya",
+      "Sadece avukat cebinde"
+    ],
+    "answer": 0,
+    "exp": "Teslim (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "tf",
+    "q": "Bilirkişiler bölge kurulları tarafından re'sen veya başvuru üzerine denetlenebilir (slayt).",
+    "answer": true,
+    "exp": "Denetim (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "tf",
+    "q": "CMK 67 uyarınca bilirkişi hukuki nitelendirme ve değerlendirme yapabilir (slayt).",
+    "answer": false,
+    "exp": "Sadece teknik/uzmanlık hususları; hukuki nitelendirme hakime ait (12adli CMK 67)."
+  },
+  {
+    "topic": 11,
+    "type": "tf",
+    "q": "Adlî Tıp veya Yüksek Sağlık Şurası gibi resmi bilirkişiler görevi kabulden kaçınamaz (slayt).",
+    "answer": true,
+    "exp": "Görevden kaçınamama (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "tf",
+    "q": "Bilirkişi raporu teslim edildikten sonra bilirkişi üzerinde değişiklik yapamaz; eksiklik varsa hakimi haberdar etmeli (slayt).",
+    "answer": true,
+    "exp": "Rapor teslimi (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "fill",
+    "q": "Bilirkişilik Kanunu sayılı kanun: ______ (sayı).",
+    "answer": [
+      "6754"
+    ],
+    "exp": "6754 sayılı kanun (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "fill",
+    "q": "Bilirkişinin dürüstlük ihlali TCK ______. madde ile cezalandırılabilir (slayt atıf).",
+    "answer": [
+      "276"
+    ],
+    "exp": "TCK 276 (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "fill",
+    "q": "Bilirkişi etik ilkeleri: yetkinlik, bağımsızlık, dürüstlük ve ______.",
+    "answer": [
+      "tarafsızlık",
+      "Tarafsızlık"
+    ],
+    "exp": "Etik liste (11adli)."
+  },
+  {
+    "topic": 11,
+    "type": "fill",
+    "q": "Temel eğitime katılmayanlar derslerin 1/______'sine devam etmezse ilişik kesilir (slayt).",
+    "answer": [
+      "12",
+      "oniki"
+    ],
+    "exp": "1/12 devam şartı (11adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Mütalaa kelimesinin anlamı slayta göre?",
+    "options": [
+      "Sadece mahkeme kararı",
+      "Düşünme ve inceleme sonucu görüş, fikir, kanaat",
+      "Sadece tanık ifadesi",
+      "Sadece polis tutanağı"
+    ],
+    "answer": 1,
+    "exp": "Giriş (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Uzman mütalaa ceza davalarında hangi kanun maddesi?",
+    "options": [
+      "CMK 134",
+      "TCK 243",
+      "CMK 67",
+      "HMK 270"
+    ],
+    "answer": 2,
+    "exp": "CMK 67 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Uzman mütalaa hukuk davalarında hangi kanun maddesi?",
+    "options": [
+      "HMK 67",
+      "CMK 276",
+      "TBK 1",
+      "HMK 293"
+    ],
+    "answer": 3,
+    "exp": "HMK 293 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "CMK 67/3 bilirkişi raporunda ne yapamaz?",
+    "options": [
+      "Hukuki nitelendirme ve hakimin yapacağı değerlendirmeler",
+      "İmzalamak",
+      "Sonuç yazmak",
+      "Yöntem belirtmek"
+    ],
+    "answer": 0,
+    "exp": "CMK 67 fıkra 3 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Listede olmayan bilim insanı uzman mütalaası verebilir mi?",
+    "options": [
+      "Hayır, asla",
+      "Evet, taraflar uzmanına başvurabilir",
+      "Sadece hakim",
+      "Sadece savcı"
+    ],
+    "answer": 1,
+    "exp": "SSS 2.1 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Uzman mütalaası ile bilirkişi raporu arasında hukuki üstünlük var mı?",
+    "options": [
+      "Bilirkişi her zaman üstün",
+      "Uzman her zaman üstün",
+      "Fark veya üstünlük yok; ikisi de takdiri delil",
+      "İkisi de bağlayıcı"
+    ],
+    "answer": 2,
+    "exp": "SSS 2.5 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Uzman mütalaası kimler tarafından alınabilir?",
+    "options": [
+      "Sadece mahkeme",
+      "Sadece polis",
+      "Sadece bilirkişi",
+      "Taraflar, cumhuriyet savcısı veya avukat"
+    ],
+    "answer": 3,
+    "exp": "SSS 2.6 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "CMK/HMK uzman mütalaası için ayrıca süre istenemez kuralı neyi önler?",
+    "options": [
+      "Yargılamanın uzamasına doğrudan katkı iddiasını",
+      "Rapor yazımını",
+      "Duruşmayı",
+      "Delil toplamayı"
+    ],
+    "answer": 0,
+    "exp": "SSS 2.9 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Görev süresince bilirkişi kendi davasında uzman görüşü verebilir mi?",
+    "options": [
+      "Evet",
+      "Hayır; görev aldığı davada uzman görüşü beyan edemez",
+      "Sadece ceza",
+      "Sadece hukuk"
+    ],
+    "answer": 1,
+    "exp": "Pratik kimler verebilir 2.11 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Adli belge incelemesi ideal olarak nerede yapılmalı?",
+    "options": [
+      "Sadece fotokopi",
+      "Sadece PDF meta",
+      "Belgenin aslı üzerinde",
+      "Sadece e-posta"
+    ],
+    "answer": 2,
+    "exp": "Belge aslı (12adli son bölüm)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Fotokopi ile inceleme yapılırsa raporda ne belirtilir?",
+    "options": [
+      "Hiçbir şey",
+      "Sadece hash",
+      "Sadece tarih",
+      "Kısıtlılıklar belirtilir"
+    ],
+    "answer": 3,
+    "exp": "Asıl yoksa kısıtlılık (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "mc",
+    "q": "Uzman mütalaasının avantajlarından biri?",
+    "options": [
+      "Konuda derinlemesine uzman seçimi; literatür ve özgün olgular",
+      "Daha ucuz her zaman",
+      "Mahkeme ataması zorunlu",
+      "Süre her zaman uzar"
+    ],
+    "answer": 0,
+    "exp": "Avantajlar 2.7 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "tf",
+    "q": "Birden çok bilirkişi farklı görüşleri gerekçeleriyle rapora yazmalıdır (CMK 67).",
+    "answer": true,
+    "exp": "CMK 67/2 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "tf",
+    "q": "Uzman kişi çağrıldığı duruşmaya geçerli özrü olmadan gelmezse rapor değerlendirmeye tabi tutulmaz (HMK 293).",
+    "answer": true,
+    "exp": "HMK 293/3 (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "tf",
+    "q": "Mahkeme bilirkişi raporuna uymakla yükümlü değildir (slayt).",
+    "answer": true,
+    "exp": "Takdiri delil (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "tf",
+    "q": "Ücretli uzman mütalaası tarafsızlığı her zaman bozar (slayt).",
+    "answer": false,
+    "exp": "Çelişki sorularla ve karşı uzman görüşüyle ortaya çıkabilir (12adli 2.8)."
+  },
+  {
+    "topic": 12,
+    "type": "fill",
+    "q": "Bilimsel mütalaa için alternatif ad: Uzman ______ veya Uzman Görüşü.",
+    "answer": [
+      "Mütalaası",
+      "mütalaası",
+      "Görüşü",
+      "görüşü"
+    ],
+    "exp": "Tanımlamalar (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "fill",
+    "q": "Adli belge inceleme alt başlıkları: yazı, imza, sahtecilik ve ______ inceleme.",
+    "answer": [
+      "yerinde",
+      "Yerinde"
+    ],
+    "exp": "Adli belge bölümü (12adli)."
+  },
+  {
+    "topic": 12,
+    "type": "fill",
+    "q": "Uzman mütalaası verebilecek resmi kurumlardan biri slaytta ______ olarak anılır.",
+    "answer": [
+      "TÜBİTAK",
+      "tübitak",
+      "Tubitak"
+    ],
+    "exp": "Pratik kimler 2.11 (12adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Adli belge incelemeleri neyi amaçlar?",
+    "options": [
+      "Sadece OCR",
+      "Belgelerdeki sahteciliklerin tespiti",
+      "Sadece arşivleme",
+      "Sadece şifreleme"
+    ],
+    "answer": 1,
+    "exp": "Giriş (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Adli belge incelemesi hangi bilim dalının temel koludur?",
+    "options": [
+      "Sadece astronomi",
+      "Sadece ekonomi",
+      "Adli bilimler",
+      "Sadece biyoloji"
+    ],
+    "answer": 2,
+    "exp": "Giriş (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Külli sahtecilik nedir?",
+    "options": [
+      "Sadece tarih değiştirme",
+      "Sadece imza",
+      "Sadece silme",
+      "Belgenin tamamının model alılarak birebir sahte oluşturulması"
+    ],
+    "answer": 3,
+    "exp": "6.1 Külli (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Kısmi sahtecilik türlerinden biri değildir?",
+    "options": [
+      "GPS yönünden",
+      "Değer yönünden",
+      "Zaman yönünden",
+      "Mana yönünden"
+    ],
+    "answer": 0,
+    "exp": "Değer, zaman, mana (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "VSC-1 cihazı hangi firma ile ilişkilidir?",
+    "options": [
+      "Projectina",
+      "Foster & Freeman",
+      "Microsoft",
+      "Google"
+    ],
+    "answer": 1,
+    "exp": "VSC İngiliz firma (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "TÜBİTAK-UEKAE belge inceleme cihazları slaytta?",
+    "options": [
+      "VSC only",
+      "Sadece iPhone",
+      "Forensic XP 4010 ve 4010 D",
+      "Sadece dd"
+    ],
+    "answer": 2,
+    "exp": "Forensic XP (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "ESDA cihazı ne için kullanılır?",
+    "options": [
+      "Sadece ses",
+      "Sadece DNA",
+      "Sadece ağ",
+      "Fulaj (baskı izi) incelemesi; yazıdan önce/sonra"
+    ],
+    "answer": 3,
+    "exp": "ESDA (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "TLC (ince tabaka kromatografisi) ne için kullanılır?",
+    "options": [
+      "Maddelerin ayrılması ve kalitatif analiz",
+      "Sadece video",
+      "Sadece GPS",
+      "Sadece hash"
+    ],
+    "answer": 0,
+    "exp": "TLC (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Üzeri karalanmış yazılar için etkin yöntemler?",
+    "options": [
+      "Sadece basılı okuma",
+      "Infrared, luminesans, ultraviyole vb. spektral",
+      "Sadece silme",
+      "Sadece OCR"
+    ],
+    "answer": 1,
+    "exp": "Karalama (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Değer yönünden kısmi sahtecilik örneği?",
+    "options": [
+      "Sadece fotoğraf değişimi",
+      "Sadece mühür",
+      "Çek/senet meblağına rakam ekleme",
+      "Sadece pul"
+    ],
+    "answer": 2,
+    "exp": "Değer sahteciliği (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Zaman yönünden kısmi sahtecilik?",
+    "options": [
+      "Sadece renk",
+      "Sadece font",
+      "Sadece kağıt",
+      "Tarih kısımlarında değişiklik"
+    ],
+    "answer": 3,
+    "exp": "Zaman sahteciliği (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Sürşarj yöntemiyle sahtecilik?",
+    "options": [
+      "Mevcut harf/rakamın değiştirilmesi",
+      "Sadece ekleme",
+      "Sadece yırtma",
+      "Sadece yakma"
+    ],
+    "answer": 0,
+    "exp": "Değiştirme (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Fotoğraf değişikliği sahteciliği?",
+    "options": [
+      "Sadece tarih",
+      "Belgedeki fotoğrafın sökülmesi veya üzerine yeni yapıştırma",
+      "Sadece QR",
+      "Sadece barkod"
+    ],
+    "answer": 1,
+    "exp": "7.4 (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Grafoloji terimi hangi dillerden oluşur?",
+    "options": [
+      "Latin only",
+      "Sadece Türkçe",
+      "Graphe (yazmak) + logos (bilim)",
+      "Sadece Fransızca"
+    ],
+    "answer": 2,
+    "exp": "1897 Paris (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Camillo Baldi grafoloji alanında ne ile anılır?",
+    "options": [
+      "İlk bilgisayar",
+      "Sadece polis",
+      "Sadece kimya",
+      "El yazısında sistematik gözlemler yapan ilk kişilerden"
+    ],
+    "answer": 3,
+    "exp": "Grafoloji tarihi (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Adli belge incelemesi yapılan yerlerden biri?",
+    "options": [
+      "Adli Tıp Kurumu Fizik İhtisas Belge İnceleme Şubesi",
+      "Sadece banka",
+      "Sadece okul",
+      "Sadece market"
+    ],
+    "answer": 0,
+    "exp": "Yerler listesi (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "Dijital belge sahteciliğinde yeni biçimler slaytta?",
+    "options": [
+      "Sadece kağıt",
+      "Metadata değişikliği, PDF manipülasyonu, yapay zekâ destekli içerik",
+      "Sadece el yazısı",
+      "Sadece mühür"
+    ],
+    "answer": 1,
+    "exp": "Bilgisayar mühendisliği bölümü (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "mc",
+    "q": "CEDAR veri seti hangi bağlamda anılır?",
+    "options": [
+      "Sadece yüz",
+      "Sadece plaka",
+      "İmza sahteciliği; gerçek ve sahte imzalar",
+      "Sadece DNA"
+    ],
+    "answer": 2,
+    "exp": "Derin öğrenme tez örneği (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "tf",
+    "q": "Külli sahtecilikte güvenlik özellikleri (filigran, hologram) genelde sahte belgede eksik kalır (slayt).",
+    "answer": true,
+    "exp": "Külli sahtecilik (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "tf",
+    "q": "Kimyasal belge inceleme yöntemleri belgelere zarar verebilir; optik yöntemler geliştirilmiştir (slayt).",
+    "answer": true,
+    "exp": "Videospektral geçiş (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "tf",
+    "q": "Mana yönünden sahtecilik sadece tarih değiştirmeyi kapsar (slayta göre).",
+    "answer": false,
+    "exp": "Ekleme, çıkarma, değiştirme ile yeni anlam (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "tf",
+    "q": "Grafoloji uzmanları yazım hızı, basınç, eğim gibi unsurları değerlendirir (slayt).",
+    "answer": true,
+    "exp": "Sahtecilik tespiti (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "fill",
+    "q": "Kısmi sahtecilik yöntemleri: ekleme, değiştirme (sürşarj), silme ve ______ değişikliği.",
+    "answer": [
+      "fotoğraf",
+      "Fotoğraf"
+    ],
+    "exp": "7. bölüm (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "fill",
+    "q": "Video Spektral Comparator kısaltması ______.",
+    "answer": [
+      "VSC",
+      "vsc"
+    ],
+    "exp": "VSC cihazı (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "fill",
+    "q": "Tamamen sahte belge düzenleme slaytta ______ sahtecilik olarak adlandırılır.",
+    "answer": [
+      "külli",
+      "Külli",
+      "küllî"
+    ],
+    "exp": "Külli sahtecilik (13adli)."
+  },
+  {
+    "topic": 13,
+    "type": "fill",
+    "q": "Belge incelemesinde görsel büyüteç olarak ______ kullanılır (slayt).",
+    "answer": [
+      "lup",
+      "Lup",
+      "büyüteç"
+    ],
+    "exp": "Lup (13adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "FISWG ve DIWG slaytta ne olarak verilmiştir?",
+    "options": [
+      "Türk kurumları",
+      "Sadece yazılım",
+      "Sadece kameralar",
+      "Uluslararası bilimsel çalışma grupları örnekleri"
+    ],
+    "answer": 3,
+    "exp": "Giriş grupları (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Türkiye'de adli görüntü uzmanları için ortak platform slayta göre?",
+    "options": [
+      "Henüz oluşturulmamış ortak çalışma grubu",
+      "Her zaman var",
+      "Sadece BTK",
+      "Sadece polis"
+    ],
+    "answer": 0,
+    "exp": "Giriş (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Laboratuvar çalışmaları kategorilerinden biri?",
+    "options": [
+      "Sadece ağ sniffing",
+      "Manipülasyon incelemeleri",
+      "Sadece antivirüs",
+      "Sadece BIOS"
+    ],
+    "answer": 1,
+    "exp": "4 kategori (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Amped FIVE'in birincil amacı?",
+    "options": [
+      "Sadece e-posta",
+      "Sadece format atma",
+      "Adli görüntü incelemede detayları en az hatayla incelemek ve geliştirmek",
+      "Sadece hash"
+    ],
+    "answer": 2,
+    "exp": "Amped FIVE (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Amped FIVE'de işlemler neden 'filtreleme' konseptiyle çalışır?",
+    "options": [
+      "Hız için",
+      "Yasak değil",
+      "Sadece renk",
+      "Orijinal materyalin değişmemesi için"
+    ],
+    "answer": 3,
+    "exp": "Orijinal koruma (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Amped FIVE iş akışında ilk adım?",
+    "options": [
+      "Yükleme/İçe Aktarma",
+      "Raporlama",
+      "Sadece silme",
+      "Sadece crop"
+    ],
+    "answer": 0,
+    "exp": "6 adımlı akış (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Amped Replay kimler için tasarlanmıştır?",
+    "options": [
+      "Sadece hakim",
+      "Olay yeri personeli, asayiş; saha inceleme",
+      "Sadece laboratuvar",
+      "Sadece üniversite"
+    ],
+    "answer": 1,
+    "exp": "Amped Replay (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Amped DVRConv ne sorununu çözer?",
+    "options": [
+      "Sadece ses",
+      "Sadece GPS",
+      "CCTV/DVR formatlarının Windows'ta açılmaması; adli açıdan sağlam dönüştürme",
+      "Sadece RAM"
+    ],
+    "answer": 2,
+    "exp": "DVRConv (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Cognitech Tri-Suite üç ana modül?",
+    "options": [
+      "Word, Excel, PowerPoint",
+      "Volatility, EnCase, FTK",
+      "Linux, Mac, Windows",
+      "AutoMeasure, VideoActive, Video Investigator"
+    ],
+    "answer": 3,
+    "exp": "Tri-Suite (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "AutoMeasure özelliği?",
+    "options": [
+      "360° kamera algılama; distorsiyon giderme; tek kareden 3B ölçüm",
+      "Sadece OCR",
+      "Sadece e-posta",
+      "Sadece hash"
+    ],
+    "answer": 0,
+    "exp": "AutoMeasure (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Ocean Systems'de dTective hangi modülle video renk uzayı ayrılır?",
+    "options": [
+      "ClearID",
+      "dVeloper",
+      "Sadece Replay",
+      "Sadece hashdump"
+    ],
+    "answer": 1,
+    "exp": "dTective (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "arithMATIC filtresi örnek kullanım?",
+    "options": [
+      "Sadece renk",
+      "Sadece GPS",
+      "Oda güvenlik kamerası önce/sonra kare farkı; hırsızlık kanaati",
+      "Sadece DNA"
+    ],
+    "answer": 2,
+    "exp": "arithMATIC (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "ClearID özelliği?",
+    "options": [
+      "Sadece silme",
+      "Sadece şifreleme",
+      "Sadece boot",
+      "Gizli ayrıntıları ortaya çıkarma; katmanlı işlem ve doğrulama raporu"
+    ],
+    "answer": 3,
+    "exp": "ClearID (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "MotionDSP'nin 'süper çözünürlük' ne yapar?",
+    "options": [
+      "Videoyu yeniden oluşturma, çözünürlük artırma, gürültü giderme",
+      "Sadece crop",
+      "Sadece meta",
+      "Sadece EXIF"
+    ],
+    "answer": 0,
+    "exp": "MotionDSP (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Forevid hangi ülke laboratuvarında geliştirilmiştir?",
+    "options": [
+      "Türkiye",
+      "Finlandiya Ulusal Soruşturma Bürosu",
+      "ABD only",
+      "Almanya only"
+    ],
+    "answer": 1,
+    "exp": "Forevid (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Videntifier ne yapar?",
+    "options": [
+      "Sadece yazdırma",
+      "Sadece antivirüs",
+      "Medya cihazlarında şüpheli videoları otomatik tarama ve listeleme",
+      "Sadece DNS"
+    ],
+    "answer": 2,
+    "exp": "Videntifier (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "IYON yazılımı kim tarafından geliştirilmiştir?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "Apple",
+      "TÜBİTAK"
+    ],
+    "answer": 3,
+    "exp": "IYON Suite (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Halistoprak tezinde karşılaştırılan yazılımlardan biri değildir?",
+    "options": [
+      "Microsoft Word",
+      "Amped Five",
+      "Cognitech Video Investigator",
+      "Forevid"
+    ],
+    "answer": 0,
+    "exp": "5 yazılım karşılaştırması (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Tez değerlendirmesinde filtre çeşitliliği ve hız açısından en iyi yazılım?",
+    "options": [
+      "Forevid",
+      "Amped Five",
+      "IYON only",
+      "Word"
+    ],
+    "answer": 1,
+    "exp": "Değerlendirme (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Cognitech Video Investigator kullanım kolaylığı slaytta?",
+    "options": [
+      "En kolay",
+      "Orta",
+      "En düşük; filtre çok ama uygulama uzun",
+      "Yok"
+    ],
+    "answer": 2,
+    "exp": "Değerlendirme (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "Forevid slaytta fotoğraf karelerinde?",
+    "options": [
+      "En iyi",
+      "Yasak",
+      "Sadece video",
+      "Etkili sonuç vermemektedir"
+    ],
+    "answer": 3,
+    "exp": "Forevid değerlendirme (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "mc",
+    "q": "IYON Suite değerlendirmesi?",
+    "options": [
+      "Yerli/milli; gelişmeye ihtiyaç; hız ve kullanım kolaylığı geride",
+      "En hızlı",
+      "En kötü her alanda",
+      "Kullanılmaz"
+    ],
+    "answer": 0,
+    "exp": "IYON değerlendirme (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "tf",
+    "q": "Amped FIVE raporu filtre ve parametrelerle tekrarlanabilirlik için otomatik rapor oluşturabilir (slayt).",
+    "answer": true,
+    "exp": "Raporlama adımı (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "tf",
+    "q": "VideoActive GPS konum belirleme ve gerçek zamanlı video işleme ile ilişkilidir (slayt).",
+    "answer": true,
+    "exp": "VideoActive (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "tf",
+    "q": "iNPUT-ACE VFR Lightboard araç hızını videodan hesaplamaya yardım eder (slayt).",
+    "answer": true,
+    "exp": "iNPUT-ACE (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "tf",
+    "q": "Kinesense sadece masaüstü sunucu için tasarlanmış; taşınabilir değildir (slayta göre).",
+    "answer": false,
+    "exp": "Taşınabilir çözüm (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "fill",
+    "q": "Amped yazılım paketlerinden biri: Amped ______ (saha/oynatma aracı).",
+    "answer": [
+      "Replay",
+      "replay"
+    ],
+    "exp": "Amped Replay (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "fill",
+    "q": "Ocean Systems görüntü iyileştirme modülü ______ (ClearID veya dTective — iyileştirme odaklı ClearID).",
+    "answer": [
+      "ClearID",
+      "clearid"
+    ],
+    "exp": "ClearID modülü (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "fill",
+    "q": "FOCLAR yazılım ailesinde görüntü iyileştirme aracı ______ olarak anılır (slayt).",
+    "answer": [
+      "Impress",
+      "impress"
+    ],
+    "exp": "Foclar Impress (14adli)."
+  },
+  {
+    "topic": 14,
+    "type": "fill",
+    "q": "Tezde karşılaştırılan yerli yazılım: IYON ______.",
+    "answer": [
+      "Suite",
+      "suite",
+      "SUITE"
+    ],
+    "exp": "IYON Suite (14adli)."
   }
 ];

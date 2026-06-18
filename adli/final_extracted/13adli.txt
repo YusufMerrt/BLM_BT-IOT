@@ -1,0 +1,554 @@
+ADLİ BELGE 
+İNCELEMELERİ
+
+---PAGE---
+1. GİRİŞ
+❖Adli belge incelemeleri; Adi Bilimler alanında, çeşitli
+inceleme yöntemleri kullanılarak belgeler üzerinde yapılan
+sahteciliklerin tespit edilmesi amacıyla yapılan çalışmaları
+ifade etmektedir.
+❖Adli belge incelemeleri; kişiler veya kurumlar arasında
+anlaşmazlık yaratan, herhangi bir şekilde hile veya
+aldatma yolu ile tahrif edilmiş ve delil niteliği bulunan
+yazılı ve basılı belgeler üzerinde inceleme, karşılaştırma ve
+saptamalar yaparak hukuka ve hukuki mercilere yardımda
+bulunan bilim alanıdır ve Adli Bilimlerin temel dallarından
+biridir [1].
+---PAGE---
+2. ADLİ BELGE İNCELEME ALANINDA ÇALIŞILAN 
+KONULAR:
+❖Sahte olarak düzenlenmiş belgelerin tespit
+edilmesi,
+❖İçeriği değiştirilmiş belgelerin sahteliğinin
+saptanması,
+❖Silintilerin belirlenmesi,
+❖Tahrip edilmiş, üzeri karalanmış veya çeşitli
+şekillerde üzeri kapatılmış yazıların içeriğinin
+belirlenmesi,
+---PAGE---
+❖Resmi evraklar üzerinde yapılan sahteciliklerin 
+tespit edilmesi;
+❖Kağıt, kalem, fotokopi, toner incelemesinin
+yapılması; 
+❖İmza ve yazılarda aidiyet tespiti 
+❖Pul, mühür, kaşe incelemeleri
+---PAGE---
+Örnek
+Kaynak: https://grafolojiuzmani.com.tr/kase-ve-muhur-inceleme/  
+---PAGE---
+3. ADLİ BELGE İNCELEMESİNİN YAPILDIĞI 
+YERLER
+➢İç İşleri Bakanlığı’na bağlı Kriminal Polis 
+Laboratuvarları,
+➢Jandarma Kriminal Daire Başkanlığı’na bağlı 
+laboratuvarlar, 
+➢Adalet Bakanlığı Adli Tıp Kurumu Fizik İhtisas 
+Dairesi Belge İnceleme Şubesi, 
+➢Adli Tıp Enstitüsü Belge İnceleme Birimi,
+➢Serbest çalışan uzmanlar vb.
+---PAGE---
+4. BELGELERİN ÖNEMİ
+❖Belgeler; eğitim, meslek, sosyal güvence, medeni 
+durum ve veraset gibi birçok alanda önemli rol 
+oynar. 
+❖Güven ilişkisine dayalı kullanılan belgelerde, 
+gerçeklik ve anlamı değiştirecek tahrifatlar 
+yapılabilir. 
+❖Çek, senet, makbuz ve faturalar üzerinde ekleme, 
+silme ve karalama yöntemleriyle sahtecilik 
+gerçekleştirilebilir. 
+---PAGE---
+4. BELGELERİN ÖNEMİ
+•Sahte imza atılması veya yazının 
+değiştirilmesiyle inkâra yönelik sahtecilikler 
+yapılabilir. 
+•Sözleşme, tapu senedi ve vasiyetname gibi 
+belgelerin içerikleri çıkar amacıyla 
+değiştirilebilir. 
+•Kimlik, pasaport, diploma ve sürücü belgesi gibi 
+kişisel belgelerde kimyasal veya mekanik 
+silme yöntemleri uygulanabilir. 
+---PAGE---
+4. BELGELERİN ÖNEMİ
+❖Sahte kaşe, mühür ve imza kullanılarak 
+tamamen sahte belge düzenlenebilir (külli 
+sahtecilik). 
+❖Belgelerdeki tahrifatları gizlemek amacıyla 
+karalama veya üzerini kapatma işlemleri 
+yapılabilir. 
+❖Belgelerin tamamını veya belirli kayıtlarını yok 
+etmek için yırtma ve yakma gibi yöntemler 
+kullanılabilir [1]. 
+---PAGE---
+❖İnceleme Konusu Belgelerin Çeşitleri
+
+---PAGE---
+
+---PAGE---
+Kaynak: Korkmaz, Hulusi. Adli Belge İncelemeleri ve Bilirkişilik. Yüksek Lisans Tezi, Üsküdar 
+Üniversitesi Bağımlılık ve Adli Bilimler Enstitüsü, 2022.
+---PAGE---
+5. ADLİ BELGE İNCELEME ALANINDA 
+KULLANILAN CİHAZ VE YÖNTEMLER
+•Belgeler üzerinde yapılan sahtecilikleri 
+belirlemek için çeşitli yöntemlerden 
+yararlanılır. 
+•İnceleme konusu belgeler, öncelikle 
+visual veya mikroskobik inceleme 
+yapılarak değerlendirilir [1]. 
+---PAGE---
+5.1. Videospektral Yöntemler
+•Belge incelemelerinde sahtecilikler, 
+önceleri daha çok kimyasal yöntemlerle 
+incelenmektedir.
+•Kimyasal yöntemler zahmetli olup 
+belgelere zarar verebilmektedir. 
+•Belgelerin zarar görmeden 
+incelenebilmesi için optik yöntemler 
+geliştirilmiştir. 
+•Elektronik alanındaki gelişmelerle 
+birlikte İsviçre merkezli Projectina 
+tarafından belge inceleme cihazları 
+üretilmiştir. 
+Şekil 1. Projektina cihazı
+---PAGE---
+❖Bilgisayar destekli ilk belge 
+inceleme cihazı Foster & 
+Freeman isimli bir İngiliz 
+firması tarafından üretilmiştir.
+❖VSC–1 (Video Spectral 
+Comparator) olarak 
+isimlendirilen cihazın kendine 
+özel bir aydınlatma kabini 
+bulunmaktadır [1].
+Şekil 2. VSC 1 (Video Spectral Comparator) 
+cihazı
+---PAGE---
+❖Belge incelemeleri için çeşitli başka cihazlarda 
+mevcuttur.
+❖TUBİTAK-UEKAE (Ulusal Elektronik ve Kriptoloji 
+Araştırma Enstitusu) tarafından belge inceleme için 
+Forensic XP 4010 ve Forensic XP 4010 D isimli cihazlar 
+geliştirilmiştir [1].
+Şekil 3. Docu Center 4500 cihazı
+Şekil 4. Forensic XP 4010(a) ve Forensic XP 4010 D(b)
+---PAGE---
+5.2. Diğer Cihaz ve Yöntemler
+❖Lup: Görsel incelemelerde 
+kullanılan büyüteç.
+
+---PAGE---
+5.2. Diğer Cihaz ve Yöntemler
+❖Elektrostatik iz belirleme 
+cihazı (ESDA-Electrostatic 
+Detection Apparatus) 
+Belgedeki fulaj (baskı izi) 
+incelemesinde kullanılır. 
+ESDA ile belgedeki fulaj izinin 
+yazıdan önce mi sonra mı 
+meydana geldiği belirlenebilir 
+[1].
+
+---PAGE---
+5.2. Diğer Cihaz ve Yöntemler
+❖Mikroskoplar: 
+• Yazılı belgelerin incelenmesinde 
+mikroskoplar sıklıkla 
+kullanılmaktadır.
+• Birçok parçadan oluşan stero-
+mikroskoplar, incelenen nesnenin 
+üç boyutlu görüntüsünü sağlar.
+
+---PAGE---
+5.2. Diğer Cihaz ve Yöntemler
+❖İnce Tabaka Kromatografisi 
+(TLC- Thin Layer 
+Chromatography): 
+• Maddelerin ayrılması, herhangi 
+bir karışımın kaç bileşenden 
+oluştuğunun bulunması ve 
+maddelerin kalitatif analizleri 
+(hangi madde mevcut, hangi 
+özellik gözleniyor gibi) için sıkça 
+kullanılan bir metottur.
+
+---PAGE---
+• Belge inceleme alanında çalışılan konulardan biri 
+olan üzeri karalanmış yazılar; içerik ya da mesajın, 
+yazının üzerine mürekkep ve düzeltici gibi maddelerle 
+uygulanan fiziksel tatbik sebebi ile 
+çözümlenemeyen her türlü yazıdır.
+---PAGE---
+• Karalamalarda çeşitli materyaller 
+kullanılmaktadır; ancak sık olarak karşılaşılan 
+tükenmez kalemle yazılan yazıların tükenmez 
+kalemle karalanmasıdır.
+• Mürekkep veya kapatıcılar ile üzeri kapatılan bu 
+yazılar genellikle gerçek olan ve adli veya hukuki 
+sonuçlara yol açabilecek bir belgede yer 
+almaktadır.
+---PAGE---
+• Günümüzde üzeri karalanmış yazıların 
+belirlenmesinde en etkin yöntem infrared, 
+luminesans, ultraviyole gibi ışık kaynaklarını 
+bünyesinde barındıran bilgisayar destekli 
+cihazlardır. Örnek olarak aşağıda bir çalışma 
+verilmiştir.
+Senet kağıdına jelpenle yazılıp kapatıcılarla tek yüzeyi karalanan örneklerin istatistiksel sonuç 
+tablosu
+Kaynak: Hamzaoğlu, Nurcan. Belge İnceleme Alanında Üstü Karalanmış Yazıların Spektral ve Hiperspektral 
+Yöntemlerle Analizi. Yüksek Lisans Tezi, İstanbul Üniversitesi Adli Tıp Enstitüsü, 2008. 
+---PAGE---
+ÖRNEK
+
+---PAGE---
+ÖRNEK
+
+---PAGE---
+ÖRNEK
+
+---PAGE---
+❖Spektral yöntemlerin üzeri karalanmış yazıların 
+görünür hale getirilmesinde 
+• mürekkep türü,
+•  rengi ve
+•  kağıt türüne 
+göre farklılık göstermektedir.
+Kaynak: Hamzaoğlu, Nurcan. Belge İnceleme Alanında Üstü 
+Karalanmış Yazıların Spektral ve Hiperspektral Yöntemlerle Analizi. 
+Yüksek Lisans Tezi, İstanbul Üniversitesi Adli Tıp Enstitüsü, 2008. 
+---PAGE---
+6. BELGELER ÜZERİNDE YAPILAN 
+SAHTECİLİK ÇEŞİTLERİ
+1.Külli Sahtecilik
+2. Kısmi Sahtecilik Tanımı ve Türleri
+2.1. Değer (Kıymet) Yönünden Kısmi 
+Sahtecilik
+2.2. Zaman Yönünden Kısmi Sahtecilik
+2.3. Mana Yönünden Kısmi Sahtecilik
+---PAGE---
+6.1. Külli Sahtecilik 
+❖Külli sahtecilik, belgenin tamamının model olarak 
+alınması ile yapılan sahtecilik türüdür. 
+❖Bu sahtecilikte sahteci kendisine sahtesini yapmak 
+istediği belgenin orijinalini bulup, model alır. 
+❖Daha sonra birebir aynı olacak şekilde aynısını 
+yapar. 
+❖Bu belge üzerine mühür ve imzayı da attıktan sonra 
+sahte olarak yeni bir belge oluşturmuş olur.
+---PAGE---
+• Ancak yapılan sahte belge gerçeğiyle birebir aynı 
+olsa dahi güvenlik özellikleri sahte belgede yer 
+almayacaktır. 
+• Bu sahtecilikle genellikle pasaport, kimlik kartı, 
+ehliyet vb. gibi belgeler üzerinde yapılabilmektedir. 
+• Bu belgelerin sahteleri oluşturulduktan sonra 
+sahte mühür, kaşe ve imza ile de işlemleri 
+tamamlanır ve kullanılır.
+---PAGE---
+❖Tam anlamıyla sahte olarak oluşturulmuş bir 
+belgeyi gerçeğinden ayırmak ilk bakışta zor olsa da 
+belge üzerinde yapılan laboratuvar incelemesi 
+sonucunda belge üzerindeki harf karakterleri, 
+boyutları, belgede var ise filigran, hologram, 
+baskı kalitesi gibi yönlerden ayırt edilebilecektir.
+---PAGE---
+ÖRNEKLER
+• Tamamen sahte olarak düzenlenmiş kimlik kartına örnek
+Kaynak: Korkmaz, Hulusi. Adli Belge İncelemeleri ve Bilirkişilik. Yüksek Lisans Tezi, Üsküdar Üniversitesi 
+Bağımlılık ve Adli Bilimler Enstitüsü, 2022.
+---PAGE---
+❖ Araç muayene pulu, plakalar, milli piyango biletleri, soğuk 
+mühür izi kalıpları, kaşe, para, pasaport, diplomalar, ilaç 
+kutuları, parfüm kutuları, bandroller vb. gibi daha birçok örnek 
+vermek mümkündür.
+---PAGE---
+6.2. Kısmi Sahtecilik Tanımı ve Türleri 
+Kısmi sahtecilik yapılış amaçlarına göre üç başlık 
+altında toplanabilir [2]:
+•  Değer (Kıymet) yönünden kısmi sahtecilik,
+• Zaman yönünden kısmi sahtecilik,
+• Anlam (Mana) yönünden kısmi sahteciliktir.
+---PAGE---
+Değer (Kıymet) Yönünden Kısmi Sahtecilik
+•Değer yönünden çek, senet, bono ya da 
+bunlara benzer sahtecilik yapan kişiye 
+haksız kazanç sağlayacak kıymetli 
+evraklardaki 
+ değer kısmında yapılan 
+oynama sonucu oluşturulan sahtecilik 
+türüdür.
+---PAGE---
+Yukarıda görüntüsü bulunan incelemeye ilişkin anlaşılacağı üzere; 
+değer kısmında “990.00” yazarken önüne “1” rakamı eklenmek suretiyle 
+değerinin “1.990.00” yapıldığı görülmektedir [2].
+---PAGE---
+❖ Soldaki normal görüntüde yazının “onüçbin” şeklinde yazıldığı, ancak 
+optik aletler ile yapılan incelemesi sonucunda aslında normalinin 
+“üçbin” olduğu ve bu yazının başına “on” yazısı eklenmek suretiyle 
+“onüçbin” yazısının elde edildiği tespit edilmiştir [2].
+
+---PAGE---
+6.2.2. Zaman Yönünden Kısmi Sahtecilik
+❖Belgelerde bulunan tarih kısımlarında yapılan 
+sahtecilik türüdür.
+❖Çek, senet, bono gibi evrakların tarih kısımlarında 
+yapılan değişiklikler olduğu gibi, pasaport, vize gibi 
+evrakların da geçerlilik tarihlerinde yapılan 
+değişiklikler bu sahteciliğin içerisinde yer 
+almaktadır.
+---PAGE---
+ÖRNEK
+• Sol tarafta senedin düzenleme tarihi 12/08/2017 olarak görünüyorken 
+sağ tarafta optik alet altında yapılan inceleme sonucunda aslında “8” 
+olarak görünen rakamın “1” rakamı olduğu, bu rakamın üzerinde 
+oynama yapılarak “8” rakamına dönüştürüldüğü görülmektedir.
+
+---PAGE---
+6.2.3. Mana Yönünden Kısmi Sahtecilik
+•Gerçek bir belgenin içerisinde yer alan 
+bilgilerde ekleme, çıkartma veya değiştirme 
+ile yeni anlam elde edilir. 
+•Nüfus cüzdanı, çek, senet, ehliyet, geçici 
+kimlik kartı, bono ve buna benzer daha bir 
+çok belge mana yönünden sahtecilik yapılan 
+belgeler örnek olarak gösterilebilir.
+---PAGE---
+7. KISMİ SAHTECİLİĞİN YÖNTEMLERİ
+❖Aşağıda verildiği şekilde kendi aralarında 
+kısmi sahtecilik sınıflandırılabilir:
+•Ekleme Yöntemiyle,
+•Değiştirme (Sürşarj) Yöntemiyle,
+•Silme Yöntemiyle,
+•Fotoğraf Değişikliği Yöntemiyle yapılmış 
+sahtecilikler.
+---PAGE---
+7.1. Ekleme Yöntemiyle Yapılan Sahtecilik
+❖Gerçek olarak düzenlenmiş bir belgedeki yazı veya rakamların 
+önüne, arkasına ya da sonuna harf ya da rakam eklenmesi ile 
+yapılan sahtecilik türüdür.
+Yukarıda görüldüğü üzere 2.200 YTL değerindeki bir senetin meblağ (değer) kısmındaki rakamların 
+sonuna “0” rakamı eklenerek meblağın 22.000 YTL‟ye çıkartıldığı yapılan optik alet incelemesi 
+sonucunda meydana çıkarılmıştır [2].
+---PAGE---
+Yukarıdaki örnekte 2.000 TL olan meblağ kısmının optik aletler ile 
+yapılan incelemesi sonucunda “0” rakamının sonradan “2” ve “0” 
+rakamlarının arasına eklendiği ve bu şekilde 20.000 TL olarak 
+gösterildiği, yani 18.000 TL haksız kazanç elde edilmeye 
+çalışıldığı görülmüştür.
+---PAGE---
+7.2. Değiştirme (Sürşarj) Yöntemiyle 
+Yapılan Sahtecilikler
+Gerçek belgede bulunan harflerin veya rakamların, sahtecinin 
+amacına uygun olarak değiştirilmesi yöntemiyle yapılan 
+sahteciliklerdir [2].
+Örnekte görüldüğü üzere 
+normalde “428” olarak 
+görünen rakamların teknik 
+cihazlarla yapılan incelemesi 
+sonucunda rakamlar üzerinde 
+değiştirme yapılmış ve aslında 
+“123” olan rakamın “428” 
+rakamına çevrildiği tespit 
+edilmiştir.
+---PAGE---
+Yukarıda görüldüğü üzere “3.000” TL olan meblağın “3” rakamı 
+üzerinde değişiklik yapılarak “8” rakamına çevrildiği ve meblağın 
+“8.000” TL yapıldığı tespit edilmiştir [2].
+---PAGE---
+7.3. Silme Yöntemiyle Yapılan Sahtecilikler
+• Silme yöntemiyle yapılan 
+sahteciliklerde, sahteci 
+genelde bir harf, bir rakam, bir 
+sözcük öbeği ya da rakamları 
+silmek, kazımak suretiyle 
+belgede değişiklik yapar [2].
+
+---PAGE---
+7.4. Fotoğraf Değişikliği Yöntemiyle Yapılan 
+Sahtecilikler
+❖Gerçek belge üzerinde bulunan fotoğrafın 
+tamamen sökülerek yerine yenisinin 
+koyulması ya da belgede bulunan fotoğrafın 
+üzerine yeni bir fotoğraf yapıştırılması 
+suretiyle yapılan sahtecilik yöntemidir.
+---PAGE---
+❖ Örneği verilen 
+vekaletnamenin önce 
+sahte cüzdan ile 
+noterde düzenlendiği, 
+daha sonra da bu 
+vekaletname üzerinde 
+fotoğraf değişikliği 
+yapılarak 
+vekaletnamenin 
+tekrardan sahte 
+olarak düzenlendiği 
+görülmektedir [2].
+---PAGE---
+8. Grafoloji ve Sahtecilik
+❖Grafoloji, el yazısının bilimsel yöntemlerle incelenerek 
+sahtecilik olup olmadığını belirlemek için kullanılan uzmanlık 
+alanıdır.
+❖Camillo Baldi, bu alanda çalışmalar yapan ve el yazısında 
+sistematik ve pratik gözlemler yapan ilk kişidir. 
+❖Grafoloji terimi, 1897'de iki Yunanca terim olan graphe (yazmak) 
+ve logos (bilim) kelimeleri birleştirilerek Paris'te, Abb Jean-
+Hippolyte tarafından çıkarılmıştır.
+---PAGE---
+8. Grafoloji ve Sahtecilik
+❖Grafoloji, el yazısının analizi yoluyla bireyin 
+kimliğini, yazım alışkanlıklarını ve motor 
+becerilerini inceleyen bilim dalıdır.
+❖Ancak, sahtecilik girişimleriyle taklit edilen 
+imzalar, değiştirilmiş belgeler ve manipüle 
+edilmiş yazılar, hukuki süreçlerde yanıltıcı 
+sonuçlara yol açabilir.
+❖Adli konular (kriminoloji) haricinde işe alım 
+süreçlerinde bir kişinin karakteriyle ilgili bilgi 
+almak içinde bu bilim dalından yararlanılabilir.
+
+---PAGE---
+8.1. Grafolojinin Kullanım Alanları
+
+---PAGE---
+8.2. Grafoloji ile Sahtecilik Nasıl Tespit 
+Edilir?
+• Grafoloji uzmanları, el yazısı 
+ve imzaları detaylı analiz 
+ederek orijinal ve sahte 
+belgeleri karşılaştırır. 
+• Yazım hızı, harf bağlantıları, 
+basınç yoğunluğu, eğim 
+farkları ve yazının doğal akışı 
+gibi unsurlar 
+değerlendirilerek sahtecilik 
+olup olmadığı belirlenir.
+Kaynak: https://grafolojiuzmani.com.tr/grafoloji/
+---PAGE---
+8.3. Grafoloji Eğitimleri
+• Üniversitelerin Sürekli 
+Eğitim Merkezleri (SEM) 
+veya akredite özel 
+kriminal kurumları 
+tarafından düzenlenen 
+sertifika programlarına 
+katılıp eğitim alınabilir. 
+
+---PAGE---
+8.4. Grafoloji – Bilgisayar Mühendisliği 
+İlişkisi
+• Bu alana yönelik imza doğrulaması/tanımlaması yapılabilir.
+Kaynak: Piccinini, G., Guarnera, L., & Battiato, S. (2025). SignForensics: A Robust Framework for Forensic Offline 
+Signature Verification with Enhanced Detection, Noise Removal, and Multi-Stage Authentication. IEEE Access.
+---PAGE---
+9. ADLİ BELGE İNCELEMELERİNDE BİLGİSAYAR 
+MÜHENDİSLİĞİ ALANINDA YÜRÜTÜLEN 
+ÇALIŞMALAR
+• Adli belge incelemelerinde bilgisayar mühendisliği, 
+başta görüntü işleme ve dijital görüntü analizi olmak 
+üzere çeşitli alanlarda kullanılmaktadır.
+• Silme, kazıma ve karalama gibi fiziksel tahrifat 
+yöntemleri varlığını sürdürmekle birlikte, belgelerin 
+giderek dijital ortamda üretilip paylaşılmasıyla 
+metadata değişikliği, PDF manipülasyonu ve yapay 
+zekâ destekli içerik üretimi gibi yeni sahtecilik 
+biçimleri de öne çıkmıştır. 
+---PAGE---
+• Dijital belgelerin kolaylıkla kopyalanabilmesi, 
+düzenlenebilmesi ve hızla yayılabilmesi, sahtecilik 
+faaliyetlerinin kapsamını ve etkisini artırmaktadır. 
+• Bu nedenle dijital belgelerin doğruluğunun incelenmesi 
+ve sahtecilik izlerinin tespiti önem taşımaktadır.
+• Bunun yanında görüntü işleme, adli belge 
+incelemelerinin çeşitli alt problemlerinde de 
+kullanılmaktadır. 
+• Örneğin imza sahteciliği gibi birçok sahtecilik türü 
+görüntü işleme yöntemleriyle analiz edilmektedir.
+---PAGE---
+ÖRNEK ÇALIŞMA- İMZA SAHTECİLİĞİ
+❖Mehmet Türkay YOLDAR 2024 yılında Derin Öğrenme 
+Yöntemleriyle İmza Sahteciliğinin Tespiti [3] yüksek lisans tezi 
+yapmıştır.
+❖Bu tezde çeşitli derin öğrenme mimarileri (VGG16, ResNet18, 
+ResNet50, Inception, Xception, EfficientNet ve Vision Transformer) 
+kullanılarak farklı modeller eğitilmiştir. 
+---PAGE---
+❖Bu tezde CEDAR veri seti kullanılmıştır.
+CEDAR imza sahteciliği veri seti gerçek ve sahte 
+imzaları içermekte olup, bu imzaların farklı bireyler 
+tarafından üretilmiş olması sebebiyle geniş bir 
+varyasyon sunmaktadır [3]. 
+• Kaynak: https://cedar.buffalo.edu/signature/ 
+adresinde yer almaktadır 
+---PAGE---
+CEDAR veri setinde yer alan imzalardan bazı örnekler
+---PAGE---
+Ön İşleme
+❖Bu tezde veri setine eşikleme, uyarlamalı eşikleme ve normalizasyon 
+yöntemleriyle imzaları ön plana çıkarmaya çalışılmıştır.
+Farklı ön işleme yöntemlerinin imzalara uygulanması
+---PAGE---
+• Ayrıca veri zenginleştirme yapılarak geliştirilecek yöntemin 
+daha dayanıklı bir yöntem olması sağlanmaya çalışılmıştır.
+• Bunun için ölçeklendirme, bulanıklaştırma, parlaklık ayarı, 
+kontrast değiştirme ve döndürme teknikleri uygulanmıştır. 
+Böylece modelin farklı boyut, netlik, aydınlatma ve açılardaki 
+imzalarda başarımı artırılmıştır.
+
+---PAGE---
+İmza Setlerinin Hazırlanması 
+• Derin öğrenme modellerinin eğitimi için imza setlerinin 
+hazırlanmasına ihtiyaç duyulmuştur. 
+• İmza setleri ikili ve üçlü setler halinde oluşturmuştur. 
+
+---PAGE---
+Önerilen Yöntemin Anahatları
+
+---PAGE---
+Kullanılan Derin Öğrenme Mimarileri 
+
+---PAGE---
+Önerilen Yöntemin Deneysel Sonuçlar
+❖ Gerçek Pozitif (True Pozitif) Örnek:
+ Modelin sahte imzayı sahte olarak doğru bir şekilde 
+sınıflandırdığı durumdur.
+Modelin çıktısının gerçek pozitif olduğu bir örnek
+---PAGE---
+Modelin çıktısının gerçek negatif olduğu bir örnek 
+❖ Gerçek Negatif (True Negatif) Örnek:
+ Modelin gerçek imzayı gerçek olarak doğru bir şekilde 
+sınıflandırdığı durumdur.
+
+---PAGE---
+Modelin çıktısının yanlış pozitif olduğu bir örnek
+❖ Yanlış Pozitif (False Pozitif) Örnek:
+ Modelin sahte imzayı gerçek olarak yanlış bir şekilde 
+sınıflandırdığı durumdur.
+
+---PAGE---
+Modelin çıktısının yanlış negatif olduğu bir örnek 
+❖ Yanlış Negatif (False Negative) Örnek:
+ Modelin gerçek imzayı sahte olarak yanlış bir şekilde 
+sınıflandırdığı durumdur.
+
+---PAGE---
+•Bu tezde farklı mimarilerin karşılaştırıldığı 
+deneylerde elde edilen bulgular farklı 
+başarım ölçütleri ile değerlendirilmiştir. 
+•Xception ve ResNet50 modelleri sırasıyla 
+%93,19 ve %91,04 doğruluk oranı ile en 
+yüksek başarım gösteren iki mimari 
+olmuştur. 
+---PAGE---
+KAYNAKLAR
+[1] Hamzaoğlu, Nurcan. Belge İnceleme Alanında Üstü Karalanmış 
+Yazıların Spektral ve Hiperspektral Yöntemlerle Analizi. Yüksek 
+Lisans Tezi, İstanbul Üniversitesi Adli Tıp Enstitüsü, 2008. 
+[2] Korkmaz, Hulusi. Adli Belge İncelemeleri ve Bilirkişilik. Yüksek 
+Lisans Tezi, Üsküdar Üniversitesi Bağımlılık ve Adli Bilimler 
+Enstitüsü, 2022.
+[3] Yoldar, Mehmet Türkay. Derin Öğrenme Yöntemleriyle İmza 
+Sahteciliğinin Tespiti. Yüksek Lisans Tezi, Ankara Üniversitesi Sağlık 
+Bilimleri Enstitüsü, 2024.
+---PAGE---

@@ -1,0 +1,567 @@
+Adli Bilişimde Görüntü 
+Karşılaştırma ve Ölçme (2)
+---PAGE---
+1. Stereografik Çift (Stereo Pairs)
+-Bir nesne veya sahne için yanlamasına 
+kaydırılmış iki giriş görüntüsünden 
+derinlik haritalarını hesaplamak için 
+stereo görüntülerden faydalanılmaktadır. 
+-Stereo görüntülerin fotoğraflanması, iki 
+merceğe sahip özel olarak tasarlanmış 
+stereo kameralar ile yapılır. 
+Şekil 1.1. Bir sineğin kafasının kırmızı 
+ve mavi anaglif stereo görüntüsü. 
+---PAGE---
+1. Stereografik Çift (Stereo Pairs)
+- Görüş alanındaki iki konumun göreceli 
+yer değiştirmesini veya ıraklık açısını 
+belirlemek için stereo görüntülerin ölçülür.
+Böylece aralarındaki mesafe hesaplanmış 
+olur. 
+Bu rutin olarak kilometreden 
+mikrometreye kadar ölçeklerde yapılır. 
+(Hava fotoğrafçılığı veya taramalı elektron 
+mikroskobu vb.)
+---PAGE---
+1. Stereografik Çift 
+(Stereo Pairs)
+• Nesnelerin iki stereo görünümdeki yanal 
+konumu, mesafelerine bağlı olarak farklılık 
+gösterir. 
+• Her durumda, aynı sahne iki farklı yerden izlenir 
+ve bu konumlar arasındaki mesafe veya açı 
+bilinir. 
+Şekil1.2. Desenlerin farklı mikroskop aracılığı ile görüntülenmesi
+---PAGE---
+1. Stereografik Çift (Stereo Pairs)
+• Örneğin Şekil 2’de S, kaydırma mesafesidir 
+(uçağın kat ettiği mesafe veya kameranın 
+hareket ettiği mesafe) 
+• Alt, rakımdır. 
+• İki farklı görüntüde göründükleri haliyle 
+(kaymaya paralel yönde ölçülen) iki nokta 
+arasındaki mesafelerden gelen ıraklık açısı 
+(d1 - d2), iki nokta arasındaki yükseklik 
+(A ve B) farkı ile orantılıdır. 
+Şekil 2. Stereo ölçüm, Denklem 1'de kullanıldığı 
+gibi paralaks mesafelerini (d) ölçerek iki nokta 
+arasındaki yükseklik farkını belirler. 
+Denklem  (1)
+---PAGE---
+2. Kalabalıkları Tahmin Etme
+❑Kalabalık yoğunluğu için 
+görüntülerden faydalanarak 
+çözülebilmektedir.
+❑Örneğin Şekil 4’te mors sayısını 
+tahmin etmek için yakın bir 
+görüntüden faydalanılmıştır. (Mors 
+başına ortalama alanı belirlemek için)
+Şekil 3.1. Mors (Deniz aygırı) sürüsü (a) bir sahilde  
+ve (b) mors başına ortalama alanı belirlemek için 
+kullanılan bir yakın plan çekilmiş bir fotoğraf 
+
+---PAGE---
+2. Kalabalıkları Tahmin Etme
+❑Yerden veya helikopter gözlem 
+noktalarından alınan görüntüler, mevcut 
+insan sayısını belirlemek için gerçek 
+"kafaların sayılmasına" izin verecek kadar 
+ayrıntı göstermez. 
+• Örneğin bazen, Şekil 3'te olduğu gibi, 
+görüş açısı ve ışıklandırma, kafaların 
+çoğu kamera tarafından görülmeyecek 
+şekildedir. 
+Şekil 3.2. Seyirci sayısını belirlemesinin istenilen  
+bir açık hava konser salonunun fotoğrafı
+
+---PAGE---
+2. Kalabalıkları Tahmin Etme
+❑Siyasi etkinliklerdeki, spor ve konser 
+salonlarındaki vb. kalabalık 
+boyutlarının tahmini önemlidir.
+• Kalabalık görüntüleri bazen 
+hareketi değerlendirmek, yarı 
+kapalı alanlarda kalabalık 
+davranışını anlamak ve güvenlik 
+konularını ele almak için kullanılır.
+Şekil 3. Seyirci sayısını belirlemesinin istenilen  
+bir açık hava konser salonunun fotoğrafı
+
+---PAGE---
+2. Kalabalıkları Tahmin Etme
+❑Kalabalık yoğunluğunu tahmin 
+etmek için Google Haritalar dan 
+yararlanılabilir.
+❑ Konserden sorumlu kişilerin 
+ifadelerine göre seyircilerin büyük 
+bir kısmının nerede durduğu 
+belirlenebilir.
+Şekil 4. Kalabalığın yoğunluğunun Google haritalar 
+üzerinden tahmin edilmesi
+
+---PAGE---
+3. Nesne Ölçümleri
+❑Mineralleri tanımlamak ve boyut 
+dağılımlarını ölçmek için toprak 
+parçacıklarının görüntülerinin 
+kullanılması, Locard değişim ilkesine 
+göre her iki yönde de çalışır. 
+(Ya kişi olay yerine bu parçacıkları 
+bırakmıştır ya da olay yerinden almıştır.)
+
+---PAGE---
+3. Nesne Ölçümleri
+❑Örneğin ayakkabılardan veya 
+lastiklerden gelen malzeme:
+▪ Failin daha önce nerede olduğunu 
+tahmin edilmesini sağlayabilir.
+▪ Toprak parçacıklarına ek olarak saç, 
+tohum, polen, lif vb. içerebilir. 
+Bazı durumda, toprakların 
+incelenmesi yalnızca zayıf kanıtlar 
+sağlayabilir [1].
+
+---PAGE---
+3. Nesne Ölçümleri
+❑Nesneleri tanımlamak ve boyut dağılımlarını ölçmek için 
+parçacıkların görüntülerinin incelenmesi oldukça önemlidir.
+❑Boyut ve şekil arasındaki yakın bir ilişki vardır.
+Daha büyük partiküllerin öncelikle küçük partikül kümeleridir. 
+Dolayısıyla daha düzensiz şekil yapılarına sahiptir. 
+Şekil 5.2. Boya pigment parçacıklarının SEM görüntüsü ve boyut ve şekil ölçümleri. 
+---PAGE---
+3. Nesne Ölçümleri
+Bir insanın fare kullanarak noktaları seçtiği ve bilgisayarın mesafeleri bildirdiği görüntüler 
+üzerindeki manuel ölçümler yapılabilir.
+Bunun dışında çoğu görüntü ölçümü, nesneleri, yapıları veya diğer ilgili özellikleri 
+tanımlamak için eşikleme veya bölütlemeden sonra gerçekleştirilir. 
+Şekil 5.1. Toprak parçacıklarının boyut dağılımının ölçülmesi.
+
+---PAGE---
+Eşikleme
+Çok sayıda nesnenin manuel olarak ölçülmesi sıkıcıdır ve ayrıca tekrar 
+üretilemezlik ve beklenti veya arzunun olası etkisi nedeniyle genellikle şüphelidir. 
+Aynı nedenden ötürü, manuel eşikleme sık kullanılmasına rağmen tercih edilen bir 
+yaklaşım değildir. 
+Otomatik yapılacak tüm eşik türlerinin en basiti, görüntünün parlaklık histogramına 
+dayanır.
+Histogramda, birçok pikselin benzer parlaklığa sahip olması aynı tür yapıyı temsil 
+ettiklerini gösterebilir. 
+---PAGE---
+Eşikleme
+Örneğin Şekil 6'daki örnekte, parlak tepe kağıda karşılık gelir, ancak 
+mürekkebi temsil eden koyu bir tepe yoktur.
+• Bu durumda ölçüm ve nihayetinde tanımlama için basılı karakterleri 
+izole etmede kullanılan eşik değeri (okla işaretlenmiş),  istatistiksel 
+bir yaklaşım (Student’s t-test) ile belirlenmiştir.
+Şekil 6.1. Gazete kağıdındaki koyu renkli harfleri seçmek için parlaklık eşiği
+---PAGE---
+Eşikleme
+• Eşik değerinin belirlenmesi
+• Otsu yönteminde olası her eşik ayarının 
+üstündeki ve altındaki piksellerin değerlerini 
+karşılaştırır ve iki grubun en farklı ve ayırt 
+edilebilir olduğunu gösteren birini seçer. 
+• İstatistiksel test (Student's t-test) ise  iki 
+popülasyonun Gauss dağılımına sahip olduğu 
+noktasında kesin bir varsayım yapmaktadır ve 
+bu nadiren olur.
+• Histograma dayalı olarak biraz farklı eşik ayarları 
+üreten çeşitli istatistiksel testler de vardır.
+Şekil 6.2. (a) Otsu (b) Student’s t-test yöntemi
+(a) 
+(b) 
+---PAGE---
+Eşikleme
+• Eşiklemede çok çeşitli başka yöntemler de vardır. 
+Örneğin otomatik eşik ayarına yönelik bir yaklaşımda, yalnızca piksellerin 
+değerlerini değil, aynı zamanda yakın komşularının değerlerini de kullanır.
+Şekil 6.3. (a) K-means yöntemi (b) örnek bir manyetik rezonans (MR) görüntüsünün (c) 
+parlaklık ve yerel kontrast temelinde altı sınıfa bölünmesini gösterir. 
+---PAGE---
+Eşikleme
+❑Bu otomatik yöntemler, genellikle, gösterilen mikroskop ve düz yataklı 
+tarayıcı örnekleri gibi kontrollü ve düzgün aydınlatmalı ve düz yüzeylere 
+sahip görüntüler için iyi çalışır. 
+❑Karmaşık yüzeyler, ayak izleri ve lastik izleri vb. üzerindeki parmak izleri 
+veya kan sıçraması desenleriyle uğraşırken genellikle daha az 
+başarılıdırlar.
+Şekil 7. Karmaşık yüzeyler
+
+---PAGE---
+Eşiklenen Görüntüleri İşleme
+• Bir görüntünün eşiklendiğinde veya 
+bölütlendiğinde görüntü, genellikle ikili 
+(binary) gösterim ile gösterilir.
+• Eşikleme işleminde görüntüdeki gürültü vb. 
+durumlardan dolayı arkaplan veya nesnelere 
+ait pikseller hatalı olarak atanabilir.
+• Bunların düzeltilmesi için eşiklenen görüntü 
+üzerinde morfolojik vb. işlemler 
+uygulanmaktadır.
+Şekil 8. (a) ve (c) orijinal görüntü 
+(b) Düzgün (d) hatalı eşiklenmiş görüntü
+(a) (b)
+(c) (d)
+---PAGE---
+Eşiklenen Görüntüleri İşleme
+• Genişleme (dilation) çatlakları doldurur ancak 
+liflerin boyutunu büyütür. 
+• Bir aşınma (erosion), liflerin boyutunu eski 
+haline getirir, ancak çatlaklar yeniden 
+görünmez.
+• Morfolojik bir açıklık, başıboş pikselleri 
+kaldırır, ön plan bölgeleri arasındaki boşlukları 
+açar ve daha yumuşak bir sınır oluşturur.
+• Morfolojik bir kapanış küçük delikleri 
+doldurur, nesnelerdeki kırılmaları birleştirir ve 
+daha yumuşak bir sınır oluşturur. 
+Şekil 8. Eşiklenen bir görüntüde aşınma (erosion) ve 
+genişleme (dilation) işlemlerinin (ve bunların 
+kombinasyonları) uygulanması. 
+---PAGE---
+Eşiklenen Görüntüleri İşleme
+❑ Örneğin Şekil 9’da orijinal görüntüdeki cam 
+lifler, her bir parçanın ayrı ayrı ölçülmesine 
+neden olacak çatlaklara sahiptir. 
+❑ Çatlaklar kapanış uygulanarak ortadan 
+kaldırılmıştır.
+Şekil 9.1. (a) orijinal görüntü, çatlak cam lifler enine kesiti; 
+(b) lifler içindeki bölünmeleri gösteren parlaklık eşiği; (c) 
+bir kapanış uygulamasından sonra oluşan görüntü.
+
+---PAGE---
+Eşiklenen Görüntüleri İşleme
+❑Bir nesneyi (lifler vb.) karakterize
+etmek için o nesnenin iskeletini 
+çıkarmak önemlidir.
+Şekil 9.2. Şekli temsil eden iskelet örnekleri. 
+Bitiş noktalarının sayısı, her bir yıldızdaki nokta 
+sayısına karşılık gelir.
+---PAGE---
+Eşiklenen Görüntüleri İşleme
+Başka bir morfolojik prosedür, birbirine temas eden nesneleri ayırt etmede kullanılan 
+watershed  bölütlemesidir. 
+Watershed  bölütlemesi kısaca: 
+• Görüntüdeki her bir ön plan pikseline en yakın arka plan noktasına olan bir mesafe 
+değeri atar.
+• Bu değerler yükselti olarak ele alınırsa, bir dizi dağ tanımlanır. 
+• Dağların birleştiği havza sınırları, iki farklı yokuş yukarı yöne sahip yerlerdir. 
+• Bu piksellerin silinmesi nesneleri ayırır.
+Şekil 10. Watershed bölütlemesi (a) temas halindeki nesneler (b) eşiklenmiş 
+görüntü, (c) renk kodlu en yakın arka plan noktasından her pikselin mesafeleri için 
+yükseklik haritası ve (d) dağların buluştuğu havza hatlarının kaldırılması.
+---PAGE---
+Görüntüleri Birleştirme
+• Morfolojik işlemeye ek olarak, eşiklenmiş görüntüler, Boolean mantığı 
+kullanılarak birleştirilebilir. 
+Şekil 11 dört temel işlevi göstermektedir. AND, OR, ExOR (Exclusive OR; 
+genellikle kısaltılmış XOR) ve NOT. 
+Şekil 11. Basit Boolean işlemleri: (a) ikili görüntü A, (b) ikili görüntü B, (c) A AND B, (d) A OR 
+B, (e) A EXOR B ve (f) NOT A.
+---PAGE---
+Görüntüleri Birleştirme
+❑ Boolean operatörlerinin kombinasyonları, Şekil 12'de gösterildiği gibi 
+bir görüntünün bölgelerini izole etmek için kullanılabilir.
+Şekil 12. Kırmızı, yeşil ve mavi kanallarda parlak olan eşikli pikselleri kullanan Boolean kombinasyonlarının
+örnekleri
+
+---PAGE---
+Görüntüleri Birleştirme
+❑ Boolean mantığı, belirli bölgeleri seçmek için işaretleyicilerin 
+kullanılmasına izin veren nesneler düzeyinde de uygulanabilir.
+▪ Örneğin arazileri ve mevcut binaları gösteren bir haritada, bina 
+içermeyen arsaları seçmek için kullanılabilir.
+Şekil 13. (a) Arazileri ve mevcut binaları gösteren bir mahalle araştırması (b) binaları işaretçi olarak kullanarak, 
+AND NOT işlevi boş olan bölgelerin seçilmesi.
+
+---PAGE---
+6. Konum ve Renk Ölçümü
+❑ Görüntülerde eşikleme veya bölütleme ile tanımlanan nesneler 
+üzerindeki ölçümler, genel olarak boyut, renk, konum veya şeklin 
+raporlanması olarak sınıflandırılabilir.
+Bunların, gerçek dünya sahnesinde çoğu durumda bir 3B 
+nesnenin yönüne dayalı 2B ölçümler olarak ele alınmaktadır.
+• Fakat görüntünün özelliklerine bağlı olarak, bu her zaman 
+böyle olmayabilir. 
+• Örneğin kan sıçraması örüntüleri, birçok mikroskop 
+görüntüsü veya tarayıcı görüntüsü de 2B'dir.
+---PAGE---
+6. Konum ve Renk Ölçümü
+• Düşük kaliteli gözetim videolarında 
+hareketi izlemek için bireyleri 
+belirlemek zor olabilir.
+• Örneğin Şekil 14’te gözetim 
+görüntülerinde görüntülenen 
+bireylerin yürüyüşünün, boy, giysi 
+renkleri vb. üzerinden kimlik 
+belirleme için bilgi sağlayabileceği 
+gösterilmiştir.
+Şekil 14.1. Bir dizi görüntüde insanların zaman içinde 
+izlenmesi
+
+---PAGE---
+6. Konum ve Renk Ölçümü
+• Gözetim videolarındaki hareketin izlenmesi, olağandışı 
+davranışları tespit etmek için potansiyel olarak önemlidir.
+• Ancak alışılmadık olayları tanımlamak veya tespit etmek 
+zordur. 
+Şekil 15. Yörüngelerin güzergahlara göre sınıflandırılmasına ilişkin örnek.
+---PAGE---
+6. Konum ve Renk Ölçümü
+• Dijital kameralar, 
+spektrofotometre/görüngesel (tayfsal) 
+(spectrophotometers ) değildir. 
+• Kırmızı, yeşil ve mavi dalga boylarını seçmek 
+için kullanılan filtreler geniş aralıkları kapsar 
+ve oldukça farklı dalga boyu ve yoğunluk 
+kombinasyonları aynı kaydedilen sinyali 
+üretebilir. 
+• Mutlak renk bilgisi gerektiğinde, bir 
+spektrofotometre kullanılmalıdır.
+
+---PAGE---
+6. Konum ve Renk Ölçümü
+❑Ancak, farklı renkleri ve nesneleri kaydedilen renk 
+sinyallerine göre ayırt etmek çoğu zaman mümkündür.
+ 
+❖ Örneğin 41 farklı üreticiden mavi tükenmez kalem 
+mürekkeplerini ayırt etmek için dijital kameradan 
+kaydedilen RGB değerlerinin bir kombinasyonunu 
+kullanmıştır [1].
+❖ % 94 başarı elde edilmiştir.
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+• Boyut ölçümleri, genellikle pigment 
+veya toprak parçacıkları gibi nesne 
+gruplarını karşılaştırmak için kullanılır. 
+• Bunun dışında boyut (ve şekil) 
+değişiklikleri de diğer faktörlerle 
+ilişkilendirilebilir. 
+• Şekil 16’daki örnek, bir paket kısmi 
+çözülme ve yeniden dondurmaya tabi 
+tutulduğunda dondurmadaki buz 
+kristallerinde meydana gelen 
+değişiklikleri göstermektedir.
+•  Bu durumda, dondurucuya giden gücün 
+kesildiğine dair kanıt sağlanmıştır.
+Şekil 16. Kısmi çözülme ve yeniden dondurmadan kaynaklanan 
+boyut artışını ve daha yuvarlak köşeleri gösteren dondurmadaki 
+buz kristallerinin mikroskop görüntüsü.
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+❑Nesneler hakkında biraz farklı bilgiler sağlayan birkaç farklı olası 
+boyut ölçümü vardır. 
+• Bunlar, genellikle alan, çevre ve diğer olası ölçümler şeklinde 
+gruplandırılabilir.
+❖Alan: genellikle nesnenin eşiklenmiş veya parçalı sınırları içindeki 
+piksel sayısının sayılmasıyla belirlenen alanı içerir. 
+❖Çevre: Sınırın uzunluğu çevreyi verir.
+• Bu doğru ölçülmesi en zor şeylerden biridir çünkü birçok sınır düzensizdir ve 
+gözlemlenen çevre kısmen görüntü çözünürlüğünün bir fonksiyonudur.
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+❖Diğer olası ölçümler: Uzunluk (maksimum boyut), minimum 
+sınırlayıcı dairenin çapı veya maksimum işaretli daire vb. yer alır.
+• Bunların tümü için iç boşlukların ve deliklerin dahil edilip edilmeyeceğine 
+karar vermek gerekir. 
+• Ölçüm hassasiyeti her zaman piksel boyutuna ve görüntü 
+çözünürlüğüne bağlıdır.
+• Toplam yaklaşık 100 pikselden daha azıyla temsil edilen nesneler 
+genellikle daha kötü sonuçlar verir.
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+• En yaygın kullanılan şekil tanımlayıcıları, ölçekten 
+bağımsız oldukları (görüntü çözünürlüğünün getirdiği 
+sınırlamalar hariç) boyut ölçüm (örneğin en/boy 
+oranı) oranlarıdır. 
+• Fakat çevreye bağlı bir oranlar (alan/çevre vb.) 
+ölçümü çözünürlüğe çok bağlıdır.
+• Şekil 17’deki şekiller için karpuz ve futbol topunun 
+uzaması en/boy oranı ve aralarındaki yarıçap fark 
+oranı ile ölçülebilir.
+Şekil 17. Yuvarlak olmayan  farklı 
+şekiller
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+• İnsan görüşü nicel değil karşılaştırmalıdır. İnsanların ayırt edici şekiller 
+olarak gördüklerine karşılık gelen iki şekil tanımlayıcısı vardır. 
+1. Nesnenin iskeleti tabanlı şekil tanımlayıcı: Topolojik özelliklerdir. 
+Şeklin orta çizgisidir. Örneğin uç noktaların sayısı aynı zamanda Şekil 
+18'deki naylon halı lifleri üzerindeki lobların (çıkıntı) sayısını da ölçer.
+Şekil 18. Naylon lifler içinden kesitlerin elektron mikroskobu görüntüsünün 
+taranması
+
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+2. Sınırın düzenliği: Birçok doğal nesnenin, fraktal bir boyutla 
+iyi tanımlanan kendine benzer pürüzlülüğe sahip yüzeyleri 
+vardır. 
+Öklid geometrisine karşılık gelen küreler ve küpler gibi birkaç 
+doğal şekil basittir. 
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+Nesne ana hatlarının fraktal boyutunu ölçülebilir.
+Örneğin Aşağıdaki şekilde bir fraktallarla ilgili bir ölçüm yapılmıştır.
+Yandaki ölçümde
+• Her pikseli anahattan uzaklığıyla etiketlenmiştir (Öklid 
+mesafe haritası).
+• Pikseller mesafenin bir fonksiyonu olarak sayılmıştır.
+• Kümülatif alan log-log eksenlerinde mesafenin bir 
+fonksiyonu olarak çizilmiştir. 
+•  Doğrunun eğimi, boyutun Minkowski ölçüsü olmuştur.
+Şekil 19. Bir toz partikülünün ana hatları.
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+Farklı satıcılar tarafından üretilen fotokopi makinelerinde kullanılan toner 
+partikülleri, farklı fraktal boyutlara sahiptir (bu, partiküllerin kağıda yapışmasını 
+etkiler). 
+Farklı yüzey aşınması, kimyasal erozyon, kırılma ve alet kullanımı, fraktal boyutun 
+ölçtüğü farklı pürüzlülük üretir.
+Hücrelerin fraktal boyutu, kanser tespiti için teşhis olanaklarına sahiptir.
+Fraktal boyut, genellikle özellikler ve tarih ile ilişkilendirilir. 
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+Sınıflandırma için yararlı olan başka matematiksel şekil 
+tanımlayıcıları da vardır. 
+❑Harmonik analiz: Bir şeklin sınırını artan frekansta bir dizi sinüzoidin 
+toplamı olarak ifade eder.
+❑Dalgacık analiz: Hem artan frekansı hem de konumu kapsayan bir 2D 
+toplamı üretir. 
+• Tortu parçacıklarının aşınmasını ve erozyonunu deniz veya rüzgar fırtınası 
+olarak sınıflandırmak için  kullanılmıştır. 
+---PAGE---
+7. Büyüklük ve Şekil Ölçme
+• Dalgacık analiz, 3B şekilleri analiz etmek adli bilişimde 
+kullanılabilir (Tıbbi görüntülemedeki şekil farklılıklarını 
+tanımlamak için uygulanmıştır.)
+❑Diğer bir yaklaşım: 
+• Sadece çevreden ziyade bir şeklin içini kullanma avantajına sahip 
+olan değişmez momentlerdir.
+• Sınırın kesin ayrıntılarının kesin olarak tanımlanamayacağı 
+ayak izleri veya ayakkabı izleri gibi şekiller için önemli 
+olabilir. 
+---PAGE---
+8. Kimlik Saptama (Identification )
+❑Yan yana karşılaştırmalar, bellekteki veya farklı koşullar 
+altında görülen şeylerle karşılaştırmaktan daha güvenilirdir. 
+• Ancak insanlar, iyi zihinsel etiketlere sahip oldukları şeyleri 
+tanımada oldukça iyidirler. 
+• Yeterli sayıda tekil kanıt mevcutsa, olumlu ("Evet, öyle") veya 
+olumsuz ("Hayır, değil") bir sonucu verecektir. 
+---PAGE---
+8. Kimlik Saptama (Identification )
+• Öğeler çeşitli yöntemler kullanılarak sınıflandırılabilir. 
+• Bu sınıflandırma kimlik tanımlaya yardımcı olmaktadır. 
+Şekil 20. Birkaç yaprak türünün şekle göre tanımlanması. 
+Şekil 21. Yaprakların sınıflandırılmasında kullanılan
+ölçülen şekil faktörleri
+* Şekil 20’de eksenler standart değişkenlerdir. 
+Şekil 21’de gösterilen üç şekil faktörünün doğrusal 
+kombinasyonlarıdır.
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+❑Özellikle bilimsel ve adli tıp alanlarında 
+görüntülemeye dahil olan herkes için çok gerçek 
+bir endişe:
+• Neyin uygun ve uygun işlemeyi oluşturduğu ve neyin 
+uygunsuz, etik olmayan ve hatta hileli manipülasyonu 
+oluşturduğu sorusudur.
+• İzleyicide yanlış bir izlenim yaratmak için bir 
+görüntüyü değiştiren her şeyin yanlış olduğudur.
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+❑İlk kural:
+▪Her zaman orijinal görüntünün kalıcı bir kopyasını, 
+elde edilmesiyle ilgili tüm verilerle birlikte 
+saklamaktır. 
+❑İkinci kural:
+▪Görüntüyü işlemek için hangi adımların atıldığını 
+dikkatli bir şekilde belgelemek ve genellikle işlenmiş 
+görüntü sunulduğunda bu adımları rapor etmektir.
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+❑Genel bir kural:
+▪Bir görüntüye herhangi bir şey eklemenin hiçbir 
+zaman kabul edilemez olmasıdır.
+❖ Ancak kalan mevcut ayrıntıları, sunum ve iletişim 
+için görsel olarak veya ölçümü kolaylaştırmak 
+gerekebilir.
+❖Bu durumda raporlanmak kaydıyla bazı bilgilerin 
+iyileştirilmesi veya kaldırılması kabul edilebilir 
+olabilir.
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+• Örneğin parlak veya karanlık bölgelerde ayrıntıları göstermek için 
+kontrastı genişletebilen gama değişiklikleri de dahil olmak üzere kontrast 
+ayarı (başka bir yerde daraltma ve potansiyel olarak diğer ayrıntıları 
+gizleme pahasına) buna bir örnektir.
+Şekil 22. Kontrast manipülasyonunun gizlenmesi: (a) histogramıyla birlikte 
+orijinal görüntü; (b) gama ayarı ve histogramda ortaya çıkan değişiklikler; 
+ve (c) piksel değerlerine uygulanan rastgele renk taklidi ve elde edilen 
+histogram.
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+• Özellikleri yeniden düzenleme veya bunları tek bir 
+görüntü içinde birleştirme veya daha benzer 
+görünmelerini sağlamak için birkaç görüntünün 
+kontrastını farklı şekilde ayarlama gibi bazı prosedürler, 
+potansiyel olarak yanıltıcıdır ve genellikle yanlıştır. 
+• Bir görüntüye bir şey eklemek için kopyala ve yapıştır 
+özelliğini kullanmak veya bir görüntünün bölümlerini 
+seçerek silmek gibi bazıları tamamen sahtekarlıktır.
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+• Aynı sahnenin başka bir fotoğrafını bulmak, bir fotoğraftaki 
+değişiklikleri tespit etmenin mükemmel bir yoludur.
+Şekil 23. General Blair'in (sağda oturan) (a) bulunmadığı bir toplantıya eklenmesi (b) 
+aynı toplantıdan başka bir fotoğrafta ise bu toplantıda aynı kişi yok. (1860’larda çekilen 
+bir fotoğraf)
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+• Bu tür kes yapıştır sahteciliği tespit 
+edilmesinde birden fazla ipuçları vardır. 
+• Bunlardan bazıları; eşleşmeyen gölge 
+uzunlukları ve açılar, geometrik 
+tutarsızlıklar, odakta farklılıklar, renk 
+uyuşmazlıkları ve farklı olan dokular veya 
+kanal gürültüleri (gürültünün parlaklıkla 
+değişme şekli dahil) şeklindedir.
+Şekil 24. Kolay farkedilebilir Kes-yapıştır 
+sahteciliği
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+• Örneğin JPEG formatında kaydedilmiş görüntü parçaları 
+birleştirildiyse, aşağıdaki gösterildiği gibi 8 × 8 bloklar tam 
+olarak hizalanmayabilir.
+Şekil 24. Mavi çiçeğin kenarları hafif bulanıktı ama yine de yakındaki diğer kenarların 
+odak noktasından daha keskin. 
+
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+• Bir görüntüdeki aynı özelliğin tam veya neredeyse tam 
+kopyalarını bulmak, sahtekarlığın kesin bir işaretidir.
+• Çünkü bir görüntüdeki rastgele istatistiksel ve gürültü 
+varyasyonları, özdeş nesnelerin bile bazı varyasyonlar 
+sergilemesine neden olur.
+Şekil 24. (a) Orijinal bir görüntü (b) kopya ve kullanımı ile yedizleri göstermek için tüm 
+bireylerde bir yüz klonlamış
+
+---PAGE---
+9. Görüntü Manipülasyonunu Algılama
+❑Görüntü kaynağını tespit etme de görüntü manipülasyonunu 
+ortaya çıkarmaktadır.
+▪Genelde farklı kameralarla ve farklı aydınlatma koşullarında 
+çekilen görüntüler farklı gürültü özelliklerine sahiptir.
+▪Bununla birlikte görüntü kaynağının tespiti, (kullanılan kamera 
+modeline göre renk filtreleri, demosacing, JPEG 
+algoritmalarındaki farklılıkları vb.) sahteciliğin tespit edilmesini 
+kolaylaştırmaktadır. 
+▪Hatta kameranın sensörü üzerindeki toz desenlerindeki 
+farklılıklar bile görüntü kaynağının farklı kökenleri olduğunu 
+gösterebilir.
+---PAGE---
+Kaynakça
+[1] Russ, John C., Jens Rindel, and P. Lord. Forensic uses of digital 
+imaging. CRC Press, 2016.
+---PAGE---

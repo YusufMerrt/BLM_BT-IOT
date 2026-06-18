@@ -1,0 +1,428 @@
+ADLİ BİLİŞİMDE 
+TEMEL GÖRÜNTÜ İŞLEME VE 
+İYİLEŞTİRME
+---PAGE---
+Boyutun Kalibre 
+Edilmesi
+Bir suç veya kaza mahallinde
+kaydedilen veya laboratuvarda alınan
+kanıt görüntülerinin kalibre edilmesi
+gerekir.
+ Birkaç durumda, bu bir kez ve tümü
+için yapılabilir.
+Genellikle piksel aralığı başına bir
+uzunluk boyutu cinsinden kalibrasyon
+kurulabilir.
+
+---PAGE---
+Boyutun Kalibre 
+Edilmesi
+Her görüntü için bir
+kalibrasyonun yapılması gerekir.
+Bu, en uygun şekilde,
+görüntüye kanıtın yanına uygun
+bir ölçek eklenerek yapılır.
+
+---PAGE---
+Boyutun Kalibre Edilmesi
+• Kalibrasyonda basit cetveller kullanılabilir, ancak kameranın dikey
+görünümünü de doğrulayan (veya aşağıdaki bölümde gösterildiği
+gibi görüntünün dik olmayan görünümler için düzeltilmesini
+sağlayan) L şeklinde bir cetvel genellikle tercih edilir.
+Şekil 1. Amerikan Adli Odontoloji Kurulu (ABFO) No. 2 
+kalibrasyon ölçeği.
+Şekil 2. Ölçü m ölçeğiyle, nesli tükenmekte olan Sibirya Amur
+kaplanının karda ayak izi. (Sky Alibhai'nin izniyle, Wildtrack.org.)
+---PAGE---
+Boyutun Kalibre Edilmesi
+•Orijinal görüntüye hiçbir şey eklemezler, bunun
+yerine görüntüde yakalanan mevcut bilgileri
+daha kolay görülebilmesi ve ölçülebilmesi için
+netleştirir.
+---PAGE---
+Boyutun Kalibre Edilmesi
+• Görüntüye renk kalibrasyonu standartlarının dahil edilmesi bazı
+uygulamalarda eşit derecede kritiktir. Bunlar, yaygın olarak kullanılan
+Şekil 3’teki gibi GretagMacbeth ColorChecker veya cetvelin parçası
+olan renk çipleri olabilir.
+Şekil 3. Bir çocuğun yüzündeki morlukların boyutsal ve renk kalibrasyon ölçeğiyle fotoğrafı: (a) fotoğrafı çekildiği 
+gibi ve (b) renk düzeltmesinden sonra.
+
+---PAGE---
+Renk Uzayları
+Çoğu durumda, bir görüntüdeki gerçek
+renkleri kaydetmenin önem derecesi, çok kritik
+olmayabilir.
+•Örneğin bir görüntüde yeşiller biraz fazla mavi
+veya kırmızılar biraz soluksa, fotoğrafın
+kullanışlılığını etkilemez.
+•Hatta, onu incelerken bile çoğu zaman fark
+edilmeyebilir.
+---PAGE---
+Renk Uzayları
+Fakat bir vakada bir çocuğun yüzündeki morluklar
+incelenecekse renk o zaman önem arz etmektedir.
+•Yanak çürüğündeki kırmızı-mor renk taze bir çürük
+olduğunu gösterir.
+•Göz çevresindeki sarı-kahverengi renk önceki bir
+olaydan daha eski bir çürük olduğunu gösterir.
+---PAGE---
+Renk Uzayları
+* Bilgisayar ekranlarında RGB uzayı kullanılır. Bir görüntü başarılı bir şekilde oluşturulur. Fakat insan görü sistemine 
+HSI renk uzayı daha yakındır. 
+Şekil 4. Birkaç renk alanı için koordinat sistemleri: (a) kübik RGB alanı, (b) bikonik HSI alanı ve (c) küresel Lab alanı.
+---PAGE---
+Renk Uzayları
+Şekil 5.Bir natürmort resmin görüntüsü.
+Şekil 6. Piksel renk değerlerinin grafikleri: (a) kübik RGB alanı, (b) 
+bikonik HSI alanı, (c) silindirik HSI alanı ve (d) küresel Lab alanı.
+Örneğin, Şekil 5'teki resimdeki arka plana bakmak, mevcut kırmızı, yeşil ve mavinin
+yoğunluklarını akla getirmez. Sanatçının renk tonu (Hue), gölge ve ton kavramıyla yakından
+ilgilidir.
+Ton (Hue), çoğu insanın renkle kastettiği şeydir. Örneğin kırmızı, turuncu ve sarı arasındaki
+ayrımdır.
+Doygunluk (Saturation), mevcut renk miktarıdır. Örneğin gri, pembe ve kırmızı arasındaki
+ayrım.
+Intensity (açıklık, parlaklık, yoğunluk) ışık miktarıdır. Örneğin, koyu kırmızı ile açık kırmızı gibi.
+---PAGE---
+Renk Uzayları
+Örneğin medyan filtreleme veya kenar keskinleştirme gibi bir görüntüdeki gürültüyü
+azaltmak veya ayrıntıların görünürlüğünü artırmak RGB sinyallerine ayrı ayrı
+uygulandığında sorunlar oluşur.
+• Görüntüde renk kaymalarına neden olur ve kırmızı, yeşil ve mavi oranları değişir.
+Ancak bunları HSI alanındaki parlaklık değerlerine uygulandığında böyle bir problem
+oluşmaz.
+Sonuç olarak ele alınan problem türüne göre farklı renk uzayları kullanılabilir.
+---PAGE---
+Renk Düzeltme
+• Bir görüntüdeki renkleri orijinal sahneye uyacak şekilde
+ayarlamak, genellikle görüntüye bazı standartların
+eklenmesini veya aynı aydınlatma koşulları kullanılarak
+fotoğraflanmasını gerektirir.
+• Bu yapılamazsa, gösterildiği gibi, sahne hakkındaki bazı
+bilgilere veya varsayımlara dayalı olarak düzeltmeler yapmak
+mümkün olabilir.
+• Örneğin ColorChecker, orijinal olarak modellerin, giysilerin
+vb. Stüdyo fotoğrafçılığında kullanılmak üzere tasarlanmıştır.
+---PAGE---
+Renk Düzeltme
+Şekil 7. Bir stüdyoda bir dizi görüntünün başlangıcında kullanılan ColorChecker grafiği.
+Şekil 7’de gösterildiği gibi kullanılacak aydınlatma
+düzeneği ile birlikte grafiğin bir fotoğrafını (film
+üzerine) kaydedildi.
+Bu, aynı ışıklandırmayla çekilen sonraki fotoğraf
+serilerinin düzeltilmesini sağladı, böylece basılı
+katalogların vb. renkleri orijinal nesnelerle renk
+eşleştirildi.
+---PAGE---
+Renk Düzeltme
+ColorChecker çizelgesindeki renkler, Şekil 8’de
+gösterildiği gibi çoğu yazıcı ve bilgisayar ekranının
+üretebileceği CIE renk çizelgesi bölümünü
+kapsayacak şekilde seçilmiştir.
+• Prosedür, renk dizisinin görüntülerinin
+kullanılacak kamera veya tarayıcı ile
+kaydedilmesini gerektirir.
+• Bir spektrofotometre, görüntülenen veya yazdırılan
+görüntüdeki karşılık gelen renkleri ölçmek için
+kullanılır.
+Şekil 8. CIE renklilik diyagramında çizilen
+ColorChecker grafik renkleri (renkler, sayfa
+yüzeyine dik eksen olan parlaklıkta da değişir)
+---PAGE---
+Renk Düzeltme
+• Standarttaki her parça için gerçek renk değerleri bilindiğinden,
+çıktıları eşleşecek şekilde ayarlayan profiller hesaplanabilir.
+• Farklı aydınlatma veya kameralar kullanıldığında prosedürün tekrarlanması
+gerekir, ancak yazılım çalışırken otomatiktir (Şekil 3).
+Bir görüntüdeki renklere yönelik daha basit, daha yaklaşık bir
+düzeltme:
+Şekil 8’de gösterilen görüntü üçgeninin köşelerini işaretlemek için
+tercihen doymuş kırmızı, yeşil ve mavi olmak üzere yalnızca üç renk
+standardıyla oluşturulabilir.
+---PAGE---
+Renk Düzeltme
+• Şekil 9'da gösterilen örnekte, boya rengi çipleri bir cetvel üzerine monte
+edilmiş ve bir ColorChecker grafiğine göre kalibre edilmiştir.
+• Daha sonra, şekilde gösterilen halı gibi görüntüleri renklendirmek için
+kullanılmıştır.
+Şekil 9. (a) Dokuma bir halının orijinal görüntüsü ve (b) renk 
+düzeltildi.
+Şekil 9’da Boya yongaları (daire
+içine alınmış) kalibre edilmiştir.
+Bir cetvel üzerine monte
+edilmiştir.
+Böylece ölçülen RGB değerleri
+görüntüyü ayarlamak için
+kullanılabilmiştir.
+---PAGE---
+Renk Düzeltme
+• Her standartta kaydedilen RGB yoğunluklarının ölçülmesi, daha
+sonra görüntüdeki her piksel için RGB değerleriyle çarpılan 3 × 3
+tristimulus değer matrisinin (renklerin ölçülmesi sonucu )
+hesaplanmasını sağlar.
+• Bu yöntem birçok görsel renk eşleştirme görevi için yeterlidir.
+
+---PAGE---
+Renk Düzeltme
+• Daha da basit bir renk ayarı türü, sahnede siyah, beyaz ve griyi temsil eden
+renksiz nötr alanların bulunabileceğini varsayar.
+• Örneğin Şekil 10’da gösterilen örnekte, siyah (lastiğin alt tarafı), beyaz
+(plakadaki arka plan) ve griyi (metal tekerlek) temsil etmek için üç nokta
+manuel olarak seçilmiştir. Bu konumlarda ölçülen RGB renk değerleri, her bir
+ayrı renk kanalına uygulanacak limitleri ve gama ayarını tanımlar.
+Şekil 10. Nötr nokta renk ayarı: (a) nötr renk noktaları işaretlenmiş orijinal görüntü, (b) ayarlanmış görüntü ve 
+(c) görüntü parlaklık histogramı üzerine bindirilmiş kırmızı, yeşil ve mavi kanallar için ayarlama eğrileri.
+---PAGE---
+Görüntü Düzeltme
+• Suç mahalli ve kanıt fotoğraflarının kaydedilmesi için en iyi
+uygulama, konunun yüzeye dik olarak görüntülenmesini belirtir.
+• Bu, boyutların herhangi bir yönde basitçe ölçülebildiği ve
+mesafelerde veya şekillerde bozulma olmayan görüntüler üretir.
+Şekil 11. Kırmızı okla işaretlenmiş iki adam arasındaki yatay mesafe, bilinen kamera 
+konumundan veya ters projeksiyonla belirlenebilir.
+---PAGE---
+Görüntü Düzeltme
+Ancak, özellikle fotoğraflar eğitimli teknisyenler tarafından
+çekilmediğinde veya diğer gözlemcilerden toplandığında
+veya bir gözetleme kamerasının sabit konumundan geldiği
+zaman istenilen şekilde fotoğraflama yapılamamaktadır.
+Ayrıca fotoğrafı çekilen yüzey düz olmayabilir.
+Bu tür görüntüler, potansiyel olarak önemli ayrıntıların tek
+kaydı olabilir, ancak doğrudan ölçümler için uygun değildir.
+---PAGE---
+Görüntü Düzeltme
+Şekil 12. Bir görüntünün düzeltilmesi: (a) fayansların üzerindeki kan sıçramasının orijinal fotoğrafı, (b) referans noktaları
+oluşturmak için karo köşelerini işaretleme, (c) görüntünün perspektif düzeltmesi ve (d) kontrastı ve düzensiz
+aydınlatmayı artırmak için ek ayarlamalar.
+---PAGE---
+Görüntü Düzeltme
+Şekil 13. Bir ayak izi görüntüsünün düzeltilmesi: (a) orijinal fotoğraf ve (b) düzeltilmiş perspektif
+* Şekil 13, cetvellerle özetlenen bir alanı
+göstermektedir.
+Bunlar, düzeltmeyi mümkün kılan güven
+işaretlerini sağlar.
+---PAGE---
+Görüntü Düzeltme
+Şekil 14. (a) Bina görüntüsü (b) orijinal görüntü
+* Bu binanın cephesinin düzeltilmesi, öndeki ağaçların görünen
+konumunu değiştirir ve elektrik direğinin açısını bozar.
+
+---PAGE---
+Görüntü Düzeltme
+Şekil 15. Aşırı geniş açılı bir mercek tarafından üretilen bozulmanın
+düzeltilmesi: (a) orijinal ve (b) düzeltilmiş görüntü.
+*Genel olarak, bu, ya görüntüde referans işaretlerinin varlığını (Şekil 15) ya da
+bir ızgaranın fotoğrafını çekerek ve gerekli ölçümleri yaparak (ve saklayarak)
+lensin önceden kalibrasyonunu gerektirir.
+
+---PAGE---
+Görüntü Düzeltme
+Birçok çeşitli profesyonel kalitede lenslerde yazılım programları
+gerekli ayarlamaları görüntülere uygulayabilir.
+Fakat  odak uzaklığına göre değişen bozulmalara sahip olan zoom
+lensler için bu durum geçerli değildir.
+ Özellikle çoğu cep kamerasındaki lensler veya cep telefonlarında ve birçok 
+gözetleme kamerasında bulunan geniş açılı lenslerde bu problem 
+yaşanmaktadır.
+ Video kameralar, özellikle analog modeller, mercekten gelen herhangi bir
+optik bozulmaya ek olarak genellikle görüntüyü bir yandan diğer yana uzatan
+veya sıkıştıran bozulmalar üretir.
+---PAGE---
+Görüntü Düzeltme
+• Görüntü düzeltmenin başka bir örneği Şekil 16'de gösterilmektedir. .
+Hareket eden bir arabadaki farklı bakış noktalarından çekilmiş birkaç
+video karesi birleştirilerek plaka daha okunabilir hale getirilmiştir.
+Ancak aracın geri kalanının görünüm bozulduğundan her biri çok
+gürültülü olan bu görüntülerin plaka numarasının okunabilmesi için
+ortalaması alınmıştır.
+Şekil 16. Her birinde plakanın görünümünü düzelttikten sonra bir 
+arabanın arkasının dört görüntüsünü birleştirilmiştir.
+---PAGE---
+Ara değerleme (Interpolation)
+• Bir görüntüde bazen perspektif bozulmasını düzeltmek,
+bazen de sadece boyutu ayarlamak veya görüntüleri
+kaydırmak veya döndürmek gerekir.
+• Bu işlemlerden herhangi biri kullanıldığında, yeni piksel
+değerlerini elde etmek için ara değerleme yapılması
+gerekir.
+• Örneğin Şekil 17’de gösterildiği gibi, bir görüntü
+döndürüldüğünde yeni piksel koordinatları orijinal
+piksellerin koordinatlarına tam olarak karşılık gelmez.
+Genel olarak, yeni piksel konumları tam sayı değerleri
+değildir ve orijinal piksellerin konumları arasında yer
+alır. Yeni piksellere hangi parlaklık veya renk değerleri
+ara değerleme işlemi ile atanır.
+Şekil 17. Bir piksel ızgarasının ölçeğini
+veya açısını değiştirmek, yeni piksel
+konumlarını orijinal koordinatlar arasına
+yerleştirir.
+---PAGE---
+Ara değerleme (interpolation)
+Temel ara değerleme yaklaşımları
+•En yakın komşu (nearest-neighbor)
+•Çift doğrusal (bilinear)
+•Çift kübik (bicubic)
+---PAGE---
+Ara değerleme (Interpolation)
+ En yakın komşu (nearest-neighbor) :
+En basit yaklaşımdır. Yeni koordinatlara en yakın konumda
+bulunan orijinal piksellerden gelen değeri (veya RGB gibi
+değerleri) yeni konuma atar.
+En yakın komşu yaklaşımı piksel parlaklığını ve renk
+değerlerini korur ancak çizgileri ve kenarları deforme eder.
+---PAGE---
+Örnek- Ara değerleme (Interpolation)
+Örnek: 3x3 piksellik bir imgenin gri değerleri aşağıda verilmiştir. Bu imge 
+en yakın komşu ara değerleme ile 6x6 piksellik bir boyuta yükseltilsin. 
+Burada büyülen görüntü tekrar orijinal boyuttaki 
+Görüntüye küçülterek tam oturtulacaktır.
+Bu nedenle oranlama yapılır.
+Büyütülen görüntünün satırları:  1 2 3 4 5 6
+Orijinal görüntünün satırları:       1 2 3
+Yeni ve eski satırlar oranlanırsa: 6/3=2 olur.
+Piksellerin satır pozisyonları = 
+[𝟏𝟏𝟐𝟐𝟑𝟑𝟒𝟒𝟓𝟓𝟔𝟔]
+𝟐𝟐 = [0.5 1 1.5 2 2.5 3]
+Satır pozisyonları tam sayıya yuvarlanır.    [ 1   1  2   2  3   3]
+Benzer Şekilde sütun pozisyonları da 6/3=2
+Sütun pozisyonlarının tamsayıya yuvarlanmış hali =[ 1   1  2   2  3   3]
+---PAGE---
+Örnek - Ara değerleme (Interpolation)
+• Yeni satır ve sütun pozisyonları belirlendikten sonra verilen Matriste 
+olduğu gibi ilgili pozisyonlara göre piksel değerleri yerleştirilir.
+
+---PAGE---
+Ara değerleme (Interpolation)
+• En yakın komşu aradeğerlemelerden daha iyi yöntem olarak çift
+doğrusal ara değerleme (bilinear interpolation) ve Çift küpsel
+(bicubic) yöntemlerdir.
+Çift doğrusal ara değerleme : En yakın 4 piksel komşuluğunu
+kullanarak ara değerleme yapmaktadır.
+• Çift küpsel aradeğerleme: En yakın 16 komşuluğu kullanarak
+ara değerleme yapmaktadır.
+• Adobe Photoshop ve Corel PhotPoint gibi ticari görüntü düzenleme
+programları çift küpsel aradeğerleme yöntemini kullanmakadır.
+---PAGE---
+Şekil 18. (a) orijinal test görüntüsü, (b) en yakın komşu, (c) çift doğrusal ve (d) çift kübik. Alt 
+kısımdaki büyütülmüş örnekler (a) 'da oklarla işaretlenmiş iki alandan gelir.
+Şekil 18. c ve d, çift doğrusal ve çift
+kübik ara değerlemede çizgiler
+sürekli ve pürüzsüz olduğundan
+bunlar görsel olarak daha iyi
+sonuçlar verir.
+Bununla birlikte, çizgilerin genişliği
+artmıştır ve piksel değerleri
+değiştirilmiştir. Siyah çizgilerin
+kenarları boyunca, çizginin genel
+görsel görünümünü pürüzsüz hale
+getirmeye yarayan gri pikseller
+vardır.
+---PAGE---
+Ara değerleme (Interpolation)
+• En yakın komşu ara değerlemesi, tüm orijinal pikselleri
+değiştirilmemiş değerlerle daha büyük alanlara dönüştürür.
+• Çift doğrusal ara değerlemesi, orijinal pikseller arasındaki boşlukları,
+uzaklıkları ile doğru orantılı olarak değişen değerlerle doldurur. ve
+bu, istatistiksel olarak üretilebilecek en olası ve en anlamlı sonuçtur.
+• Çift kübik ara değerlemesi ise kübik polinomları daha geniş bir
+bölgedeki orijinal piksel değerlerine sığdırır ve daha düzgün bir
+sonuç almaya çalışır.
+• Sonuçlar genellikle görsel olarak iyi görünür ve birçok kişi bunu
+fotoğrafları büyütmek için kullanmayı tercih eder.
+Ancak bu, ince detayların önemli olabileceği adli durumlarda
+yapılmamalıdır.
+---PAGE---
+Şekil 19. 3 × 3 bir kare bloğun 3 kat büyütülmesi için ara değerleme yöntemlerinin karşılaştırılması.
+---PAGE---
+Kontrastı ve Parlaklığı Ayarlama
+• Bir fotoğraf , parlak ışıklara ve derin gölgelere sahip gece
+sahnelerinde çekilmiş olabilir.
+• Ya da bir fotoğraf, güneşli bir alanın yanında derin gölgeli dış
+mekan sahneleri içerebilir.
+Bu durumda, önceden kolayca görülemeyen ayrıntıları daha
+iyi gösterebilmek adına görüntüde kontrast ve parlaklık ayarı
+yapılmaktadır.
+---PAGE---
+Kontrastı ve Parlaklığı Ayarlama
+* Adli bilişimdeki bir görüntüde herhangi
+bir değişiklik yapıldığında orijinal görüntü
+saklanmalı ve yeni bir görüntüde yapılan
+değişimler belirtilerek onun da bir kopyası
+alınmalıdır.
+Şekil 20. Karanlık kısmı sıkıştırırken parlaklık aralığının parlak
+kısmını genişletir. Orijinal ve değiştirilmiş görüntüler için
+histogramlar ve aktarım işlevi gösterilir.
+---PAGE---
+Histogramdengeleme/eşitleme
+• Histogram eşitleme, bir görüntüdeki piksellerin parlaklığını her bir 
+parlaklık tonuyla gösterilen alanların (veya piksellerin sayısını) eşit 
+olacak şekilde değiştiren bir tekniktir.
+Şekil 21’degösterildiği gibi histogram eşitleme
+orijinal histogramın kümülatif çizimi
+kullanılarak gerçekleştirilir.
+Şekil 21. Parlak kısmı sıkıştırırken parlaklık aralığının karanlık 
+kısmını genişletmek. 
+---PAGE---
+Histogramdengeleme/eşitleme
+• Kümülatif histogram, görüntünün her olası değerden daha koyu
+veya daha koyu olan alan fraksiyonudur.
+• Bu nedenle orijinal parlaklık değeri i olan pikseller için yeni
+parlaklık değeri şu şekilde hesaplanabilir
+Pay kısmı kümülatif histogramı ifade etmektedir.
+Payda, görüntüdeki veya alanının toplam piksel sayısıdır.
+255, ise gri görüntüde en parlak piksel değeridir.
+*
+ Kümülatif
+ histogram
+, her renk değerinin kendisinden bir
+önceki renk değerleri ile toplanmasıyla elde edilir.
+Örneğin bir görüntüde 0 parlaklık değerli piksel sayısı 5 ve 1
+parlaklık değerli piksel sayısı 20 ise kümülatif histogram 25
+olur. Bu işlem tüm parlaklık değerleri için yapılır.
+---PAGE---
+Histogramdengeleme/eşitleme
+• Çoğu durumda, görüntü histogramlarının eşitlenmesi, aynı sahnenin farklı
+aydınlatma altında (örneğin günün farklı saatlerinde) çekilmiş görüntülerinin
+karşılaştırılmasını kolaylaştırabilir.
+• Şekil 22'deki örnekte gösterildiği gibi, bazı durumlarda bir görüntüdeki kontrastı
+diğeriyle eşleşecek şekilde ayarlamak da yararlı olabilir.
+Örnekte, bir banka soyguncusunun iki
+gözetim görüntüsü, kulak şeklinin
+ayrıntılarındaki benzerlikleri belirlemek
+için karşılaştırılmıştır.
+Bu, her iki suçu işleyen kişinin aynı kişi
+olduğunu saptama noktasında bir fikir
+oluşturmuştur.
+Şekil 22. Eşleştirme işlemi için histogram ayarlanması
+---PAGE---
+Histogramdengeleme/eşitleme
+Önceki tüm kontrast genişletme, gama ayarı ve
+histogram eşitleme örnekleri tek renkli gri
+tonlamalı görüntüler göstermiştir.
+Bu prosedür, öncelikle RGB renk uzayından
+parlaklık bilgilerini renk verilerinden ayıran HSI
+veya Lab gibi alanlardan birine dönüştürülmesi
+gerekir.
+---PAGE---
+Histogramdengeleme/eşitleme
+• Parlaklığı değiştirme prosedürü, Şekil 23’te gösterildiği gibi renk
+değerlerini değiştirmeden bırakarak yalnızca yoğunluk veya parlaklık
+verilerine uygulanır.
+Şekil 23. Renk verileri değişmeden histogram eşitleme
+---PAGE---
+Histogramdengeleme/eşitleme
+• Bir görüntüdeki renk kanallarına histogram değişiklikleri gibi geliştirmeler
+uygulamaya çalışmak, tipik olarak yeni, yanlış ve istenmeyen renklerin ortaya
+çıkmasına neden olur.
+• Şekil 23, ayrı RGB kanallarının eşitlenmesini L kanalının eşitlenmesiyle
+karşılaştıran ve a ve b kanal verilerini değiştirmeden bırakan bir örneği
+gösterir.
+Şekil 24. Renkli bir görüntünün işlenmesi: (a) orijinal fotoğraf; (b) RGB kanallarının ayrı ayrı eşitlenmesi, (c) renk 
+bilgisini değiştirmeden bırakarak sadece parlaklık verilerinin eşitlenmesi.
+
+---PAGE---
+KAYNAKLAR
+• Russ, John C., Jens Rindel, and P . Lord.Forensic uses of digital 
+imaging. CRC Press, 2016.
+---PAGE---

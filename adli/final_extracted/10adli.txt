@@ -1,0 +1,191 @@
+Kanıtın Yorumlanması ve 
+Sunulması
+---PAGE---
+Görüntü Ekranları
+Görüntüleri jüri üyelerine basılı kopya şeklinde sunmak iyi olmayacaktır.
+Görüntüleri herkesin bir arada görebileceği ortak bir odak noktasına 
+sahip geniş ekranlı bir monitör ile  duruşmalara dahil etmek daha iyi 
+olacaktır. 
+Ayrıca resim/görüntüdeki gerçek renkler vaka için önemli olmasa bile, 
+yanlışlarsa jüri üyelerinin tepkisini ve yorumunu önyargılı hale 
+getirebilir. 
+---PAGE---
+Prosedürlerin Açıklanması 
+ve Gösterilmesi
+• Adli bilişimde görüntüler üzerindeki uygulanan 
+işlemler, çoğu çok zaman alıcı ve karmaşıktır.
+• Önemli olan yalnızca sonuçlardır. 
+• Ancak sonuçları tek başına göstermek de kötü bir 
+uygulamadır.
+• Çünkü tüm süreç bilimselliğin dışında bir sihir gibi 
+görünebilir.
+---PAGE---
+Prosedürlerin Açıklanması 
+ve Gösterilmesi
+• İşlemeyi ve sonuçlarını göstermek için
+bilginin gerçekte orijinal görüntüde
+olduğunu ve sadece "ortaya çıktığını" veya
+işlem tarafından daha kolay görünür hale
+getirildiğini göstermektir.
+• Bunu yapmanın iyi bir yolu, süreci adım
+adım sonuçları göstermektir.
+---PAGE---
+Prosedürlerin Açıklanması ve Gösterilmesi
+Şekil 1. Gama değiştirilerek görüntü kontrastının eşzamanlı olarak ayarlanmasıyla, ilgilenilen bir alan 
+etrafında ortalanmış aşamalı büyütmeyi gösteren bir dizi görüntü örneği.
+---PAGE---
+Prosedürlerin 
+Açıklanması ve 
+Gösterilmesi
+Şekil 2. Düzgün olmayan arka plan
+parlaklığının seviyelendirilmesini ve kenar
+kontrastının keskinleştirilmesini
+belgeleyen bir görüntü dizisi örneği.
+
+---PAGE---
+Prosedürlerin Açıklanması ve Gösterilmesi
+Şekil 3. Sadece arabanın arkasındaki plaka alanının ters evrişimini (deconvolution) gösteren bir görüntü dizisi örneği.
+plaka alanının 
+---PAGE---
+Prosedürlerin Açıklanması ve Gösterilmesi
+Şekil 4. Bir ilgi alanını vurgulama ve arka planı karartma örnekleri
+
+---PAGE---
+Karşılaştırmalar
+• Çoğu durumda karşılaştırmalar, uyumlu ölçekler ve
+yönelimle ve mümkün olduğu ölçüde benzer parlaklık ve
+kontrastla yan yana yapılmalıdır.
+Şekil 5. Mermi kovanları üzerindeki ateşleme iğnesi ve fırlatma işaretlerinin yan yana karşılaştırması.
+---PAGE---
+Karşılaştırmalar
+Şekil 6. İki sabıka fotoğrafının (a, b) polis ressamının bir şüphelinin eskiziyle (ortada) karşılaştırılması. 
+
+---PAGE---
+Karşılaştırmalar
+• Daha fazla maddeyle veya karşılaştırma noktası olması
+amaçlanmayan birden çok varyasyonun bulunduğu
+karşılaştırmalar çok daha zordur.
+Şekil 7. Örgü desenlerinin karşılaştırılması, renk farklılıklarının ve farklı görüntü ölçeklerinin varlığı nedeniyle karmaşıktır.
+---PAGE---
+Karşılaştırmalar
+• Bir kumaş veya diğer materyallerin bir görüntüsünü olay yerinde
+kaydedilen bir izlenimle karşılaştırmak aynı zamanda ölçek ve
+yönün eşleştirilmesini de gerektirir.
+Şekil 8. Baskı görüntüsünün kayış ve kumaş görüntüsüyle hizalamak için döndürülmediği bir örneği göstermektedir.
+
+---PAGE---
+Bilgisayar Grafikleri ve Animasyonları
+❖Bilgisayar ekranlarının, sanal
+gerçekliğin ve diğer görsel yardımcıların
+kullanımı, özellikle görüntüler dahil
+olmak üzere kanıtların sunulması için
+dönüştürücü olabilir.
+❖Bu, hem orijinal hem de işlenmiş
+fotoğrafları, bilgisayar grafikleri ve
+animasyonları içerir.
+---PAGE---
+Bilgisayar Grafikleri ve Animasyonları
+• Şekil 8’de, bir bıçak yarasının açısı, giriş yarasının
+ilişkisini, nervürlerin konumunu ve kalbin girişin
+omurgaya dik olduğunu belirten bir şekilde gösteren
+bilgisayar grafikleri kullanılarak gösterilmektedir.
+Şekil 9. Bıçak yarasının açısını gösteren bilgisayar grafikleri illüstrasyon.
+---PAGE---
+Dinamik Modeller
+❖Adli animasyonların doğruluğu, onu oluşturmak için kullanılan
+verilerin doğruluğuna ve doğrulanabilirliğine bağlıdır.
+❖Bu veriler
+• Görgü tanıklarının
+• Sürücülerin
+• Kaza sonrası olay yerine gelen polis memurlarının
+• Araçların yapısal hasarını analiz eden mühendislerin ifadeleri
+• Karayolundaki herhangi bir patinaj izleri
+• Muhtemelen gözetleme vb.
+yollarla toplanabilir.
+---PAGE---
+Dinamik Modeller
+• Parametrelerden birinde küçük bir
+değişiklik bile sonuçta büyük bir
+değişikliğe neden olabilir.
+---PAGE---
+Dinamik Modeller
+• Bazı araçlarda, bir aracın çalışmasıyla ilgili önemli bilgileri saklayan
+yerleşik bilgisayarlar veya aracın işaret ettiği yönü gösteren gösterge
+paneli kameraları bulunur.
+• Çoğu zaman, büyük ölçüde aynı tanıklığa dayalı olarak birkaç farklı
+senaryo oluşturulabilir.
+---PAGE---
+Dinamik Modeller
+• Dinamik, çok gövdeli bir süreçte yer alan süreçleri modelleyerek, farklı anlardaki
+konumları gösteren haritalar (Şekil 10) veya gerçekçi bilgisayar grafikleri simülasyonları
+(Şekil 11) oluşturmak mümkündür.
+Şekil 10. Bir kaza sırasında çeşitli zamanlarda arabaların
+konumlarını gösteren bir harita görünümü örneği
+Şekil 11. Rollover kazasını gösteren bir animasyondan üç 
+hareketsiz kare. 
+---PAGE---
+Dinamik Modeller
+• Bu adli animasyonlar, mahkemede kullanıldığında, mevcut
+kanıtları desteklemeli ve doğrulamalıdır.
+• Gereklilikler, uygunluk, özgünlük (kanıtla destek) ve uzman
+görüşü ile desteklemedir.
+---PAGE---
+Dinamik Modeller
+• Bilgisayar grafiklerinin bir başka çok özel alanı, yaşlanmanın etkilerini tahmin etmek için yüzlerin
+fotoğrafik görüntülerini kullanır.
+• Şekil 5.18'de gösterildiği gibi, bu genellikle çocuklar için, örneğin, kayıp veya çalınan çocukların beklenen
+mevcut görünümlerini gösteren bir görüntü sunarak bulunmalarına yardımcı olmak için kullanılır.
+Şekil 12. Bir çocuğun yüzünün tahmini yaşlanması:
+---PAGE---
+Standartlar
+• Çeşitli üreticilerin boyalarında ve 
+elyaflarında kullanılan renkler gibi çok sayıda 
+görüntü ve ilgili malzeme veritabanı
+mevcuttur. 
+• Ulusal parmak izi veritabanına ek olarak, 
+yerel sabıka resimleri, ehliyet fotoğrafları ve 
+silah kayıtları vardır.
+• Ateşlenmiş fişek kutuları ve tornavida ve 
+keski çizgi desenleri üzerinde 3 boyutlu çizgi 
+ve baskı desenlerinin bir derlemesi vardır. 
+---PAGE---
+Standartlar
+• Lastik sırtı ve ayakkabı tabanı modelleri
+için, çeşitli Bilimsel Çalışma Gruplarından
+(SWG) biri olan SWGTREAD
+(http://www.swgtread.org) tarafından bir
+veritabanı tutulur.
+• Çeşitli tekniklerle kimyasal analizin yanı
+sıra renk ve mikroskobik incelemeyi de
+içeren boya yongalarının
+karşılaştırılmasına yönelik standartlar,
+Scientific Working Group for Materials
+Analysis (SWGMAT, 2000) ve American
+Society for Testing and Materials (ASTM)
+tarafından yayınlanmıştır. , 2014).
+---PAGE---
+Olasılıkları Değerlendirme
+• Ölçüm belirsizliği her zaman bir endişe kaynağıdır ve
+muhtemelen zorluklar için bir konudur.
+• 79.3 ± 1.2 cm gibi bir şeyin temsil ettiği belirsizlik
+fikrine az sayıda jüri üyesi (veya yargıç ve avukat) aşina
+olacaktır.
+• Gauss istatistikleri bir ölçüme uygulandığında bile,
+standart sapmanın arkasındaki kavramlar ve yanlış
+pozitif ve yanlış negatif gibi çeşitli hata türleri
+arasındaki farkı açıklamak garip olabilir.
+---PAGE---
+Olasılıkları Değerlendirme
+•Avukatların, istatistikleri veya anlamlarını
+yanlış ifade edecek durumlar oluşturmak
+gerekir.
+•Örneğin sonuçları "Hesaplanan boyut 31,2
+inçtir ve verilerin doğruluğu, gerçek değerin
+29,8 inçten küçük veya 32,6 inçten büyük
+olma olasılığının % 1'den az olması" gibi bir
+şey olarak sunmak daha iyidir.
+---PAGE---
+KAYNAKLAR
+• Russ, John C., Jens Rindel, and P . Lord.Forensic uses of digital 
+imaging. CRC Press, 2016.
+---PAGE---
